@@ -30,15 +30,16 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
     color: white;
     padding: 10px;
     text-align: center;
 }
 
 .popup-content h3 {
-    margin: 0 0 5px 0;
-    font-size: 18px;
+    padding-top: 15px;
+    font-size: 20px;
 }
 
 .popup-content p {

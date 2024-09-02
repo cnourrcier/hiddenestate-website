@@ -6,14 +6,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --sepia-100: #f4f0e8;
-  --sepia-200: #e8e0d0;
-  --sepia-600: #a67c52;
-  --sepia-700: #8c6642;
-  --sepia-900: #3c2f1f;
-}
-
 html {
   overflow-y: scroll;
 }
