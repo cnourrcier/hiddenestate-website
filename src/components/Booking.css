@@ -6,8 +6,12 @@
     margin: 0 4.05vw 4rem 4.05vw;
 }
 
-.book-button {
-    background-color: rgb(218, 191, 78);
+.button-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.button {
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -17,6 +21,19 @@
     transition: background-color 0.3s;
 }
 
+.book-button {
+    background-color: hsl(48, 65%, 58%);
+    color: white;
+}
+
 .book-button:hover {
     background-color: hsl(48, 65%, 48%);
 }
+
+.history-button {
+    background-color: hsl(0, 0%, 4%);
+}
+.history-button:hover {
+    background-color: hsl(0, 0%, 14%);
+}
+
