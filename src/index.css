@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --sepia-100: #f4f0e8;
+  --sepia-200: #e8e0d0;
+  --sepia-600: #a67c52;
+  --sepia-700: #8c6642;
+  --sepia-900: #3c2f1f;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background-color: rgb(225, 225, 225);
+  font-family: Montserrat, sans-serif;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  color: var(--sepia-900);
+  line-height: 1.6;
+}
+
+h1 {
+  line-height: 3.6rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 4.3rem;
+  line-height: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  line-height: 2.7rem;
+  margin: 2rem 0;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 0 4.05vw;
+}

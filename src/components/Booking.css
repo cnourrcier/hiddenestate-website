@@ -1,0 +1,22 @@
+.booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4.05vw 4rem 4.05vw;
+}
+
+.book-button {
+    background-color: rgb(218, 191, 78);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-button:hover {
+    background-color: hsl(48, 65%, 48%);
+}

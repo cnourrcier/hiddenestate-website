@@ -1,0 +1,30 @@
+.img-slider-section {
+    margin: 0 4.05vw 4rem 4.05vw;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.img-slider {
+    display: flex;
+    gap: 1rem;
+}
+
+.img-slider img {
+    width: calc(50% - 0.5rem);
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .img-slider {
+        flex-direction: column;
+    }
+
+    .img-slider img {
+        width: 100%;
+    }
+}

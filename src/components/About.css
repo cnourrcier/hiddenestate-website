@@ -1,0 +1,10 @@
+.about {
+    margin: 0 4.05vw 4rem 4.05vw;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid rgb(218, 191, 78);
+    padding-left: 1rem;
+    margin-top: 1rem;
+}

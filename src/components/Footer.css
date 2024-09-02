@@ -1,0 +1,33 @@
+.resort-footer {
+    padding: 2rem 0;
+    color: rgb(10, 10, 10);
+    background-color: rgb(218, 191, 78);
+}
+
+.site-footer {
+    padding: 0.65rem 0;
+    font-size: 0.8rem;
+    background-color: rgb(10, 10, 10);
+    color: rgb(218, 191, 78);
+}
+
+.footer-content {
+    text-align: center;
+    height: 100%;
+}
+
+.manager {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.25rem;
+}
+
+.permit {
+    margin-top: 1rem;
+}
