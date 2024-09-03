@@ -3,7 +3,7 @@ import './Features.css';
 const Features = () => {
     return (
         <section className="features">
-            <h2>Palm Springs Home for Events</h2>
+            <h2>Palm Springs Vacation Home for Events</h2>
             <p className="features__subtitle">
                 Vacation Rental, Corp. Events, Weddings, Reunions, Dinner Parties, Film, Photography, Garden Parties, Private Tours
             </p>

@@ -49,7 +49,7 @@ const Location = () => {
 
     return (
         <section className="location">
-            <h2>Location</h2>
+            <h2>Amazing Location!</h2>
             <div className="location-content">
                 <div className="map-container">
                     <Map

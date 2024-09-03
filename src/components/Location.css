@@ -167,9 +167,6 @@
 }
 
 @media (max-width: 768px) {
-    .location h2 {
-        font-size: 1.75rem;
-    }
 
     .map-container .mapboxgl-map {
         min-height: 350px;
@@ -189,9 +186,6 @@
 }
 
 @media (max-width: 480px) {
-    .location h2 {
-        font-size: 1.5rem;
-    }
 
     .map-container .mapboxgl-map {
         min-height: 300px;
