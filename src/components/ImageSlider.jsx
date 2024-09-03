@@ -25,8 +25,8 @@ const ImageSlider = () => {
     return (
         <section className="img-slider-section">
             <div className="img-slider">
-                <img src={images[currentImageIndex]} alt="Resort view" />
-                <img src={images[(currentImageIndex + 1) % images.length]} alt="Resort view" />
+                <img src={images[currentImageIndex]} alt={`Resort view ${currentImageIndex + 1}`} />
+                <img src={images[(currentImageIndex + 1) % images.length]} alt={`Resort view ${(currentImageIndex + 1) % images.length} + 1`} />
             </div>
         </section>
     )
