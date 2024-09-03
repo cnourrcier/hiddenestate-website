@@ -1,3 +1,64 @@
 .features {
-    margin: 0 4.05vw 8rem 4.05vw;
+    margin: 0 auto 8rem auto;
+    max-width: 900px;
+}
+
+.features__subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+.features__description {
+    margin-bottom: 2rem;
+}
+
+.features__description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.features__subheading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.features__list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.features__list li {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.features__list li::before {
+    content: "•";
+    color: #DAB34A;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 992px) {
+    .features {
+        margin: 0 4.05vw 8rem 4.05vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .features__subtitle {
+        text-align: center;
+    }
 }

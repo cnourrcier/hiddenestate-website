@@ -1,10 +1,54 @@
 .about {
-    margin: 0 4.05vw 8rem 4.05vw;
+    margin: 0 auto 8rem auto;
+    max-width: 900px;
 }
 
-blockquote {
+.about__subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.about__content {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.about__content p {
+    margin-bottom: 1.5rem;
+}
+
+.about__quote {
     font-style: italic;
     border-left: 4px solid rgb(218, 191, 78);
-    padding-left: 1rem;
-    margin-top: 1rem;
+    padding: 1rem 0 1rem 1.5rem;
+    margin-top: 2rem;
+    background-color: #f9f9f9;
+}
+
+.about__quote p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.about__quote cite {
+    font-size: 0.9rem;
+    color: #777;
+    font-style: normal;
+}
+
+@media (max-width: 992px) {
+    .about {
+        margin: 0 4.05vw 8rem 4.05vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .about__subtitle {
+        text-align: center;
+    }
 }
