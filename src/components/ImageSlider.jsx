@@ -24,7 +24,6 @@ const ImageSlider = () => {
 
     return (
         <section className="img-slider-section">
-            <h3>Experience the Glamour of Hollywood's Golden Age</h3>
             <div className="img-slider">
                 <img src={images[currentImageIndex]} alt="Resort view" />
                 <img src={images[(currentImageIndex + 1) % images.length]} alt="Resort view" />

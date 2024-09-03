@@ -4,10 +4,9 @@ const Booking = () => {
 
     return (
         <section className="booking">
-            <h2>Book Now</h2>
             <div className='button-container'>
-                <button className="button history-button">View Our History</button>
-                <button className="button book-button">Reserve Your Stay</button>
+                <button className="button history-button">History</button>
+                <button className="button book-button">Book Now</button>
             </div>
         </section>
     )

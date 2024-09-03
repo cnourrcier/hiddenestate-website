@@ -1,5 +1,5 @@
 .location {
-    margin: 0 4.05vw 4rem 4.05vw;
+    margin: 0 4.05vw 8rem 4.05vw;
 }
 
 .map-container {
@@ -73,4 +73,35 @@
 
 .map-style-switcher button:hover {
     background-color: rgba(10, 10, 10);
+}
+
+.street-view-container {
+    position: relative;
+}
+
+.street-view-container img {
+    width: 100%;
+    height: auto;
+}
+
+.street-view-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.street-view-content h3 {
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.street-view-content p {
+    margin: 0;
+    font-size: 14px;
 }

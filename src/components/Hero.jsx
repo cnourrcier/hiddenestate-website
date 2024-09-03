@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchPexelsVideo } from '../utils/pexelsAPI';
 import './Hero.css';
+import FadingCategories from './FadingCategories';
 
 const Hero = () => {
     const [videoUrl, setVideoUrl] = useState('');
@@ -36,8 +37,9 @@ const Hero = () => {
             <div className="hero-overlay"></div>
             <div className="hero-content">
                 <h1>Clark Gable's <br />Palm Springs Resort</h1>
-                <p className='subtitle'>Your Desert Hideaway Awaits!</p>
-                <p>*Disclaimer: This video is only a placeholder to demonstrate example</p>
+                <p>Your Desert Hideaway Awaits!</p>
+                <FadingCategories />
+                <h3>Experience the Glamour of Hollywood's Golden Age</h3>
             </div>
         </div>
     )

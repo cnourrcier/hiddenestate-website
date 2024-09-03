@@ -40,7 +40,7 @@ const CustomMarker = ({ onClick }) => (
 );
 
 const Location = () => {
-    const [popupInfo, setPopupInfo] = useState(markerInfo);
+    const [popupInfo, setPopupInfo] = useState(null);
     const [currentStyle, setCurrentStyle] = useState(mapStyles[0].url);
 
     const handleMarkerClick = () => {
@@ -100,6 +100,13 @@ const Location = () => {
                     </div>
                 </div>
             </div>
+            {/* <div className='street-view-container'>
+                <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1725299251/Clark%20Gable%20Pitch%20Site/_I1A0197m_2_oiuer9.jpg`} alt='Property' />
+                <div className='street-view-content'>
+                    <h3>{markerInfo.name}</h3>
+                    <p>{markerInfo.address}</p>
+                </div>
+            </div> */}
         </section>
     )
 }
