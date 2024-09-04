@@ -16,6 +16,10 @@
     height: 100%;
 }
 
+.footer-content span {
+    margin-left: 4px;
+}
+
 .manager {
     font-weight: bold;
     margin-bottom: 0.5rem;

@@ -9,10 +9,10 @@ const Footer = () => {
                 <div className="footer-content">
                     <p className="manager">Exclusively Managed by Natural Retreats</p>
                     <p className="contact">
-                        <Phone className="icon" /> 888.451.0156
+                        <Phone className="icon" /> <span>888.451.0156</span>
                     </p>
                     <p className="contact">
-                        <Mail className="icon" /> concierge@naturalretreats.com
+                        <Mail className="icon" /> <span>concierge@naturalretreats.com</span>
                     </p>
                     <p className="permit">City of Palm Springs Rental Permit #1039</p>
                 </div>
