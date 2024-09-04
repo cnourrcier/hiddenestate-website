@@ -5,7 +5,7 @@ const Features = () => {
         <section className="features">
             <h2>Palm Springs Vacation Home for Events</h2>
             <p className="features__subtitle">
-                Vacation Rental, Corp. Events, Weddings, Reunions, Dinner Parties, Film, Photography, Garden Parties, Private Tours
+                Vacation Rental, Corporate Events, Weddings, Reunions, Dinner Parties, Film, Photography, Garden Parties, Private Tours
             </p>
             <div className="features__description">
                 <p>
