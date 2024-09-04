@@ -27,13 +27,13 @@
 }
 
 .book-button:hover {
-    background-color: hsl(48, 65%, 48%);
+    background-color: hsl(48, 65%, 54%);
 }
 
 .history-button {
-    background-color: hsl(0, 0%, 4%);
-}
-.history-button:hover {
-    background-color: hsl(0, 0%, 14%);
+    background-color: hsl(0, 0%, 12%);
 }
 
+.history-button:hover {
+    background-color: hsl(0, 0%, 0%);
+}
