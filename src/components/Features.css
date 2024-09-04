@@ -51,6 +51,10 @@
     left: 0;
 }
 
+.feature {
+    font-weight: bold;
+}
+
 @media (max-width: 992px) {
     .features {
         margin: 0 4.05vw 8rem 4.05vw;
