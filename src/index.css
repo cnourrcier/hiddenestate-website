@@ -6,15 +6,33 @@
   box-sizing: border-box;
 }
 
+:root {
+  --ps-terracotta: #E07A5F;
+  /* --ps-sand: #F2CC8F; */
+  --ps-sand: hsl(37, 79%, 85%);
+  /* --ps-green: #81B29A; */
+  --ps-green: hsl(151, 24%, 55%);
+  --ps-blue: #3D405B;
+  --ps-white: #F4F1DE;
+  --ps-whiter: hsl(52, 50%, 95%);
+  --ps-gold: #D4AF37;
+}
+
 html {
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: rgb(225, 225, 225);
+  background-color: var(--ps-white);
   font-family: Montserrat, sans-serif;
-  color: var(--sepia-900);
+  color: var(--ps-blue);
   line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 h1 {

@@ -1,14 +1,7 @@
 .resort-footer {
     padding: 2rem 0;
-    color: rgb(10, 10, 10);
-    background-color: rgb(218, 191, 78);
-}
-
-.site-footer {
-    padding: 0.65rem 0;
-    font-size: 0.8rem;
-    background-color: rgb(10, 10, 10);
-    color: rgb(218, 191, 78);
+    color: var(--ps-white);
+    background-color: var(--ps-blue);
 }
 
 .footer-content {

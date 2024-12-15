@@ -28,6 +28,11 @@ const ImageSlider = () => {
                 <img src={images[currentImageIndex]} alt={`Resort view ${currentImageIndex + 1}`} />
                 <img src={images[(currentImageIndex + 1) % images.length]} alt={`Resort view ${(currentImageIndex + 1) % images.length} + 1`} />
             </div>
+            <div className="property__description">
+                <p>
+                    One of the oldest homes in Old Las Palmas. The Spanish Colonial Revival estate was Created by <span>Master Architect McNeal Swasey</span>. The estate was constructed during the height of the Spanish Revival architectural movement, a common design choice in the Palm Springs area during the 1920s and 1930s, reflecting the glamourous lifestyle of Hollywood's golden age.
+                </p>
+            </div>
         </section>
     )
 }

@@ -15,11 +15,8 @@ const Footer = () => {
                         <Mail className="icon" /> <span>concierge@naturalretreats.com</span>
                     </p>
                     <p className="permit">City of Palm Springs Rental Permit #1039</p>
-                </div>
-            </footer>
-            <footer className='site-footer'>
-                <div className='footer-content'>
-                    <p className='copywrite'>Copyright 2022 - Clark Gable</p>
+                    <p>Locations760.com</p>
+                    <p>Website by: <a href="https://charlesnourrcier.com" target="_blank">Charles Nourrcier</a></p>
                 </div>
             </footer>
         </>
