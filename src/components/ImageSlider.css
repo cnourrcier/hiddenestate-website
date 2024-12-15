@@ -1,5 +1,6 @@
 .img-slider-section {
-    margin: 0 4.05vw 8rem 4.05vw;
+    padding: 6rem 8rem;
+    background-color: var(--ps-sand);
 }
 
 h3 {
@@ -17,6 +18,25 @@ h3 {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.property__description {
+    margin-top: 8rem;
+    padding: 1.5rem;
+    background-color: var(--ps-white);
+    border-radius: 10px;
+}
+
+.property__description p {
+    line-height: 1.7;
+    color: var(--ps-blue);
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.property__description p span {
+    font-weight: 600;
 }
 
 @media (max-width: 768px) {

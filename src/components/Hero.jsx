@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { fetchPexelsVideo } from '../utils/pexelsAPI';
 import './Hero.css';
-import FadingCategories from './FadingCategories';
 
 const Hero = () => {
     const [videoUrl, setVideoUrl] = useState('');
@@ -36,10 +35,26 @@ const Hero = () => {
             )}
             <div className="hero-overlay"></div>
             <div className="hero-content">
-                <h1>Clark Gable's <br />Palm Springs Resort</h1>
-                <p>Your Desert Hideaway Awaits!</p>
-                <FadingCategories />
-                <h3>Experience the Glamour of Hollywood's Golden Age</h3>
+                <div className="hero-text-container">
+                    <h1>Your Desert Hideaway Awaits!</h1>
+                    <p className='hero-subtitle'>Experience the Glamour of Hollywood's Golden Age</p>
+                </div>
+                <div className="hero-event-links">
+                    <div className="event-links-grid">
+                        <a href="#corporate" className="event-link">
+                            <span>Corporate Events</span>
+                        </a>
+                        <a href="#weddings" className="event-link">
+                            <span>Weddings</span>
+                        </a>
+                        <a href="#private" className="event-link">
+                            <span>Private Events</span>
+                        </a>
+                        <a href="#rentals" className="event-link">
+                            <span>Vacation Rentals</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     )

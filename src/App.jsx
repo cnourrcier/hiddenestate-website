@@ -1,26 +1,32 @@
-import About from './components/About';
-import Footer from './components/Footer';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import ImageSlider from './components/ImageSlider';
-import Features from './components/Features';
-import Location from './components/Location';
+import HomePage from './pages/HomePage';
+import HistoryPage from './pages/HistoryPage';
+import GalleryPage from './pages/GalleryPage';
+import MissionPage from './pages/MissionPage';
+import ContactPage from './pages/ContactPage';
 import Booking from './components/Booking';
+import Footer from './components/Footer';
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Hero />
-      <About />
-      <ImageSlider />
-      <Features />
-      <Location />
-      <Booking />
-      <Footer />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />}/>
+          <Route path="/history" element={<HistoryPage />}/>
+          <Route path="/gallery" element={<GalleryPage />}/>
+          <Route path="/mission" element={<MissionPage />}/>
+          <Route path="/contact" element={<ContactPage />}/>
+        </Routes>
+        {/* <Booking /> */}
+        <Footer />
+      </Router>
     </>
   )
 }
 
-export default App
+export default App;

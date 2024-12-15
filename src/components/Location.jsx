@@ -49,7 +49,6 @@ const Location = () => {
 
     return (
         <section className="location">
-            <h2>Amazing Location!</h2>
             <div className="location-content">
                 <div className="map-container">
                     <Map
@@ -110,6 +109,11 @@ const Location = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='location__description'>
+                <p>
+                    You'll be within a short walking distance of all the best dining and entertainment, nestled in Old Las Palmas, a premier neighborhood referred to as the <span>"Beverly Hills"</span> of Palm Springs. Rich in architecture and Hollywood history, this affluent neighborhood also holds estates belonging to well-known figures like Leonardo DiCaprio, Kurt Russel, and Katherine Hepburn.
+                </p>
             </div>
         </section>
     )

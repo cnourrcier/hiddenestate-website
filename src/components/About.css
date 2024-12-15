@@ -1,54 +1,95 @@
 .about {
-    margin: 0 auto 8rem auto;
-    max-width: 900px;
+    max-width: 1200px;
+    margin: 6rem;
+    background-color: var(--ps-white);
+    color: var(--ps-blue);
+}
+
+.about__title {
+    font-size: 4.5rem;
+    color: var(--ps-terracotta);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 5.5rem;
+    text-align: center;
+}
+
+.about__location {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--ps-green);
+    margin-top: 0.5rem;
 }
 
 .about__subtitle {
     font-size: 1.25rem;
-    font-weight: 500;
+    color: var(--ps-blue);
+    font-style: italic;
     margin-bottom: 2rem;
-    color: #666;
+    line-height: 1.6;
+}
+
+.about__wrapper {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about__image-placeholder {
+    flex: 0 0 40%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .about__content {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #444;
+    flex: 1;
 }
 
 .about__content p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.movie_title {
+    font-weight: 600;
+    font-style: italic;
+    color: var(--ps-terracotta);
 }
 
 .about__quote {
+    background-color: var(--ps-sand);
+    padding: 2rem;
+    border-left: 5px solid var(--ps-terracotta);
     font-style: italic;
-    border-left: 4px solid rgb(218, 191, 78);
-    padding: 1rem 0 1rem 1.5rem;
-    margin-top: 2rem;
-    background-color: #f9f9f9;
+    position: relative;
 }
 
 .about__quote p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
-    color: #555;
+    margin-bottom: 1rem;
+    color: var(--ps-blue);
 }
 
-.about__quote cite {
-    font-size: 0.9rem;
-    color: #777;
-    font-style: normal;
+.about__quote-highlight {
+    margin: 1rem;
+    font-size: 1.3rem;
 }
 
-@media (max-width: 992px) {
-    .about {
-        margin: 0 4.05vw 8rem 4.05vw;
-    }
+.about__quote span {
+    font-weight: bold;
 }
 
-@media (max-width: 480px) {
-    .about__subtitle {
-        text-align: center;
-    }
+.about__quote-source {
+    display: block;
+    text-align: right;
+    color: var(--ps-terracotta);
+    font-weight: bold;
+    margin-top: 1rem;
 }
