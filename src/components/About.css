@@ -1,45 +1,45 @@
 .about {
+    min-height: 100vh;
     max-width: 1200px;
-    margin: 6rem;
+    margin: auto;
+    padding: 1rem;
     background-color: var(--ps-white);
     color: var(--ps-blue);
 }
 
 .about__title {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     color: var(--ps-terracotta);
-    margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    line-height: 5.5rem;
     text-align: center;
 }
 
 .about__location {
     display: block;
-    font-size: 1.5rem;
-    color: var(--ps-green);
-    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--ps-green); 
+    margin-bottom: 1rem;
 }
 
 .about__subtitle {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    font-weight: 500;
     color: var(--ps-blue);
     font-style: italic;
-    margin-bottom: 2rem;
-    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
 .about__wrapper {
     display: flex;
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
-.about__image-placeholder {
-    flex: 0 0 40%;
+.about__image-container {
+    flex: 0 0 20%;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    border-radius: 10px;
+    border-radius: 3px;
     overflow: hidden;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .about__content p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     line-height: 1.7;
 }
 
@@ -66,20 +66,20 @@
 
 .about__quote {
     background-color: var(--ps-sand);
-    padding: 2rem;
+    padding: 1rem;
     border-left: 5px solid var(--ps-terracotta);
     font-style: italic;
     position: relative;
 }
 
 .about__quote p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color: var(--ps-blue);
 }
 
 .about__quote-highlight {
-    margin: 1rem;
-    font-size: 1.3rem;
+    margin: 0 1rem;
+    font-size: 1rem;
 }
 
 .about__quote span {
@@ -91,5 +91,5 @@
     text-align: right;
     color: var(--ps-terracotta);
     font-weight: bold;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
