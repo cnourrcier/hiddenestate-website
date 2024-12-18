@@ -1,7 +1,8 @@
 /* Global styles */
 .location {
     max-width: 1200px;
-    margin: 6rem 8rem;
+    margin: auto;
+    padding: 1rem;
 }
 
 /* Layout styles */
@@ -151,7 +152,8 @@
 }
 
 .location__description {
-    margin-top: 8rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     padding: 1.5rem;
     background-color: var(--ps-sand);
     border-radius: 10px;
@@ -160,7 +162,7 @@
 .location__description p {
     line-height: 1.7;
     color: var(--ps-blue);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-style: italic;
     line-height: 1.6;
 }
