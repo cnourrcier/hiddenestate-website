@@ -1,10 +1,14 @@
-import {Link} from 'react-router-dom';
+import React from 'react';
+import {Link, useLocation} from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
+    const location = useLocation();
+
+    const isMainPage = location.pathname == '/';
 
     return (
-        <header>
+        <header className={isMainPage ? 'header transparent' : 'header solid'}>
             <div className='logo-container'>
                 <Link to="/"><img src={`/img/Blanco.png`} /></Link>
             </div>

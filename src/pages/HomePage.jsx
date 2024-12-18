@@ -1,7 +1,6 @@
 import Hero from '../components/Hero';
 import About from '../components/About';
-import ImageSlider from '../components/ImageSlider';
-import Features from '../components/Features';
+import ImageSliderAndFeatures from '../components/ImageSliderAndFeatures';
 import Reviews from '../components/Reviews';
 import Location from '../components/Location';
 
@@ -10,8 +9,7 @@ function HomePage () {
         <>
             <Hero />
             <About />
-            <ImageSlider />
-            <Features />
+            <ImageSliderAndFeatures />
             <Reviews />
             <Location />
         </>
