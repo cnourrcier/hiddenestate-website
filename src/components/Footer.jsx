@@ -21,7 +21,7 @@ const Footer = () => {
                         <p>Locations760.com</p>
                     </div>
                     <div className='footer-group'>
-                        <p className='web-designer'>Website by <a href="https://charlesnourrcier.com" target="_blank">DevRise Studio</a></p>
+                        <p className='web-designer'>Website by <a href="#" target="_blank">DevRise Studio</a></p>
                         <p className='contact'>
                             <Phone className="icon" /> <span>337.496.7870</span>
                         </p>
