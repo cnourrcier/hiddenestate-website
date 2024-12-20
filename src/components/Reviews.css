@@ -1,7 +1,7 @@
 .reviews {
     max-width: 1200px;
     margin: auto;
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: var(--ps-white);
     color: var(--ps-blue);
 }
@@ -37,8 +37,8 @@
 .review-card {
     /* height: 350px; */
     background-color: var(--ps-sand);
-    border-radius: 10px;
-    padding: 1.5rem;
+    border-radius: 3px;
+    padding: 1rem 1.5rem;
     /* box-shadow: 0 6px 12px rgba(0,0,0,0.1); */
     transition: transform 0.3s ease;
 }

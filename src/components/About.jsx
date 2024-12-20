@@ -5,7 +5,7 @@ const About = () => {
     return (
         <section className="about">
             <h1 className="about__title">
-                Welcome to the "Hidden Gable" 
+                Welcome to the "Hidden Gable Estate" 
                 <span className="about__location">Located in Old Las Palmas, Palm Springs</span>
             </h1>
             <div className="about__wrapper">
@@ -29,10 +29,11 @@ const About = () => {
                 </div>
             </div>
             <blockquote className="about__quote">
+                <p className='about__quote-title'>"Frankly darling, you will give a damn."</p>
+                <cite className="about__quote-source">- Lauran Piro, GOOD HOUSEKEEPING Oct 2, 2014</cite>
                 <p>"We love a good pink house, but a rosy-hued home that once belonged to one of Hollywood's dreamiest actors makes us especially giddy. It's like the real-estate equivalent of a strapping gentleman in a pink polo shirt — oddly, it just works.</p>
                 <p className='about__quote-highlight'><span>Clark Gable</span> and actress <span>Carole Lombard</span> once called this Spanish Colonial in Palm Springs their home.</p>
                 <p>And it's rife with perplexing famous-people details, like half a dozen bathrooms, a saltwater pool, and a guest house cutely called a <i>'casita'</i>. But, exposed wooden beams, intricate tilework, and a master bedroom with outdoor access make this house a timeless classic (much like Gable himself)."</p>
-                <cite className="about__quote-source">- Lauran Piro, GOOD HOUSEKEEPING Oct 2, 2014</cite>
             </blockquote>
         </section>
     )

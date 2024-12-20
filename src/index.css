@@ -8,9 +8,7 @@
 
 :root {
   --ps-terracotta: #E07A5F;
-  /* --ps-sand: #F2CC8F; */
   --ps-sand: hsl(37, 79%, 85%);
-  /* --ps-green: #81B29A; */
   --ps-green: hsl(151, 24%, 55%);
   --ps-blue: #3D405B;
   --ps-white: #F4F1DE;

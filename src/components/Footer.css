@@ -13,7 +13,11 @@
     margin-left: 4px;
 }
 
-.manager {
+.footer-group {
+    margin-bottom: 1.2rem;
+}
+
+.manager, .web-designer {
     font-weight: bold;
     margin-bottom: 0.5rem;
 }

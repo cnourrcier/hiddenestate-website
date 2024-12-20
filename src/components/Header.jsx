@@ -12,6 +12,11 @@ const Header = () => {
             <div className='logo-container'>
                 <Link to="/"><img src={`/img/Blanco.png`} /></Link>
             </div>
+            <div className='estate-name'>
+                <div className="estate-word">Hidden</div>
+                <div className="estate-word">Gable</div>
+                <div className="estate-word">Estate</div>
+            </div>
             <div className='tabs-container'>
                 <Link to="/" className='tab'>Home</Link>
                 <Link to="/history" className='tab'>History</Link> 
