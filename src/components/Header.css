@@ -11,6 +11,10 @@ header {
     letter-spacing: 0.02rem;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .transparent {
     background-color: transparent;
 }
@@ -73,6 +77,26 @@ header {
     font-weight: 500;
 }
 
+.rental-menu-dropdown-container {
+    position: relative;
+}
+
+.rental-menu-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100%);
+    left: -15px;
+    width: 12rem;
+    padding: 0 1rem;
+    background-color: hsl(0, 0%, 18%);
+    transition: all 0.3s;
+    z-index: 999;
+  }
+
+  .rental-menu-dropdown.show {
+    display: block;
+  }
+
 .tab {
     font-family: "Poiret One", serif;
     border: 2px solid transparent;
@@ -81,8 +105,7 @@ header {
     height: 100%;
     cursor: pointer;
     text-decoration: none;
-    /* color: rgb(218, 191, 78); */
-    padding: 5px 8px;
+    padding: 0.5rem;
 }
 
 .tab:hover {
