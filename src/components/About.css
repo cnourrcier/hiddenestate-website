@@ -1,5 +1,5 @@
 .about {
-    min-height: 100vh;
+    min-height: 100dvh;
     max-width: 1200px;
     margin: auto;
     padding: 1rem;
@@ -61,12 +61,12 @@
 .movie_title {
     font-weight: 600;
     font-style: italic;
-    color: var(--ps-terracotta);
 }
 
 .about__quote {
     background-color: var(--ps-sand);
     padding: 1rem;
+    border-radius: 3px;
     border-left: 5px solid var(--ps-terracotta);
     font-style: italic;
     position: relative;
@@ -75,6 +75,12 @@
 .about__quote p {
     margin-bottom: 0.5rem;
     color: var(--ps-blue);
+}
+
+.about__quote-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 .about__quote-highlight {
@@ -91,5 +97,5 @@
     text-align: right;
     color: var(--ps-terracotta);
     font-weight: bold;
-    /* margin-top: 1rem; */
+    margin-bottom: 0.5rem;
 }

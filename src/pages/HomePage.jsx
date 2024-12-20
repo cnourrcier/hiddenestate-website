@@ -6,7 +6,7 @@ import Location from '../components/Location';
 
 function HomePage () {
     return (
-        <>
+        <>  
             <Hero />
             <About />
             <ImageSliderAndFeatures />

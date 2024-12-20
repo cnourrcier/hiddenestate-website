@@ -22,7 +22,7 @@ const initialViewLocation = {
 const markerInfo = {
     longitude: propertyLocation.longitude,
     latitude: propertyLocation.latitude,
-    name: "Clark Gable Estate",
+    name: "Hidden Gable Estate",
     address: "222 W Chino Dr. Palm Springs, CA 92262"
 };
 

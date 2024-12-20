@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
     background-color: #f0f0f0;
-    border-radius: 8px;
+    border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -64,7 +64,7 @@
 .side-info {
     width: 100%;
     position: relative;
-    border-radius: 8px;
+    border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -152,17 +152,16 @@
 }
 
 .location__description {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
     background-color: var(--ps-sand);
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 .location__description p {
-    line-height: 1.7;
     color: var(--ps-blue);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-style: italic;
     line-height: 1.6;
 }
