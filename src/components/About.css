@@ -78,9 +78,9 @@
 }
 
 .about__quote-title {
-    font-size: 1.2rem;
-    font-weight: bold;
     text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .about__quote-highlight {
@@ -94,7 +94,8 @@
 
 .about__quote-source {
     display: block;
-    text-align: right;
+    /* text-align: center; */
+    margin-left: 35rem;
     color: var(--ps-terracotta);
     font-weight: bold;
     margin-bottom: 0.5rem;
