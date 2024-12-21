@@ -18,9 +18,9 @@ const MissionPage = () => {
                         Named for its gable roof hidden behind the hedges in Old Las Palmas.  Restoration is an on-going process with planned projects during the summer months.  We are lucky to have photos from the time the home was completed for guidance.  Future plans include restoring the courtyard on the South side, uncovering the original terrazzo floors and restoring the original tile work in the bathrooms.  Yes … under the paint and existing tile is the original tile which was discovered during the 2022 remodel.  
                     </p>
                 </div>
-                <div className="hidden-gable__content-image">
+                <div className="hidden-gable__content-image-container">
                     <img 
-                        src="/img/mission-img1.jpg" 
+                        src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734741322/Hidden%20Gable%20Estate/mission%20page/5649_srh49e.jpg`}
                         alt="Restoration property" 
                         className="hidden-gable__image"
                     />
@@ -37,24 +37,24 @@ const MissionPage = () => {
             </ul>
             <div className="mission__img-grid">
                 <img 
-                    src="/img/mission-img1.jpg" 
+                    src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734741337/Hidden%20Gable%20Estate/mission%20page/344_W_8th_kivr1w.jpg`} 
                     alt="Restoration property" 
-                    className="hidden-gable__image"
+                    className="grid__image"
                 />
                 <img 
-                    src="/img/mission-img2.jpg" 
+                    src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734741452/Hidden%20Gable%20Estate/mission%20page/Los_Angeles_County_Torrey_House_0014_wfuwr1.jpg`} 
                     alt="Restoration property" 
-                    className="hidden-gable__image"
+                    className="grid__image"
                 />
                 <img 
-                    src="/img/mission-img3.jpg" 
+                    src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734741335/Hidden%20Gable%20Estate/mission%20page/Burnett_dsdhlz.jpg`} 
                     alt="Restoration property" 
-                    className="hidden-gable__image"
+                    className="grid__image"
                 />
                 <img 
-                    src="/img/mission-img4.jpg" 
+                    src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734741336/Hidden%20Gable%20Estate/mission%20page/Elm_ave_d3avwk.jpg`}
                     alt="Restoration property" 
-                    className="hidden-gable__image"
+                    className="grid__image"
                 />
             </div>
         </section>
