@@ -1,7 +1,7 @@
 .mission {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 130px 1rem 60px 1rem;
+    padding: 130px 2.5rem 60px 2.5rem;
     background-color: var(--ps-white);
     color: var(--ps-blue);
     line-height: 1.7;
@@ -41,7 +41,7 @@
     font-size: 2rem;
     border-bottom: 2px solid var(--ps-green);
     padding-bottom: 0.5rem;
-    margin: 2rem 0 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .hidden-gable__wrapper {
@@ -53,10 +53,7 @@
 }
 
 .hidden-gable__content {
-    background-color: var(--ps-whiter);
-    padding: 2rem;
-    border-radius: 3px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+
 }
 
 .hidden-gable__content-image-container {
@@ -64,7 +61,7 @@
     width: 650px;
     border-radius: 3px;
     overflow: cover;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 6px rgba(0,0,0z,0.1);
 }
 
 .hidden-gable__image {
@@ -79,6 +76,10 @@
     object-fit: cover;
 }
 
+.nourrcier-family-wrapper {
+    line-height: 1.7;
+}
+
 .mission > p:nth-of-type(2),
 .mission > p:nth-of-type(3),
 .mission > p:nth-of-type(4) {
@@ -87,15 +88,12 @@
 }
 
 .mission ul {
-    background-color: var(--ps-whiter);
-    padding: 1.5rem 2rem;
-    border-radius: 3px;
-    margin: 1rem 0;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    padding-left: 1.5rem;
+
 }
 
 .mission ul li {
-    margin-bottom: 0.5rem;
+    padding-top: 0.3rem;
     padding-left: 1.5rem;
     position: relative;
 }
