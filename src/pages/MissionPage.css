@@ -53,20 +53,18 @@
 }
 
 .hidden-gable__content {
-
 }
 
 .hidden-gable__content-image-container {
     height: 350px;
     width: 650px;
-    border-radius: 3px;
     overflow: cover;
-    box-shadow: 0 3px 6px rgba(0,0,0z,0.1);
 }
 
 .hidden-gable__image {
     width: 100%;
     height: 100%;
+    border-radius: 3px;
     object-fit: cover;
 }
 

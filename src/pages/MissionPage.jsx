@@ -15,7 +15,7 @@ const MissionPage = () => {
             <div className="hidden-gable__wrapper">
                 <div className="hidden-gable__content">
                     <p>
-                        Named for its gable roof hidden behind the pink walls in Old Las Palmas.  Restoration is an on-going process with planned projects during the summer months.  We are lucky to have photos from the time the home was completed for guidance.  Future plans include restoring the courtyard on the South side, uncovering the original terrazzo floors and restoring the original tile work in the bathrooms.  Yes … under the paint and existing tile is the original tile which was discovered during the 2022 remodel.  
+                        Named for its gable roof hidden behind the pink walls in Old Las Palmas.  Restoration is an on-going process with planned projects during the summer months.  We are lucky to have photos from the time the home was completed for guidance.  Future plans include restoring the courtyard on the South side, uncovering the original terrazzo floors, and restoring the original tile work in the bathrooms.  Yes … under the paint and existing tile is the original tile which was discovered during the 2022 remodel.  
                     </p>
                 </div>
                 <div className="hidden-gable__content-image-container">
