@@ -1,5 +1,5 @@
 .resort-footer {
-    padding: 2rem 0;
+    padding: 2rem;
     color: var(--ps-white);
     background-color: var(--ps-blue);
 }
@@ -13,8 +13,15 @@
     margin-left: 4px;
 }
 
-.footer-group {
+.top-footer-group {
     margin-bottom: 1.2rem;
+}
+
+.bottom-footer-group {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin: 1.2rem;
 }
 
 .manager, .web-designer {
