@@ -53,7 +53,7 @@ const Header = () => {
                 <div className="estate-word">Gable</div>
                 <div className="estate-word">Estate</div>
             </div>
-            <div className={dimensions.width > 1000 ? 'tabs-container' : 'hidden'}>
+            <div className={dimensions.width > 1000 || dimensions.height < 500 ? 'tabs-container' : 'hidden'}>
                 <Link to="/" className='tab'>Home</Link>
                 <Link to="/history" className='tab'>History</Link> 
                 <div 
@@ -80,7 +80,7 @@ const Header = () => {
                 <Link to="/contact" className='tab'>Contact Us</Link>
             
             </div>
-            <div className={dimensions.width < 1000 ? "tabs-container" : "hidden"}>
+            <div className={dimensions.width < 1000 && dimensions.height > 500 ? "tabs-container" : "hidden"}>
                 <div className="dropdown-container">
                     <div 
                         onClick={handleClick}
