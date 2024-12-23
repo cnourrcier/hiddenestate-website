@@ -95,29 +95,32 @@ ul {
     display: none;
     position: absolute;
     top: calc(100%);
-    padding: 0 1rem;
     background-color: hsl(0, 0%, 18%);
     transition: all 0.3s;
     z-index: 999;
 }
 
 .rental {
+    padding: 0 1rem;
     left: -15px;
     width: 12rem;
 }
 
 .mobile {
+    padding: 2rem;
     left: 0;
-    top: 100px;
+    top: 0;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
+    overflow-y: auto;
 }
 
 .mobile ul {
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,7 +140,6 @@ ul {
     border: 2px solid transparent;
     display: flex;
     align-items: center;
-    height: 100%;
     cursor: pointer;
     text-decoration: none;
     padding: 0.5rem;
@@ -145,6 +147,11 @@ ul {
 
 .tab:hover {
     color: var(--ps-sand);
+}
+
+.close-icon {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .hamburger-icon {
@@ -173,6 +180,10 @@ ul {
 
     .estate-name {
         margin-left: 0;
+    }
+
+    .mobile {
+        padding: 1.5rem 1rem;
     }
 
 }
