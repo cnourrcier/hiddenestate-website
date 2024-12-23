@@ -42,7 +42,7 @@ const Header = () => {
     return (
         <header className={isMainPage && !mobileMenuDropdown ? 'header transparent' : isMainPage && mobileMenuDropdown ? 'header solid fixed' : 'header solid'}>
             <div className={!mobileMenuDropdown ? 'logo-container' : 'hidden'}>
-                <Link to="/"><img src={`/img/Blanco.png`} /></Link>
+                <Link to="/"><img src={`/img/Blancov2.png`} /></Link>
             </div>
             <div className={!mobileMenuDropdown ? 'estate-name' : 'hidden'}>
                 <div className="estate-word">Hidden</div>
@@ -96,9 +96,9 @@ const Header = () => {
                         <ul>
                             <li><Link onClick={handleClick} to="/" className='tab dropdown-tab'>Home</Link></li>
                             <li><Link onClick={handleClick} to="/history" className='tab dropdown-tab'>History</Link></li>
-                            <li><Link onClick={handleClick} to="#" className='tab dropdown-tab'>Rental</Link></li>
+                            <li><Link onClick={handleClick} to="/" className='tab dropdown-tab'>Rental</Link></li>
                             <li><Link onClick={handleClick} to="/gallery" className='tab dropdown-tab'>Gallery</Link></li>
-                            <li><Link onClick={handleClick} to="#" className='tab dropdown-tab'>Media</Link></li>
+                            <li><Link onClick={handleClick} to="/" className='tab dropdown-tab'>Media</Link></li>
                             <li><Link onClick={handleClick} to="/mission" className='tab dropdown-tab'>Our Mission</Link></li>
                             <li><Link onClick={handleClick} to="/contact" className='tab dropdown-tab'>Contact Us</Link></li>
                         </ul>
