@@ -9,7 +9,7 @@ header {
     color: var(--ps-white);
     font-size: 1.06rem;
     letter-spacing: 0.02rem;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
 }
 
 ul {
@@ -125,7 +125,7 @@ ul {
 }
 
 .mobile .tab {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .show {
@@ -163,4 +163,16 @@ ul {
     height: 2px;
     border-radius: 5px;
     background-color: var(--ps-white);
+}
+
+@media (max-width: 480px) {
+
+    .header {
+        padding: 0 1rem;
+    }
+
+    .estate-name {
+        margin-left: 0;
+    }
+
 }

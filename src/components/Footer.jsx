@@ -10,17 +10,17 @@ const Footer = () => {
                     <div className='top-footer-group'>
                         <p className="manager">Exclusively Managed by Natural Retreats</p>
                         <p className="contact">
-                            <Phone className="icon" /> <span>888.451.0156</span>
+                            <Phone className="icon" strokeWidth={1.3}/> <span>888.451.0156</span>
                         </p>
                         <p className="contact">
-                            <Mail className="icon" /> <span>concierge@naturalretreats.com</span>
+                            <Mail className="icon" strokeWidth={1.3}/> <span>concierge@naturalretreats.com</span>
                         </p>
                     </div>
                     <div className='bottom-footer-group'>
                     <div className='bottom-footer-group-left'>
                             <p className='web-designer'>Website by DevRise Studio</p>
                             <p className="contact">
-                                <Mail className="icon" /> <span>contact@devrisestudio.com</span>
+                                <Mail className="icon" strokeWidth={1.3}/> <span>contact@devrisestudio.com</span>
                             </p>
                         </div>
                         <div className='bottom-footer-group-right'>

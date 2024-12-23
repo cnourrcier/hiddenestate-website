@@ -109,6 +109,12 @@
     }
 }
 
+@media (max-width: 1000px) {
+    .features__list {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
 
 @media (max-width: 768px) {
     .img-slider {
