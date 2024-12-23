@@ -64,7 +64,7 @@ ul {
 .estate-word:nth-child(2) { --n: 1; }
 .estate-word:nth-child(3) { --n: 2; }
 
-.tabs-container, .mobile-tabs-container {
+.tabs-container {
     position: relative;
     margin-left: auto;
     width: auto;
@@ -83,23 +83,49 @@ ul {
     display: none;
 }
 
-.rental-menu-dropdown-container {
+.dropdown-container {
     position: relative;
 }
 
-.rental-menu-dropdown {
+.menu-dropdown {
     display: none;
     position: absolute;
     top: calc(100%);
-    left: -15px;
-    width: 12rem;
     padding: 0 1rem;
     background-color: hsl(0, 0%, 18%);
     transition: all 0.3s;
     z-index: 999;
-  }
+}
 
-.rental-menu-dropdown.show {
+.rental {
+    left: -15px;
+    width: 12rem;
+}
+
+.mobile {
+    left: 0;
+    top: 110px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.mobile ul {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mobile .tab {
+    font-size: 1.5rem;
+}
+
+.show {
     display: block;
 }
 
@@ -118,14 +144,14 @@ ul {
     color: var(--ps-sand);
 }
 
-.hamburger-menu {
+.hamburger-icon {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     cursor: pointer;
 }
 
-.hamburger-menu:hover .line {
+.hamburger-icon:hover .line {
     background-color: var(--ps-sand);
 }
 

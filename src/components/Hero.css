@@ -143,6 +143,10 @@
         font-size: 1.2rem;
     }
 
+    .hero-text-container {
+        margin-bottom: 2rem;
+    }
+
     .event-links-grid {
         gap: 1rem;
     }
