@@ -53,7 +53,7 @@ const Header = () => {
                 <div className="estate-word">Gable</div>
                 <div className="estate-word">Estate</div>
             </div>
-            <div className={dimensions.width > 1000 || dimensions.height < 500 ? 'tabs-container' : 'hidden'}>
+            <div className={dimensions.width > 1000 ? 'tabs-container' : 'hidden'}>
                 <Link to="/" className='tab'>Home</Link>
                 <Link to="/history" className='tab'>History</Link> 
                 <div 
@@ -80,7 +80,7 @@ const Header = () => {
                 <Link to="/contact" className='tab'>Contact Us</Link>
             
             </div>
-            <div className={dimensions.width < 1000 && dimensions.height > 500 ? "tabs-container" : "hidden"}>
+            <div className={dimensions.width < 1000 ? "tabs-container" : "hidden"}>
                 <div className="dropdown-container">
                     <div 
                         onClick={handleClick}
@@ -97,6 +97,12 @@ const Header = () => {
                         <X size={40} strokeWidth={1.3} strokeLinecap="round" />
                     </div>
                     <div className={`menu-dropdown ${mobileMenuDropdown ? 'mobile show' : ''}`}>
+                    <div 
+                        onClick={handleClick}
+                        className='close-icon tab'
+                    >
+                        <X size={40} strokeWidth={1.3} strokeLinecap="round" />
+                    </div>
                         <ul>
                             <li><Link onClick={handleClick} to="/" className='tab dropdown-tab'>Home</Link></li>
                             <li><Link onClick={handleClick} to="/history" className='tab dropdown-tab'>History</Link></li>
