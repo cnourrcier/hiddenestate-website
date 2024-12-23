@@ -40,7 +40,7 @@ const Header = () => {
 
 
     return (
-        <header className={isMainPage && !mobileMenuDropdown ? 'header transparent' : 'header solid'}>
+        <header className={isMainPage && !mobileMenuDropdown ? 'header transparent' : isMainPage && mobileMenuDropdown ? 'header solid fixed' : 'header solid'}>
             <div className={!mobileMenuDropdown ? 'logo-container' : 'hidden'}>
                 <Link to="/"><img src={`/img/Blanco.png`} /></Link>
             </div>
