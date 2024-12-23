@@ -41,7 +41,7 @@
     justify-content: center;
     align-items: center;
     color: var(--ps-white);
-    padding-top: 110px;
+    padding-top: 3rem;
     margin: 3rem;
 }
 
@@ -132,11 +132,11 @@
 @media screen and (max-width: 480px) {
 
     .hero-content {
-        padding-top: 80px;
+        padding-top: 3rem;
     }
 
     .hero-content h1 {
-        font-size: 3rem;
+        font-size: 2.4rem;
     }
 
     .hero-subtitle {
@@ -144,7 +144,7 @@
     }
 
     .hero-text-container {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     .event-links-grid {
@@ -152,6 +152,7 @@
     }
 
     .event-link {
-        padding: 8px 0;
+        padding: 10px 0;
+        font-size: 1.3rem;
     }
 }
