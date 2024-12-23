@@ -23,6 +23,10 @@ const Header = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  useEffect(() => {
+    mobileMenuDropdown ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
+  }, [mobileMenuDropdown]);
+
     const location = useLocation();
     const isMainPage = location.pathname == '/';
 
