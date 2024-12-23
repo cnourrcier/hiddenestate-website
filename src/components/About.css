@@ -1,6 +1,6 @@
 .about {
     min-height: 100dvh;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
     padding: 1rem;
     background-color: var(--ps-white);
@@ -22,25 +22,22 @@
     margin-bottom: 1rem;
 }
 
-.about__subtitle {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--ps-blue);
-    font-style: italic;
+.about__content-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
     margin-bottom: 1rem;
+    align-items: start;
 }
 
-.about__wrapper {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 1rem;
-}
-
-.about__image-container {
-    flex: 0 0 20%;
+.about__content-image-container {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    max-width: 200px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     border-radius: 3px;
     overflow: hidden;
+    aspect-ratio: 3/4;
 }
 
 .about__image {
@@ -49,8 +46,12 @@
     object-fit: cover;
 }
 
-.about__content {
+.about__content-text {
+    grid-column-start: 2;
+    grid-column-end: 4;
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .about__content p {
@@ -58,8 +59,18 @@
     line-height: 1.7;
 }
 
+.about__content-highlight {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--ps-blue);
+    font-style: italic;
+    margin-bottom: 1rem;
+    width: auto;
+}
+
 .movie_title {
-    /* font-weight: 600; */
     font-style: italic;
 }
 
@@ -84,6 +95,8 @@
 }
 
 .about__quote-highlight {
+    grid-column-start: 2;
+    grid-column-end: 4;
     margin: 0 1rem;
     font-size: 1rem;
 }
@@ -94,9 +107,51 @@
 
 .about__quote-source {
     display: block;
-    /* text-align: center; */
-    margin-left: 35rem;
+    text-align: right;
     color: var(--ps-terracotta);
     font-weight: bold;
     margin-bottom: 0.5rem;
+    padding-right: 1rem;
+}
+
+@media (max-width: 900px) {
+
+    .about__content-highlight {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .about__image-container {
+        grid-row: 1;
+        width: 250px;
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (min-height: 750px) and (max-width: 1024px) {
+    .about {
+        min-height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about__title {
+        font-size: 2rem;
+    }
+
+    .about__location {
+        font-size: 1rem;
+    }
+
+    .about__content-image-container {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .about__content-text {
+        grid-column-start: 3;
+    }
+
 }

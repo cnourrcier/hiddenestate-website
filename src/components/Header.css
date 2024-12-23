@@ -64,7 +64,7 @@ ul {
 .estate-word:nth-child(2) { --n: 1; }
 .estate-word:nth-child(3) { --n: 2; }
 
-.tabs-container {
+.tabs-container, .mobile-tabs-container {
     position: relative;
     margin-left: auto;
     width: auto;
@@ -72,9 +72,20 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 0.5rem;
     margin-right: 4.05vw;
     font-weight: 500;
+}
+
+.tabs-container {
+    gap: 0.5rem;
+}
+
+.mobile-tabs-container {
+    gap: 3.1rem;
+}
+
+.hidden {
+    display: none;
 }
 
 .rental-menu-dropdown-container {
@@ -93,9 +104,9 @@ ul {
     z-index: 999;
   }
 
-  .rental-menu-dropdown.show {
+.rental-menu-dropdown.show {
     display: block;
-  }
+}
 
 .tab {
     font-family: "Poiret One", serif;
@@ -110,4 +121,27 @@ ul {
 
 .tab:hover {
     color: var(--ps-sand);
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.hamburger-menu:hover .line {
+    background-color: var(--ps-sand);
+}
+
+.line {
+    width: 30px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--ps-white);
+}
+
+@media (max-width: 600px) {
+    
+
 }
