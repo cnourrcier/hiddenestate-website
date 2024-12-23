@@ -166,10 +166,6 @@
     line-height: 1.6;
 }
 
-.location__description p span {
-    font-weight: 600;
-}
-
 /* Responsive styles */
 @media (max-width: 992px) {
     .location-content {
