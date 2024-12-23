@@ -9,6 +9,7 @@ header {
     color: var(--ps-white);
     font-size: 1.06rem;
     letter-spacing: 0.02rem;
+    padding: 0 1.5rem;
 }
 
 ul {
@@ -24,7 +25,6 @@ ul {
 }
 
 .logo-container {
-    margin-left: 4.05vw;
     cursor: pointer;
     height: 100%;
 }
@@ -72,16 +72,11 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 4.05vw;
     font-weight: 500;
 }
 
 .tabs-container {
     gap: 0.5rem;
-}
-
-.mobile-tabs-container {
-    gap: 3.1rem;
 }
 
 .hidden {
@@ -139,9 +134,4 @@ ul {
     height: 2px;
     border-radius: 5px;
     background-color: var(--ps-white);
-}
-
-@media (max-width: 600px) {
-    
-
 }
