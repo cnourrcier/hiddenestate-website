@@ -1,3 +1,4 @@
+import HeroForTesting from '../components/HeroForTesting';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import ImageSliderAndFeatures from '../components/ImageSliderAndFeatures';
@@ -7,6 +8,7 @@ import Location from '../components/Location';
 function HomePage () {
     return (
         <>  
+            {/* <HeroForTesting /> */}
             <Hero />
             <About />
             <ImageSliderAndFeatures />
