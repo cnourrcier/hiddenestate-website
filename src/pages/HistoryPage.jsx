@@ -14,7 +14,7 @@ const HistoryItem = ({ year, title, imageSrc, additionalImageSrc, videoSrc, info
           {year && <div className="history-year">{year}</div>}
         </div>
         <div className="history-content">
-          <div className="history-content-info">{title}</div>
+          <div className="history-content-title">{title}</div>
         </div>
       </div>
 
@@ -82,7 +82,7 @@ const HistoryPage = () => {
     },
     { 
       year: "", 
-      title: "Mary Bono",
+      title: "Political Fundraisers",
       info: "Congress Woman Mary Bono with President George Bush held several political events at the Hidden Gable Estate",
       image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735404651/Hidden%20Gable%20Estate/history%20page/mary_bono_d4e5y7.jpg` 
     },
