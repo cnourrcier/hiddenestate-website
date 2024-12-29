@@ -15,7 +15,7 @@
     text-align: center;
 }
 
-.about__location {
+.about__subtitle {
     display: block;
     font-size: 1.2rem;
     color: var(--ps-green); 
@@ -143,7 +143,7 @@
         line-height: 1.4;
     }
 
-    .about__location {
+    .about__subtitle {
         font-size: 1rem;
     }
 

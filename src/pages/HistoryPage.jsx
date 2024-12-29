@@ -1,169 +1,123 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import TextFlow from './TextFlow';
 import './HistoryPage.css';
 
-const TimelineItem = ({ year, event, imageSrc }) => (
-  <div className="timeline-item">
+const HistoryItem = ({ year, event, imageSrc }) => (
+  <div className="history-item">
     <div className="newspaper-clipping">
       <img src={imageSrc} alt={`${year} event`} />
     </div>
-    <div className="timeline-content">
-      <div className="timeline-year">{year}</div>
-      <div className="timeline-event">{event}</div>
+    <div className="history-content">
+      <div className="history-year">{year}</div>
+      <div className="history-event">{event}</div>
     </div>
   </div>
 );
 
-const CelebrityImage = ({ imageSrc, name }) => (
-  <div className='celebrity-image'>
-    <img src={imageSrc} alt={name} />
-    <p>{name}</p>
-  </div>
-)
-
 const HistoryPage = () => {
 
-  const timelineEvents = [
+  const topHistoryEvents = [
     {
-      year: "1925",
-      event: "Estate built by McNeal Swasey for Agnes Swobdi-Meade",
-      image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1724950168/Clark%20Gable%20Estate%20Website/ClarkGableEstate1925_bqdmbp.jpg`
+      year: "Roaring Twenties",
+      event: "Swobdi - a pioneer of the Los Angeles Fashion District, was renowned for her work as an importer, designer and couturière for silent film stars.",
+      image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735422116/Hidden%20Gable%20Estate/history%20page/RoaringTwenties_ik20wu.jpg`
     },
     {
-      year: "1930s-40s",
-      event: "Clark Gable and Carole Lombard's desert hideaway",
-      image: "https://via.placeholder.com/300x200.png?text=Kimball+and+Fleeson"
+      year: "1939-1942",
+      event: `Clark Gable and Carole Lombard - "King of Hollywood" and one of greatest actresses of Classic Hollywood Cinema`,
+      image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735402328/Hidden%20Gable%20Estate/home%20page/Gable-Lombard-39_nv5j1q.jpg`
     },
     {
       year: "1950s-60s",
-      event: "Home to Dan Kimball and Doris Fleeson",
-      image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1724950164/Clark%20Gable%20Estate%20Website/DanKimball_n09alo.jpg`
+      event: "Master Architect McNeal Swasey - A Spanish Colonial Revival, one of the oldest homes in Old Las Palmas",
+      image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735402995/Hidden%20Gable%20Estate/history%20page/MasterArchitect_xk0htu.jpg`
     },
-    {
-      year: "1969-78",
-      event: "Residence of Shar Cracraft, Editor of Palm Springs Life Magazine",
-      image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1724950503/Clark%20Gable%20Estate%20Website/SharCracraft_zkyjxj.jpg`
-    },
-    {
-      year: "2000s",
-      event: "Hosted political fundraisers for Rep. Mary Bono",
-      image: "https://via.placeholder.com/300x200.png?text=Mary+Bono+Fundraisers"
-    },
-    {
-      year: "2015",
-      event: "Clark Gable Estate Garden Party 'Gable Awards'",
-      image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1724950348/Clark%20Gable%20Estate%20Website/GardenParty_c3viyw.png`
-    }
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [itemsToShow, setItemsToShow] = useState(3);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 768) {
-        setItemsToShow(1);
-      } else if (window.innerWidth <= 1200) {
-        setItemsToShow(2);
-      } else {
-        setItemsToShow(3);
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-    handleResize(); // Call once to set initial state
-
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const scrollTimeline = (direction) => {
-    if (direction === 'left' && currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    } else if (direction === 'right' && currentIndex < timelineEvents.length - itemsToShow) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  };
-
-  const visibleEvents = timelineEvents.slice(currentIndex, currentIndex + itemsToShow);
-
-  const celebrities = [
-    { name: "Clark Gable", image: "https://via.placeholder.com/300x400.png?text=Clark+Gable" },
-    { name: "Carole Lombard", image: "https://via.placeholder.com/300x400.png?text=Carole+Lombard" },
-    { name: "Bing Crosby", image: "https://via.placeholder.com/300x400.png?text=Bing+Crosby" },
-    { name: "Sammy Davis Jr.", image: "https://via.placeholder.com/300x400.png?text=Sammy+Davis+Jr." },
-    { name: "Maurice Chevalier", image: "https://via.placeholder.com/300x400.png?text=Maurice+Chevalier" },
-    { name: "Dan Kimball", image: "https://via.placeholder.com/300x400.png?text=Dan+Kimball" },
+  const bottomHistoryEvents = [
+    { 
+      year: "", 
+      event: "Desert Motif harvested from Arizona",
+      image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735404267/Hidden%20Gable%20Estate/history%20page/DesertMotif_lloy8y.jpg` 
+    },
+    { 
+      year: "1960s", 
+      event: "Secretary of Navy Dan Kimball with President Harry S. Truman, and Vice Admiral Harry S. Hill at the Army-Navy baseball game at Annapolis",
+      image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735404666/Hidden%20Gable%20Estate/history%20page/President_Harry_S._Truman_and_Others_at_Army-Navy_Baseball_Game_bh0bbs.jpg`
+    },
+    { 
+      year: "1960s", 
+      event: "Doris Fleeson - Syndicated columnist and women's rights champion with First Lady Elenor Roosevelt",
+      image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735404643/Hidden%20Gable%20Estate/history%20page/DorisFleeson_vfnxso.jpg`
+    },
+    { 
+      year: "", 
+      event: "WWII",
+      image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735404675/Hidden%20Gable%20Estate/history%20page/SHE_S_READY__TOO._BUY_WAR_BONDS_-_NARA_-_515403_92_zn1vsu.jpg`
+    },
+    { 
+      year: "", 
+      event: "Congress Woman Mary Bono with President George Bush held several political events at the Hidden Gable Estate",
+      image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735404651/Hidden%20Gable%20Estate/history%20page/mary_bono_d4e5y7.jpg` 
+    },
+    { 
+      year: "2003-2015", 
+      event: "Douglas Family",
+      image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/video/upload/v1735404700/Hidden%20Gable%20Estate/history%20page/DouglasFamily2003-2015_jp36oq.mp4` 
+    },
+    { 
+      year: "1970s", 
+      event: "Shar Cracraft - Editor of Palm Springs Life Magazine",
+      image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1724950503/Hidden%20Gable%20Estate/history%20page/SharCracraft_zkyjxj.jpg` 
+    },
   ];
 
   return (
-    <div className="about-page">
-      <div className="container">
-        <h1>About Clark Gable Estate</h1>
+    <div className="history">
+        <h1 className='history__title'>Hidden Gable Estate</h1>
+        <h2 className='history__subtitle'>222 W Chino Road (1925)</h2>
 
-        <section className="history-section">
-          <h2>Our Rich History</h2>
-          <p>Established in 1925, the Clark Gable Estate is the oldest home in Old Las Palmas, Palm Springs. This Spanish Colonial Revival estate was created by Master Architect McNeal Swasey for Los Angeles fashion designer and importer Mrs. Agnes Swobdi-Meade during the Roaring Twenties.</p>
-
-          <h3>Timeline</h3>
-          <div className="timeline-container">
-            <button
-              className="timeline-nav-button left"
-              onClick={() => scrollTimeline('left')}
-              disabled={currentIndex === 0}
-            >
-              &lt;
-            </button>
-            <div className="timeline">
-              {visibleEvents.map((event, index) => (
-                <TimelineItem key={currentIndex + index} year={event.year} event={event.event} imageSrc={event.image} />
-              ))}
-            </div>
-            <button
-              className="timeline-nav-button right"
-              onClick={() => scrollTimeline('right')}
-              disabled={currentIndex === timelineEvents.length - itemsToShow}
-            >
-              &gt;
-            </button>
-          </div>
-        </section>
-
-        <section className="features-section">
-          <h2>Notable Features</h2>
-          <ul>
-            <li>Breathtaking views of San Jacinto Mountains</li>
-            <li>Large lot with lush gardens and mature palm trees</li>
-            <li>Swimming pool and pool cabana</li>
-            <li>Pickle Ball Court adaptable for outdoor events</li>
-            <li>Private Casita above Garage</li>
-            <li>Gated, private, and secluded, yet walking distance to downtown Palm Springs</li>
-            <li>Original plaster moldings, ornate Spanish lighting, and period furnishings</li>
-            <li>Pool table custom-made for Kirk Douglas</li>
-          </ul>
-        </section>
-
-        <section className="celebrity-section">
-          <h2>Celebrity Residents and Visitors</h2>
-          <p>The Clark Gable Estate has been home to and visited by numerous celebrities over the years, including:</p>
-          <div className='celebrity-gallery'>
-            {celebrities.map((celebrity, index) => (
-              <CelebrityImage key={index} imageSrc={celebrity.image} name={celebrity.name} />
+        <section className="top-history__container">
+            {topHistoryEvents.map((event, index) => (
+                <HistoryItem key={index} year={event.year} event={event.event} imageSrc={event.image} />
             ))}
-          </div>
         </section>
-
-        <section className="legacy-section">
-          <h2>Legacy and Preservation</h2>
-          <p>The Clark Gable Estate's legacy is a compelling tapestry woven from the threads of visionary individuals who have called it home. From fashion designers to Hollywood icons, from influential columnists to military leaders, each resident has contributed to the rich history of this property.</p>
-          <p>We are committed to preserving this historic gem. Recent renovations have restored architectural details and paint colors to their former glory. Restoration is an ongoing process, and we invite you to follow our journey as we continue these efforts.</p>
+        <section className='middle-content__container'>
+        <TextFlow />
+            {/* <div className='middle-content__winter-residents'>
+                <p>
+                    Winter Residents:
+                </p>
+                <p>
+                    Bing and Dixie Crosby - Radio/television personalities
+                    Sammy Davis Jr - singer, actor, comedian, dancer, and musician.
+                    Maurice Chevalier - French singer/actor
+                    Bishop Joseph P. Dougherty - First Bishop of Yakima, WA</p>
+            </div> */}
+            {/* <div className='middle-content__text'>
+                <p>
+                    <b>Hidden Gable Estate</b> is named for the many Spanish gables hidden behind its pink walls, a style that reflects the glamour of Hollywood's Golden Age.
+                </p>
+                <p>
+                    A Spanish Colonial Revival, one of the oldest homes in Old Las Palmas, was created by Master Architect McNeal Swasey for Los Angeles fashion designer and importer Mrs. Agnes Swobdi-Meade during the "Roaring Twenties." Swobdi, a pioneer of the Los Angeles Fashion District, was renowned for her work as an importer, designer and couturière for silent film stars.
+                </p>
+                <p>
+                    McNeal Swasey, an esteemed architect to southern California's elite, was known for using advanced technologies. The house is perfectly oriented to avoid sun exposure on bedroom windows, features a fireproof and earthquake-resistant structure. The thick concrete walls provide thermal massing, virtually eliminating temperature fluctuations throughout the day and night. 
+                </p>
+                <p>
+                    This estate's legacy is a rich tapestry, interwoven with the stories of remarkable individuals whose influence spanned fashion, film, government, and industry. Among its distinguished occupants were Clark Gable, the "King of Hollywood"; Carole Lombard, one of the most celebrated actresses of Classic Hollywood Cinema; Doris Fleeson, a trailblazing syndicated columnist who shaped public opinion across five U.S. presidencies and championed women's rights; and Dan Kimball, a retired Secretary of the Navy and CEO whose leadership left a lasting impact on naval policy and strategy. In the early 1950’s, the first Bishop of Yakima, WA visited often.  Statues of St. Francis from that period still exist on the property.  And many more …
+                </p>
+                <p>
+                    <b><i>If these walls could talk!</i></b>
+                </p>
+            </div> */}
         </section>
-
-        <section className="quote-section">
-          <blockquote>
-            "This house is part of Palm Springs heritage."
-            <footer>- Joel Douglas, Son of Kirk Douglas</footer>
-          </blockquote>
+          
+        <section className='bottom-history__container'>
+            {bottomHistoryEvents.map((event, index) => (
+                <HistoryItem key={index} year={event.year} event={event.event} imageSrc={event.image} />
+            ))}
         </section>
-      </div>
     </div>
   );
 };

@@ -6,12 +6,12 @@ const About = () => {
         <section className="about">
             <h1 className="about__title">
                 Welcome to the "Hidden Gable Estate" 
-                <span className="about__location">Located in Old Las Palmas, Palm Springs</span>
+                <span className="about__subtitle">Located in Old Las Palmas, Palm Springs</span>
             </h1>
             <div className="about__content-wrapper">
                 <div className="about__content-image-container">
                     <img 
-                        src="/img/Gable-Lombard-39.jpg" 
+                        src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735402328/Hidden%20Gable%20Estate/home%20page/Gable-Lombard-39_nv5j1q.jpg`} 
                         alt="Clark Gable and Carole Lombard's Palm Springs Estate" 
                         className="about__image"
                     />

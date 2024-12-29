@@ -8,7 +8,7 @@
 }
 
 .mission__title {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     color: var(--ps-terracotta);
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -50,9 +50,6 @@
     gap: 2rem;
     align-items: center;
     margin-bottom: 2rem;
-}
-
-.hidden-gable__content {
 }
 
 .hidden-gable__content-image-container {
