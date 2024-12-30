@@ -67,13 +67,18 @@
 }
 
 .history-item .newspaper-clipping {
-  width: 100%;
-  aspect-ratio: 3/4;
+  transform: scale(1.05);
+  max-width: 75%;
   position: relative;
-  background-color: #f5f5f5;
   margin-bottom: 20px;
   overflow: hidden;
   cursor: pointer;
+  margin: 1rem auto;
+}
+
+.history-item .newspaper-clipping.landscape {
+  max-width: 100%;
+  transform: scale(1.1);
 }
 
 .history-item .newspaper-clipping img {
@@ -99,7 +104,7 @@
 }
 
 .history-content-title {
-  font-size: 16px;
+  font-size: .85rem;
   color: var(--ps-blue);
 }
 

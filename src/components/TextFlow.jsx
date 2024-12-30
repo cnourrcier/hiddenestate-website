@@ -140,7 +140,7 @@ const TextFlow = () => {
               <li style={styles.listItemLeft}>Bing and Dixie Crosby</li>
               <li style={styles.listItemRight}>Radio/television personalities</li>
               <li style={styles.listItemLeft}>Sammy Davis Jr</li>
-              <li style={styles.listItemRight}>Singer, Actor, Comedian, Dancer, Musician.</li>
+              <li style={styles.listItemRight}>Singer, Actor, Comedian, Dancer, Musician</li>
               <li style={styles.listItemLeft}>Maurice Chevalier</li>
               <li style={styles.listItemRight}>French singer/actor</li>
               <li style={styles.listItemLeft}>Bishop Joseph P. Dougherty</li>

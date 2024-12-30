@@ -5,16 +5,25 @@ import './HistoryPage.css';
 
 const HistoryItem = ({ year, title, imageSrc, additionalImageSrc, videoSrc, info }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isLandscape, setIsLandscape] = useState(false);
+
+  const checkImageOrientation = (e) => {
+    setIsLandscape(e.target.naturalWidth > e.target.naturalHeight);
+  };
 
   return (
     <>
       <div className="history-item" onClick={() => setIsModalOpen(true)}>
-        <div className="newspaper-clipping">
-          <img src={imageSrc} alt={`${year}`} />
-          {year && <div className="history-year">{year}</div>}
+        <div className={`newspaper-clipping ${isLandscape ? 'landscape' : ''}`}>
+          <img 
+            src={imageSrc} 
+            alt={`${title}`}
+            onLoad={checkImageOrientation}
+          />
         </div>
         <div className="history-content">
           <div className="history-content-title">{title}</div>
+          {year && <div className="history-content-title">{year}</div>}
         </div>
       </div>
 
@@ -35,8 +44,8 @@ const HistoryPage = () => {
 
   const topHistoryItems = [
     {
-      year: "Roaring Twenties",
-      title: "Swobdi",
+      year: "",
+      title: "Roaring Twenties",
       info: "Swobdi pioneer of the Los Angeles Fashion District, was renowned for her work as an importer, designer and couturière for silent film stars.",
       image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735422116/Hidden%20Gable%20Estate/history%20page/RoaringTwenties_ik20wu.jpg`
     },
@@ -47,7 +56,7 @@ const HistoryPage = () => {
       image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735402328/Hidden%20Gable%20Estate/home%20page/Gable-Lombard-39_nv5j1q.jpg`
     },
     {
-      year: "1950s-60s",
+      year: "",
       title: "Master Architect McNeal Swasey",
       info: "A Spanish Colonial Revival, one of the oldest homes in Old Las Palmas",
       image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735402995/Hidden%20Gable%20Estate/history%20page/MasterArchitect_xk0htu.jpg`
@@ -62,13 +71,13 @@ const HistoryPage = () => {
       image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735404267/Hidden%20Gable%20Estate/history%20page/DesertMotif_lloy8y.jpg` 
     },
     { 
-      year: "1960s", 
+      year: "", 
       title: "Dan Kimball",
       info: "Secretary of Navy Dan Kimball with President Harry S. Truman, and Vice Admiral Harry S. Hill at the Army-Navy baseball game at Annapolis",
       image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735404666/Hidden%20Gable%20Estate/history%20page/President_Harry_S._Truman_and_Others_at_Army-Navy_Baseball_Game_bh0bbs.jpg`
     },
     { 
-      year: "1960s",
+      year: "",
       title: "Doris Fleeson",
       info: "Syndicated columnist and women's rights champion with First Lady Elenor Roosevelt",
       image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735404643/Hidden%20Gable%20Estate/history%20page/DorisFleeson_vfnxso.jpg`
@@ -87,14 +96,14 @@ const HistoryPage = () => {
       image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735404651/Hidden%20Gable%20Estate/history%20page/mary_bono_d4e5y7.jpg` 
     },
     { 
-      year: "2003-2015",
+      year: "",
       title: "Douglas Family",
-      info: "Douglas Family",
-      image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735503830/Hidden%20Gable%20Estate/history%20page/DouglasFamily_hzmlzt.png`,
+      info: "Douglas Family 2003-2015",
+      image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735579854/Hidden%20Gable%20Estate/history%20page/DouglasFamily_pegxqx.png`,
       video: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/video/upload/v1735404700/Hidden%20Gable%20Estate/history%20page/DouglasFamily2003-2015_jp36oq.mp4`, 
     },
     { 
-      year: "1970s", 
+      year: "", 
       title: "Shar Cracraft",
       info: "Editor of Palm Springs Life Magazine",
       image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1724950503/Hidden%20Gable%20Estate/history%20page/SharCracraft_zkyjxj.jpg` 
