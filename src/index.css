@@ -7,13 +7,13 @@
 }
 
 :root {
-  --ps-terracotta: #E07A5F;
+  --ps-terracotta: #e07a5f;
   --ps-sand: hsl(37, 79%, 85%);
   --ps-green: hsl(151, 24%, 55%);
-  --ps-blue: #3D405B;
-  --ps-white: #F4F1DE;
+  --ps-blue: #3d405b;
+  --ps-white: #f4f1de;
   --ps-whiter: hsl(52, 50%, 95%);
-  --ps-gold: #D4AF37;
+  --ps-gold: #d4af37;
 }
 
 html {

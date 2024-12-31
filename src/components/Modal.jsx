@@ -2,14 +2,14 @@ import React from 'react';
 import { X } from 'lucide-react';
 import './Modal.css';
 
-const Modal = ({ isOpen, onClose, image, additionalImage, video, title, info }) => {
+const Modal = ({ isOpen, onClose, item }) => {
   if (!isOpen) return null;
 
   return (
     <div className="modal-overlay">
       <div className="modal-container">
         <div className="modal-header">
-          <h3 className="modal-title">{title}</h3>
+          <h3 className="modal-title">{item.title}</h3>
           <button 
             onClick={onClose}
             className="modal-close-button"
@@ -20,23 +20,23 @@ const Modal = ({ isOpen, onClose, image, additionalImage, video, title, info }) 
         
         <div className="modal-content">
           <div className="modal-media-container">
-            {video ? (
+            {item.video ? (
                 <video
                     controls
                 >
-                    <source src={video} type="video/mp4" />
+                    <source src={item.video} type="video/mp4" />
                 </video>
             ) : (
                 <>
                     <img
-                        src={image}
-                        alt={title}
+                        src={item.image}
+                        alt={item.title}
                         className="modal-image"
                     />
-                    {additionalImage && (
+                    {item.additionalImage && (
                         <img 
-                            src={additionalImage}
-                            alt={title}
+                            src={item.additionalImage}
+                            alt={item.title}
                             className='modal-image'
                         />
                     )}
@@ -44,9 +44,9 @@ const Modal = ({ isOpen, onClose, image, additionalImage, video, title, info }) 
             )}
           </div>
           <div className='modal-info-container'>
-            {info && (
+            {item.info && (
                 <p className="modal-info-text">
-                {info}
+                {item.info}
                 </p>
             )}
           </div>
