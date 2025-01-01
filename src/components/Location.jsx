@@ -73,7 +73,7 @@ const Location = () => {
                                 className='custom-popup'
                             >
                                 <div className='popupInfo'>
-                                    <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1725299251/Clark%20Gable%20Pitch%20Site/_I1A0197m_2_oiuer9.jpg`} alt='Property' />
+                                    <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1725299251/Hidden%20Gable%20Estate/home%20page/_I1A0197m_2_oiuer9.jpg`} alt='Property' />
                                     <div className='popup-content'>
                                         <h3>{popupInfo.name}</h3>
                                         <p>{popupInfo.address}</p>
@@ -101,7 +101,7 @@ const Location = () => {
 
                 <div className='side-info-container'>
                     <div className='side-info'>
-                        <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1725299251/Clark%20Gable%20Pitch%20Site/_I1A0197m_2_oiuer9.jpg`} alt='Property' />
+                        <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1725299251/Hidden%20Gable%20Estate/home%20page/_I1A0197m_2_oiuer9.jpg`} alt='Property' />
                         <div className="side-info-overlay"></div>
                         <div className='side-info-content'>
                             <h3>{markerInfo.name}</h3>
