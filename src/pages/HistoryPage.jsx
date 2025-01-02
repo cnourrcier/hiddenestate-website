@@ -43,7 +43,7 @@ const HistoryPage = () => {
       info: "Syndicated columnist and women's rights champion with First Lady Elenor Roosevelt",
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-      }/image/upload/v1735404643/Hidden%20Gable%20Estate/history%20page/DorisFleeson_vfnxso.jpg`,
+      }/image/upload/v1735781555/Hidden%20Gable%20Estate/history%20page/DorisFleesonArticle_bkl43l.jpg`,
     },
   ];
 
