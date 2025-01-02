@@ -1,22 +1,23 @@
-import React from "react";
 import ImageGallery from "../components/ImageGallery";
-import "./HistoryPage.css";
 import NewspaperArticle from "../components/NewspaperArticle";
+import "./HistoryPage.css";
 
 const HistoryPage = () => {
   const topHistoryItems = [
     {
       year: "",
-      title: "Roaring Twenties",
+      galleryTitle: "Roaring Twenties, Fashion, Silent Films",
+      modalTitle: "Roaring Twenties, Fashion, Silent Films",
       info: "Swobdi pioneer of the Los Angeles Fashion District, was renowned for her work as an importer, designer and couturière for silent film stars.",
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
       }/image/upload/v1735422116/Hidden%20Gable%20Estate/history%20page/RoaringTwenties_ik20wu.jpg`,
+      size: "make-larger",
     },
     {
-      year: "1939-1942",
-      // title: "Clark Gable and Carole Lombard",
-      title: "Gable & Lombard",
+      year: "",
+      galleryTitle: 'Clark Gable "King of Hollywood" and Carol Lombard "Greatest Actress of classic Hollywood cinema"',
+      modalTitle: "Gable & Lombard 1939-1942",
       info: `"King of Hollywood" and one of greatest actresses of Classic Hollywood Cinema`,
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
@@ -24,43 +25,50 @@ const HistoryPage = () => {
     },
     {
       year: "",
-      // title: "Master Architect McNeal Swasey",
-      title: "Master Architect",
-      info: "A Spanish Colonial Revival, one of the oldest homes in Old Las Palmas",
+      galleryTitle: "Secretary of Navy Dan Kimball with President Harry Truman at the Army Navy baseball game",
+      modalTitle: "Secretary of Navy Dan Kimball",
+      info: "Secretary of Navy Dan Kimball with President Harry S. Truman, and Vice Admiral Harry S. Hill at the Army-Navy baseball game at Annapolis",
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-      }/image/upload/v1735402995/Hidden%20Gable%20Estate/history%20page/MasterArchitect_xk0htu.jpg`,
+      }/image/upload/v1735404666/Hidden%20Gable%20Estate/history%20page/President_Harry_S._Truman_and_Others_at_Army-Navy_Baseball_Game_bh0bbs.jpg`,
+      size: 'make-larger',
+    },
+    {
+      year: "",
+      galleryTitle: "Doris Fleeson, syndicated political columnist and women's rights champion",
+      modalTitle: "Doris Fleeson",
+      info: "Syndicated columnist and women's rights champion with First Lady Elenor Roosevelt",
+      image: `https://res.cloudinary.com/${
+        import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
+      }/image/upload/v1735404643/Hidden%20Gable%20Estate/history%20page/DorisFleeson_vfnxso.jpg`,
     },
   ];
 
   const bottomHistoryItems = [
     {
       year: "",
-      title: "Desert Motif",
+      galleryTitle: "Master Architect",
+      modalTitle: "Master Architect McNeal Swasey",
+      info: "A Spanish Colonial Revival, one of the oldest homes in Old Las Palmas",
+      image: `https://res.cloudinary.com/${
+        import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
+      }/image/upload/v1735402995/Hidden%20Gable%20Estate/history%20page/MasterArchitect_xk0htu.jpg`,
+      size: 'make-larger',
+    },
+    {
+      year: "",
+      galleryTitle: "Desert Motif",
+      modalTitle: "Desert Motif",
       info: "Desert Motif harvested from Arizona",
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
       }/image/upload/v1735404267/Hidden%20Gable%20Estate/history%20page/DesertMotif_lloy8y.jpg`,
+      size: 'make-larger',
     },
     {
       year: "",
-      title: "Dan Kimball",
-      info: "Secretary of Navy Dan Kimball with President Harry S. Truman, and Vice Admiral Harry S. Hill at the Army-Navy baseball game at Annapolis",
-      image: `https://res.cloudinary.com/${
-        import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-      }/image/upload/v1735404666/Hidden%20Gable%20Estate/history%20page/President_Harry_S._Truman_and_Others_at_Army-Navy_Baseball_Game_bh0bbs.jpg`,
-    },
-    {
-      year: "",
-      title: "Doris Fleeson",
-      info: "Syndicated columnist and women's rights champion with First Lady Elenor Roosevelt",
-      image: `https://res.cloudinary.com/${
-        import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-      }/image/upload/v1735404643/Hidden%20Gable%20Estate/history%20page/DorisFleeson_vfnxso.jpg`,
-    },
-    {
-      year: "",
-      title: "WWII",
+      galleryTitle: "WWII",
+      modalTitle: "WWII",
       info: "",
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
@@ -71,15 +79,17 @@ const HistoryPage = () => {
     },
     {
       year: "",
-      title: "Political Fundraisers",
+      galleryTitle: "Political Fundraisers",
+      modalTitle: "Political Fundraisers",
       info: "Congress Woman Mary Bono with President George Bush held several political events at the Hidden Gable Estate",
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
       }/image/upload/v1735404651/Hidden%20Gable%20Estate/history%20page/mary_bono_d4e5y7.jpg`,
     },
     {
-      year: "",
-      title: "Douglas Family",
+      year: "2003-2015",
+      galleryTitle: "Douglas Family",
+      modalTitle: "Douglas Family",
       info: "Douglas Family 2003-2015",
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
@@ -90,7 +100,8 @@ const HistoryPage = () => {
     },
     {
       year: "",
-      title: "Shar Cracraft",
+      galleryTitle: "Shar Cracraft",
+      modalTitle: "Shar Cracraft",
       info: "Editor of Palm Springs Life Magazine",
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
@@ -104,7 +115,7 @@ const HistoryPage = () => {
       <h2 className="history__subtitle">222 W Chino Road (1925)</h2>
 
       <section className="top-history__container">
-        <ImageGallery className="fun-style" items={topHistoryItems} />
+        <ImageGallery className="top-grid" items={topHistoryItems} />
       </section>
 
       <section className="middle-content__container">
@@ -112,7 +123,7 @@ const HistoryPage = () => {
       </section>
 
       <section className="bottom-history__container">
-        <ImageGallery className="grid-style" items={bottomHistoryItems} />
+        <ImageGallery className="bottom-grid" items={bottomHistoryItems} />
       </section>
     </div>
   );

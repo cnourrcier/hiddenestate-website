@@ -42,26 +42,61 @@
 
 .inner-box-one {
   width: 100px;
-  height: 225px;
-  background-color: var(--ps-sand);
+  height: 260px;
   position: absolute;
   right: 0;
   bottom: 0;
-  border-left: 2px solid var(--ps-whiter);
-  border-top: 2px solid var(--ps-whiter);
-  border-bottom: 2px solid var(--ps-whiter);
+}
+
+.inner-text-box {
+  position: relative;
+  width: 200px;
+  height: 100%;
+  background-color: var(--ps-sand);
+  font-size: 0.73rem;
+  z-index: 1001;
+  padding-top:0.5rem;
+}
+
+.box-title {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 0.3rem;
+}
+
+.boxTitleUnderline {
+  width: 75px;
+  height: 3px;
+  background-color: var(--ps-whiter);
+  margin: auto;
+}
+
+.list {
+  padding-top: 0.7rem;
+}
+
+.listItem {
+  padding-bottom: 0.1rem;
+}
+
+.listItemLeft {
+  padding-left: 0.5rem;
+  /* border-left: 4px solid var(--ps-terracotta); */
+  color: var(--ps-blue);
+}
+
+.listItemRight {
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  color: var(--ps-terracotta);
 }
 
 .inner-box-two {
   width: 100px;
-  height: 225px;
-  background-color: var(--ps-sand);
+  height: 260px;
   position: absolute;
   left: 0;
   bottom: 0;
-  border-right: 2px solid var(--ps-whiter);
-  border-top: 2px solid var(--ps-whiter);
-  border-bottom: 2px solid var(--ps-whiter);
 }
 
 .text-intro {

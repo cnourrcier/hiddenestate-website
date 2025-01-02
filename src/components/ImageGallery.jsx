@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Modal from './Modal';
 import './ImageGallery.css';
 
@@ -21,18 +21,18 @@ const ImageGallery = ({ items, className }) => {
         {items.map((item, index) => ( 
             <div 
               key={index} 
-              className='img-wrapper' 
+              className='content-wrapper' 
               onClick={() => openModal(item)}
             >
               <img
                 src={item.image}
-                alt={item.title}
-                className='img-gallery-img'
+                alt={item.galleryTitle}
+                className={`img-gallery-img ${item.size || ''}`}
               />
-              <div className="overlay">
-                <p>{item.title}</p>
+              <div className="gallery-title">
+                <p>{item.galleryTitle}</p>
                 <p>{item?.year}</p>
-                </div>
+              </div>
             </div>
         ))}
         {isModalOpen && (

@@ -8,7 +8,24 @@ const NewspaperArticle = () => {
         <div className="wrapper-row">
           <div className="wrapper">
             <div className="floating-box-one">
-              <div className="inner-box-one"></div>
+              <div className="inner-box-one">
+                <div className="inner-text-box">
+                  <p className="box-title">
+                    Winter Residents:
+                  </p>
+                  <div className="boxTitleUnderline"></div>
+                    <ul className="list">
+                      <li className="listItem listItemLeft">Bing and Dixie Crosby</li>
+                      <li className="listItem listItemRight">Radio/television personalities</li>
+                      <li className="listItem listItemLeft">Sammy Davis Jr</li>
+                      <li className="listItem listItemRight">Singer, Actor, Comedian, Dancer, Musician</li>
+                      <li className="listItem listItemLeft">Maurice Chevalier</li>
+                      <li className="listItem listItemRight">French singer/actor</li>
+                      <li className="listItem listItemLeft">Bishop Joseph P. Dougherty</li>
+                      <li className="listItem listItemRight">First Bishop of Yakima, WA</li>
+                    </ul>
+                  </div>
+                </div>
             </div>
             <div className="text-body">
               <b>

@@ -9,7 +9,7 @@ const Modal = ({ isOpen, onClose, item }) => {
     <div className="modal-overlay">
       <div className="modal-container">
         <div className="modal-header">
-          <h3 className="modal-title">{item.title}</h3>
+          <h3 className="modal-title">{item.modalTitle}</h3>
           <button 
             onClick={onClose}
             className="modal-close-button"
@@ -30,13 +30,13 @@ const Modal = ({ isOpen, onClose, item }) => {
                 <>
                     <img
                         src={item.image}
-                        alt={item.title}
+                        alt={item.modalTitle}
                         className="modal-image"
                     />
                     {item.additionalImage && (
                         <img 
                             src={item.additionalImage}
-                            alt={item.title}
+                            alt={item.modalTitle}
                             className='modal-image'
                         />
                     )}
