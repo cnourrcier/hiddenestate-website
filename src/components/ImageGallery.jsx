@@ -31,6 +31,8 @@ const ImageGallery = ({ items, className }) => {
               />
               <div className="gallery-title">
                 <p>{item.galleryTitle}</p>
+                {item.galleryTitle2 && <p>{item.galleryTitle2}</p>}
+                {item.galleryTitle3 && <p>{item.galleryTitle3}</p>}
                 <p>{item?.year}</p>
               </div>
             </div>

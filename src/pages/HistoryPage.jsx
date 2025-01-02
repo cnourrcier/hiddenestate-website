@@ -6,7 +6,9 @@ const HistoryPage = () => {
   const topHistoryItems = [
     {
       year: "",
-      galleryTitle: "Roaring Twenties, Fashion, Silent Films",
+      galleryTitle: "Roaring Twenties",
+      galleryTitle2: "Fashion",
+      galleryTitle3: "Silent Films",
       modalTitle: "Roaring Twenties, Fashion, Silent Films",
       info: "Swobdi pioneer of the Los Angeles Fashion District, was renowned for her work as an importer, designer and couturière for silent film stars.",
       image: `https://res.cloudinary.com/${
@@ -16,7 +18,8 @@ const HistoryPage = () => {
     },
     {
       year: "",
-      galleryTitle: 'Clark Gable "King of Hollywood" and Carol Lombard "Greatest Actress of classic Hollywood cinema"',
+      galleryTitle: 'Clark Gable "King of Hollywood"',
+      galleryTitle2: 'Carol Lombard "Greatest Actress of classic Hollywood cinema"',
       modalTitle: "Gable & Lombard 1939-1942",
       info: `"King of Hollywood" and one of greatest actresses of Classic Hollywood Cinema`,
       image: `https://res.cloudinary.com/${
