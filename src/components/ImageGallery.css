@@ -23,17 +23,13 @@
   width: 100%;
 }
 
-.image-gallery-wrapper .content-wrapper:hover {
-  /* transform: scale(1.05); */
-}
-
 .image-gallery-wrapper .content-wrapper .gallery-title {
   padding: 1rem;
   max-width: 100%;
   word-wrap: break-word;
 }
 
-.image-gallery-wrapper.bottom-grid {
+.image-gallery-wrapper.bottom-grid .gallery-title {
   font-weight: bold;
 }
 
