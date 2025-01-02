@@ -23,7 +23,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
         {/* <Booking /> */}
-        <ViewportDimensions />
+        {/* <ViewportDimensions /> */}
         <Footer />
       </Router>
     </>

@@ -1,40 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Hero.css';
-import VideoPlayer from '../utils/VideoPlayer';
+import VideoPlayer from '../../utils/VideoPlayer';
 
-const HeroForTesting = () => {
-    const [videoUrl, setVideoUrl] = useState('');
-
-    useEffect(() => {
-        const loadVideo = async () => {
-            const url = '/video/HiddenGableEstate.mp4';
-            setVideoUrl(url);
-        };
-        loadVideo();
-    }, []);
-
+const Hero = () => {
+    
     return (
         <div className="hero-section">
-            {console.log(videoUrl)}
-            {videoUrl ? (
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    className="hero-video"
-                >
-                    <source src={videoUrl} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            ) : (
-                <img
-                    src="https://via.placeholder.com/1920x1080.png?text=Palm+Springs+Retreat"
-                    alt="Palm Springs Historic House"
-                    className="hero-image"
-                />
-            )}
-            {/* <VideoPlayer /> */}
+            <VideoPlayer />
             <div className="hero-overlay"></div>
             <div className="hero-content">
                 <div className="hero-text-container">
@@ -62,4 +34,4 @@ const HeroForTesting = () => {
     )
 }
 
-export default HeroForTesting;
+export default Hero;

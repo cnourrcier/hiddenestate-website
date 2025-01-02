@@ -26,13 +26,13 @@ const ImageGallery = ({ items, className }) => {
             >
               <img
                 src={item.image}
-                alt={item.galleryTitle}
+                alt={item.galleryTitle[0]}
                 className={`img-gallery-img ${item.size || ''}`}
               />
               <div className="gallery-title">
-                <p>{item.galleryTitle}</p>
-                {item.galleryTitle2 && <p>{item.galleryTitle2}</p>}
-                {item.galleryTitle3 && <p>{item.galleryTitle3}</p>}
+                <p>{item.galleryTitle[0]}</p>
+                {item.galleryTitle?.[1] && <p>{item.galleryTitle[1]}</p>}
+                {item.galleryTitle?.[2] && <p>{item.galleryTitle[2]}</p>}
                 <p>{item?.year}</p>
               </div>
             </div>

@@ -17,17 +17,26 @@ const Modal = ({ isOpen, onClose, item }) => {
             <X />
           </button>
         </div>
-        
-        <div className="modal-content">
-          <div className="modal-media-container">
-            {item.video ? (
-                <video
-                    controls
-                >
-                    <source src={item.video} type="video/mp4" />
-                </video>
-            ) : (
-                <>
+
+        {item.Component ? (
+
+            <item.Component />
+
+          ) : (
+
+            <div className="modal-content">
+              <div className="modal-media-container">
+                {item.video ? (
+
+                  <video
+                      controls
+                  >
+                      <source src={item.video} type="video/mp4" />
+                  </video>
+
+                ) : (
+
+                  <>
                     <img
                         src={item.image}
                         alt={item.modalTitle}
@@ -40,17 +49,19 @@ const Modal = ({ isOpen, onClose, item }) => {
                             className='modal-image'
                         />
                     )}
-                </>
-            )}
-          </div>
-          <div className='modal-info-container'>
-            {item.info && (
-                <p className="modal-info-text">
-                {item.info}
-                </p>
-            )}
-          </div>
-        </div>
+                  </>
+                )}
+              </div>
+              <div className='modal-info-container'>
+                {item.info && (
+                    <p className="modal-info-text">
+                    {item.info}
+                    </p>
+                )}
+              </div>
+            </div>
+        )}
+
       </div>
     </div>
   );
