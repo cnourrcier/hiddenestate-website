@@ -1,20 +1,21 @@
 .wrapper-column {
   display: flex;
   flex-direction: column;
+  margin: 0 1rem;
 }
 
-.space {
+/* .space {
   width: 100%;
   max-width: 1100px;
   margin: auto;
-  height: 50px;
-  /* background-color: var(--ps-whiter); */
-}
+  height: 2.5rem;
+  background-color: var(--ps-whiter);
+} */
 
 .wrapper-row {
   display: flex;
   margin: auto;
-  max-width: 1100px;
+  max-width: 1000px;
   border: 2px solid var(--ps-whiter);
   background-color: var(--ps-whiter);
   padding: 1rem;
@@ -106,7 +107,7 @@
   bottom: 0;
 }
 
-.text-intro {
+/* .text-intro {
   display: block;
   font-size: 3.1rem;
   line-height: 3rem;
@@ -114,7 +115,7 @@
   left: 10px;
   overflow: hidden;
   margin-bottom: 5px;
-}
+} */
 
 .text-body p {
   text-align: justify;

@@ -5,10 +5,6 @@ const ThemeClippings = () => {
     return (
         <section className='themes-container'>
             <div className='theme-snippet-container'>
-            <header className='themes-header'>
-                <h1>Step Back in Time: Celebrating History Through Events</h1>
-                <p>Explore the rich legacy of Hidden Gable Estate with timeless themes that bring history to life.</p>
-            </header>
                 <div className="theme-snippet">
                     <h2>Fashion</h2>
                 </div>
@@ -29,6 +25,9 @@ const ThemeClippings = () => {
                     <h2>Space Race</h2>
                 </div>
             </div>
+            <header className='themes-header'>
+                <h2><i>Explore the rich legacy of Hidden Gable Estate with timeless themes that bring history to life</i></h2>
+            </header>
         </section>
     )
 }

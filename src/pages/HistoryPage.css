@@ -14,7 +14,7 @@
 .history__subtitle {
   font-size: 1.5rem;
   color: var(--ps-blue);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   position: relative;
   padding-bottom: 1rem;
 }
@@ -30,8 +30,13 @@
   background-color: var(--ps-green);
 }
 
+.history-discover-hint {
+  text-align: center;
+  color: #666;
+}
+
 .top-history__container {
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   padding-bottom: 3rem;
 }
 

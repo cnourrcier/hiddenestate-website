@@ -48,7 +48,7 @@ const HistoryPage = () => {
         // 'Clark Gable "King of Hollywood"',
         // 'Carol Lombard "Greatest Actress of classic Hollywood cinema"',
       ],
-      modalTitle: "Gable & Lombard 1939-1942",
+      modalTitle: "Clark Gable and Carol Lombard",
       info: `"King of Hollywood" and one of greatest actresses of Classic Hollywood Cinema`,
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
@@ -72,28 +72,40 @@ const HistoryPage = () => {
   const bottomHistoryItems = [
     {
       galleryTitle: [
-        "Master Architect",
+        "Shar Cracraft",
       ],
-      modalTitle: "Master Architect McNeal Swasey",
-      info: "A Spanish Colonial Revival, one of the oldest homes in Old Las Palmas",
+      modalTitle: "Shar Cracraft",
+      info: "Editor of Palm Springs Life Magazine",
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-      }/image/upload/v1735402995/Hidden%20Gable%20Estate/history%20page/MasterArchitect_xk0htu.jpg`,
-      size: 'make-larger',
-      // Component: MasterArchitect,
-      Component: Test,
+      }/image/upload/v1724950503/Hidden%20Gable%20Estate/history%20page/SharCracraft_zkyjxj.jpg`,
+      Component: SharCracraft,
     },
     {
+      year: "2003-2015",
       galleryTitle: [
-        "Desert Motif",
+        "Douglas Family",
       ],
-      modalTitle: "Desert Motif",
-      info: "Desert Motif harvested from Arizona",
+      modalTitle: "Douglas Family",
+      info: "Douglas Family 2003-2015",
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-      }/image/upload/v1735404267/Hidden%20Gable%20Estate/history%20page/DesertMotif_lloy8y.jpg`,
-      size: 'make-larger',
+      }/image/upload/v1735579854/Hidden%20Gable%20Estate/history%20page/DouglasFamily_pegxqx.png`,
+      video: `https://res.cloudinary.com/${
+        import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
+      }/video/upload/v1735404700/Hidden%20Gable%20Estate/history%20page/DouglasFamily2003-2015_jp36oq.mp4`,
     },
+    // {
+    //   galleryTitle: [
+    //     "Desert Motif",
+    //   ],
+    //   modalTitle: "Desert Motif",
+    //   info: "Desert Motif harvested from Arizona",
+    //   image: `https://res.cloudinary.com/${
+    //     import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
+    //   }/image/upload/v1735404267/Hidden%20Gable%20Estate/history%20page/DesertMotif_lloy8y.jpg`,
+    //   size: 'make-larger',
+    // },
     {
       galleryTitle: [
         "WWII",
@@ -119,29 +131,17 @@ const HistoryPage = () => {
       }/image/upload/v1735404651/Hidden%20Gable%20Estate/history%20page/mary_bono_d4e5y7.jpg`,
     },
     {
-      year: "2003-2015",
       galleryTitle: [
-        "Douglas Family",
+        "Master Architect",
       ],
-      modalTitle: "Douglas Family",
-      info: "Douglas Family 2003-2015",
+      modalTitle: "Master Architect McNeal Swasey",
+      info: "A Spanish Colonial Revival, one of the oldest homes in Old Las Palmas",
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-      }/image/upload/v1735579854/Hidden%20Gable%20Estate/history%20page/DouglasFamily_pegxqx.png`,
-      video: `https://res.cloudinary.com/${
-        import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-      }/video/upload/v1735404700/Hidden%20Gable%20Estate/history%20page/DouglasFamily2003-2015_jp36oq.mp4`,
-    },
-    {
-      galleryTitle: [
-        "Shar Cracraft",
-      ],
-      modalTitle: "Shar Cracraft",
-      info: "Editor of Palm Springs Life Magazine",
-      image: `https://res.cloudinary.com/${
-        import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-      }/image/upload/v1724950503/Hidden%20Gable%20Estate/history%20page/SharCracraft_zkyjxj.jpg`,
-      Component: SharCracraft,
+      }/image/upload/v1735402995/Hidden%20Gable%20Estate/history%20page/MasterArchitect_xk0htu.jpg`,
+      size: 'make-larger',
+      // Component: MasterArchitect,
+      Component: Test,
     },
   ];
 
@@ -149,6 +149,7 @@ const HistoryPage = () => {
     <div className="history">
       <h1 className="history__title">Hidden Gable Estate</h1>
       <h2 className="history__subtitle">Est. 1925</h2>
+      <p className="history-discover-hint">(Click any image to learn more!)</p>
 
       <section className="top-history__container">
         {/* <ImageGallery className="top-grid" items={topHistoryItems} /> */}

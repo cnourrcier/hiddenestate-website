@@ -28,11 +28,11 @@ const NewspaperArticle = () => {
                 </div>
             </div>
             <div className="text-body">
-              <b>
+              {/* <b>
                 <span className="text-intro">Hidden Gable Estate</span>
-              </b>
+              </b> */}
               <p>
-                is named for the many Spanish gables hidden behind its pink
+                Named for the many Spanish gables hidden behind its pink
                 walls, a style that reflects the glamour of Hollywood's Golden
                 Age. A Spanish Colonial Revival, one of the oldest homes in Old
                 Las Palmas, was created by Master Architect McNeal Swasey for
