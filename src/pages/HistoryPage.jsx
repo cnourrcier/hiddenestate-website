@@ -1,5 +1,5 @@
-import ImageGallery from "../components/historyPage/ImageGallery";
-// import ImageGalleryAlt from "../components/historyPage/ImageGalleryAlt";
+// import ImageGallery from "../components/historyPage/ImageGallery";
+import ImageGalleryAlt from "../components/historyPage/ImageGalleryAlt";
 import NewspaperArticle from "../components/historyPage/NewspaperArticle";
 import "./HistoryPage.css";
 
@@ -8,27 +8,43 @@ import DorisFleeson from "../components/historyPage/modalPages/DorisFleeson";
 import MasterArchitect from "../components/historyPage/modalPages/MasterArchitect";
 import WarBonds from "../components/historyPage/modalPages/WarBonds";
 import SharCracraft from "../components/historyPage/modalPages/SharCracraft";
+import ThemeClippings from "../components/historyPage/ThemeClippings";
 
 
 const HistoryPage = () => {
   const topHistoryItems = [
     {
       galleryTitle: [
+        'Dan Kimball with President Harry Truman',
+        // "Secretary of Navy Dan Kimball with President Harry Truman at the Army Navy baseball game",
+      ],
+      modalTitle: "Dan Kimball",
+      info: "Secretary of Navy Dan Kimball with President Harry S. Truman, and Vice Admiral Harry S. Hill at the Army-Navy baseball game at Annapolis",
+      image: `https://res.cloudinary.com/${
+        import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
+      }/image/upload/v1735404666/Hidden%20Gable%20Estate/history%20page/President_Harry_S._Truman_and_Others_at_Army-Navy_Baseball_Game_bh0bbs.jpg`,
+      // size: 'make-larger',
+      Component: DanKimball,
+    },
+    {
+      galleryTitle: [
         "Roaring Twenties",
-        "Fashion",
-        "Silent Films",
+        // "Fashion",
+        // "Silent Films",
       ],
       modalTitle: "Roaring Twenties, Fashion, Silent Films",
       info: "Swobdi pioneer of the Los Angeles Fashion District, was renowned for her work as an importer, designer and couturière for silent film stars.",
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
       }/image/upload/v1735422116/Hidden%20Gable%20Estate/history%20page/RoaringTwenties_ik20wu.jpg`,
-      size: "make-larger",
+      // size: "make-larger",
     },
     {
       galleryTitle: [
-        'Clark Gable "King of Hollywood"',
-        'Carol Lombard "Greatest Actress of classic Hollywood cinema"',
+        'Gable & Lombard',
+        '1939-1942',
+        // 'Clark Gable "King of Hollywood"',
+        // 'Carol Lombard "Greatest Actress of classic Hollywood cinema"',
       ],
       modalTitle: "Gable & Lombard 1939-1942",
       info: `"King of Hollywood" and one of greatest actresses of Classic Hollywood Cinema`,
@@ -38,19 +54,9 @@ const HistoryPage = () => {
     },
     {
       galleryTitle: [
-        "Secretary of Navy Dan Kimball with President Harry Truman at the Army Navy baseball game",
-      ],
-      modalTitle: "Dan Kimball",
-      info: "Secretary of Navy Dan Kimball with President Harry S. Truman, and Vice Admiral Harry S. Hill at the Army-Navy baseball game at Annapolis",
-      image: `https://res.cloudinary.com/${
-        import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-      }/image/upload/v1735404666/Hidden%20Gable%20Estate/history%20page/President_Harry_S._Truman_and_Others_at_Army-Navy_Baseball_Game_bh0bbs.jpg`,
-      size: 'make-larger',
-      Component: DanKimball,
-    },
-    {
-      galleryTitle: [
-        "Doris Fleeson, syndicated political columnist and women's rights champion",
+        'Political Columnist',
+         'Doris Fleeson',
+        // "Doris Fleeson, syndicated political columnist and women's rights champion",
       ],
       modalTitle: "Doris Fleeson",
       info: "Syndicated columnist and women's rights champion with First Lady Elenor Roosevelt",
@@ -142,8 +148,12 @@ const HistoryPage = () => {
       <h2 className="history__subtitle">222 W Chino Road (1925)</h2>
 
       <section className="top-history__container">
-        <ImageGallery className="top-grid" items={topHistoryItems} />
-        {/* <ImageGalleryAlt className="fun-style" items={topHistoryItems} /> */}
+        {/* <ImageGallery className="top-grid" items={topHistoryItems} /> */}
+        <ImageGalleryAlt className="fun-style" items={topHistoryItems} />
+      </section>
+
+      <section>
+        <ThemeClippings />
       </section>
 
       <section className="middle-content__container">
@@ -151,8 +161,8 @@ const HistoryPage = () => {
       </section>
 
       <section className="bottom-history__container">
-        <ImageGallery className="bottom-grid" items={bottomHistoryItems} />
-        {/* <ImageGalleryAlt className="grid-style" items={bottomHistoryItems} /> */}
+        {/* <ImageGallery className="bottom-grid" items={bottomHistoryItems} /> */}
+        <ImageGalleryAlt className="grid-style" items={bottomHistoryItems} />
       </section>
     </div>
   );

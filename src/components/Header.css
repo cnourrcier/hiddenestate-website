@@ -1,4 +1,4 @@
-header {
+.header {
     position: absolute;
     z-index: 999;
     display: flex;
@@ -12,7 +12,7 @@ header {
     padding: 0 2rem;
 }
 
-ul {
+.header-links {
     list-style-type: none;
 }
 
@@ -98,6 +98,10 @@ ul {
     background-color: hsl(0, 0%, 18%);
     transition: all 0.3s;
     z-index: 999;
+}
+
+.dropdown-list {
+    list-style-type: none;
 }
 
 .rental {

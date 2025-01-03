@@ -52,10 +52,16 @@
   position: relative;
   width: 200px;
   height: 100%;
-  background-color: var(--ps-sand);
+  /* background-color: var(--ps-sand); */
   font-size: 0.73rem;
   z-index: 2;
   padding-top:0.5rem;
+  border: 1px solid #ccc;
+  background-image: url('/img/paper-fibers.png');
+}
+
+.list {
+  list-style-type: none;
 }
 
 .box-title {

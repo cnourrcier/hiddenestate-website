@@ -65,7 +65,7 @@ const Header = () => {
                         <p>Rental</p>
                     </div>
                     <div className={`menu-dropdown ${rentalMenuDropdown ? 'rental show' : ''}`}>
-                        <ul>
+                        <ul className='dropdown-list'>
                             <li><Link to="#" className='tab dropdown-tab'>Corporate Events</Link></li>
                             <li><Link to="#" className='tab dropdown-tab'>Private Events</Link></li>
                             <li><Link to="#" className='tab dropdown-tab'>Weddings</Link></li>
@@ -103,7 +103,7 @@ const Header = () => {
                     >
                         <X size={40} strokeWidth={1.3} strokeLinecap="round" />
                     </div>
-                        <ul>
+                        <ul className='header-links'>
                             <li><Link onClick={handleClick} to="/" className='tab dropdown-tab'>Home</Link></li>
                             <li><Link onClick={handleClick} to="/history" className='tab dropdown-tab'>History</Link></li>
                             <li><Link onClick={handleClick} to="/" className='tab dropdown-tab'>Rental</Link></li>

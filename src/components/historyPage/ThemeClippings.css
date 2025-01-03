@@ -1,0 +1,205 @@
+.themes-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ps-whiter);
+}
+
+.theme-snippet-container {
+    font-family: 'Georgia', serif;
+    background-color: var(--ps-whiter);
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.themes-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.themes-header h1 {
+    font-size: 2rem;
+    color: var(--ps-blue);
+    margin: 0;
+}
+
+.themes-header p {
+    font-size: 16px;
+    color: var(--ps-blue);
+    margin: 5px 0 20px;
+}
+
+.theme-snippet {
+    width: 300px;
+    height: auto;
+    margin: 20px;
+    padding: 15px;
+    background: var(--ps-whiter);
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ps-blue);
+    text-align: left;
+    background-image: url('/img/paper-fibers.png');
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.theme-snippet.hovered {
+    /* transform: translateY(-5px); */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.theme-snippet h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+.theme-snippet p {
+    margin: 0;
+}
+
+.theme-image {
+    position: absolute;
+    top: -100;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .theme-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+.theme-content {
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.theme-content.hidden {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Version 1 */
+
+/* .themes-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ps-whiter);
+}
+
+.themes-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.themes-header h1 {
+    font-size: 2rem;
+    color: var(--ps-blue);
+    margin: 0;
+}
+
+.themes-header p {
+    font-size: 16px;
+    color: var(--ps-blue);
+    margin: 5px 0 20px;
+}
+
+.theme-snippet-container {
+    font-family: 'Georgia', serif;
+    background-color: var(--ps-whiter);
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.theme-snippet {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background: var(--ps-whiter);
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ps-blue);
+    text-align: left;
+    background-image: url('/img/paper-fibers.png');
+    background-size: cover;
+    cursor: pointer;
+    transition: ease 0.7s;
+}
+
+.theme-snippet:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;
+}
+
+.theme-snippet h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+.theme-snippet p {
+    margin: 0;
+}
+
+.theme-snippet:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.theme-snippet .icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    opacity: 0.8;
+} */
