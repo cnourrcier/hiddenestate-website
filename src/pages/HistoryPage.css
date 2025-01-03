@@ -8,17 +8,19 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
 }
 
-.history__subtitle {
+/* .history__subtitle {
   font-size: 1.2rem;
   color: var(--ps-blue);
   margin-bottom: 2rem;
   position: relative;
   padding-bottom: 1rem;
-}
+} */
 
-.history__subtitle::after {
+.history__title::after {
   content: "";
   position: absolute;
   bottom: 0;

@@ -67,6 +67,7 @@ const NewspaperArticle = () => {
                 St. Francis from that period still exist on the property. And
                 many more …
               </p>
+              <p className="text-highlight"><i>...if these walls could talk!</i></p>
             </div>
           </div>
         </div>

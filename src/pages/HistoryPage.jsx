@@ -16,6 +16,7 @@ const HistoryPage = () => {
     {
       galleryTitle: [
         'Dan Kimball with President Harry Truman',
+        'Army Navy Baseball',
         // "Secretary of Navy Dan Kimball with President Harry Truman at the Army Navy baseball game",
       ],
       modalTitle: "Dan Kimball",
@@ -28,8 +29,8 @@ const HistoryPage = () => {
     },
     {
       galleryTitle: [
+        "Fashion",
         "Roaring Twenties",
-        // "Fashion",
         // "Silent Films",
       ],
       modalTitle: "Roaring Twenties, Fashion, Silent Films",
@@ -42,7 +43,7 @@ const HistoryPage = () => {
     {
       galleryTitle: [
         'Gable & Lombard',
-        '1939-1942',
+        'Classic Hollywood',
         // 'Clark Gable "King of Hollywood"',
         // 'Carol Lombard "Greatest Actress of classic Hollywood cinema"',
       ],
@@ -144,8 +145,8 @@ const HistoryPage = () => {
 
   return (
     <div className="history">
-      <h1 className="history__title">Hidden Gable Estate</h1>
-      <h2 className="history__subtitle">222 W Chino Road (1925)</h2>
+      <h1 className="history__title">Est. 1925</h1>
+      {/* <h2 className="history__subtitle">Est. 1925</h2> */}
 
       <section className="top-history__container">
         {/* <ImageGallery className="top-grid" items={topHistoryItems} /> */}
