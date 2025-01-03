@@ -9,6 +9,7 @@ import MasterArchitect from "../components/historyPage/modalPages/MasterArchitec
 import WarBonds from "../components/historyPage/modalPages/WarBonds";
 import SharCracraft from "../components/historyPage/modalPages/SharCracraft";
 import ThemeClippings from "../components/historyPage/ThemeClippings";
+import Test from '../components/historyPage/modalPages/Test';
 
 
 const HistoryPage = () => {
@@ -79,7 +80,8 @@ const HistoryPage = () => {
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
       }/image/upload/v1735402995/Hidden%20Gable%20Estate/history%20page/MasterArchitect_xk0htu.jpg`,
       size: 'make-larger',
-      Component: MasterArchitect,
+      // Component: MasterArchitect,
+      Component: Test,
     },
     {
       galleryTitle: [
@@ -145,8 +147,8 @@ const HistoryPage = () => {
 
   return (
     <div className="history">
-      <h1 className="history__title">Est. 1925</h1>
-      {/* <h2 className="history__subtitle">Est. 1925</h2> */}
+      <h1 className="history__title">Hidden Gable Estate</h1>
+      <h2 className="history__subtitle">Est. 1925</h2>
 
       <section className="top-history__container">
         {/* <ImageGallery className="top-grid" items={topHistoryItems} /> */}

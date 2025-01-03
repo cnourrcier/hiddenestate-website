@@ -9,18 +9,17 @@
   letter-spacing: 1px;
   text-align: center;
   position: relative;
-  padding-bottom: 1rem;
 }
 
-/* .history__subtitle {
-  font-size: 1.2rem;
+.history__subtitle {
+  font-size: 1.5rem;
   color: var(--ps-blue);
   margin-bottom: 2rem;
   position: relative;
   padding-bottom: 1rem;
-} */
+}
 
-.history__title::after {
+.history__subtitle::after {
   content: "";
   position: absolute;
   bottom: 0;

@@ -1,0 +1,25 @@
+.swasey-modal-container {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.swasey-text-content {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.image {
+  max-width: 300px;
+}
+
+.swasey-img3 {
+  width: 600px;
+}
+
+.swasey-image-first-row,
+.swasey-image-third-row {
+  display: flex;
+}
