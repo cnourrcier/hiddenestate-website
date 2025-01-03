@@ -17,12 +17,13 @@ const GalleryPage = () => {
     <div className="gallery-page">
       <div className="container">
         <h1>Photo Gallery</h1>
-        <p className="intro">Explore the beauty and charm of our historic Palm Springs retreat.</p>
+        <p className="intro">Explore the beauty and charm of Hidden Gable Estate.</p>
         
         <div className="image-grid">
           {images.map((image) => (
             <div key={image.id} className="image-item" onClick={() => setSelectedImage(image)}>
               <img src={image.src} alt={image.alt} />
+              <p className='image-item-title'>Image Title</p>
             </div>
           ))}
         </div>

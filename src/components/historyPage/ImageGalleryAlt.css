@@ -1,3 +1,8 @@
+.image-gallery-wrapper {
+  max-width: 1100px;
+  margin: auto;
+}
+
 .image-gallery-wrapper.fun-style {
     display: flex;
     justify-content: center;
@@ -7,10 +12,11 @@
 
   .image-gallery-wrapper.grid-style {
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
   }
 
   .img-wrapper {
