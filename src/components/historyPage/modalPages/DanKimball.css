@@ -77,15 +77,17 @@
   }
 }
 
-.swasey img {
-  max-height: 300px;
+.kimball img {
+  max-height: 500px;
   border-radius: 3px;
 }
 
-.swasey-list-item {
+.kimball .list-item {
   margin: 1.2rem 1rem;
-  padding: 0.5rem;
+  padding-left: 0.5rem;
   border-left: 3px solid var(--ps-terracotta);
   border-radius: 3px;
   list-style-type: none;
+  text-align: left;
+
 }

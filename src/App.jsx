@@ -6,7 +6,6 @@ import HistoryPage from "./pages/HistoryPage";
 import GalleryPage from "./pages/GalleryPage";
 import MissionPage from "./pages/MissionPage";
 import ContactPage from "./pages/ContactPage";
-// import Booking from './components/Booking';
 import Footer from "./components/Footer";
 import ViewportDimensions from "./utils/ViewportDimensions";
 
@@ -22,7 +21,6 @@ function App() {
           <Route path="/mission" element={<MissionPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
-        {/* <Booking /> */}
         {/* <ViewportDimensions /> */}
         <Footer />
       </Router>

@@ -1,0 +1,57 @@
+.dw {
+  display: flex;
+  background-color: var(--ps-white);
+  justify-content: center;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.dw-pnl__cntnt {
+  width: 100%;
+}
+
+.dw-clstr {
+  display: flex;
+  gap: 1rem;
+}
+
+.dw-clstr--hrz {
+  flex-direction: column;
+}
+
+.dw-clstr__sgmnt {
+  display: flex;
+  overflow:visible;
+  /* flex: 1 1 auto;  */
+  justify-content: space-around;
+}
+
+.dw-clstr__sgmnt--rw {
+  display: flex;
+  gap: 1rem;
+}
+
+.dw-clstr__sgmnt--clmn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.fleeson img {
+  max-height: 350px;
+}
+
+.fleeson .list-item {
+  margin: 1.2rem 1rem;
+  padding: 0 0.5rem;
+  border-left: 3px solid var(--ps-terracotta);
+  border-radius: 3px;
+  list-style-type: none;
+}
+
+cite {
+  margin: 0 4rem;
+}
+

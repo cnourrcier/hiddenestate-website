@@ -1,9 +1,0 @@
-.modal-content-container {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-}
-
-.modal-content-container img {
-  max-width: 500px;
-}
