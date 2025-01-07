@@ -10,7 +10,7 @@
   }
   
   .modal-container {
-    background-color: var(--ps-white);
+    background-color: white;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -20,7 +20,7 @@
   
   .modal-header {
     padding: 1rem 1rem 1rem 2rem;
-    border-bottom: 3px solid var(--ps-whiter);
+    background-color: hsl(0, 0%, 18%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@
   .modal-title {
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--ps-blue);
+    color: var(--ps-whiter);
     margin-left: auto;
   }
   
@@ -38,6 +38,7 @@
     background: none;
     border: none;
     border-radius: 50%;
+    color: var(--ps-whiter);
     cursor: pointer;
     transition: background-color 0.2s;
     margin-left: auto;

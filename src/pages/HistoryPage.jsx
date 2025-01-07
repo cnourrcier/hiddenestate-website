@@ -9,6 +9,7 @@ import MasterArchitect from "../components/historyPage/modalPages/MasterArchitec
 import WarBonds from "../components/historyPage/modalPages/WarBonds";
 import SharCracraft from "../components/historyPage/modalPages/SharCracraft";
 import ThemeClippings from "../components/historyPage/ThemeClippings";
+import Test from "../components/historyPage/modalPages/Test";
 
 
 const HistoryPage = () => {
@@ -141,6 +142,18 @@ const HistoryPage = () => {
       size: 'make-larger',
       Component: MasterArchitect,
     },
+    // {
+    //   galleryTitle: [
+    //     "Test",
+    //   ],
+    //   modalTitle: "Test",
+    //   info: "Test",
+    //   image: `https://res.cloudinary.com/${
+    //     import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
+    //   }/image/upload/v1735402995/Hidden%20Gable%20Estate/history%20page/MasterArchitect_xk0htu.jpg`,
+    //   size: 'make-larger',
+    //   Component: Test,
+    // },
   ];
 
   return (
