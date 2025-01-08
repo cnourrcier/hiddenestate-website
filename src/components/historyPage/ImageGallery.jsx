@@ -29,7 +29,7 @@ const ImageGalleryAlt = ({ items, className }) => {
             alt={item.galleryTitle[0]}
             className={`img-gallery-img ${item.size || ''}`}
           />
-          <div className={className === 'fun-style' ? 'overlay' : 'text-content'}>
+          <div className={className === 'fun-style' ? 'fun-style-overlay' : 'text-content'}>
             <p>{item.galleryTitle[0]}</p>
             {item.galleryTitle?.[1] && <p>{item.galleryTitle[1]}</p>}
             {/* {item.galleryTitle?.[2] && <p>{item.galleryTitle[2]}</p>} */}

@@ -15,6 +15,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .navigation {
@@ -41,17 +42,17 @@
   position: relative;
 }
 
-.overlay {
+.thumbnail-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.2);
-  transition: 0.1s ease;
+  opacity: 1;
 }
 
-.overlay:hover {
+.thumbnail-overlay:hover {
   background: transparent;
 }
 

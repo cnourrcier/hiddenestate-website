@@ -8,8 +8,8 @@ import Location from "../components/homePage/Location";
 function HomePage() {
   return (
     <>
-      {/* <HeroForTesting /> */}
-      <Hero />
+      <HeroForTesting />
+      {/* <Hero /> */}
       <About />
       <ImageSliderAndFeatures />
       <Reviews />

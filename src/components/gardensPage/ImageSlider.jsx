@@ -76,7 +76,7 @@ const thumbnails = [
                 src={thumbnails[index].url}
                 alt={`Thumbnail ${index + 1}`}
               />
-              <div className={currentIndex !== index ? 'overlay' : ''} />
+              <div className={currentIndex !== index ? 'thumbnail-overlay' : ''} />
             </button>
           ))}
         </div>
