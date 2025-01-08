@@ -1,3 +1,4 @@
+import ImageCarousel from '../components/gardensPage/ImageCarousel';
 import ImageSlider from '../components/gardensPage/ImageSlider';
 import './GardensPage.css';
 
@@ -42,7 +43,8 @@ const GardensPage = () => {
             </section>
             
             <section className='gardens__image-slider'>
-                <ImageSlider />
+                {/* <ImageSlider /> */}
+                <ImageCarousel />
             </section>
 
             <section id="text-content" className='gardens__text-content'>
