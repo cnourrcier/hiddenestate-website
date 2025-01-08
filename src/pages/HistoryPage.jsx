@@ -8,7 +8,7 @@ import MasterArchitect from "../components/historyPage/modalPages/MasterArchitec
 import WarBonds from "../components/historyPage/modalPages/WarBonds";
 import SharCracraft from "../components/historyPage/modalPages/SharCracraft";
 import ThemeClippings from "../components/historyPage/ThemeClippings";
-import Test from "../components/historyPage/modalPages/Test";
+// import Test from "../components/historyPage/modalPages/Test";
 
 
 const HistoryPage = () => {
@@ -162,7 +162,6 @@ const HistoryPage = () => {
       <p className="history-discover-hint">(Click any image to learn more!)</p>
 
       <section className="top-history__container">
-        {/* <ImageGallery className="top-grid" items={topHistoryItems} /> */}
         <ImageGallery className="fun-style" items={topHistoryItems} />
       </section>
 
@@ -175,7 +174,6 @@ const HistoryPage = () => {
       </section>
 
       <section className="bottom-history__container">
-        {/* <ImageGallery className="bottom-grid" items={bottomHistoryItems} /> */}
         <ImageGallery className="grid-style" items={bottomHistoryItems} />
       </section>
     </div>

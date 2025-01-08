@@ -1,6 +1,7 @@
 
 .gardens {
     padding: 110px 0 60px 0;
+    background-color: var(--ps-whiter);
   }
 
 .gardens__top-image {
@@ -69,6 +70,11 @@
 .more-link:hover svg{
   cursor: pointer;
   color: var(--ps-terracotta);
+}
+
+.gardens__image-slider {
+  width: 100%;
+  background-color: var(--ps-white);
 }
 
 .gardens__text-content {
