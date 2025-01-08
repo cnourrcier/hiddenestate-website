@@ -17,17 +17,6 @@ const ImageCarousel = ({ images }) => {
         })
     }
 
-    function getThumbnailIndexes () {
-        const indexes = [];
-        for (let i = -2; i <= 2; i++) {
-          let index = imageIndex + i;
-          if (index < 0) index = images.length + index;
-          if (index >= images.length) index = index - images.length;
-          indexes.push(index);
-        }
-        return indexes;
-    };
-
     return (
         <section 
             className='image-carousel-container'
@@ -50,7 +39,7 @@ const ImageCarousel = ({ images }) => {
                     ))}
                 </div>
             </div>
-            <div className='buttons-container'>
+            <div className='buttons-and-text-container'>
                     <button 
                         className='nav-btn left' 
                         onClick={showPrevImage}
@@ -60,21 +49,14 @@ const ImageCarousel = ({ images }) => {
                             <path d="M15 19l-7-7 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                     </button>
-                    <div className='thumbnails-container'>
-                        {getThumbnailIndexes().map((index ) => (
-                            <button  
-                                key={images[index].id}
-                                className={`thumbnail-btn ${imageIndex === index ? 'active' : ''}`}
-                                onClick={() => setImageIndex(index)}
-                                aria-label= {`View Image ${images[index].id}`}
+                    <div className='image-text-container'>
+                        {images.map(({id, text}, index) => (
+                            <p 
+                                key={id}
+                                className={`image-text ${imageIndex === index ? '' : 'hidden'}`}
                             >
-                                <img 
-                                    src={images[index].url} 
-                                    alt={images[index].alt}
-                                    aria-hidden={index !== imageIndex}
-                                />
-                                <div className={imageIndex !== index ? 'thumbnail-btn-overlay' : ''} />
-                            </button>
+                                {text}
+                            </p>
                         ))}
                     </div>
                     <button 

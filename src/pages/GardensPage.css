@@ -80,7 +80,26 @@
 .gardens__text-content {
   display: flex;
   flex-direction: column;
-  padding: 3rem;
-  max-width: 1000px;
+  padding: 2rem 3rem 0 3rem;
+  max-width: 1100px;
   gap: 1rem;
+}
+
+.gardens__showcase-images-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.gardens__showcase-images-container img {
+  max-height: 200px;
+}
+
+.gardens__image-and-text-slider {
+  padding: 1rem 0 10rem 0;
+  width: 100%;
+  background-color: var(--ps-white);
+
 }
