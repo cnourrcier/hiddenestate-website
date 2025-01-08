@@ -1,5 +1,4 @@
-// import ImageGallery from "../components/historyPage/ImageGallery";
-import ImageGalleryAlt from "../components/historyPage/ImageGalleryAlt";
+import ImageGallery from "../components/historyPage/ImageGallery";
 import NewspaperArticle from "../components/historyPage/NewspaperArticle";
 import "./HistoryPage.css";
 
@@ -164,7 +163,7 @@ const HistoryPage = () => {
 
       <section className="top-history__container">
         {/* <ImageGallery className="top-grid" items={topHistoryItems} /> */}
-        <ImageGalleryAlt className="fun-style" items={topHistoryItems} />
+        <ImageGallery className="fun-style" items={topHistoryItems} />
       </section>
 
       <section>
@@ -177,7 +176,7 @@ const HistoryPage = () => {
 
       <section className="bottom-history__container">
         {/* <ImageGallery className="bottom-grid" items={bottomHistoryItems} /> */}
-        <ImageGalleryAlt className="grid-style" items={bottomHistoryItems} />
+        <ImageGallery className="grid-style" items={bottomHistoryItems} />
       </section>
     </div>
   );
