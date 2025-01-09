@@ -1,5 +1,6 @@
 import ImageGallery from "../components/historyPage/ImageGallery";
 import NewspaperArticle from "../components/historyPage/NewspaperArticle";
+import ThemeClippings from "../components/historyPage/ThemeClippings";
 import "./HistoryPage.css";
 
 import DanKimball from "../components/historyPage/modalPages/DanKimball";
@@ -7,7 +8,7 @@ import DorisFleeson from "../components/historyPage/modalPages/DorisFleeson";
 import MasterArchitect from "../components/historyPage/modalPages/MasterArchitect";
 import WarBonds from "../components/historyPage/modalPages/WarBonds";
 import SharCracraft from "../components/historyPage/modalPages/SharCracraft";
-import ThemeClippings from "../components/historyPage/ThemeClippings";
+import Douglas from '../components/historyPage/modalPages/Douglas';
 // import Test from "../components/historyPage/modalPages/Test";
 
 
@@ -81,7 +82,7 @@ const HistoryPage = () => {
       Component: SharCracraft,
     },
     {
-      year: "2003-2015",
+      year: "",
       galleryTitle: [
         "Douglas Family",
       ],
@@ -93,6 +94,7 @@ const HistoryPage = () => {
       video: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
       }/video/upload/v1735404700/Hidden%20Gable%20Estate/history%20page/DouglasFamily2003-2015_jp36oq.mp4`,
+      Component: Douglas,
     },
     // {
     //   galleryTitle: [

@@ -1,0 +1,42 @@
+.douglas {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .douglas__top-content {
+    display: flex;
+  }
+  
+  .douglas__video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    max-width: 600px; /* for video */
+  }
+
+  .douglas__video-container p {
+    text-align: center;
+  }
+
+  .douglas__info-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 300px;
+  }
+  
+  .douglas__info-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--ps-blue);
+  }
+
+  .douglas__text-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
