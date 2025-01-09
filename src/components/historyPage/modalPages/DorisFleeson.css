@@ -1,5 +1,3 @@
-
-
 .fleeson {
     margin: auto;
     display: grid;
@@ -7,7 +5,10 @@
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 1rem;
     padding: 1rem;
-    /* max-width: 96vw; */
+}
+
+.fleeson h3 {
+    line-height: 1.7rem;
 }
 
 .fleeson__article {
@@ -261,10 +262,6 @@
 }
 
 @media (max-width: 700px) {
-
-    .fleeson__article h3 {
-        line-height: 2rem;
-    }
 
     .fleeson__img1 {
         grid-row: 7/8;
