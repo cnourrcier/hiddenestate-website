@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import './ImageCarousel.css';
 
-const ImageCarousel = ({ images }) => {
-
+const ModularImageCarousel = ({ 
+  images,
+  showThumbnails = false,
+  showText = false,
+  className = ''
+}) => {
     const [imageIndex, setImageIndex] = useState(0);
 
     function showPrevImage() {
@@ -17,7 +21,7 @@ const ImageCarousel = ({ images }) => {
         })
     }
 
-    function getThumbnailIndexes () {
+    function getThumbnailIndexes() {
         const indexes = [];
         for (let i = -2; i <= 2; i++) {
           let index = imageIndex + i;
@@ -26,14 +30,17 @@ const ImageCarousel = ({ images }) => {
           indexes.push(index);
         }
         return indexes;
-    };
+    }
 
     return (
         <section 
-            className='image-carousel-container'
+            className={`image-carousel-container ${className}`}
             aria-label='Image Carousel'
         >
-            <a href="#after-image-carousel-controls" className='skip-link'>Skip Image Carousel Controls</a>
+            <a href="#after-image-carousel-controls" className='skip-link'>
+                Skip Image Carousel Controls
+            </a>
+            
             <div className='image-carousel'>
                 <div 
                     className='images-container' 
@@ -46,27 +53,30 @@ const ImageCarousel = ({ images }) => {
                             src={url} 
                             alt={alt}
                             aria-hidden={index !== imageIndex}
-                            />
+                        />
                     ))}
                 </div>
             </div>
-            <div className='buttons-container'>
-                    <button 
-                        className='nav-btn left' 
-                        onClick={showPrevImage}
-                        aria-label='View Previous Image'
-                    >
-                        <svg aria-hidden width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M15 19l-7-7 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                    </button>
+
+            <div className='controls-container'>
+                <button 
+                    className='nav-btn left' 
+                    onClick={showPrevImage}
+                    aria-label='View Previous Image'
+                >
+                    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 19l-7-7 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                </button>
+
+                {showThumbnails && (
                     <div className='thumbnails-container'>
-                        {getThumbnailIndexes().map((index ) => (
+                        {getThumbnailIndexes().map((index) => (
                             <button  
                                 key={images[index].id}
                                 className={`thumbnail-btn ${imageIndex === index ? 'active' : ''}`}
                                 onClick={() => setImageIndex(index)}
-                                aria-label= {`View Image ${images[index].id}`}
+                                aria-label={`View Image ${images[index].id}`}
                             >
                                 <img 
                                     src={images[index].url} 
@@ -77,19 +87,35 @@ const ImageCarousel = ({ images }) => {
                             </button>
                         ))}
                     </div>
-                    <button 
+                )}
+
+                {showText && (
+                    <div className='text-container'>
+                        {images.map(({id, text}, index) => (
+                            <p 
+                                key={id}
+                                className={`image-text ${imageIndex === index ? '' : 'hidden'}`}
+                            >
+                                {text}
+                            </p>
+                        ))}
+                    </div>
+                )}
+
+                <button 
                     className='nav-btn right'
                     onClick={showNextImage}
                     aria-label='View Next Image'
                 >
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M9 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                 </button>
             </div>
+            
             <div id='after-image-carousel-controls' />
         </section>
     )
 }
 
-export default ImageCarousel;
+export default ModularImageCarousel;

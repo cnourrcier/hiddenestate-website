@@ -74,7 +74,7 @@
 
 .gardens__image-slider {
   width: 100%;
-  background-color: var(--ps-white);
+  margin: 2rem auto;
 }
 
 .gardens__text-content {
@@ -98,8 +98,8 @@
 }
 
 .gardens__image-and-text-slider {
+  margin-top: auto;
   padding: 1rem 0 10rem 0;
   width: 100%;
-  background-color: var(--ps-white);
 
 }

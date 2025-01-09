@@ -1,5 +1,4 @@
 import ImageCarousel from '../components/gardensPage/ImageCarousel';
-import ImageAndTextCarousel from '../components/gardensPage/ImageAndTextCarousel';
 import './GardensPage.css';
 
 const GardensPage = () => {
@@ -76,7 +75,10 @@ const GardensPage = () => {
             </section>
             
             <section className='gardens__image-slider'>
-                <ImageCarousel images={ currentGardenImages }/>
+                <ImageCarousel 
+                    images={ currentGardenImages } 
+                    showThumbnails={ true }
+                />
             </section>
 
             <section id="text-content" className='gardens__text-content'>
@@ -95,7 +97,10 @@ const GardensPage = () => {
                 </div>
 
                 <div className='gardens__image-and-text-slider'>
-                <ImageAndTextCarousel images={ historicalGardenImages }/>
+                <ImageCarousel 
+                    images={ historicalGardenImages } 
+                    showText={ true }
+                />
                 </div>
             </section>
         </div>
