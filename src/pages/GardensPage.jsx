@@ -81,28 +81,27 @@ const GardensPage = () => {
                 />
             </section>
 
-            <section id="text-content" className='gardens__text-content'>
-                <p>
-                    We strive to create colorful and tropical landscapes that support local wildlife. Gardening in Palm Springs has unique challenges due to the extreme environment of the valley in the summer with temperatures exceeding 120°F.  However, our gardens can be breath-taking during the spring when trees, shrubs, perennials and annuals are outrivaling each other in a riot of colorful blooms.
-                </p>
-                <p>
-                    The Cactus and Succulent Society gathered here in 1929 because Mrs. Swobdi had created “one of the finest collections of Cactus in the United States”.  
-                </p>
-            </section>
-
-            <section>
+            <section className='gardens__middle-content'>
+                <div id="text-content" className='gardens__text-content'>
+                    <p>
+                        We strive to create colorful and tropical landscapes that support local wildlife. Gardening in Palm Springs has unique challenges due to the extreme environment of the valley in the summer with temperatures exceeding 120°F.  However, our gardens can be breath-taking during the spring when trees, shrubs, perennials and annuals are outrivaling each other in a riot of colorful blooms.
+                    </p>
+                    <p>
+                        The Cactus and Succulent Society gathered here in 1929 because Mrs. Swobdi had created “one of the finest collections of Cactus in the United States”.  
+                    </p>
+                </div>
                 <div className='gardens__showcase-images-container'>
                     <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736364423/Hidden%20Gable%20Estate/gardens%20page/LosAngelesTimes_1929_April_18_hrnpb8.png`} alt="" />
                     <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736364893/Hidden%20Gable%20Estate/gardens%20page/Cactus_event_-_m_small_lgdphh.jpg`} alt="" />
                 </div>
-
+            </section>
+            
                 <div className='gardens__image-and-text-slider'>
                 <ImageCarousel 
                     images={ historicalGardenImages } 
                     showText={ true }
                 />
                 </div>
-            </section>
         </div>
     )
 }
