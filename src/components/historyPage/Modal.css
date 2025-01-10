@@ -1,7 +1,7 @@
 .modal-overlay {
     position: fixed;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,6 +17,11 @@
     height: 100vh;
     overflow-y: auto;
   }
+
+  .modal-overlay.simple .modal-container {
+    all:unset;
+    /* background-color: rgba(249, 247, 236, 0.1); */
+  }
   
   .modal-header {
     padding: 1rem 1rem 1rem 2rem;
@@ -24,6 +29,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .modal-overlay.simple .modal-header {
+    background-color: unset;
+    background-color: rgba(249, 247, 236, 0.1);
   }
   
   .modal-title {

@@ -16,7 +16,7 @@ const WarBonds = () => (
         <div className="dw-pnl">
           <div className="dw-pnl__cntnt text-cntnt">
             <h2>War Bonds</h2>
-            <h3>Ernest Alschuler's winter home in 1943 (rented)</h3>
+            <h3>Ernest Alschuler's winter home in 1943</h3>
             <ul className='list'>
               <li className='list-item'>President Sentinel Radio Company, very active in local Palm Springs community.</li>
               <li className='list-item'>Credited with developing the first portable television.</li>

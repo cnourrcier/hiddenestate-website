@@ -1,5 +1,8 @@
 
 .gardens {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     padding: 110px 0 60px 0;
     background-color: var(--ps-whiter);
   }
@@ -20,7 +23,7 @@
 }
 
 .gardens__title-container {
-  padding: 1rem 3rem 0 3rem;
+  padding: 1rem 10rem 0 10rem;
   width: 100%;
 }
 
@@ -45,8 +48,8 @@
 }
 
 .gardens__list-container {
-  max-width: 1000px;
-  padding: 0 3rem 3rem 3rem;
+  width: 100%;
+  padding: 0 10rem;
 }
 
 .gardens__list-container ul {
@@ -88,15 +91,16 @@
 
 .gardens__middle-content {
   display: flex;
-  margin: 3rem auto;
+  gap: 2.5rem;
+  padding: 2rem 10rem;
 }
 
 .gardens__text-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0 0 3rem;
   max-width: 1100px;
+  padding-top: 1rem;
   gap: 2rem;
   font-size: 1.1rem;
 }
@@ -107,12 +111,15 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  max-width: 400px;
-  padding: 3rem;
+  min-width: 270px;
+  transition: transform 0.7s ease;
+  cursor: pointer;
 }
 
 .gardens__showcase-images-container img {
   object-fit: contain;
+  width: 100%;
+  transition: transform 0.7s ease;
 }
 
 .gardens__showcase-images-container img:nth-child(odd) {
@@ -129,16 +136,4 @@
   margin-top: auto;
   padding: 1rem 0 12rem 0;
   width: 100%;
-
-}
-
-
-@media (max-width: 650px) {
-  .gardens__showcase-images-container {
-    flex-direction: column;
-  }
-
-  .gardens__showcase-images-container img {
-    object-fit: contain;
-  }
 }

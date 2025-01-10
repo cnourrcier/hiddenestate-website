@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import ImageCarousel from '../components/gardensPage/ImageCarousel';
 import './GardensPage.css';
+import Modal from '../components/historyPage/Modal';
 
 const GardensPage = () => {
 
@@ -36,6 +38,20 @@ const GardensPage = () => {
             { id: 21, url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736365526/Hidden%20Gable%20Estate/gardens%20page/cactus_motif_j99nbr.jpg`, text: `Mrs Swobdi admiring the gardens in her high heels with snow on the ground`, alt: 'Cactus Motif'},
     ];
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedItem, setSelectedItem] = useState(null);
+    
+    const openModal = (item) => {
+    setSelectedItem(item);
+    setIsModalOpen(true);
+    }
+
+    const closeModal = () => {
+    setSelectedItem(null);
+    setIsModalOpen(false);
+    }
+
+
     return (
         <div className='gardens'>
             <section className='gardens__top-section'>
@@ -53,7 +69,7 @@ const GardensPage = () => {
                         <li><b>Olive Trees:</b> Heavy producing Manzanilla olive trees that are more than 100 years old.</li>
                         <li><b>Roses:</b> Ever expanding collection of roses selected for their ability to survive the summer heat.</li>
                         <li><b>Cactus Motif:</b> The cactus landscape in the Twenties was with specimens collected from Arizona.  We are slowly expanding our present-day Cactus Motif.</li>
-                        <li 
+                        {/* <li 
                             className='more-link'
                             onClick={() => {
                                 // document.querySelector('.gardens__text-content').scrollIntoView();
@@ -69,7 +85,7 @@ const GardensPage = () => {
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M15 19l-7-7 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </section>
@@ -91,14 +107,31 @@ const GardensPage = () => {
                     </p>
                 </div>
                 <div className='gardens__showcase-images-container'>
-                    <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736364423/Hidden%20Gable%20Estate/gardens%20page/LosAngelesTimes_1929_April_18_hrnpb8.png`} alt="" />
-                    <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736364893/Hidden%20Gable%20Estate/gardens%20page/Cactus_event_-_m_small_lgdphh.jpg`} alt="" />
+                    <img 
+                        onClick={() => openModal({image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736364423/Hidden%20Gable%20Estate/gardens%20page/LosAngelesTimes_1929_April_18_hrnpb8.png`, modalTitle: 'In the Desert'})}
+                        src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736364423/Hidden%20Gable%20Estate/gardens%20page/LosAngelesTimes_1929_April_18_hrnpb8.png`} 
+                        alt="" 
+                    />
+                    <img 
+                        onClick={() => openModal({image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736364893/Hidden%20Gable%20Estate/gardens%20page/Cactus_event_-_m_small_lgdphh.jpg`, modalTitle: 'Image Title'})}
+                        src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736364893/Hidden%20Gable%20Estate/gardens%20page/Cactus_event_-_m_small_lgdphh.jpg`} 
+                        alt="" 
+                    />
                 </div>
+                {isModalOpen && (
+                    <Modal 
+                        isOpen={isModalOpen}
+                        onClose={closeModal} 
+                        item={selectedItem}
+                        className={'simple'}
+                    />
+      )}
             </section>
             
                 <div className='gardens__image-and-text-slider'>
                 <ImageCarousel 
                     images={ historicalGardenImages } 
+                    className='scale-images'
                     showText={ true }
                 />
                 </div>

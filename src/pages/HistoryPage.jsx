@@ -73,6 +73,7 @@ const HistoryPage = () => {
     {
       galleryTitle: [
         "Shar Cracraft",
+        "Editor of Palm Springs Life Magazine",
       ],
       modalTitle: "Shar Cracraft",
       info: "Editor of Palm Springs Life Magazine",

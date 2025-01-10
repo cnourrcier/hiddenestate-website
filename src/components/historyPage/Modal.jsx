@@ -2,11 +2,11 @@ import React from 'react';
 import { X } from 'lucide-react';
 import './Modal.css';
 
-const Modal = ({ isOpen, onClose, item }) => {
+const Modal = ({ isOpen, onClose, item, className='' }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="modal-overlay">
+    <div className={`modal-overlay ${className}`}>
       <div className="modal-container">
         <div className="modal-header">
           <h3 className="modal-title">{item.modalTitle}</h3>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './ImageCarousel.css';
 
-const ModularImageCarousel = ({ 
+const ImageCarousel = ({ 
   images,
   showThumbnails = false,
   showText = false,
@@ -118,4 +118,4 @@ const ModularImageCarousel = ({
     )
 }
 
-export default ModularImageCarousel;
+export default ImageCarousel;

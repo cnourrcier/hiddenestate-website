@@ -7,7 +7,7 @@ const DanKimball = () => (
 
         <div className="dw-pnl ">
           <div className="dw-pnl__cntnt text-cntnt">
-            <h3>US Secretary of Navy (retired)</h3>
+            <h3>US Secretary of Navy</h3>
             <h3>CEO and Board Chairman of Aerojet Corporation</h3>
             <h3>Primary residence from 1958 until his death in 1969</h3>
             <ul className='list'>
