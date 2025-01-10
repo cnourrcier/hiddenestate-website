@@ -56,7 +56,7 @@ const GardensPage = () => {
         <div className='gardens'>
             <section className='gardens__top-section'>
                 <div className='gardens__top-image'>
-                    <img src="https://via.placeholder.com/800x300.png?text=Placeholder" alt="" />
+                    <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736474130/Hidden%20Gable%20Estate/gardens%20page/house_collage_with_cactus_landscape_-_m_small_mlylay.jpg`} alt="" />
                 </div>
                 <div className='gardens__title-container'>
                     <h1 className="gardens__title">
