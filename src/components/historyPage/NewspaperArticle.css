@@ -1,29 +1,16 @@
 .wrapper-column {
   display: flex;
   flex-direction: column;
-  margin: 0 1rem;
+  margin: 0 2rem;
 }
-
-/* .space {
-  width: 100%;
-  max-width: 1100px;
-  margin: auto;
-  height: 2.5rem;
-  background-color: var(--ps-whiter);
-} */
 
 .wrapper-row {
   display: flex;
   margin: auto;
-  max-width: 1000px;
-  border: 2px solid var(--ps-whiter);
+  max-width: 1100px;
+  /* border: 2px solid var(--ps-terracotta); */
   background-color: var(--ps-whiter);
   padding: 1rem;
-}
-
-.wrapper {
-  /* max-width: 800px; */
-  /* margin: 0 auto; */
 }
 
 .floating-box-one {

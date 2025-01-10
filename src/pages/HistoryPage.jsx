@@ -1,6 +1,8 @@
 import ImageGallery from "../components/historyPage/ImageGallery";
-import NewspaperArticle from "../components/historyPage/NewspaperArticle";
 import ThemeClippings from "../components/historyPage/ThemeClippings";
+import NewspaperArticle from "../components/historyPage/NewspaperArticle";
+import Douglas from '../components/historyPage/Douglas';
+
 import "./HistoryPage.css";
 
 import DanKimball from "../components/historyPage/modalPages/DanKimball";
@@ -8,8 +10,6 @@ import DorisFleeson from "../components/historyPage/modalPages/DorisFleeson";
 import MasterArchitect from "../components/historyPage/modalPages/MasterArchitect";
 import WarBonds from "../components/historyPage/modalPages/WarBonds";
 import SharCracraft from "../components/historyPage/modalPages/SharCracraft";
-import Douglas from '../components/historyPage/modalPages/Douglas';
-// import Test from "../components/historyPage/modalPages/Test";
 
 
 const HistoryPage = () => {
@@ -18,7 +18,6 @@ const HistoryPage = () => {
       galleryTitle: [
         'Dan Kimball with President Harry Truman',
         'Army Navy Baseball',
-        // "Secretary of Navy Dan Kimball with President Harry Truman at the Army Navy baseball game",
       ],
       modalTitle: "Dan Kimball",
       info: "Secretary of Navy Dan Kimball with President Harry S. Truman, and Vice Admiral Harry S. Hill at the Army-Navy baseball game at Annapolis",
@@ -45,8 +44,6 @@ const HistoryPage = () => {
       galleryTitle: [
         'Gable & Lombard',
         'Classic Hollywood',
-        // 'Clark Gable "King of Hollywood"',
-        // 'Carol Lombard "Greatest Actress of classic Hollywood cinema"',
       ],
       modalTitle: "Clark Gable and Carol Lombard",
       info: `"King of Hollywood" and one of greatest actresses of Classic Hollywood Cinema`,
@@ -58,7 +55,6 @@ const HistoryPage = () => {
       galleryTitle: [
         'Political Columnist',
          'Doris Fleeson',
-        // "Doris Fleeson, syndicated political columnist and women's rights champion",
       ],
       modalTitle: "Doris Fleeson",
       info: "Syndicated columnist and women's rights champion with First Lady Elenor Roosevelt",
@@ -70,44 +66,6 @@ const HistoryPage = () => {
   ];
 
   const bottomHistoryItems = [
-    {
-      galleryTitle: [
-        "Shar Cracraft",
-        "Editor of Palm Springs Life Magazine",
-      ],
-      modalTitle: "Shar Cracraft",
-      info: "Editor of Palm Springs Life Magazine",
-      image: `https://res.cloudinary.com/${
-        import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-      }/image/upload/v1724950503/Hidden%20Gable%20Estate/history%20page/SharCracraft_zkyjxj.jpg`,
-      Component: SharCracraft,
-    },
-    // {
-    //   year: "",
-    //   galleryTitle: [
-    //     "Douglas Family",
-    //   ],
-    //   modalTitle: "Douglas Family",
-    //   info: "Douglas Family 2003-2015",
-    //   image: `https://res.cloudinary.com/${
-    //     import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-    //   }/image/upload/v1735579854/Hidden%20Gable%20Estate/history%20page/DouglasFamily_pegxqx.png`,
-    //   video: `https://res.cloudinary.com/${
-    //     import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-    //   }/video/upload/v1735404700/Hidden%20Gable%20Estate/history%20page/DouglasFamily2003-2015_jp36oq.mp4`,
-    //   Component: Douglas,
-    // },
-    // {
-    //   galleryTitle: [
-    //     "Desert Motif",
-    //   ],
-    //   modalTitle: "Desert Motif",
-    //   info: "Desert Motif harvested from Arizona",
-    //   image: `https://res.cloudinary.com/${
-    //     import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-    //   }/image/upload/v1735404267/Hidden%20Gable%20Estate/history%20page/DesertMotif_lloy8y.jpg`,
-    //   size: 'make-larger',
-    // },
     {
       galleryTitle: [
         "WWII",
@@ -124,16 +82,6 @@ const HistoryPage = () => {
     },
     {
       galleryTitle: [
-        "Political Fundraisers",
-      ],
-      modalTitle: "Political Fundraisers",
-      info: "Congress Woman Mary Bono with President George Bush held several political events at the Hidden Gable Estate",
-      image: `https://res.cloudinary.com/${
-        import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-      }/image/upload/v1735404651/Hidden%20Gable%20Estate/history%20page/mary_bono_d4e5y7.jpg`,
-    },
-    {
-      galleryTitle: [
         "Master Architect",
       ],
       modalTitle: "Master Architect McNeal Swasey",
@@ -144,18 +92,18 @@ const HistoryPage = () => {
       size: 'make-larger',
       Component: MasterArchitect,
     },
-    // {
-    //   galleryTitle: [
-    //     "Test",
-    //   ],
-    //   modalTitle: "Test",
-    //   info: "Test",
-    //   image: `https://res.cloudinary.com/${
-    //     import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-    //   }/image/upload/v1735402995/Hidden%20Gable%20Estate/history%20page/MasterArchitect_xk0htu.jpg`,
-    //   size: 'make-larger',
-    //   Component: Test,
-    // },
+    {
+      galleryTitle: [
+        "Shar Cracraft",
+        "Editor of Palm Springs Life Magazine",
+      ],
+      modalTitle: "Shar Cracraft",
+      info: "Editor of Palm Springs Life Magazine",
+      image: `https://res.cloudinary.com/${
+        import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
+      }/image/upload/v1724950503/Hidden%20Gable%20Estate/history%20page/SharCracraft_zkyjxj.jpg`,
+      Component: SharCracraft,
+    },
   ];
 
   return (
