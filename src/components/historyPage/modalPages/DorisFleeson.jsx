@@ -1,11 +1,11 @@
 import './DorisFleeson.css';
 
-const Test2 = () => {
+const Fleeson = () => {
     return (
         <div className='fleeson'>
             <div className='fleeson__article'>
                 <h3>Captain Clark Gable flys with bomber squadron in WWII</h3>
-                <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735781555/Hidden%20Gable%20Estate/history%20page/DorisFleesonArticle_bkl43l.jpg`} alt="heroes article" />
+                <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736195174/Hidden%20Gable%20Estate/history%20page/fleeson-heroes_syicpy.png`} alt="heroes article" />
             </div>
             <div className='fleeson__quote1'>
                 <p>“Dear Doris: There are many presidents who can read your column, but it is only a happy few who have it delivered to them in person.  Sincerely, John Kennedy.”</p>
@@ -21,6 +21,7 @@ const Test2 = () => {
                   <li className='list-item'>Married Dan Kimball in 1958</li>
                 </ul>
             </div>
+            <div className='row-divider'></div>
             <div className='fleeson__img1'>
                 <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839277/Hidden%20Gable%20Estate/history%20page/trenches_nnwonq.jpg`} alt="trenches" />
             </div>
@@ -45,4 +46,4 @@ const Test2 = () => {
     )
 }
 
-export default Test2;
+export default Fleeson;
