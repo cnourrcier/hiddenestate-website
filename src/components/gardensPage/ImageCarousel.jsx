@@ -47,13 +47,17 @@ const ImageCarousel = ({
                     style={{transform: `translateX(-${100 * imageIndex}%)`}}
                 >
                     {images.map(({ id, url, alt }, index) => (
-                        <img 
+                        <div
                             key={id} 
-                            className='image-carousel-img' 
-                            src={url} 
-                            alt={alt}
-                            aria-hidden={index !== imageIndex}
-                        />
+                            className='image-slide'
+                        >
+                            <img 
+                                className='image-carousel-img' 
+                                src={url} 
+                                alt={alt}
+                                aria-hidden={index !== imageIndex}
+                            />
+                        </div>
                     ))}
                 </div>
             </div>
