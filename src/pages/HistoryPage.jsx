@@ -82,21 +82,21 @@ const HistoryPage = () => {
       }/image/upload/v1724950503/Hidden%20Gable%20Estate/history%20page/SharCracraft_zkyjxj.jpg`,
       Component: SharCracraft,
     },
-    {
-      year: "",
-      galleryTitle: [
-        "Douglas Family",
-      ],
-      modalTitle: "Douglas Family",
-      info: "Douglas Family 2003-2015",
-      image: `https://res.cloudinary.com/${
-        import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-      }/image/upload/v1735579854/Hidden%20Gable%20Estate/history%20page/DouglasFamily_pegxqx.png`,
-      video: `https://res.cloudinary.com/${
-        import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
-      }/video/upload/v1735404700/Hidden%20Gable%20Estate/history%20page/DouglasFamily2003-2015_jp36oq.mp4`,
-      Component: Douglas,
-    },
+    // {
+    //   year: "",
+    //   galleryTitle: [
+    //     "Douglas Family",
+    //   ],
+    //   modalTitle: "Douglas Family",
+    //   info: "Douglas Family 2003-2015",
+    //   image: `https://res.cloudinary.com/${
+    //     import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
+    //   }/image/upload/v1735579854/Hidden%20Gable%20Estate/history%20page/DouglasFamily_pegxqx.png`,
+    //   video: `https://res.cloudinary.com/${
+    //     import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
+    //   }/video/upload/v1735404700/Hidden%20Gable%20Estate/history%20page/DouglasFamily2003-2015_jp36oq.mp4`,
+    //   Component: Douglas,
+    // },
     // {
     //   galleryTitle: [
     //     "Desert Motif",
@@ -174,6 +174,10 @@ const HistoryPage = () => {
 
       <section className="middle-content__container">
         <NewspaperArticle />
+      </section>
+
+      <section>
+        <Douglas />
       </section>
 
       <section className="bottom-history__container">
