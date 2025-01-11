@@ -56,7 +56,6 @@
     background-color: var(--ps-whiter);
     display: flex;
     flex-direction: column;
-    padding: 1rem 2rem;
 }
 
 .cracraft__quote cite {
@@ -71,7 +70,7 @@
     object-fit: contain;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1150px) {
     .cracraft {
         grid-template-columns: repeat(4, 1fr);
     }
