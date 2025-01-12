@@ -8,6 +8,7 @@ const ImageCarousel = ({
   className = ''
 }) => {
     const [imageIndex, setImageIndex] = useState(0);
+    const [clicked, setClicked] = useState(false);
 
     function showPrevImage() {
         setImageIndex(index => {
@@ -41,7 +42,7 @@ const ImageCarousel = ({
                 Skip Image Carousel Controls
             </a>
             
-            <div className='image-carousel'>
+            <div onClick={() => setClicked(!clicked)} className={`image-carousel ${clicked ? 'zoom' : ''}`}>
                 <div 
                     className='images-container' 
                     style={{transform: `translateX(-${100 * imageIndex}%)`}}

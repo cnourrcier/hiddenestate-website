@@ -2,7 +2,7 @@
 .gardens {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 2rem; */
     padding: 110px 0 60px 0;
     background-color: var(--ps-whiter);
   }
