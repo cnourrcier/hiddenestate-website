@@ -49,6 +49,7 @@
     .douglas__video-container video{
       width: 90vw;
       max-width: 700px;
+      margin: auto;
     }
 
     .douglas__logo-container {

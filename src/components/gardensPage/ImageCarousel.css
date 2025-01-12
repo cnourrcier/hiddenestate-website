@@ -17,7 +17,7 @@
 }
 
 .text-carousel .image-carousel.zoom {
-    transform: scale(1.6);
+    transform: scale(1.8);
     z-index: 2000;
 }
 

@@ -70,7 +70,7 @@ const HistoryPage = () => {
   const bottomHistoryItems = [
     {
       galleryTitle: [
-        "WWII",
+        `"Buy a Bomber Campaign"`,
       ],
       modalTitle: "WWII",
       info: "",
@@ -84,7 +84,7 @@ const HistoryPage = () => {
     },
     {
       galleryTitle: [
-        "Master Architect",
+        "Master Architect McNeal Swasey",
       ],
       modalTitle: "Master Architect McNeal Swasey",
       info: "A Spanish Colonial Revival, one of the oldest homes in Old Las Palmas",
