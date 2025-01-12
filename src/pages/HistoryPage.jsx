@@ -10,6 +10,7 @@ import DorisFleeson from "../components/historyPage/modalPages/DorisFleeson";
 import MasterArchitect from "../components/historyPage/modalPages/MasterArchitect";
 import WarBonds from "../components/historyPage/modalPages/WarBonds";
 import SharCracraft from "../components/historyPage/modalPages/SharCracraft";
+import GableLombard from "../components/historyPage/modalPages/GableLombard";
 
 
 const HistoryPage = () => {
@@ -50,6 +51,7 @@ const HistoryPage = () => {
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
       }/image/upload/v1735402328/Hidden%20Gable%20Estate/home%20page/Gable-Lombard-39_nv5j1q.jpg`,
+      Component: GableLombard,
     },
     {
       galleryTitle: [

@@ -1,0 +1,33 @@
+.gable-lombard {
+    padding: 3rem;
+}
+
+.gable-lombard img {
+    max-width: 300px;
+}
+
+.img-description {
+    font-size: 0.8rem;
+    text-align: center;
+    max-width: 300px;
+    font-style: italic;
+}
+
+.gable-lombard .img:nth-of-type(odd) {
+    float: left;
+    padding-right: 1rem;
+}
+
+.gable-lombard .img:nth-of-type(even) {
+    float: right;
+    padding-left: 1rem;
+}
+
+.img.five {
+    padding-bottom: 3rem;
+}
+
+
+.gable-lombard p {
+    padding-bottom: 1rem;
+}
