@@ -1,7 +1,7 @@
 .mission {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 130px 2.5rem 60px 2.5rem;
+    padding: 130px 3rem 60px 3rem;
     background-color: var(--ps-white);
     color: var(--ps-blue);
     line-height: 1.7;
@@ -48,21 +48,17 @@
     margin-bottom: 2rem;
 }
 
-.hidden-gable__wrapper {
+.mission__content {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 2rem;
     align-items: center;
     margin-bottom: 2rem;
 }
 
-.hidden-gable__content-image-container {
-    height: 350px;
-    width: 650px;
-    overflow: cover;
-}
-
 .hidden-gable__image {
+    max-height: 350px;
+    max-width: 650px;
     width: 100%;
     height: 100%;
     border-radius: 3px;
@@ -73,10 +69,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.nourrcier-family-wrapper {
-    line-height: 1.7;
 }
 
 .mission > p:nth-of-type(2),
@@ -112,12 +104,48 @@
     margin: 2rem 0;
 }
 
+.mission__grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
 .mission__img-grid img {
     width: 250px;
     height: 250px;
     object-fit: cover;
     border-radius: 3px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 1150px) {
+    .mission__img-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+
+    .mission__grid-item:nth-child(odd) {
+        justify-content: flex-end;
+    }
+    .mission__grid-item:nth-child(even) {
+        justify-content: flex-start;
+    }
+
+    .mission__img-grid img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 3px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+}
+
+@media (max-width: 860px) {
+    .mission__img-grid {
+        gap: 1rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -127,5 +155,12 @@
 
     .mission__img-grid {
         grid-template-columns: 1fr;
+    }
+
+    .mission__grid-item:nth-child(odd) {
+        justify-content: center;
+    }
+    .mission__grid-item:nth-child(even) {
+        justify-content: center;
     }
 }
