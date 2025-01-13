@@ -1,5 +1,7 @@
 .gable-lombard {
     padding: 3rem;
+    margin: auto;
+    max-width: 1100px;
 }
 
 .gable-lombard img {
@@ -14,20 +16,60 @@
 }
 
 .gable-lombard .img:nth-of-type(odd) {
-    float: left;
-    padding-right: 1rem;
-}
-
-.gable-lombard .img:nth-of-type(even) {
     float: right;
     padding-left: 1rem;
 }
 
-.img.five {
-    padding-bottom: 3rem;
+.gable-lombard .img:nth-of-type(even) {
+    float: left;
+    padding-right: 1rem;
 }
-
 
 .gable-lombard p {
     padding-bottom: 1rem;
+}
+
+
+@media (max-width: 700px) {
+    .gable-lombard {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        place-items: center;
+        padding: 2rem;
+    }
+
+    .gable-lombard .img:nth-of-type(odd) {
+        float: unset;
+        padding-left: 0rem;
+    }
+    
+    .gable-lombard .img:nth-of-type(even) {
+        float: unset;
+        padding-right: 0rem;
+    }
+
+    .gable-lombard img {
+        width: 90vw;
+        max-width: 400px;
+    }
+
+    .img.one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img.one img {
+        max-height: 450px;
+        width: auto;
+    }
+
+
+    .img-description {
+        text-align: center;
+        width: 90vw;
+        max-width: 400px;
+    }
+
 }
