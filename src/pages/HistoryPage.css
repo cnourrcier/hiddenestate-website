@@ -44,6 +44,12 @@
   padding-bottom: 3rem;
 }
 
+@media (max-width: 1050px) {
+  .history-discover-hint {
+    padding-bottom: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .history-page h1 {
     font-size: 28px;
@@ -55,5 +61,15 @@
 
   .history-page h3 {
     font-size: 20px;
+  }
+
+  .history-discover-hint {
+    padding-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .history-discover-hint {
+    padding-bottom: 1rem;
   }
 }
