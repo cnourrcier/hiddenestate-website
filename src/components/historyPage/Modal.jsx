@@ -25,40 +25,11 @@ const Modal = ({ isOpen, onClose, item, className='' }) => {
           ) : (
 
             <div className="modal-content">
-              <div className="modal-media-container">
-                {item.video ? (
-
-                  <video
-                      controls
-                  >
-                      <source src={item.video} type="video/mp4" />
-                  </video>
-
-                ) : (
-
-                  <>
                     <img
                         src={item.image}
                         alt={item.modalTitle}
                         className="modal-image"
                     />
-                    {item.additionalImage && (
-                        <img 
-                            src={item.additionalImage}
-                            alt={item.modalTitle}
-                            className='modal-image'
-                        />
-                    )}
-                  </>
-                )}
-              </div>
-              <div className='modal-info-container'>
-                {item.info && (
-                    <p className="modal-info-text">
-                    {item.info}
-                    </p>
-                )}
-              </div>
             </div>
         )}
 

@@ -20,7 +20,8 @@
 
   .modal-overlay.simple .modal-container {
     all:unset;
-    /* background-color: rgba(249, 247, 236, 0.1); */
+    background-color: rgba(249, 247, 236, 0.1);
+    padding: 0 2rem 2rem 2rem;
   }
   
   .modal-header {
@@ -33,7 +34,7 @@
 
   .modal-overlay.simple .modal-header {
     background-color: unset;
-    background-color: rgba(249, 247, 236, 0.1);
+    /* background-color: rgba(249, 247, 236, 0.1); */
   }
   
   .modal-title {
@@ -59,37 +60,11 @@
     height: 1.5rem;
   }
   
-  .modal-content {
-    display: flex;
-    padding: 1.5rem;
-    max-height: 400px;
-  }
-  
-  .modal-media-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-    max-width: 600px; /* for video */
-  }
 
   .modal-image {
     width: auto;
     height: auto;
-    min-width: 400px;
-    max-width: 400px;
-    height: auto;
+    padding-top: 1rem;
+    max-width: 90vw;
     object-fit: contain;
-  }
-
-  .modal-info-container {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 300px;
-  }
-  
-  .modal-info-text {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: var(--ps-blue);
   }

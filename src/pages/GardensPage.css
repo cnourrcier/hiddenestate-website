@@ -8,9 +8,6 @@
   }
 
 .gardens__top-image {
-  background-color: hsl(0, 0%, 80%);
-  display: flex;
-  justify-content: center;
   width: 100%;
   height: 100%;
 }
@@ -90,6 +87,7 @@
   width: 100%;
   height: 100%;
   min-width: 270px;
+  max-width: 270px;
   transition: transform 0.7s ease;
   cursor: pointer;
 }
@@ -114,4 +112,61 @@
   margin-top: auto;
   padding: 1rem 0 12rem 0;
   width: 100%;
+}
+
+
+@media (max-width: 1050px) {
+  .gardens__middle-content {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4rem;
+  }
+
+  .gardens__text-content {
+    padding-top: 0;
+  }
+
+  .gardens__showcase-images-container {
+    flex-direction: row;
+  }
+
+  .gardens__showcase-images-container img:nth-child(odd) {
+    transform: rotate(-6deg);
+    z-index: 3;
+  }
+  
+  .gardens__showcase-images-container img:nth-child(even) {
+    transform: rotate(6deg);
+    z-index: 2;
+  }
+}
+
+@media (max-width: 750px) {
+  .gardens__top-image img {
+    height: 190px;
+    object-position: 55% 50%;
+  }
+
+  .gardens__title-container {
+    padding: 1rem 3rem 0 3rem;
+  }
+
+  .gardens__list-container {
+    padding: 0 3rem;
+  }
+
+  .gardens__middle-content {
+    padding: 2rem 3rem;
+  }
+
+  .gardens__showcase-images-container {
+    min-width: 0;
+    max-width: 40vw;
+    width: 90vw;
+  }
+
+  .gardens__image-and-text-slider {
+    padding: 1rem 0 16rem 0;
+    width: 100%;
+  }
 }
