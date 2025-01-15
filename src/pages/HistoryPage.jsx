@@ -11,6 +11,7 @@ import MasterArchitect from "../components/historyPage/modalPages/MasterArchitec
 import WarBonds from "../components/historyPage/modalPages/WarBonds";
 import SharCracraft from "../components/historyPage/modalPages/SharCracraft";
 import GableLombard from "../components/historyPage/modalPages/GableLombard";
+import Swobdi from "../components/historyPage/modalPages/Swobdi";
 
 
 const HistoryPage = () => {
@@ -34,12 +35,13 @@ const HistoryPage = () => {
         "Roaring Twenties",
         // "Silent Films",
       ],
-      modalTitle: "Roaring Twenties, Fashion, Silent Films",
+      modalTitle: "Mrs. Agnes Swobdi-Meade",
       info: "Swobdi pioneer of the Los Angeles Fashion District, was renowned for her work as an importer, designer and couturière for silent film stars.",
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
       }/image/upload/v1735422116/Hidden%20Gable%20Estate/history%20page/RoaringTwenties_ik20wu.jpg`,
       // size: "make-larger",
+      Component: Swobdi,
     },
     {
       galleryTitle: [
