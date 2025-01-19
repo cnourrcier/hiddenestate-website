@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import CarouselControls from '../CarouselControls';
+import CarouselControls from './CarouselControls';
 import './ImageCarousel.css';
 
 const ImageCarousel = ({ 

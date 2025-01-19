@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import VideoPlayer from '../../utils/VideoPlayer';
+import VideoPlayer from '../VideoPlayer';
 
 const Hero = () => {
     

@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import ImageCarousel from '../components/gardensPage/ImageCarousel';
+import ImageCarousel from '../components/ImageCarousel';
+import Modal from '../components/Modal';
 import './GardensPage.css';
-import Modal from '../components/historyPage/Modal';
+
 
 const GardensPage = () => {
     

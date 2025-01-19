@@ -1,4 +1,4 @@
-import ImageCarousel from '../../gardensPage/ImageCarousel';
+import ImageCarousel from '../../ImageCarousel';
 import './Swobdi.css';
 
 const Swobdi = () => {
