@@ -114,13 +114,13 @@ const GardensPage = () => {
       )}
             </section>
             
-                <div className='gardens__image-and-text-slider'>
+            <section className='gardens__image-and-text-slider'>
                 <ImageCarousel 
                     images={ historicalGardenImages } 
                     className='text-carousel'
                     showText={ true }
                 />
-                </div>
+            </section>
         </div>
     )
 }

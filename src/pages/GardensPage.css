@@ -166,7 +166,7 @@
   }
 
   .gardens__image-and-text-slider {
-    padding: 1rem 0 16rem 0;
+    padding-bottom: 16rem;
     width: 100%;
   }
 }
