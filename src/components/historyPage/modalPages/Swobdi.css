@@ -10,7 +10,7 @@
     max-width: 800px;
 }
 
-.swobdi__text-content .list-item {
+.swobdi .list-item {
     margin: 1.2rem auto;
     padding: 0 0.5rem;
     border-left: 3px solid var(--ps-terracotta);

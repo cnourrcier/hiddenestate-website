@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Modal from './Modal';
 import './ImageGallery.css';
 
-const ImageGalleryAlt = ({ items, className }) => {
+const ImageGallery = ({ items, className }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
 
@@ -48,4 +48,4 @@ const ImageGalleryAlt = ({ items, className }) => {
   );
 };
 
-export default ImageGalleryAlt;
+export default ImageGallery;

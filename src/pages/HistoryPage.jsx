@@ -6,12 +6,12 @@ import Douglas from '../components/historyPage/Douglas';
 import "./HistoryPage.css";
 
 import DanKimball from "../components/historyPage/modalPages/DanKimball";
-import DorisFleeson from "../components/historyPage/modalPages/DorisFleeson";
-import MasterArchitect from "../components/historyPage/modalPages/MasterArchitect";
-import WarBonds from "../components/historyPage/modalPages/WarBonds";
-import SharCracraft from "../components/historyPage/modalPages/SharCracraft";
-import GableLombard from "../components/historyPage/modalPages/GableLombard";
 import Swobdi from "../components/historyPage/modalPages/Swobdi";
+import GableLombard from "../components/historyPage/modalPages/GableLombard";
+import DorisFleeson from "../components/historyPage/modalPages/DorisFleeson";
+import WarBonds from "../components/historyPage/modalPages/WarBonds";
+import MasterArchitect from "../components/historyPage/modalPages/MasterArchitect";
+import SharCracraft from "../components/historyPage/modalPages/SharCracraft";
 
 
 const HistoryPage = () => {
@@ -21,26 +21,23 @@ const HistoryPage = () => {
         'Dan Kimball, Secretary of Navy, with President Harry Truman',
         'Army Navy Baseball',
       ],
-      modalTitle: "Dan Kimball",
+      modalTitle: "Secretary of Navy Dan Kimball",
       info: "Secretary of Navy Dan Kimball with President Harry S. Truman, and Vice Admiral Harry S. Hill at the Army-Navy baseball game at Annapolis",
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
       }/image/upload/v1735404666/Hidden%20Gable%20Estate/history%20page/President_Harry_S._Truman_and_Others_at_Army-Navy_Baseball_Game_bh0bbs.jpg`,
-      // size: 'make-larger',
       Component: DanKimball,
     },
     {
       galleryTitle: [
         "Fashion",
         "Roaring Twenties",
-        // "Silent Films",
       ],
       modalTitle: "Mrs. Agnes Swobdi-Meade",
       info: "Swobdi pioneer of the Los Angeles Fashion District, was renowned for her work as an importer, designer and couturière for silent film stars.",
       image: `https://res.cloudinary.com/${
         import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV
       }/image/upload/v1735422116/Hidden%20Gable%20Estate/history%20page/RoaringTwenties_ik20wu.jpg`,
-      // size: "make-larger",
       Component: Swobdi,
     },
     {
