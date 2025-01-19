@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { X } from 'lucide-react';
 import './Modal.css';
 
 const Modal = ({ isOpen, onClose, item, className='' }) => {
+
+  useEffect(() => {
+    if (isOpen) document.body.style.overflow = 'hidden';
+    return () => document.body.style.overflow = '';
+  }, [isOpen]);
+  
   if (!isOpen) return null;
 
   return (
