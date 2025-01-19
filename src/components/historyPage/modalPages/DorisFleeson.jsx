@@ -12,7 +12,7 @@ const Fleeson = () => {
             </div>
             <div className='fleeson__main-text1'>
                 <h3>Syndicated Political Columnist</h3>
-                <h4>Resident 1958-1969</h4>
+                <h4>Resident: 1958-1969</h4>
                 <ul className='list'>
                   <li className='list-item'>Her Syndicated column on government insider gossip was syndicated nationally to 90 newspapers for 25 years.</li>
                   <li className='list-item'>She was a champion of women's rights and led a battle for installation of rest room facilities in the Senate press gallery in the 1940s.</li>

@@ -5,9 +5,9 @@
 
 
 .swobdi__text-content {
-    padding: 3rem;
+    padding: 0 1rem;
     margin: auto;
-    max-width: 800px;
+    max-width: 700px;
 }
 
 .swobdi .list-item {
@@ -18,17 +18,24 @@
     list-style-type: none;
 }
 
-@media (max-width: 1100px) {
-    .swobdi__text-content {
-        padding: 1rem;
-        margin: auto;
-        max-width: 800px;
-    }
+.swobdi__carousel-container {
+    display: flex;
+    flex-direction: column;
 }
 
-@media (max-width: 1000px) {
+.swobdi__carousel-container p {
+    text-align: center;
+}
+
+@media (max-width: 1300px) {
      .swobdi {
         flex-direction: column;
         padding-bottom: 3rem;
+    }
+
+    .swobdi__text-content {
+        padding: 0 1rem;
+        margin: auto;
+        max-width: 900px;
     }
 }

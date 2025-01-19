@@ -10,6 +10,10 @@
   max-width: 900px;
 }
 
+.kimball h3 {
+  line-height: 1.7rem;
+}
+
 .kimball img {
   margin: auto;
   max-width: 600px;
@@ -30,7 +34,7 @@
   .kimball {
     flex-direction: column;
     align-items: center;
-    padding: 0;
+    padding: 1rem;
   }
   
   .kimball__text-content,

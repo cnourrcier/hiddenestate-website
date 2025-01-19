@@ -80,6 +80,7 @@ const GardensPage = () => {
                 <ImageCarousel 
                     images={ currentGardenImages } 
                     showThumbnails={ true }
+                    className='garden-carousel'
                 />
             </section>
 

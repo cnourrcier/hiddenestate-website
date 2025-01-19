@@ -3,9 +3,8 @@ import './DanKimball.css';
 const DanKimball = () => (
     <div className="kimball">
           <div className="kimball__text-content">
-            {/* <h3>US Secretary of Navy</h3> */}
-            {/* <h3>CEO and Board Chairman of Aerojet Corporation</h3> */}
-            {/* <h3>Primary residence from 1958 until his death in 1969</h3> */}
+            <h3>US Secretary of Navy, CEO and board Chairman of Aerojet Corporation</h3>
+            <h4>Resident: 1958-1969</h4>
             <ul className='list'>
               <li className='list-item'>President and Board Chairman of Aerojet General Corp. during his residence, a period of explosive growth. Best known as the executive who turned Aerojet-General Corp. from a tiny General Tire subsidiary into an aerospace giant (engines, rockets, bomb fuses).</li>
               <li className='list-item'>Met Dorris Fleeson in Washington (1953), married in 1958.</li>

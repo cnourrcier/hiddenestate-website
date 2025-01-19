@@ -30,10 +30,9 @@
     grid-column: 6/12;
     grid-row: 2;
     background-color: var(--ps-whiter);
-    padding: 2rem;
+    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
