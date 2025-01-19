@@ -44,7 +44,7 @@ const Swobdi = () => {
                 </ul>
             </div>
             <div className='swobdi__carousel-container'>
-                <p>Click on any image to enlarge!</p>
+                <p>Click on an image to enlarge</p>
                 <ImageCarousel images={images} className='swobdi-carousel'/>
             </div>
         </div>

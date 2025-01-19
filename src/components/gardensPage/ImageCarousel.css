@@ -26,12 +26,27 @@
     margin: 0.5rem auto;
 }
 
-.swobdi-carousel .image-carousel.zoom,
+.homepage-carousel .image-carousel.zoom {
+    transform: scale(1.7);
+    z-index: 2000;
+}
+
+.swobdi-carousel .image-carousel.zoom {
+    transform: scale(1.7);
+    z-index: 2000;
+}
 .text-carousel .image-carousel.zoom {
     transform: scale(1.8);
     z-index: 2000;
 }
 
+@media (min-width: 1301px) {
+    .swobdi-carousel .image-carousel.zoom {
+        transform: scale(1.8) translateX(-20%);
+    }
+} 
+
+.homepage-carousel .image-carousel,
 .swobdi-carousel .image-carousel,
 .text-carousel .image-carousel {
     cursor: pointer;
@@ -80,6 +95,7 @@
     justify-content: space-between;
     flex: 1;
     gap: 3rem;
+    padding: 0 2rem;
 }
 
 .swobdi-carousel .controls-container {
@@ -258,6 +274,12 @@
     }
 }
 
+@media (max-width: 750px) {
+    .image-carousel-container.text-carousel {
+        margin-top: -1rem;
+    }
+}
+
 @media (max-width: 600px) {
     .image-carousel-container {
         max-width: 400px;
@@ -275,16 +297,10 @@
 
 @media (max-width: 500px) {
     .image-carousel-container {
-        max-width: 340px;
+        max-width: 90vw;
     }
 
     .image-text {
         width: 250px;
-    }
-}
-
-@media (max-width: 400px) {
-    .image-carousel-container {
-        max-width: 300px;
     }
 }
