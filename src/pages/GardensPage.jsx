@@ -94,12 +94,12 @@ const GardensPage = () => {
                 </div>
                 <div className='gardens__showcase-images-container'>
                     <img 
-                        onClick={() => openModal({image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736364423/Hidden%20Gable%20Estate/gardens%20page/LosAngelesTimes_1929_April_18_hrnpb8.png`, modalTitle: 'In the Desert'})}
+                        onClick={() => openModal({image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736364423/Hidden%20Gable%20Estate/gardens%20page/LosAngelesTimes_1929_April_18_hrnpb8.png`, modalTitle: ''})}
                         src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736364423/Hidden%20Gable%20Estate/gardens%20page/LosAngelesTimes_1929_April_18_hrnpb8.png`} 
                         alt="" 
                     />
                     <img 
-                        onClick={() => openModal({image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736364893/Hidden%20Gable%20Estate/gardens%20page/Cactus_event_-_m_small_lgdphh.jpg`, modalTitle: 'Cactus Event'})}
+                        onClick={() => openModal({image: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736364893/Hidden%20Gable%20Estate/gardens%20page/Cactus_event_-_m_small_lgdphh.jpg`, modalTitle: 'Swobdi hosting Cactus and Succulent Society of America 1929'})}
                         src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736364893/Hidden%20Gable%20Estate/gardens%20page/Cactus_event_-_m_small_lgdphh.jpg`} 
                         alt="" 
                     />

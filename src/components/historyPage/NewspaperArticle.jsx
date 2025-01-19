@@ -60,8 +60,8 @@ const NewspaperArticle = () => {
                 Lombard, one of the most celebrated actresses of Classic
                 Hollywood Cinema; Doris Fleeson, a trailblazing syndicated
                 columnist who shaped public opinion across five U.S.
-                presidencies and championed women's rights; and Dan Kimball, a
-                retired Secretary of the Navy and CEO whose leadership left a
+                presidencies and championed women's rights; and Dan Kimball,
+                Secretary of the Navy and CEO whose leadership left a
                 lasting impact on naval policy and strategy. In the early
                 1950's, the first Bishop of Yakima, WA visited often. Statues of
                 St. Francis from that period still exist on the property. And

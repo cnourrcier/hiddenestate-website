@@ -18,7 +18,7 @@ const HistoryPage = () => {
   const topHistoryItems = [
     {
       galleryTitle: [
-        'Dan Kimball with President Harry Truman',
+        'Dan Kimball, Secretary of Navy, with President Harry Truman',
         'Army Navy Baseball',
       ],
       modalTitle: "Dan Kimball",
