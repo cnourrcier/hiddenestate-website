@@ -80,6 +80,10 @@
   font-size: 1.1rem;
 }
 
+.gardens__text-content p {
+  width: 100%;
+}
+
 .gardens__showcase-images-container {
   display: flex;
   flex-direction: column;

@@ -91,6 +91,9 @@ const GardensPage = () => {
                     <p>
                         The Cactus and Succulent Society gathered here in 1929 because Mrs. Swobdi had created “one of the finest collections of Cactus in the United States”.  
                     </p>
+                    <p className='click-hint'>
+                        Click on any photo to enlarge for more detail!
+                    </p>
                 </div>
                 <div className='gardens__showcase-images-container'>
                     <img 
