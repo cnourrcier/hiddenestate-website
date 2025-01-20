@@ -104,6 +104,10 @@
     border: 1px solid var(--ps-terracotta);
 }
 
+.swobdi-carousel.text-container {
+    border:none;
+}
+
 .image-text {
     position: absolute;
     margin-top: 1rem;

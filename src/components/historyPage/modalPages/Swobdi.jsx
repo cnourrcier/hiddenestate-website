@@ -4,16 +4,56 @@ import './Swobdi.css';
 const Swobdi = () => {
 
     const images = [
-        { id: 1, url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-fashions_j2in6j.jpg' },
-        { id: 2, url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874700/Hidden%20Gable%20Estate/history%20page/swobdi-with-glove_hwp2tj.jpg' },
-        { id: 3, url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/stranger-within-our-gates_zghaht.jpg' },
-        { id: 4, url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-feather-hat_stddkw.jpg' },
-        { id: 5, url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-chinese-robe_ypeydp.jpg' },
-        { id: 6, url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874698/Hidden%20Gable%20Estate/history%20page/swobdi-25-years-in-business_uitt4o.jpg' },
-        { id: 7, url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/LA-fashion-show_a7ix14.jpg' },
-        { id: 8, url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-illustration_du4jwq.jpg' },
-        { id: 9, url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874700/Hidden%20Gable%20Estate/history%20page/swobdi-on-display-for-your-approval_df1vj1.jpg' },
-        { id: 10, url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-large-hat_djrnsn.jpg' },
+        { 
+            id: 1, 
+            url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-fashions_j2in6j.jpg',
+            text: '1',
+        },
+        { 
+            id: 2, 
+            url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874700/Hidden%20Gable%20Estate/history%20page/swobdi-with-glove_hwp2tj.jpg',
+            text: '2' 
+        },
+        { 
+            id: 3, 
+            url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/stranger-within-our-gates_zghaht.jpg',
+            text: '3'
+        },
+        { 
+            id: 4, 
+            url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-feather-hat_stddkw.jpg',
+            text: '4'
+        },
+        { 
+            id: 5, 
+            url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-chinese-robe_ypeydp.jpg', 
+            text: '5'
+        },
+        { 
+            id: 6, 
+            url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874698/Hidden%20Gable%20Estate/history%20page/swobdi-25-years-in-business_uitt4o.jpg',
+            text: '6'
+        },
+        { 
+            id: 7, 
+            url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/LA-fashion-show_a7ix14.jpg',
+            text: '7',
+        },
+        { 
+            id: 8, 
+            url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-illustration_du4jwq.jpg',
+            text: '8',
+        },
+        { 
+            id: 9, 
+            url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874700/Hidden%20Gable%20Estate/history%20page/swobdi-on-display-for-your-approval_df1vj1.jpg',
+            text: '9'
+        },
+        { 
+            id: 10, 
+            url: 'https://res.cloudinary.com/dwguf4w1t/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-large-hat_djrnsn.jpg',
+            text: '10'
+        },
     ]
 
     return (
@@ -45,7 +85,7 @@ const Swobdi = () => {
             </div>
             <div className='swobdi__carousel-container'>
                 <p>Click on an image to enlarge</p>
-                <ImageCarousel images={images} className='swobdi-carousel'/>
+                <ImageCarousel images={images} showText={true} className='swobdi-carousel text-container'/>
             </div>
         </div>
     )
