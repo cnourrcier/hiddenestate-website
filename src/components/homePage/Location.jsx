@@ -14,7 +14,7 @@ const propertyLocation = {
 };
 
 const initialViewLocation = {
-    latitude: 33.8380,
+    latitude: 33.8310,
     longitude: -116.54887,
     zoom: 13
 }

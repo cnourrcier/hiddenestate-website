@@ -4,6 +4,9 @@ const GableLombard = () => {
 
     return (
         <div className='gable-lombard'>
+            <header>
+                <h3>Desert Hideaway 1939 to 1942</h3>
+            </header>
             <div className='img one'>
                 <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736701593/Hidden%20Gable%20Estate/history%20page/Carole_Lombard_Cinelandia_August_1928_vlzwah.jpg`} alt="" />
                 <p className='img-description'>1928</p>
@@ -12,7 +15,7 @@ const GableLombard = () => {
             Hidden Gable Estate, commissioned by Agnes Swobdi, is a product of the roaring 20's.  It was a time of great wealth creation, women's liberation and revealing fashions aka “flappers”.  It was also the golden age of Hollywood dominated by Clark Gable “King of Hollywood”. 
             </p>
             <p>
-            Silent films became popular in the US at the beginning of the 20th century around the same time Swobdi had her first Millinery store (1901) in Los Angeles.  She evolved (with Hollywood) into high end couture to the silent movie stars.  Most likely provided fashions for yet to be discovered silent movie actress Carol Lombard who was later known as one of greatest actresses of Classic Hollywood Cinema.  Swobdi's parties in Los Angeles were legendary and certainly included rising stars and Hollywood's elite. 
+            Silent films became popular in the US at the beginning of the 20th century around the same time Swobdi had her first Millinery store (1901) in Los Angeles.  She evolved (with Hollywood) into high end couturière to the silent movie stars.  Most likely provided fashions for yet to be discovered silent movie actress Carol Lombard who was later known as one of greatest actresses of Classic Hollywood Cinema.  Swobdi's parties in Los Angeles were legendary and certainly included rising stars and Hollywood's elite. 
             </p>
             <p>
             Clark Gable and Carol Lombard both got their starts as extras and supporting roles in silent films produced in the 20's (Clark Gable's in 1924 and Carol Lombard's in 1921).  Stars of the silent film era like Mary Pickford, Douglas Fairbanks, Sr., and Harold Lloyd faded into obscurity in the 1930s after the advent of the talkies but not Clark Gable and Carol Lombard.

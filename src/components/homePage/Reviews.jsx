@@ -59,7 +59,7 @@ const Reviews = () => {
                                 <p className="review__text">{review.text}</p>
                                 <div className="review__attribution">
                                     <span className="review__author">{review.author}</span>
-                                    <span className="review__date">{review.date}</span>
+                                    {/* <span className="review__date">{review.date}</span> */}
                                 </div>
                             </div>
                         ))}

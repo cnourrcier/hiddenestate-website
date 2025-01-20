@@ -13,7 +13,7 @@
 }
 
 .map-container {
-    flex: 2;
+    flex: 40%;
     display: flex;
     flex-direction: column;
     background-color: #f0f0f0;
@@ -23,7 +23,7 @@
 }
 
 .side-info-container {
-    flex: 1;
+    flex: 60%;
     display: flex;
     align-items: stretch;
 }
@@ -73,6 +73,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (min-width: 993px) {
+    .side-info img {
+        object-position: 20% 50%;
+    }
 }
 
 .side-info-overlay {

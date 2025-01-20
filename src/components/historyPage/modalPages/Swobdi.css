@@ -3,6 +3,9 @@
     display: flex;
 }
 
+.swobdi h3 {
+    line-height: 1.7rem;
+  }
 
 .swobdi__text-content {
     padding: 0 1rem;
