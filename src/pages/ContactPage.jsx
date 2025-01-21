@@ -45,8 +45,8 @@ const ContactPage = () => {
                     <div className="contact-info">
                         <h2>Get in Touch</h2>
                         <p><strong>Address:</strong> 123 Palm Springs Blvd, Palm Springs, CA 92262</p>
-                        <p><strong>Phone:</strong> (555) 123-4567</p>
-                        <p><strong>Email:</strong> info@pshistoricretreat.com</p>
+                       
+                        
                         <h3>Follow Us</h3>
                         <div className="social-links">
                             {/* Add social media icons/links here */}
