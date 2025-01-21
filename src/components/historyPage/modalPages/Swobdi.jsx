@@ -25,13 +25,13 @@ const Swobdi = () => {
         { 
             id: 4, 
             url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-feather-hat_stddkw.jpg`,
-            text: `Los Angeles Times 1923, Aileen Pringle, Goldwyn Star`,
+            text: `Aileen Pringle, Goldwyn Star. Los Angeles Times 1923`,
             alt: '',
         },
         { 
             id: 5, 
             url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-chinese-robe_ypeydp.jpg`, 
-            text: `Los Angeles Times 1923, Mary Astor, she may be best remembered for her performance as Brigid O'Shaughnessy in The Maltese Falcon (1941)`,
+            text: `Mary Astor, she may be best remembered for her performance as Brigid O'Shaughnessy in The Maltese Falcon (1941). Los Angeles Times 1923`,
             alt: '',
         },
         { 
