@@ -24,7 +24,7 @@ const Footer = () => {
                             </p>
                         </div>
                         <div className='bottom-footer-group-right'>
-                            <p className="permit">City of Palm Springs Rental Permit #1039</p>
+                            <p className="permit">City of Palm Springs ID 5045</p>
                             {/* <p>Locations760.com</p> */}
                         </div>
                     </div>
