@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useState } from 'react';
+import CarouselControls from '../carousel/CarouselControls';
 import './Reviews.css';
 import './ReviewsSlider.css';
-import CarouselControls from '../CarouselControls';
 
 const Reviews = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -67,11 +66,11 @@ const Reviews = () => {
                 </div>
             </div>
             <CarouselControls
-                images={reviews}
-                imageIndex={currentIndex}
-                setImageIndex={setCurrentIndex}
-                showPrevImage={handlePrevious}
-                showNextImage={handleNext}
+                items={reviews}
+                currentIndex={currentIndex}
+                setCurrentIndex={setCurrentIndex}
+                showPrev={handlePrevious}
+                showNext={handleNext}
                 showDots={true}
                 className={'reviews-carousel'}
             />

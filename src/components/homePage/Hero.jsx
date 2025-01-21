@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <div className="hero-section">
             <VideoPlayer />
-            {/* <div className="hero-overlay"></div>
+            <div className="hero-overlay"></div>
             <div className="hero-content">
                 <div className="hero-text-container">
                     <h1>Your Desert Hideaway Awaits!</h1>
@@ -29,7 +29,7 @@ const Hero = () => {
                         </a>
                     </div>
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }

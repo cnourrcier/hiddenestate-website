@@ -39,9 +39,9 @@ const VideoPlayer = () => {
           objectFit: 'cover',
         }}
         playsInline
-        // autoPlay
+        autoPlay
         muted
-        controls
+        // controls
       ></video>
     // </div>
   );

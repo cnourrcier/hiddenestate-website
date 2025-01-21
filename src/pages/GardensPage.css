@@ -113,11 +113,16 @@
 }
 
 .gardens__image-and-text-slider {
-  margin-top: auto;
+  margin-top: -4rem;
   padding: 1rem 0 12rem 0;
   width: 100%;
 }
 
+@media (max-width: 1200px) {
+  .gardens__image-and-text-slider {
+    margin-top: -2rem;
+  }
+}
 
 @media (max-width: 1050px) {
   .gardens__middle-content {
@@ -170,6 +175,7 @@
   }
 
   .gardens__image-and-text-slider {
+    margin-top: -1rem;
     padding-bottom: 16rem;
     width: 100%;
   }

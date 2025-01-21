@@ -2,11 +2,11 @@ import React from 'react';
 import './CarouselControls.css';
 
 const CarouselControls = ({
-  images,
-  imageIndex,
-  showPrevImage,
-  showNextImage,
-  setImageIndex,
+  items,
+  currentIndex,
+  showPrev,
+  showNext,
+  setCurrentIndex,
   showThumbnails = false,
   showText = false,
   showDots = false,
@@ -15,9 +15,9 @@ const CarouselControls = ({
   function getThumbnailIndexes() {
     const indexes = [];
     for (let i = -2; i <= 2; i++) {
-      let index = imageIndex + i;
-      if (index < 0) index = images.length + index;
-      if (index >= images.length) index = index - images.length;
+      let index = currentIndex + i;
+      if (index < 0) index = items.length + index;
+      if (index >= items.length) index = index - items.length;
       indexes.push(index);
     }
     return indexes;
@@ -27,8 +27,8 @@ const CarouselControls = ({
     <div className={`controls-container ${className}`}>
       <button 
         className='nav-btn left' 
-        onClick={showPrevImage}
-        aria-label='View Previous Image'
+        onClick={showPrev}
+        aria-label='View Previous Item'
       >
         <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none">
           <path d="M15 19l-7-7 7-7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -39,17 +39,17 @@ const CarouselControls = ({
         <div className='thumbnails-container'>
           {getThumbnailIndexes().map((index) => (
             <button  
-              key={images[index].id}
-              className={`thumbnail-btn ${imageIndex === index ? 'active' : ''}`}
-              onClick={() => setImageIndex(index)}
-              aria-label={`View Image ${images[index].id}`}
+              key={items[index].id}
+              className={`thumbnail-btn ${currentIndex === index ? 'active' : ''}`}
+              onClick={() => setCurrentIndex(index)}
+              aria-label={`View Item ${items[index].id}`}
             >
               <img 
-                src={images[index].url} 
-                alt={images[index].alt}
-                aria-hidden={index !== imageIndex}
+                src={items[index].url} 
+                alt={items[index].alt}
+                aria-hidden={index !== currentIndex}
               />
-              <div className={imageIndex !== index ? 'thumbnail-btn-overlay' : ''} />
+              <div className={currentIndex !== index ? 'thumbnail-btn-overlay' : ''} />
             </button>
           ))}
         </div>
@@ -57,10 +57,10 @@ const CarouselControls = ({
 
       {showText && (
         <div className='text-container'>
-            {images.map(({id, text}, index) => (
+            {items.map(({id, text}, index) => (
                 <p 
                 key={id}
-                className={`image-text ${imageIndex === index ? '' : 'hidden'}`}
+                className={`image-text ${currentIndex === index ? '' : 'hidden'}`}
                 >
                 {text}
                 </p>
@@ -70,11 +70,11 @@ const CarouselControls = ({
 
       {showDots && (
         <div className="reviews__dots">
-            {images.map((_, index) => (
+            {items.map((_, index) => (
                 <span 
                     key={index} 
-                    className={`dot ${index === imageIndex ? 'active' : ''}`}
-                    onClick={() => setImageIndex(index)}
+                    className={`dot ${index === currentIndex ? 'active' : ''}`}
+                    onClick={() => setCurrentIndex(index)}
                 />
             ))}
     </div>
@@ -82,8 +82,8 @@ const CarouselControls = ({
 
       <button 
         className='nav-btn right'
-        onClick={showNextImage}
-        aria-label='View Next Image'
+        onClick={showNext}
+        aria-label='View Next Item'
       >
         <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none">
           <path d="M9 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

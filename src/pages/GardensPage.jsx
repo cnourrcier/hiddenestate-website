@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ImageCarousel from '../components/ImageCarousel';
+import Carousel from '../components/carousel/Carousel';
 import Modal from '../components/Modal';
 import './GardensPage.css';
 
@@ -78,10 +78,10 @@ const GardensPage = () => {
             </section>
             
             <section className='gardens__image-slider'>
-                <ImageCarousel 
-                    images={ currentGardenImages } 
+                <Carousel 
+                    items={ currentGardenImages } 
                     showThumbnails={ true }
-                    className='garden-carousel'
+                    className='gardens-modern-carousel'
                 />
             </section>
 
@@ -120,9 +120,9 @@ const GardensPage = () => {
             </section>
             
             <section className='gardens__image-and-text-slider'>
-                <ImageCarousel 
-                    images={ historicalGardenImages } 
-                    className='text-carousel'
+                <Carousel 
+                    items={ historicalGardenImages } 
+                    className='gardens-historic-carousel'
                     showText={ true }
                 />
             </section>

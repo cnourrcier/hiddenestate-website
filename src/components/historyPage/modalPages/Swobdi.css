@@ -24,6 +24,7 @@
 .swobdi__carousel-container {
     display: flex;
     flex-direction: column;
+    padding-bottom: 4rem;
 }
 
 .swobdi__carousel-container p {

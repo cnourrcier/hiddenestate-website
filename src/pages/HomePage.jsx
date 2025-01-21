@@ -1,7 +1,7 @@
 import HeroForTesting from "../components/homePage/HeroForTesting";
 import Hero from "../components/homePage/Hero";
 import About from "../components/homePage/About";
-import ImageCarousel from "../components/ImageCarousel";
+import Carousel from "../components/carousel/Carousel";
 import Features from "../components/homePage/Features";
 import Reviews from "../components/homePage/Reviews";
 import Location from "../components/homePage/Location";
@@ -19,12 +19,12 @@ const images = [
 function HomePage() {
   return (
     <>
-      {/* <HeroForTesting /> */}
-      <Hero />
+      <HeroForTesting />
+      {/* <Hero /> */}
       <About />
       <section className="image-carousel-section">
-      <ImageCarousel 
-          images={ images } 
+      <Carousel 
+          items={ images } 
           showThumbnails={ true }
           className='homepage-carousel'
       />
