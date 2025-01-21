@@ -49,7 +49,7 @@ const Swobdi = () => {
         { 
             id: 8, 
             url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-illustration_du4jwq.jpg`,
-            text: `Los Angeles Times 1923, extracted from one of Mrs Swobdi's advertisements`,
+            text: `Extracted from one of Mrs Swobdi's advertisements. Los Angeles Times 1923`,
             alt: '',
         },
         { 
