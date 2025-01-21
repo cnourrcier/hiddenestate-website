@@ -7,13 +7,13 @@ const Swobdi = () => {
         { 
             id: 1, 
             url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-fashions_j2in6j.jpg`,
-            text: `  "Julanne Johnson, leading woman for Douglas Fairbanks, has beauty which may well be likened to the most beautiful in art." Los Angeles Times 1924`,
+            text: `"Julanne Johnson, leading woman for Douglas Fairbanks, has beauty which may well be likened to the most beautiful in art." Los Angeles Times 1924`,
             alt: '',
         },
         { 
             id: 2, 
             url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736874700/Hidden%20Gable%20Estate/history%20page/swobdi-with-glove_hwp2tj.jpg`,
-            text: `Los Angeles Times 1923 Ruth Clifford, she was also, for a time, the voice of Walt Disney's Minnie Mouse and Daisy Duck.`,
+            text: `Ruth Clifford, she was also, for a time, the voice of Walt Disney's Minnie Mouse and Daisy Duck. Los Angeles Times 1923`,
             alt: '',
         },
         { 
