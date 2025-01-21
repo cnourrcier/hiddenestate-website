@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import Hls from 'hls.js';
 
 const VideoPlayer = () => {
-  const videoId = import.meta.env.VITE_CLOUDFLARE_STREAM_VIDEO_ID;
+  // const videoId = import.meta.env.VITE_CLOUDFLARE_STREAM_VIDEO_ID;
+  const videoId = "2b26733b3315beae5c1fccb9db301be0";
   const customerSubdomain = import.meta.env.VITE_CLOUDFLARE_STREAM_CUSTOMER_SUBDOMAIN;
   const videoSrc = `https://${customerSubdomain}/${videoId}/manifest/video.m3u8`;
 
