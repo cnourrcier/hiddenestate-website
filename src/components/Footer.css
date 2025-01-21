@@ -16,6 +16,7 @@
 }
 
 .top-footer-group {
+    color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
