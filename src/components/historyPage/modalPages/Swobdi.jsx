@@ -7,7 +7,7 @@ const Swobdi = () => {
         { 
             id: 1, 
             url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-fashions_j2in6j.jpg`,
-            text: ` Los Angeles Times 1924"Julanne Johnson, leading woman for Douglas Fairbanks, has beauty which may well be likened to the most beautiful in art.`,
+            text: ` Los Angeles Times 1924 "Julanne Johnson, leading woman for Douglas Fairbanks, has beauty which may well be likened to the most beautiful in art."`,
             alt: '',
         },
         { 
