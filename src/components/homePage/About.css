@@ -47,9 +47,6 @@
 }
 
 .about__content-text {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
     grid-column-start: 2;
     grid-column-end: 4;
 }
@@ -57,6 +54,10 @@
 .about__content p {
     margin-bottom: 0.5rem;
     line-height: 1.7;
+}
+
+.about__content-text p {
+    padding-bottom: 1rem;
 }
 
 .about__content-highlight {
