@@ -19,8 +19,8 @@ const images = [
 function HomePage() {
   return (
     <>
-      <HeroForTesting />
-      {/* <Hero /> */}
+      {/* <HeroForTesting /> */}
+      <Hero />
       <About />
       <section className="image-carousel-section">
       <Carousel 
