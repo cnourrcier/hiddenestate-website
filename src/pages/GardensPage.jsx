@@ -9,12 +9,14 @@ const GardensPage = () => {
     const imageUrl = import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV;
 
     const currentGardenImages = [
-            { id: 1, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1736293118/Hidden%20Gable%20Estate/gardens%20page/_I1A0136_3_small_vexlvc.jpg`, alt: 'Image 1' },
-            { id: 2, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1736293119/Hidden%20Gable%20Estate/gardens%20page/_I1A0210_2_small_qxnziq.jpg`, alt: 'Image 2' },
-            { id: 3, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1736293119/Hidden%20Gable%20Estate/gardens%20page/_I1A0204_2_small_irjpo0.jpg`, alt: 'Image 3' },
-            { id: 4, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1736293119/Hidden%20Gable%20Estate/gardens%20page/_I1A0059_1_small_hzalpi.jpg`, alt: 'Image 4' },
-            { id: 5, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1736293117/Hidden%20Gable%20Estate/gardens%20page/_I1A0056_2_small_fvc4yi.jpg`, alt: 'Image 5' },
-            { id: 6, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1736293118/Hidden%20Gable%20Estate/gardens%20page/_I1A0053_1_small_smq5bv.jpg`, alt: 'Image 6' },
+            { id: 1, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504909/Hidden%20Gable%20Estate/gardens%20page/_I1A0136_3_small_tck5l5.jpg`, alt: 'Image 1' },
+            { id: 2, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504909/Hidden%20Gable%20Estate/gardens%20page/_I1A0332_small_eir0og.jpg`, alt: 'Image 2' },
+            { id: 3, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504910/Hidden%20Gable%20Estate/gardens%20page/_I1A0204_2_small_mprvjv.jpg`, alt: 'Image 3' },
+            { id: 4, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504910/Hidden%20Gable%20Estate/gardens%20page/_I1A0059_1_small_lvbnbl.jpg`, alt: 'Image 4' },
+            { id: 5, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504910/Hidden%20Gable%20Estate/gardens%20page/_I1A0056_2_small_utk5r8.jpg`, alt: 'Image 5' },
+            { id: 6, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504909/Hidden%20Gable%20Estate/gardens%20page/_I1A0053_1_small_qcm9tm.jpg`, alt: 'Image 6' },
+            { id: 7, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737505678/Hidden%20Gable%20Estate/gardens%20page/_I1A0336_vapsdt.jpg`, alt: 'Image 7' },
+            { id: 8, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737505677/Hidden%20Gable%20Estate/gardens%20page/_I1A0360_azhsjo.jpg`, alt: 'Image 8' },
         ];
 
     const historicalGardenImages = [
