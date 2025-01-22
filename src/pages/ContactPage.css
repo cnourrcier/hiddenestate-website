@@ -71,17 +71,3 @@
     color: var(--ps-terracotta);
     background-color: rgb(224, 122, 95, 0.1);
 }
-
-@media (max-width: 768px) {
-    .contact-page h1 {
-        font-size: 28px;
-    }
-
-    .intro {
-        font-size: 16px;
-    }
-
-    .contact-content {
-        flex-direction: column;
-    }
-}
