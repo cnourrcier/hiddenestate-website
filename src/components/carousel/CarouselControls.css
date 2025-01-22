@@ -112,6 +112,10 @@
     display: none;
 }
 
+.small-text {
+    font-size: 0.8rem;;
+}
+
 /* Accessibility styles */
 .nav-btn:focus-visible,
 .thumbnail-btn:focus-visible {

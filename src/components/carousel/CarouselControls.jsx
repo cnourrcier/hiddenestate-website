@@ -57,13 +57,18 @@ const CarouselControls = ({
 
       {showText && (
         <div className='text-container'>
-            {items.map(({id, text}, index) => (
-                <p 
-                key={id}
-                className={`image-text ${currentIndex === index ? '' : 'hidden'}`}
+            {items.map((item, index) => (
+                <div 
+                  key={item.id}
+                  className={`image-text ${currentIndex === index ? '' : 'hidden'}`}
                 >
-                {text}
-                </p>
+                  <p>
+                  {item.text} {' '}
+                  {item.text2 && (
+                    <span className='small-text'>{item.text2}</span>
+                  )}
+                  </p>
+                </div>
             ))}
         </div>
       )}

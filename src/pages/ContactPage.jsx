@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './ContactPage.css';
 
 const ContactPage = () => {
@@ -22,7 +22,7 @@ const ContactPage = () => {
         <div className="contact-page">
             <div className="container">
                 <h1>Contact Us</h1>
-                <p className="intro">Have a question or want to book your stay? We'd love to hear from you!</p>
+                <p className="intro">email@email.com</p>
 
                 <div className="contact-content">
                     <div className="contact-form">
@@ -41,16 +41,6 @@ const ContactPage = () => {
                             </div>
                             <button type="submit" className="btn btn-primary">Send Message</button>
                         </form>
-                    </div>
-                    <div className="contact-info">
-                        <h2>Get in Touch</h2>
-                        <p><strong>Address:</strong> 123 Palm Springs Blvd, Palm Springs, CA 92262</p>
-                       
-                        
-                        <h3>Follow Us</h3>
-                        <div className="social-links">
-                            {/* Add social media icons/links here */}
-                        </div>
                     </div>
                 </div>
             </div>
