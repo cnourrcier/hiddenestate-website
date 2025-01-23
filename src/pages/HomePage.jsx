@@ -18,7 +18,7 @@ const images = [
 
 function HomePage() {
   return (
-    <>
+    <section className="homepage">
       {/* <HeroForTesting /> */}
       <Hero />
       <About />
@@ -34,7 +34,7 @@ function HomePage() {
       </section>
       <Reviews />
       <Location />
-    </>
+    </section>
   );
 }
 

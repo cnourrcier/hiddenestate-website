@@ -1,6 +1,6 @@
-import React from 'react';
-import './Hero.css';
 import VideoPlayer from '../VideoPlayer';
+import { Link } from 'react-router-dom';
+import './Hero.css';
 
 const Hero = () => {
     
@@ -15,18 +15,18 @@ const Hero = () => {
                 </div>
                 <div className="hero-event-links">
                     <div className="event-links-grid">
-                        <a href="#corporate" className="event-link">
+                        <Link to="/contact" className="event-link">
                             <span>Corporate Events</span>
-                        </a>
-                        <a href="#weddings" className="event-link">
+                        </Link>
+                        <Link to="/contact" className="event-link">
                             <span>Weddings</span>
-                        </a>
-                        <a href="#private" className="event-link">
+                        </Link>
+                        <Link to="/contact" className="event-link">
                             <span>Private Events</span>
-                        </a>
-                        <a href="#rentals" className="event-link">
+                        </Link>
+                        <Link to="/contact" className="event-link">
                             <span>Vacation Rentals</span>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

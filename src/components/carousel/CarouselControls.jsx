@@ -1,4 +1,3 @@
-import React from 'react';
 import './CarouselControls.css';
 
 const CarouselControls = ({

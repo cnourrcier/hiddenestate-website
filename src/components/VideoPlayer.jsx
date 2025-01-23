@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Hls from 'hls.js';
 
 const VideoPlayer = () => {
-  // const videoId = import.meta.env.VITE_CLOUDFLARE_STREAM_VIDEO_ID;
   const videoId = import.meta.env.VITE_CLOUDFLARE_STREAM_VIDEO_ID;
   const customerSubdomain = import.meta.env.VITE_CLOUDFLARE_STREAM_CUSTOMER_SUBDOMAIN;
   const videoSrc = `https://${customerSubdomain}/${videoId}/manifest/video.m3u8`;
@@ -21,14 +20,6 @@ const VideoPlayer = () => {
   }, [videoSrc]);
 
   return (
-    // <div
-    //   style={{
-    //     position: 'relative',
-    //     width: '100vw',
-    //     height: '100vh',
-    //     overflow: 'hidden',
-    //   }}
-    // >
       <video
         id="video-player"
         style={{
@@ -44,7 +35,6 @@ const VideoPlayer = () => {
         muted
         // controls
       ></video>
-    // </div>
   );
 };
 

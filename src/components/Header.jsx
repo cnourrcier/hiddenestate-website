@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {Link, useLocation} from 'react-router-dom';
 import { X } from 'lucide-react';
 import './Header.css';
@@ -67,10 +67,10 @@ const Header = () => {
                     </div>
                     <div className={`menu-dropdown ${rentalMenuDropdown ? 'rental show' : ''}`}>
                         <ul className='dropdown-list'>
-                            <li><Link to="#" className='tab dropdown-tab'>Corporate Events</Link></li>
-                            <li><Link to="#" className='tab dropdown-tab'>Private Events</Link></li>
-                            <li><Link to="#" className='tab dropdown-tab'>Weddings</Link></li>
-                            <li><Link to="#" className='tab dropdown-tab'>Vacation Rentals</Link></li>
+                            <li><Link to="/contact" className='tab dropdown-tab'>Corporate Events</Link></li>
+                            <li><Link to="/contact" className='tab dropdown-tab'>Private Events</Link></li>
+                            <li><Link to="/contact" className='tab dropdown-tab'>Weddings</Link></li>
+                            <li><Link to="/contact" className='tab dropdown-tab'>Vacation Rentals</Link></li>
                         </ul>
                     </div>
                 </div>
