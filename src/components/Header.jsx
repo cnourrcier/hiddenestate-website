@@ -76,7 +76,7 @@ const Header = () => {
                 </div>
 
                 <Link to="/gallery" className='tab'>Gallery</Link>
-                <Link to="#" className='tab'>Media</Link>
+                <Link to="/media" className='tab'>Media</Link>
                 <Link to="/mission" className='tab'>Our Mission</Link>
                 <Link to="/contact" className='tab'>Contact Us</Link>
             
@@ -110,7 +110,7 @@ const Header = () => {
                             <li><Link onClick={handleClick} to="/gardens" className='tab dropdown-tab'>Gardens</Link></li>
                             <li><Link onClick={handleClick} to="/" className='tab dropdown-tab'>Rental</Link></li>
                             <li><Link onClick={handleClick} to="/gallery" className='tab dropdown-tab'>Gallery</Link></li>
-                            <li><Link onClick={handleClick} to="/" className='tab dropdown-tab'>Media</Link></li>
+                            <li><Link onClick={handleClick} to="/media" className='tab dropdown-tab'>Media</Link></li>
                             <li><Link onClick={handleClick} to="/mission" className='tab dropdown-tab'>Our Mission</Link></li>
                             <li><Link onClick={handleClick} to="/contact" className='tab dropdown-tab'>Contact Us</Link></li>
                         </ul>
