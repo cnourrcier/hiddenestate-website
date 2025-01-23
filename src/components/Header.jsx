@@ -108,7 +108,7 @@ const Header = () => {
                             <li><Link onClick={handleClick} to="/" className='tab dropdown-tab'>Home</Link></li>
                             <li><Link onClick={handleClick} to="/history" className='tab dropdown-tab'>History</Link></li>
                             <li><Link onClick={handleClick} to="/gardens" className='tab dropdown-tab'>Gardens</Link></li>
-                            <li><Link onClick={handleClick} to="/" className='tab dropdown-tab'>Rental</Link></li>
+                            <li><Link onClick={handleClick} to="/contact" className='tab dropdown-tab'>Rental</Link></li>
                             <li><Link onClick={handleClick} to="/gallery" className='tab dropdown-tab'>Gallery</Link></li>
                             <li><Link onClick={handleClick} to="/media" className='tab dropdown-tab'>Media</Link></li>
                             <li><Link onClick={handleClick} to="/mission" className='tab dropdown-tab'>Our Mission</Link></li>
