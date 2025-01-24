@@ -1,8 +1,6 @@
 .features {
     max-width: 1400px;
     margin: auto;
-    padding: 0.5rem;
-    background-color: var(--ps-sand);
     color: var(--ps-blue);
 }
 
@@ -39,11 +37,11 @@
 }
 
 .features__list li {
-    background-color: var(--ps-white);
+    background-color: var(--ps-sand);
     margin-bottom: 0rem;
     padding-left: 0.5rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     border-left: 3px solid var(--ps-terracotta);
     border-radius: 3px;
     box-shadow: 0 2px 2px rgba(0,0,0,0.1);

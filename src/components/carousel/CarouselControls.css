@@ -11,6 +11,7 @@
 
 .controls-container.reviews-carousel {
     justify-content: center;
+    margin-top: 0.5rem;
 }
 
 .nav-btn {
@@ -158,6 +159,7 @@
     .controls-container {
         /* justify-content: space-between; */
         gap: 0;
+        margin-top: 0.5rem;
     }
 
     .nav-btn.left {

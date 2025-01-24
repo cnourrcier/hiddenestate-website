@@ -6,12 +6,11 @@
 .reviews__slider-container {
     margin: auto;
     width: 70%;
-    height: 300px;
     overflow: hidden;
 }
 
 .slider-wrapper {
-    padding-bottom: 1rem;
+    /* padding-bottom: 1rem; */
 }
 
 .slider-review-card {

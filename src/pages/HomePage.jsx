@@ -22,13 +22,11 @@ function HomePage() {
       {/* <HeroForTesting /> */}
       <Hero />
       <About />
-      <section className="image-carousel-section">
       <Carousel 
-          items={ images } 
-          showThumbnails={ true }
-          className='homepage-carousel'
+        items={ images } 
+        showThumbnails={ true }
+        className='homepage-carousel'
       />
-      </section>
       <section className="features-section">
         <Features />
       </section>
