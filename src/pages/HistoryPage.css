@@ -73,3 +73,9 @@
     padding-bottom: 1rem;
   }
 }
+
+@media (max-width: 500px) {
+  .history {
+    padding: 130px 0 60px 0;
+  }
+}

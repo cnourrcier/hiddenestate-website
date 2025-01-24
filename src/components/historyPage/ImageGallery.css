@@ -163,6 +163,19 @@
       transform: rotate(10deg);
     }
 
+    /* .image-gallery-wrapper.fun-style .img-wrapper:nth-child(1) {
+      transform: rotate(0deg);
+    }
+    .image-gallery-wrapper.fun-style .img-wrapper:nth-child(2) {
+      transform: rotate(0deg);
+    }
+    .image-gallery-wrapper.fun-style .img-wrapper:nth-child(3) {
+      transform: rotate(0deg) translateX(-0.5rem);
+    }
+    .image-gallery-wrapper.fun-style .img-wrapper:nth-child(4) {
+      transform: rotate(0deg) translateX(-0.5rem);
+    } */
+
     .image-gallery-wrapper.fun-style .img-wrapper:hover {
       transform: rotate(0deg);
       margin: 0;
