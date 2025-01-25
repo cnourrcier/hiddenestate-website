@@ -46,3 +46,12 @@
     padding: 0.3rem;
   }
 }
+
+@media (min-width: 430px) {
+  .dw-clstr__sgmnt--hlf {
+    flex-basis: 50%;
+  }
+  .dw-clstr__sgmnt--qrt {
+    flex-basis: 25%;
+  }
+}

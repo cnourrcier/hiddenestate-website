@@ -20,7 +20,7 @@ const MasterAchitect = () => (
             <div className="swasey__img dw-clstr__sgmnt ">
               <img className="dw-pnl__cntnt" src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734719349/Hidden%20Gable%20Estate/home%20page/5734_dy1q44.jpg`} alt="Master Architect" />
             </div>
-            <div className="swasey__img dw-clstr__sgmnt ">
+            <div className="swasey__img dw-clstr__sgmnt .dw-clstr__sgmnt--qrt">
               <img className="dw-pnl__cntnt" src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839306/Hidden%20Gable%20Estate/history%20page/The_Los_Angeles_Times_1925_10_04_108_kib7nn.jpg`} alt="barrymores build in beverly hills" />
             </div>
           </div>
@@ -32,10 +32,10 @@ const MasterAchitect = () => (
           </div>
 
           <div className='dw-clstr__sgmnt'>
-            <div className="swasey__img dw-clstr__sgmnt ">
+            <div className="swasey__img dw-clstr__sgmnt .dw-clstr__sgmnt--hlf">
               <img className="dw-pnl__cntnt" src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839305/Hidden%20Gable%20Estate/history%20page/Los_Angeles_Times_1931_April_6_pg_74_ib2nin.png`} alt="Los Angeles Times 1931 April 6 pg 74 " />
             </div>
-            <div className="swasey__img dw-clstr__sgmnt ">
+            <div className="swasey__img dw-clstr__sgmnt .dw-clstr__sgmnt--hlf">
               <img className="dw-pnl__cntnt" src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839307/Hidden%20Gable%20Estate/history%20page/The_Los_Angeles_Times_1925_10_12_6_vpok9s.jpg`} alt="Los Angeles Times 1925 October" />
             </div>
           </div>
