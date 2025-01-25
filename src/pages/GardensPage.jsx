@@ -118,7 +118,7 @@ const GardensPage = () => {
                         item={selectedItem}
                         className={'simple'}
                     />
-      )}
+                )}
             </section>
             
             <section className='gardens__image-and-text-slider'>
