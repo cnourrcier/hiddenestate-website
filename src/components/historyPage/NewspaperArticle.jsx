@@ -37,13 +37,13 @@ const NewspaperArticle = () => {
                 Age. A Spanish Colonial Revival, one of the oldest homes in Old
                 Las Palmas, was created by Master Architect McNeal Swasey for
                 Los Angeles fashion designer and importer Mrs. Agnes
-                Swobdi-Meade during the "Roaring Twenties." Swobdi, a pioneer of
+                Swobdi-Meade during the "Roaring Twenties". Swobdi, a pioneer of
                 the Los Angeles Fashion District, was renowned for her work as
                 an importer, designer and couturière for silent film stars.
                 McNeal Swasey, an esteemed architect to southern California's
                 elite, was known for using advanced technologies. The house is
-                perfectly oriented to avoid sun exposure on bedroom windows,
-                features a fireproof and earthquake-resistant structure.
+                perfectly oriented to avoid sun exposure on bedroom walls,
+                and features a fireproof and earthquake-resistant structure.
               </p>
             </div>
           </div>
