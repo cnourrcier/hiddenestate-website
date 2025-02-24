@@ -4,7 +4,6 @@ import './Footer.css';
 const Footer = () => {
 
     return (
-        <>
             <footer className='resort-footer'>
                 <div className="footer-content">
                     <div className='top-footer-group'>
@@ -30,7 +29,6 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-        </>
     )
 }
 

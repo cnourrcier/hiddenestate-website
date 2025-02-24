@@ -79,7 +79,7 @@ const Swobdi = () => {
 
     return (
         <div className='swobdi'>
-            <div className='swobdi__text-content'>
+            <section className='swobdi__text-content'>
                 <header>
                     <h3>“Roaring Twenties, Liberated Women, and Flappers"</h3>
                     <h4>Winter Residence until 1931</h4>
@@ -104,15 +104,15 @@ const Swobdi = () => {
                         Swobdi's parties were legendary, and certainly included rising stars and Hollywood's elite.
                     </li>
                 </ul>
-            </div>
-            <div className='swobdi__carousel-container'>
+            </section>
+            <section className='swobdi__carousel-container'>
                 <p>Click on an image to enlarge</p>
                 <Carousel 
                     items={images} 
                     showText={true} 
                     className='swobdi-carousel'
                 />
-            </div>
+            </section>
         </div>
     )
 }

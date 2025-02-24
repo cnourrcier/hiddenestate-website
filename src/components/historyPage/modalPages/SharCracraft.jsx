@@ -9,7 +9,7 @@ const SharCracraftNew = () => {
             <div className='cracraft__article-photo-self'>
                 <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839323/Hidden%20Gable%20Estate/history%20page/The_Desert_Sun_1976_01_26_11.mjpg_nvytk2.jpg`} alt="The Desert Sun January 1976" />
             </div>
-            <div className='cracraft__main-text'>
+            <section className='cracraft__main-text'>
                 <div className='cracraft__content-wrapper'>
                     <h3>Editor of Palm Springs Life Magazine</h3>
                     <h4>Resident: 1969 - 1978</h4>
@@ -24,7 +24,7 @@ const SharCracraftNew = () => {
                         <cite>- Cracraft</cite>
                     </div>
                 </div>
-            </div>
+            </section>
             <div className='cracraft__article-text'>
                 <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839323/Hidden%20Gable%20Estate/history%20page/Palm_Desert_Post_1976_01_29_23_brhguf.jpg`} alt="Palm Desert Post January 1976" />
             </div>

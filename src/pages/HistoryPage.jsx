@@ -2,6 +2,7 @@ import ImageGallery from "../components/historyPage/ImageGallery";
 import ThemeClippings from "../components/historyPage/ThemeClippings";
 import NewspaperArticle from "../components/historyPage/NewspaperArticle";
 import Douglas from '../components/historyPage/Douglas';
+import { Helmet } from "react-helmet-async";
 
 import "./HistoryPage.css";
 
@@ -108,7 +109,12 @@ const HistoryPage = () => {
   ];
 
   return (
-    <div className="history">
+    <main className="history">
+
+      <Helmet>
+        <title>Celebrity Desert Hideaway</title>
+      </Helmet>
+      
       <h1 className="history__title">Hidden Gable Estate</h1>
       <h2 className="history__subtitle">Est. 1925</h2>
       <p className="history-discover-hint">(Click any image to learn more!)</p>
@@ -132,7 +138,7 @@ const HistoryPage = () => {
       <section className="bottom-history__container">
         <ImageGallery className="grid-style" items={bottomHistoryItems} />
       </section>
-    </div>
+    </main>
   );
 };
 

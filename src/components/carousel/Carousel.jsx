@@ -24,7 +24,7 @@ const Carousel = ({
     }
 
     return (
-        <section 
+        <div 
             className={`carousel-container ${className}`}
             aria-label={`${className} Image Carousel`}
         >
@@ -64,7 +64,7 @@ const Carousel = ({
                 className={className}
             />
             <div id='after-image-carousel-controls' />
-        </section>
+        </div>
     )
 }
 

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Carousel from '../components/carousel/Carousel';
 import Modal from '../components/Modal';
+import { Helmet } from "react-helmet-async";
 import './GardensPage.css';
 
 
@@ -59,7 +60,12 @@ const GardensPage = () => {
 
 
     return (
-        <div className='gardens'>
+        <main className='gardens'>
+
+            <Helmet>
+                <title>Solitude and Tranquility</title>
+            </Helmet>
+            
             <section className='gardens__top-section'>
                 <div className='gardens__top-image'>
                     <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736474130/Hidden%20Gable%20Estate/gardens%20page/house_collage_with_cactus_landscape_-_m_small_mlylay.jpg`} alt="" />
@@ -128,7 +134,7 @@ const GardensPage = () => {
                     showText={ true }
                 />
             </section>
-        </div>
+        </main>
     )
 }
 

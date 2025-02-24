@@ -3,7 +3,7 @@ import './MasterArchitect.css';
 const MasterAchitect = () => (
     <div className='swasey'>
 
-        <div className="swasey__text-content ">
+        <section className="swasey__text-content ">
             <ul className='swasey-list'>
               <li className='list-item'>Swasey's early works included the Ambassador Hotel home of the famous Coconut Grove and Huntington Library, working under Principal Architect Muron Hunt.</li>
               <li className='list-item'>He was the chief architect of Lake Arrowhead village and surrounding 50,000 acres.</li>
@@ -12,7 +12,7 @@ const MasterAchitect = () => (
               <li className='list-item'>St. Regis Hotel 1254 w 6th, 1925 and Hotel Constance, Pasadena 1926</li>
               <li className='list-item'>Twentieth Century Fox Films Sound Studio, West Los Angeles</li>
             </ul>      
-        </div>
+        </section>
 
         <div className='row'>
           <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734719349/Hidden%20Gable%20Estate/home%20page/5734_dy1q44.jpg`} alt="Master Architect" />

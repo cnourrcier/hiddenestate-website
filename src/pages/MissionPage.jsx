@@ -1,17 +1,26 @@
+import { Helmet } from "react-helmet-async";
 import './MissionPage.css';
 
 const MissionPage = () => {
 
     return (
-        <section className="mission">
+        <main className="mission">
+            
+            <Helmet>
+                <title>Historic Preservation</title>
+            </Helmet>
+
             <h1 className="mission__title">
                 Our Mission 
             </h1>
+
             <p>
                 Our Mission is the restoration and preservation of historical properties created by master architects for extraordinary individuals.  Through adaptive reuse, we return these properties back to their formal glory while creating a space that is highly desirable and economically viable.  
             </p>
+
             <h2><i>Hidden Gable Estate</i></h2>
-            <div className="mission__content">
+
+            <section className="mission__content">
                     <img 
                         src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734741322/Hidden%20Gable%20Estate/mission%20page/5649_srh49e.jpg`}
                         alt="Restoration property" 
@@ -20,7 +29,9 @@ const MissionPage = () => {
                     <p>
                         Named for its gable roof hidden behind the pink walls in Old Las Palmas.  Restoration is an on-going process with planned projects during the summer months.  We are lucky to have photos from the time the home was completed for guidance.  Future plans include restoring the courtyard on the South side, uncovering the original terrazzo floors, and restoring the original tile work in the bathrooms.  Yes … under the paint and existing tile is the original tile which was discovered during the 2022 remodel.  
                     </p>
-            </div>
+            </section>
+
+            <section>
                 <h2>Nourrcier Family </h2>
                 <p>Chuck & Karen Nourrcier - Specializing in restoration and adaptive reuse of Queen Anne, Craftsman and Spanish Architectures.</p>
                 <p>Long Beach Heritage Preservation Awards: 2020, 2024</p>
@@ -30,7 +41,9 @@ const MissionPage = () => {
                     <li>National Register of Historical Places</li>
                     <li>California Register of Historical Resources</li>
                 </ul>
-            <div className="mission__img-grid">
+            </section>
+            
+            <section className="mission__img-grid">
                 <div className='mission__grid-item'>
                     <img 
                         src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734741337/Hidden%20Gable%20Estate/mission%20page/344_W_8th_kivr1w.jpg`} 
@@ -55,8 +68,8 @@ const MissionPage = () => {
                         alt="Restoration property" 
                     />
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
     )
 }
 

@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import axios from 'axios';
+import { Helmet } from 'react-helmet-async';
 import './ContactPage.css';
 
 const ContactPage = () => {
@@ -28,7 +29,12 @@ const ContactPage = () => {
       };
 
     return (
-        <div className="contact-page">
+        <main className="contact-page">
+
+            <Helmet>
+                <title>Palm Springs Weddings/Events</title>
+            </Helmet>
+
             <div className="container">
                 <h1>Contact Us</h1>
 
@@ -54,7 +60,7 @@ const ContactPage = () => {
                 </div>
                 
             </div>
-        </div>
+        </main>
     );
 };
 
