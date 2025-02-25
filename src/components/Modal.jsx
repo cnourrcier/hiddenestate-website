@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { X } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import './Modal.css';
 
 const Modal = ({ isOpen, onClose, item, className='' }) => {
@@ -13,6 +14,11 @@ const Modal = ({ isOpen, onClose, item, className='' }) => {
 
   return (
     <div className={`modal-overlay ${className}`}>
+
+      <Helmet>
+        <title>{item.HTMLTitle}</title>
+      </Helmet>
+
       <div className="modal-container">
         <div className="modal-header">
           <h3 className="modal-title">{item.modalTitle}</h3>
@@ -25,11 +31,8 @@ const Modal = ({ isOpen, onClose, item, className='' }) => {
         </div>
 
         {item.Component ? (
-
             <item.Component />
-
           ) : (
-
             <div className="modal-content">
                     <img
                         src={item.image}
@@ -38,7 +41,6 @@ const Modal = ({ isOpen, onClose, item, className='' }) => {
                     />
             </div>
         )}
-
       </div>
     </div>
   );

@@ -1,28 +1,13 @@
-import React, { useState } from 'react';
-import Modal from '../Modal';
 import './ImageGallery.css';
 
-const ImageGallery = ({ items, className }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(null);
-
-  const openModal = (item) => {
-    setSelectedItem(item);
-    setIsModalOpen(true);
-  }
-
-  const closeModal = () => {
-    setSelectedItem(null);
-    setIsModalOpen(false);
-  }
-
+const ImageGallery = ({ items, className, onItemClick }) => {
   return (
     <div className={`image-gallery-wrapper ${className}`}>
       {items.map((item, index) => ( 
         <div 
           key={index} 
           className='img-wrapper' 
-          onClick={() => openModal(item)}
+          onClick={() => onItemClick(item)}
         >
           <img
             src={item.image}
@@ -32,18 +17,10 @@ const ImageGallery = ({ items, className }) => {
           <div className={className === 'fun-style' ? 'fun-style-overlay' : 'text-content'}>
             <p>{item.galleryTitle[0]}</p>
             {item.galleryTitle?.[1] && <p>{item.galleryTitle[1]}</p>}
-            {/* {item.galleryTitle?.[2] && <p>{item.galleryTitle[2]}</p>} */}
             <p>{item?.year}</p>
           </div>
         </div>
       ))}
-      {isModalOpen && (
-        <Modal 
-          isOpen={isModalOpen}
-          onClose={closeModal} 
-          item={selectedItem}
-        />
-      )}
     </div>
   );
 };

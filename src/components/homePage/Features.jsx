@@ -3,6 +3,7 @@ import './Features.css';
 const Features = () => {
 
     return (
+        <section className='features-section'>
             <div className="features">
                 <h2 className="features__heading">Features</h2>
                 <ul className="features__list">
@@ -15,6 +16,7 @@ const Features = () => {
                     <li><span className='feature'>Gated, Private and Secluded:</span> Many event parking options</li>
                 </ul>
             </div>
+        </section>
     )
 }
 

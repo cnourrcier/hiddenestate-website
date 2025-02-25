@@ -17,7 +17,9 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/history" element={<HistoryPage />} />
+          <Route path="/history" element={<HistoryPage />}>
+            <Route path=":slug" element={<HistoryPage />}/>
+          </Route>
           <Route path="/gardens" element={<GardensPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/media" element={<MediaPage />} />

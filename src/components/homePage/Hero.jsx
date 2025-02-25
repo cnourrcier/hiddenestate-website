@@ -5,7 +5,7 @@ import './Hero.css';
 const Hero = () => {
     
     return (
-        <div className="hero-section">
+        <section className="hero-section">
             <VideoPlayer />
             <div className="hero-overlay"></div>
             <div className="hero-content">
@@ -30,7 +30,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

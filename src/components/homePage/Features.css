@@ -1,3 +1,10 @@
+.features-section {
+    /* min-height: 100dvh; */
+    margin: auto;
+    padding: 1rem;
+    /* background-color: var(--ps-sand); */
+  }
+
 .features {
     max-width: 1400px;
     margin: auto;

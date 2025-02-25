@@ -1,11 +1,14 @@
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+import "./HistoryPage.css";
+
 import ImageGallery from "../components/historyPage/ImageGallery";
 import ThemeClippings from "../components/historyPage/ThemeClippings";
 import NewspaperArticle from "../components/historyPage/NewspaperArticle";
 import Douglas from '../components/historyPage/Douglas';
-import { Helmet } from "react-helmet-async";
 
-import "./HistoryPage.css";
-
+import Modal from "../components/Modal";
 import DanKimball from "../components/historyPage/modalPages/DanKimball";
 import Swobdi from "../components/historyPage/modalPages/Swobdi";
 import GableLombard from "../components/historyPage/modalPages/GableLombard";
@@ -16,12 +19,19 @@ import SharCracraft from "../components/historyPage/modalPages/SharCracraft";
 
 
 const HistoryPage = () => {
+  const { slug } = useParams(); // Get the slug from URL params
+  const navigate = useNavigate();
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
+
   const topHistoryItems = [
     {
       galleryTitle: [
         'Dan Kimball, Secretary of Navy, with President Harry Truman',
         'Army Navy Baseball',
       ],
+      slug: "dan-kimball",
+      HTMLTitle: "Space Race",
       modalTitle: "Secretary of Navy Dan Kimball",
       info: "Secretary of Navy Dan Kimball with President Harry S. Truman, and Vice Admiral Harry S. Hill at the Army-Navy baseball game at Annapolis",
       image: `https://res.cloudinary.com/${
@@ -34,6 +44,8 @@ const HistoryPage = () => {
         "Fashion",
         "Roaring Twenties",
       ],
+      slug: 'swobdi',
+      HTMLTitle: "Roaring Twenties and Fashion",
       modalTitle: "Mrs. Agnes Swobdi-Meade",
       info: "Swobdi pioneer of the Los Angeles Fashion District, was renowned for her work as an importer, designer and couturière for silent film stars.",
       image: `https://res.cloudinary.com/${
@@ -46,6 +58,8 @@ const HistoryPage = () => {
         'Gable & Lombard',
         'Classic Hollywood',
       ],
+      slug: 'clark-gable-and-carol-lombard',
+      HTMLTitle: "Classic Hollywood",
       modalTitle: "Clark Gable and Carol Lombard",
       info: `"King of Hollywood" and one of greatest actresses of Classic Hollywood Cinema`,
       image: `https://res.cloudinary.com/${
@@ -58,6 +72,8 @@ const HistoryPage = () => {
         'Political Columnist',
          'Doris Fleeson',
       ],
+      slug: 'doris-fleeson',
+      HTMLTitle: "Women Leadership and WWII",
       modalTitle: "Doris Fleeson",
       info: "Syndicated columnist and women's rights champion with First Lady Elenor Roosevelt",
       image: `https://res.cloudinary.com/${
@@ -72,6 +88,8 @@ const HistoryPage = () => {
       galleryTitle: [
         `"Buy a Bomber Campaign"`,
       ],
+      slug: 'wwii',
+      HTMLTitle: "WWII",
       modalTitle: "WWII",
       info: "",
       image: `https://res.cloudinary.com/${
@@ -86,6 +104,8 @@ const HistoryPage = () => {
       galleryTitle: [
         "Master Architect McNeal Swasey",
       ],
+      slug: 'mcneal-swasey',
+      HTMLTitle: "Spanish Colonial Revival",
       modalTitle: "Master Architect McNeal Swasey",
       info: "A Spanish Colonial Revival, one of the oldest homes in Old Las Palmas",
       image: `https://res.cloudinary.com/${
@@ -99,6 +119,8 @@ const HistoryPage = () => {
         "Shar Cracraft",
         "Editor of Palm Springs Life Magazine",
       ],
+      slug: "shar-cracraft",
+      HTMLTitle: "Palm Springs Celebrity",
       modalTitle: "Shar Cracraft",
       info: "Editor of Palm Springs Life Magazine",
       image: `https://res.cloudinary.com/${
@@ -107,6 +129,28 @@ const HistoryPage = () => {
       Component: SharCracraft,
     },
   ];
+
+  const allHistoryItems = [...topHistoryItems, ...bottomHistoryItems];
+
+  useEffect(() => {
+    if (slug) {
+      const item = allHistoryItems.find(item => item.slug === slug);
+      if (item) {
+        setSelectedItem(item);
+        setModalOpen(true);
+      }
+    } else {
+      setModalOpen(false);
+    }
+  }, [slug, allHistoryItems]);
+
+  const handleCloseModal = () => {
+    navigate('/history');
+  };
+
+  const handleOpenModal = (item) => {
+    navigate(`/history/${item.slug}`);
+  };
 
   return (
     <main className="history">
@@ -120,7 +164,11 @@ const HistoryPage = () => {
       <p className="history-discover-hint">(Click any image to learn more!)</p>
 
       <section className="top-history__container">
-        <ImageGallery className="fun-style" items={topHistoryItems} />
+        <ImageGallery 
+          className="fun-style" 
+          items={topHistoryItems} 
+          onItemClick={handleOpenModal}
+        />
       </section>
 
       <section>
@@ -136,8 +184,19 @@ const HistoryPage = () => {
       </section>
 
       <section className="bottom-history__container">
-        <ImageGallery className="grid-style" items={bottomHistoryItems} />
+        <ImageGallery 
+          className="grid-style" 
+          items={bottomHistoryItems} 
+          onItemClick={handleOpenModal}
+        />
       </section>
+      {modalOpen && selectedItem && (
+        <Modal 
+          isOpen={modalOpen}
+          onClose={handleCloseModal} 
+          item={selectedItem}
+        />
+      )}
     </main>
   );
 };
