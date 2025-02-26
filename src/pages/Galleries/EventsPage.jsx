@@ -12,9 +12,7 @@ const EventsPage = () => {
       </Helmet>
       
       <div className="events__header-container">
-        <h1 className="events__main-header">Custom Events</h1>
-        <h2 className="events__subheader">Extraordinary Experiences</h2>
-        <h2 className="events__subheader">Your Brand</h2>
+        <h1 className="events__header">Custom Events <span className='star'>★</span> Extraordinary Experiences <span className='star'>★</span> Your Brand</h1>
       </div>  
       <section className="top-section">        
         <div className="historic-image-container">
