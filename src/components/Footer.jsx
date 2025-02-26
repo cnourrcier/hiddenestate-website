@@ -6,6 +6,10 @@ import tripadvisorIcon from '../assets/icons/tripadvisor.svg';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  const ScrollToTop = () => {
+    window.ScrollTo(0, 0);
+  }
   
   return (
     <footer className="footer">
@@ -13,14 +17,14 @@ const Footer = () => {
         <div className="footer-nav">
           <h3>Navigation</h3>
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/history">History</Link></li>
-            <li><Link to="/gardens">Gardens</Link></li>
-            <li><Link to="/galleries/estate">Estate</Link></li>
-            <li><Link to="/galleries/events">Events</Link></li>
-            <li><Link to="/media">Media</Link></li>
-            <li><Link to="/mission">Mission</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/" onClick={ScrollToTop}>Home</Link></li>
+            <li><Link to="/history" onClick={ScrollToTop}>History</Link></li>
+            <li><Link to="/gardens" onClick={ScrollToTop}>Gardens</Link></li>
+            <li><Link to="/galleries/estate" onClick={ScrollToTop}>Estate</Link></li>
+            <li><Link to="/galleries/events" onClick={ScrollToTop}>Events</Link></li>
+            <li><Link to="/media" onClick={ScrollToTop}>Media</Link></li>
+            <li><Link to="/mission" onClick={ScrollToTop}>Mission</Link></li>
+            <li><Link to="/contact" onClick={ScrollToTop}>Contact</Link></li>
           </ul>
         </div>
         
