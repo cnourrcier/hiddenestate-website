@@ -15,16 +15,16 @@ const Hero = () => {
                 </div>
                 <div className="hero-event-links">
                     <div className="event-links-grid">
-                        <Link to="/contact" className="event-link">
+                        <Link to="/contact" className="hero__event-link">
                             <span>Corporate Events</span>
                         </Link>
-                        <Link to="/contact" className="event-link">
+                        <Link to="/contact" className="hero__event-link">
                             <span>Weddings</span>
                         </Link>
-                        <Link to="/contact" className="event-link">
+                        <Link to="/contact" className="hero__event-link">
                             <span>Private Events</span>
                         </Link>
-                        <Link to="/contact" className="event-link">
+                        <Link to="/contact" className="hero__event-link">
                             <span>Vacation Rentals</span>
                         </Link>
                     </div>
