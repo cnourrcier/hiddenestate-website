@@ -10,6 +10,7 @@ import MissionPage from "./pages/MissionPage";
 import ContactPage from "./pages/ContactPage";
 import Footer from "./components/Footer";
 import ViewportDimensions from "./utils/ViewportDimensions";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         </Routes>
         {/* <ViewportDimensions /> */}
         <Footer />
+        <ScrollToTopButton />
       </Router>
     </>
   );
