@@ -21,6 +21,7 @@ const EventsPage = () => {
           <img 
               src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736364893/Hidden%20Gable%20Estate/gardens%20page/Cactus_event_-_m_small_lgdphh.jpg`} 
               alt="Garden Tour 1929: Cactus and Succulent Society of America" 
+              className='historic-image'
           />
           <h3 className="historic-image-title">Garden Tour 1929</h3>
           <p className="historic-image-description">
