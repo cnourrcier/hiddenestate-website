@@ -1,35 +1,51 @@
-import { Phone, Mail } from 'lucide-react';
-import './Footer.css';
+import { Link } from 'react-router-dom';
+import './Footer.css'; 
+
+import yelpIcon from '../assets/icons/yelp.svg';
+import tripadvisorIcon from '../assets/icons/tripadvisor.svg';
 
 const Footer = () => {
-
-    return (
-            <footer className='resort-footer'>
-                <div className="footer-content">
-                    <div className='top-footer-group'>
-                        <p className="manager">Exclusively Managed by Natural Retreats</p>
-                        <p className="contact">
-                            <Phone className="icon" strokeWidth={1.3}/> <span>888.451.0156</span>
-                        </p>
-                        <p className="contact">
-                            <Mail className="icon" strokeWidth={1.3}/> <span>concierge@naturalretreats.com</span>
-                        </p>
-                    </div>
-                    <div className='bottom-footer-group'>
-                    <div className='bottom-footer-group-left'>
-                            <p className='web-designer'>Website by DevRise Studio</p>
-                            <p className="contact">
-                                <Mail className="icon" strokeWidth={1.3}/> <span>contact@devrisestudio.com</span>
-                            </p>
-                        </div>
-                        <div className='bottom-footer-group-right'>
-                            <p className="permit">City of Palm Springs ID 5045</p>
-                            {/* <p>Locations760.com</p> */}
-                        </div>
-                    </div>
-                </div>
-            </footer>
-    )
-}
+  const currentYear = new Date().getFullYear();
+  
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-nav">
+          <h3>Navigation</h3>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/history">History</Link></li>
+            <li><Link to="/gardens">Gardens</Link></li>
+            <li><Link to="/galleries/estate">Estate</Link></li>
+            <li><Link to="/galleries/events">Events</Link></li>
+            <li><Link to="/media">Media</Link></li>
+            <li><Link to="/mission">Mission</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+          </ul>
+        </div>
+        
+        <div className="footer-info">
+          <h3>Hidden Gable Estate</h3>
+          <p>Experience the beauty and history of one of Palm Springs' most treasured landmarks.</p>
+          <div className="social-links">
+            <a href="https://yelp.com" target="_blank" rel="noopener noreferrer">
+                Yelp
+                <img src={yelpIcon} alt="Yelp" className="social-icon" />
+            </a>
+            <a href="https://tripadvisor.com" target="_blank" rel="noopener noreferrer">
+                TripAdvisor
+                <img src={tripadvisorIcon} alt="Tripadvisor" className="social-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div className="footer-bottom">
+        <p>Copyright © {currentYear} Hidden Gable Estate - All Rights Reserved | City of Palm Springs ID 5045</p>
+        <p>Website by DevRise Studio</p>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;
