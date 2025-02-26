@@ -9,13 +9,13 @@
 :root {
   --ps-dark-terracotta: hsl(13, 68%, 58%);
   --ps-terracotta: #e07a5f;
-  --ps-sand: hsl(37, 79%, 85%);
+  --ps-sand: #f7e0bb;
   --ps-green: hsl(151, 24%, 55%);
   --ps-dark-blue: hsl(234, 20%, 20%);
   --ps-blue: #3d405b;
   --ps-grey: #555;
   --ps-white: #f4f1de;
-  --ps-whiter: hsl(52, 50%, 95%);
+  --ps-whiter: #f9f7ec;
   --ps-whitest: hsl(52, 50%, 97%);
   --ps-gold: #d4af37;
 }

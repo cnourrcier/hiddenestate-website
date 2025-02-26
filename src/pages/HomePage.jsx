@@ -4,7 +4,9 @@ import Carousel from "../components/carousel/Carousel";
 import Features from "../components/homePage/Features";
 import Reviews from "../components/homePage/Reviews";
 import Location from "../components/homePage/Location";
+import claudeMonetInspiration from '../assets/claude-monet-inspiration.svg';
 import { Helmet } from "react-helmet-async";
+import './HomePage.css';
 
 const images = [
   { id: 1, url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734804922/Hidden%20Gable%20Estate/home%20page/5750_y8gi72.jpg`, alt: 'Image 1'},
@@ -26,11 +28,20 @@ function HomePage() {
 
       <Hero />
       <About />
-      <Carousel 
-        items={ images } 
-        showThumbnails={ true }
-        className='homepage-carousel'
-      />
+      
+      <section className="homepage__image-section">
+        <Carousel 
+          items={ images } 
+          showThumbnails={ true }
+          className='homepage-carousel'
+        />
+        <div className="monet-container">
+          <h3 className="monet-title">Claude Monet Inspiration</h3>
+          <img className='monet-image' src={claudeMonetInspiration} alt="Claude Monet - House Among the Palms" />
+          <cite className="monet-quote">“Color is my daylong obsession, joy, and torment” <span>- Claude Monet</span></cite>
+          <p className="monet-text">The estate interior and exterior colors have been meticulously restored as they existed in the twenties. Swobdi, a frequent world traveler, got her inspiration and color pallet choices from Claude Monet's pink home in Giverny (a commune in France). Pink exterior walls with green shutters, yellow crown molding, exterior tile with all Monet's favorite colors, etc. Monet lived in his pink home from 1883 until his death in 1926. Another example of Monet's influence is his painting “House Among the Palms” with pink exterior and red tile roof.</p>
+        </div>
+      </section>
       <Features />
       <Reviews />
       <Location />
