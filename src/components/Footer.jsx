@@ -26,7 +26,7 @@ const Footer = () => {
         
         <div className="footer-info">
           <h3>Hidden Gable Estate</h3>
-          <p>Experience the beauty and history of one of Palm Springs' most treasured landmarks.</p>
+          <p>Experience the glamour and history of one of Palm Springs' most treasured landmarks.</p>
           <div className="social-links">
             <a href="https://yelp.com" target="_blank" rel="noopener noreferrer">
                 Yelp
