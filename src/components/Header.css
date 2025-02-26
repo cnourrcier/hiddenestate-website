@@ -1,3 +1,7 @@
+ul {
+    list-style-type: none;
+}
+
 .header {
     position: absolute;
     z-index: 999;
@@ -104,7 +108,7 @@
     list-style-type: none;
 }
 
-.rental {
+.rental, .galleries {
     padding: 0 1rem;
     left: -15px;
     width: 12rem;
@@ -123,7 +127,7 @@
     overflow-y: auto;
 }
 
-.mobile ul {
+.mobile .header-links {
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -133,6 +137,40 @@
 
 .mobile .tab {
     font-size: 1.4rem;
+}
+  
+.mobile-submenu-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 20px;
+}
+
+.mobile-submenu {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    border-radius: 3px;
+}
+
+.mobile-submenu.open {
+    opacity: 1;
+    max-height: 300px;
+    padding: 0.8rem;
+    background-color: var(--ps-whiter);
+    color: hsl(0, 0%, 18%);
+}
+
+.divider-line {
+    height: 1px;
+    width: 35px;
+    background-color: var(--ps-gold);
 }
 
 .show {

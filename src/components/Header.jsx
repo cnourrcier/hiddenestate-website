@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react';
 import {Link, useLocation} from 'react-router-dom';
-import { X } from 'lucide-react';
+import { ChevronDown, ChevronUp, X } from 'lucide-react';
 import './Header.css';
 
 const Header = () => {
     const [rentalMenuDropdown, setRentalMenuDropdown] = useState(false);
+    const [galleriesMenuDropdown, setGalleriesMenuDropdown] = useState(false);
     const [mobileMenuDropdown, setMobileMenuDropdown] = useState(false);
+    const [mobileRentalOpen, setMobileRentalOpen] = useState(false);
+    const [mobileGalleriesOpen, setMobileGalleriesOpen] = useState(false);
     const [dimensions, setDimensions] = useState({
     width: window.innerWidth,
     height: window.innerHeight
@@ -30,18 +33,17 @@ const Header = () => {
     const location = useLocation();
     const isMainPage = location.pathname == '/';
 
-    function handleMouseEnter() {
-        setRentalMenuDropdown(true);
-    }
-
-    function handleMouseLeave() {
-        setRentalMenuDropdown(false);
+    function handleDropdownToggle(dropdownSetter, isOpen) {
+        return () => dropdownSetter(isOpen);
     }
 
     function handleClick() {
         setMobileMenuDropdown(prev => !prev);
     }
 
+    function toggleMobileSubmenu(setter) {
+        return () => setter(prev => !prev);
+    }
 
     return (
         <header className={isMainPage && !mobileMenuDropdown ? 'header transparent' : isMainPage && mobileMenuDropdown ? 'header solid fixed' : 'header solid'}>
@@ -58,8 +60,8 @@ const Header = () => {
                 <Link to="/history" className='tab'>History</Link> 
                 <Link to="/gardens" className='tab'>Gardens</Link>
                 <div 
-                    onMouseEnter={handleMouseEnter} 
-                    onMouseLeave={handleMouseLeave}
+                    onMouseEnter={handleDropdownToggle(setRentalMenuDropdown, true)} 
+                    onMouseLeave={handleDropdownToggle(setRentalMenuDropdown, false)}
                     className='dropdown-container'
                 >
                     <div className='tab'>
@@ -67,15 +69,30 @@ const Header = () => {
                     </div>
                     <div className={`menu-dropdown ${rentalMenuDropdown ? 'rental show' : ''}`}>
                         <ul className='dropdown-list'>
-                            <li><Link to="/contact" className='tab dropdown-tab'>Corporate Events</Link></li>
-                            <li><Link to="/contact" className='tab dropdown-tab'>Private Events</Link></li>
-                            <li><Link to="/contact" className='tab dropdown-tab'>Weddings</Link></li>
-                            <li><Link to="/contact" className='tab dropdown-tab'>Vacation Rentals</Link></li>
+                            <li><Link to="/contact" className='tab'>Corporate Events</Link></li>
+                            <li><Link to="/contact" className='tab'>Private Events</Link></li>
+                            <li><Link to="/contact" className='tab'>Weddings</Link></li>
+                            <li><Link to="/contact" className='tab'>Vacation Rentals</Link></li>
+                        </ul>
+                    </div>
+                </div>
+                <div 
+                    onMouseEnter={handleDropdownToggle(setGalleriesMenuDropdown, true)} 
+                    onMouseLeave={handleDropdownToggle(setGalleriesMenuDropdown, false)}
+                    className='dropdown-container'
+                >
+                    <div className='tab'>
+                        <p>Galleries</p>
+                    </div>
+                    <div className={`menu-dropdown ${galleriesMenuDropdown ? 'galleries show' : ''}`}>
+                        <ul className='dropdown-list'>
+                            <li><Link to="/galleries/estate" className='tab'>Estate</Link></li>
+                            <li><Link to="/galleries/events" className='tab'>Events</Link></li>
                         </ul>
                     </div>
                 </div>
 
-                <Link to="/gallery" className='tab'>Gallery</Link>
+
                 <Link to="/media" className='tab'>Media</Link>
                 <Link to="/mission" className='tab'>Our Mission</Link>
                 <Link to="/contact" className='tab'>Contact Us</Link>
@@ -98,21 +115,57 @@ const Header = () => {
                         <X size={40} strokeWidth={1.3} strokeLinecap="round" />
                     </div>
                     <div className={`menu-dropdown ${mobileMenuDropdown ? 'mobile show' : ''}`}>
-                    <div 
-                        onClick={handleClick}
-                        className='close-icon tab'
-                    >
-                        <X size={40} strokeWidth={1.3} strokeLinecap="round" />
-                    </div>
+                        <div 
+                            onClick={handleClick}
+                            className='close-icon tab'
+                        >
+                            <X size={40} strokeWidth={1.3} strokeLinecap="round" />
+                        </div>
                         <ul className='header-links'>
-                            <li><Link onClick={handleClick} to="/" className='tab dropdown-tab'>Home</Link></li>
-                            <li><Link onClick={handleClick} to="/history" className='tab dropdown-tab'>History</Link></li>
-                            <li><Link onClick={handleClick} to="/gardens" className='tab dropdown-tab'>Gardens</Link></li>
-                            <li><Link onClick={handleClick} to="/contact" className='tab dropdown-tab'>Rental</Link></li>
-                            <li><Link onClick={handleClick} to="/gallery" className='tab dropdown-tab'>Gallery</Link></li>
-                            <li><Link onClick={handleClick} to="/media" className='tab dropdown-tab'>Media</Link></li>
-                            <li><Link onClick={handleClick} to="/mission" className='tab dropdown-tab'>Our Mission</Link></li>
-                            <li><Link onClick={handleClick} to="/contact" className='tab dropdown-tab'>Contact Us</Link></li>
+                            <li><Link onClick={handleClick} to="/" className='tab'>Home</Link></li>
+                            <li><Link onClick={handleClick} to="/history" className='tab'>History</Link></li>
+                            <li><Link onClick={handleClick} to="/gardens" className='tab'>Gardens</Link></li>
+                            <li className='mobile-submenu-container'>
+                                <div
+                                    onClick={toggleMobileSubmenu(setMobileRentalOpen)}
+                                    className='tab mobile-submenu-toggle'
+                                >
+                                    <span>Rental</span>
+                                    {mobileRentalOpen ? 
+                                        <ChevronUp size={18} /> :
+                                        <ChevronDown size={18}/>
+                                    }
+                                </div>
+                                <ul className={`mobile-submenu ${mobileRentalOpen ? 'open' : ''}`}>
+                                    <li><Link onClick={handleClick} to="/contact" className='tab'>Corporate Events</Link></li>
+                                    <div className='divider-line'></div>
+                                    <li><Link onClick={handleClick} to="/contact" className='tab'>Private Events</Link></li>
+                                    <div className='divider-line'></div>
+                                    <li><Link onClick={handleClick} to="/contact" className='tab'>Weddings</Link></li>
+                                    <div className='divider-line'></div>
+                                    <li><Link onClick={handleClick} to="/contact" className='tab'>Vacation Rentals</Link></li>
+                                </ul>
+                            </li>
+                            <li className='mobile-submenu-container'>
+                                <div 
+                                    onClick={toggleMobileSubmenu(setMobileGalleriesOpen)} 
+                                    className='tab mobile-submenu-toggle'
+                                >
+                                    <span>Galleries</span>
+                                    {mobileGalleriesOpen ? 
+                                        <ChevronUp size={18} /> : 
+                                        <ChevronDown size={18} />
+                                    }
+                                </div>
+                                <ul className={`mobile-submenu ${mobileGalleriesOpen ? 'open' : ''}`}>
+                                    <li><Link onClick={handleClick} to="/galleries/estate" className='tab'>Estate</Link></li>
+                                    <div className='divider-line'></div>
+                                    <li><Link onClick={handleClick} to="/galleries/events" className='tab'>Events</Link></li>
+                                </ul>
+                            </li>
+                            <li><Link onClick={handleClick} to="/media" className='tab'>Media</Link></li>
+                            <li><Link onClick={handleClick} to="/mission" className='tab'>Our Mission</Link></li>
+                            <li><Link onClick={handleClick} to="/contact" className='tab'>Contact Us</Link></li>
                         </ul>
                     </div>
                 </div>

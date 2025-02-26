@@ -3,12 +3,14 @@ import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
 import HistoryPage from "./pages/HistoryPage";
 import GardensPage from "./pages/GardensPage";
-import GalleryPage from "./pages/GalleryPage";
+import EstatePage from "./pages/Galleries/EstatePage";
+import EventsPage from "./pages/Galleries/EventsPage";
 import MediaPage from "./pages/MediaPage";
 import MissionPage from "./pages/MissionPage";
 import ContactPage from "./pages/ContactPage";
 import Footer from "./components/Footer";
 import ViewportDimensions from "./utils/ViewportDimensions";
+
 
 function App() {
   return (
@@ -21,7 +23,8 @@ function App() {
             <Route path=":slug" element={<HistoryPage />}/>
           </Route>
           <Route path="/gardens" element={<GardensPage />} />
-          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/galleries/estate" element={<EstatePage />} />
+          <Route path="/galleries/events" element={<EventsPage />} />
           <Route path="/media" element={<MediaPage />} />
           <Route path="/mission" element={<MissionPage />} />
           <Route path="/contact" element={<ContactPage />} />
