@@ -72,7 +72,7 @@ const Header = () => {
                             <li><Link to="/contact" className='tab'>Corporate Events</Link></li>
                             <li><Link to="/contact" className='tab'>Private Events</Link></li>
                             <li><Link to="/contact" className='tab'>Weddings</Link></li>
-                            <li><Link to="/rental/luxuryvacationrental" className='tab'>Luxury Vacation Rentals</Link></li>
+                            <li><Link to="/rental/luxuryvacationrental" className='tab'>Luxury Vacation Rental</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -143,7 +143,7 @@ const Header = () => {
                                     <div className='divider-line'></div>
                                     <li><Link onClick={handleClick} to="/contact" className='tab'>Weddings</Link></li>
                                     <div className='divider-line'></div>
-                                    <li><Link onClick={handleClick} to="/contact" className='tab'>Vacation Rentals</Link></li>
+                                    <li><Link onClick={handleClick} to="/rental/luxuryvacationrental" className='tab'>Luxury Vacation Rental</Link></li>
                                 </ul>
                             </li>
                             <li className='mobile-submenu-container'>
