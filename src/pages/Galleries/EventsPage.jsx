@@ -34,7 +34,7 @@ const EventsPage = () => {
             <Link to="/contact" className="event-link">Private Tours</Link>
           </div>
           
-          <ul className="features-list">
+          <ul className="events__features-list">
             <li>Secluded and secure</li>
             <li>Beautiful mountain views</li>
             <li>Stunning gardens and courtyard spaces</li>

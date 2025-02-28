@@ -72,7 +72,7 @@ const Header = () => {
                             <li><Link to="/contact" className='tab'>Corporate Events</Link></li>
                             <li><Link to="/contact" className='tab'>Private Events</Link></li>
                             <li><Link to="/contact" className='tab'>Weddings</Link></li>
-                            <li><Link to="/contact" className='tab'>Vacation Rentals</Link></li>
+                            <li><Link to="/rental/luxuryvacationrental" className='tab'>Luxury Vacation Rentals</Link></li>
                         </ul>
                     </div>
                 </div>

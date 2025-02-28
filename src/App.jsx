@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
 import HistoryPage from "./pages/HistoryPage";
 import GardensPage from "./pages/GardensPage";
+import LuxuryVacationRental from "./pages/Rental/LuxuryVacationRental";
 import EstatePage from "./pages/Galleries/EstatePage";
 import EventsPage from "./pages/Galleries/EventsPage";
 import MediaPage from "./pages/MediaPage";
@@ -26,13 +27,14 @@ function App() {
             <Route path=":slug" element={<HistoryPage />}/>
           </Route>
           <Route path="/gardens" element={<GardensPage />} />
+          <Route path="rental/luxuryvacationrental" element={<LuxuryVacationRental />}/>
           <Route path="/galleries/estate" element={<EstatePage />} />
           <Route path="/galleries/events" element={<EventsPage />} />
           <Route path="/media" element={<MediaPage />} />
           <Route path="/mission" element={<MissionPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
-        <ViewportDimensions />
+        {/* <ViewportDimensions /> */}
         <Footer />
         <ScrollToTopButton />
       </Router>

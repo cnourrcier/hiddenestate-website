@@ -1,0 +1,162 @@
+/* Global styles for this component */
+.luxury-rental-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 130px 2rem 60px 2rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  .luxury-rental-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid #e0c9a6;
+    padding-bottom: 2rem;
+  }
+  
+  .luxury-rental-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--ps-terracotta);
+    margin-bottom: 0.5rem;
+  }
+  
+  .luxury-rental-header h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--ps-grey);
+  }
+  
+  .tagline {
+    font-style: italic;
+    color: var(--ps-terracotta);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .luxury__landscape-features {
+    color: var(--ps-grey);
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Section styles */
+  .luxury-rental-container section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .luxury-rental-container section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--ps-terracotta);
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .luxury-rental-container section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #e0c9a6;
+  }
+  
+  /* Feature lists */
+  .luxury__features-list, .celebrity-list, .activities-list, .attractions-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .luxury__features-list li, .celebrity-list li, .activities-list li, .attractions-list li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .emoji {
+    display: inline-block;
+    margin-right: 1rem;
+    min-width: 24px;
+  }
+  
+  .check {
+    display: inline-block;
+    margin-right: 1rem;
+    color: var(--ps-green);
+    min-width: 24px;
+  }
+  
+  /* Call to action */
+  .book-your-stay {
+    text-align: center;
+    background-color: #f9f5ec;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 3rem;
+  }
+  
+  .contact-cta {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-button {
+    background-color: var(--ps-terracotta);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: var(--ps-dark-terracotta);
+  }
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .luxury-rental-header h1 {
+      font-size: 2rem;
+    }
+    
+    .luxury-rental-header h2 {
+      font-size: 1.2rem;
+    }
+    
+    section h2 {
+      font-size: 1.5rem;
+    }
+    
+    .luxury__features-list li, .celebrity-list li, .activities-list li, .attractions-list li {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .luxury-rental-container {
+      padding: 1rem;
+    }
+    
+    .luxury-rental-header h1 {
+      font-size: 1.8rem;
+    }
+    
+    .luxury-rental-header h2 {
+      font-size: 1.1rem;
+    }
+    
+    .book-now-button {
+      width: 100%;
+    }
+  }

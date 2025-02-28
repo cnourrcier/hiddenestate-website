@@ -97,19 +97,19 @@
     background: rgba(224, 122, 95, 0.2);
   }
   
-  .features-list {
+  .events__features-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
   
-  .features-list li {
+  .events__features-list li {
     padding: 0.5rem 0;
     padding-left: 1.5rem;
     position: relative;
   }
   
-  .features-list li::before {
+  .events__features-list li::before {
     content: '✓';
     color: var(--ps-green);
     position: absolute;
