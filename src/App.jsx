@@ -19,7 +19,9 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage />}>
+            <Route path="home/:slug" element={<HomePage />}/>
+          </Route>
           <Route path="/history" element={<HistoryPage />}>
             <Route path=":slug" element={<HistoryPage />}/>
           </Route>
@@ -30,7 +32,7 @@ function App() {
           <Route path="/mission" element={<MissionPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
-        {/* <ViewportDimensions /> */}
+        <ViewportDimensions />
         <Footer />
         <ScrollToTopButton />
       </Router>

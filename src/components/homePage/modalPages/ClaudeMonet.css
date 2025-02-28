@@ -1,0 +1,85 @@
+.modal-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Flex layout for image and text */
+  .modal-info {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  
+  /* Image styling */
+  .modal-main-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Text content container */
+  .modal-text {
+    flex: 1;
+  }
+  
+  /* Heading styles */
+  .modal-text h2 {
+    color: var(--ps-terracotta); /* A pink color reminiscent of Monet's house */
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    border-bottom: 2px solid hsl(13, 68%, 97%);
+    padding-bottom: 0.5rem;
+  }
+  
+  .modal-text h3 {
+    color: var(--ps-green); /* Green reminiscent of Monet's shutters */
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Paragraph styling */
+  .modal-text p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  /* Blockquote styling */
+  .modal-text blockquote {
+    font-style: italic;
+    border-left: 4px solid var(--ps-terracotta);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: var(--ps-grey);
+  }
+  
+  /* Historical note section */
+  .historical-note {
+    background-color: hsl(13, 68%, 97%);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin-top: 1.5rem;
+  }
+  
+  .historical-note p {
+    margin-bottom: 0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .modal-info {
+      flex-direction: column;
+    }
+    
+    .modal-main-image {
+      max-width: 100%;
+      margin-bottom: 1.5rem;
+    }
+  }

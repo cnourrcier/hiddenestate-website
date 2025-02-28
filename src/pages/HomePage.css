@@ -45,3 +45,9 @@
   display: block;
   text-align: right;
 }
+
+@media (max-width: 768px) {
+  .homepage__image-section {
+    flex-direction: column;
+  }
+}
