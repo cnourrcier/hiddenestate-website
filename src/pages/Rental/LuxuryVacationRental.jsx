@@ -55,7 +55,7 @@ const LuxuryVacationRental = () => {
       </section>
 
       <section className="storied-past">
-        <h2>A Storied Past -- Hollywood's Desert Hideaway</h2>
+        <h2>A Storied Past - Hollywood's Desert Hideaway</h2>
         <p>
           Designed by <strong>Master Architect McNeal Swasey</strong> for famed fashion
           designer <strong>Swobdi</strong> in the 1920s, <strong>Hidden Gable Estate</strong> has been
@@ -77,7 +77,7 @@ const LuxuryVacationRental = () => {
       </section>
 
       <section className="outdoor-oasis">
-        <h2>Outdoor Oasis -- Your Private Desert Resort</h2>
+        <h2>Outdoor Oasis - Your Private Desert Resort</h2>
         <p>
           Step outside to discover a <strong>private paradise</strong> surrounded by <strong>towering
           palms, citrus trees, and breathtaking desert views</strong>. Whether you're
@@ -94,7 +94,7 @@ const LuxuryVacationRental = () => {
       </section>
 
       <section className="explore-palm-springs">
-        <h2>Explore Palm Springs -- Steps from the Best Attractions</h2>
+        <h2>Explore Palm Springs - Steps from the Best Attractions</h2>
         <p>
           Hidden Gable Estate is located in <strong>Old Las Palmas</strong>, often referred to
           as the <strong>"Beverly Hills of Palm Springs"</strong>, home to more <strong>celebrity
