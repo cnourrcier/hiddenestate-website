@@ -1,3 +1,4 @@
+import claudeMonetInspiration from '../../../assets/claude-monet-inspiration.svg';
 import './ClaudeMonet.css';
 
 const ClaudeMonet = () => {
@@ -5,7 +6,7 @@ const ClaudeMonet = () => {
       <div className="modal-content">
         <div className="modal-info">
           <img 
-            src="/src/assets/claude-monet-inspiration.svg" 
+            src={claudeMonetInspiration}
             alt="Claude Monet - House Among the Palms" 
             className="modal-main-image"
           />

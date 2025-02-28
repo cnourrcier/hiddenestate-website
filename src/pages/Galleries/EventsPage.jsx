@@ -23,7 +23,7 @@ const EventsPage = () => {
           />
           <h3 className="historic-image-title">Garden Tour 1929</h3>
           <p className="historic-image-description">
-            Cacus and Succulant Society of America
+            Cactus and Succulant Society of America
           </p>
         </div>
         
