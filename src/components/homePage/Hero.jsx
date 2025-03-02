@@ -24,7 +24,7 @@ const Hero = () => {
                         <Link to="/contact" className="hero__event-link">
                             <span>Private Events</span>
                         </Link>
-                        <Link to="/contact" className="hero__event-link">
+                        <Link to="/rental/luxuryvacationrental" className="hero__event-link">
                             <span>Vacation Rentals</span>
                         </Link>
                     </div>
