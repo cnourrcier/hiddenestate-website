@@ -1,13 +1,35 @@
 
 import { useNavigate } from 'react-router-dom';
 import './LuxuryVacationRental.css';
+import { useRef } from 'react';
 
 const LuxuryVacationRental = () => {
   const navigate = useNavigate();
+  const galleryRef = useRef(null);
 
   const handleClick = () => {
     navigate('/contact');
-  }
+  };
+
+  const handleScrollLeft = () => {
+    if (galleryRef.current) {
+      const scrollAmount = 370;
+      galleryRef.current.scrollBy({
+        left: -scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const handleScrollRight = () => {
+    if (galleryRef.current) {
+      const scrollAmount = 370;
+      galleryRef.current.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
 
   const propertyFeatures = [
     "Accommodates up to 10 guests",
@@ -34,7 +56,7 @@ const LuxuryVacationRental = () => {
   const galleryImages = [
     { url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734804922/Hidden%20Gable%20Estate/home%20page/5750_y8gi72.jpg`, alt: 'Outdoor cabana seating area' },
     { url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734719454/Hidden%20Gable%20Estate/home%20page/5757_ufhw0g.jpg`, alt: 'Pool and pickleball court with breathtaking views' },
-    { url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734719349/Hidden%20Gable%20Estate/home%20page/5734_dy1q44.jpg`, alt: 'Interior living space with fireplace' },
+    { url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734719350/Hidden%20Gable%20Estate/home%20page/5742_mr4ibo.jpg`, alt: 'Interior living space with fireplace' },
     { url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734719452/Hidden%20Gable%20Estate/home%20page/5837_g7sld1.jpg`, alt: 'Saltwater pool with Outdoor Kitchen' },
     { url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1740889953/Hidden%20Gable%20Estate/home%20page/5672_ueiwtz.jpg`, alt: 'Kirk Douglas pool table' }
   ];
@@ -55,11 +77,11 @@ const LuxuryVacationRental = () => {
         <div className="main-section">
             <div className="luxury-rental-header">
                 <h1>Luxury Vacation Rental at Hidden Gable Estate</h1>
-                <h2><em>Pickleball • Mountain Views • Historic Celebrity Estate</em></h2>
+                <h2><em>Dramatic Mountain Views • Historic Celebrity Estate</em></h2>
                 <p className="tagline">"Let's Play Pickleball!"</p>
                 <p className="luxury__landscape-features">
                 Lush gardens | 100-year-old olive trees | Towering date palms |
-                Citrus groves | Dramatic mountain views
+                Citrus grove
                 </p>
             </div>
             <section className="details-container">
@@ -88,7 +110,6 @@ const LuxuryVacationRental = () => {
               <ul className="feature-list">
                 {propertyFeatures.map((feature, index) => (
                   <li key={index} className="feature-item">
-                    <span className="feature-number">{index + 1}</span>
                     <span className="feature-text">{feature}</span>
                   </li>
                 ))}
@@ -114,8 +135,8 @@ const LuxuryVacationRental = () => {
             </div>
           </div>
         </div>
-        
-        <div className="image-gallery-divider">
+
+        <div className="image-gallery-divider" ref={galleryRef}>
           {galleryImages.map((image, index) => (
             <div key={index} className="gallery-image-container">
               <img 
@@ -130,6 +151,20 @@ const LuxuryVacationRental = () => {
           ))}
         </div>
         
+        <div className='gallery-nav-button-container'>
+          <button class="gallery-nav-button" onClick={handleScrollLeft}>
+            <svg viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+            </svg>
+          </button>
+
+          <button class="gallery-nav-button" onClick={handleScrollRight}>
+            <svg viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+            </svg>
+          </button>
+        </div>
+        
         <div className="secondary-section">
           <div className="section-container">
             <div className="activities-wrapper">
@@ -139,11 +174,11 @@ const LuxuryVacationRental = () => {
                     Step outside to discover a private paradise surrounded by towering palms, citrus trees, and breathtaking desert views. Whether you're looking for adventure or relaxation, the estate offers something for everyone:
                 </p>
                 <ul className="activities-list">
-                  <li><span className="check">✔</span> Take a refreshing dip in the saltwater pool & spa</li>
-                  <li><span className="check">✔</span> Host a friendly pickleball match on your private court</li>
-                  <li><span className="check">✔</span> Relax in the poolside cabana with a BBQ & outdoor kitchen</li>
-                  <li><span className="check">✔</span> Unwind by the firepit under a starry desert sky</li>
-                  <li><span className="check">✔</span> Enjoy an alfresco meal surrounded by lush gardens</li>
+                  <li> Take a refreshing dip in the saltwater pool & spa</li>
+                  <li> Host a friendly pickleball match on your private court</li>
+                  <li> Relax in the poolside cabana with a BBQ & outdoor kitchen</li>
+                  <li> Unwind by the firepit under a starry desert sky</li>
+                  <li> Enjoy an alfresco meal surrounded by lush gardens</li>
                 </ul>
               </div>
               <div className="location-box">
