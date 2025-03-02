@@ -310,16 +310,6 @@
   margin-bottom: 0.5rem;
 }
 
-.bullet {
-  display: inline-block;
-  color: var(--ps-green);
-  background-color: var(--ps-green);
-  margin-right: 0.5rem;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-}
-
 .location-list {
   list-style: none;
 }

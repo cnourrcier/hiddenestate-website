@@ -34,9 +34,9 @@ const EventsPage = () => {
           </div>
           
           <ul className="events__features-list">
-            <li>Secluded and secure</li>
-            <li>Beautiful mountain views</li>
-            <li>Stunning gardens and courtyard spaces</li>
+            <li><span className='bullet'></span>Secluded and secure</li>
+            <li><span className='bullet'></span>Beautiful mountain views</li>
+            <li><span className='bullet'></span>Stunning gardens and courtyard spaces</li>
           </ul>
         </div>
       </section>

@@ -29,7 +29,9 @@
   
   /* Top section styles */
   .top-section {
+    margin: auto;
     display: flex;
+    max-width: 1000px;
     gap: 3rem;
     margin-bottom: 4rem;
     align-items: flex-start;
@@ -41,6 +43,7 @@
   
   .historic-image {
     width: 100%;
+    max-width: 430px;
     height: auto;
     display: block;
     border-radius: 4px;
@@ -72,7 +75,7 @@
     gap: 1rem;
   }
   
-  .event-link {
+  /* .event-link {
     position: relative;
     display: inline-block;
     padding: 12px 20px;
@@ -88,12 +91,36 @@
         0 1px 3px rgba(0, 0, 0, 0.08);
     transition: color 0.1s ease;
     cursor: pointer;
-  }
+  } */
   
-  .event-link:hover {
+  /* .event-link:hover {
     border: 1px solid var(--ps-terracotta);
     color: var(--ps-terracotta);
     background: rgba(224, 122, 95, 0.2);
+  } */
+
+  .event-link {
+    margin-right: auto;
+    display: inline-block;
+    padding: 12px 20px;
+    width: 300px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: 1px solid var(--ps-dark-terracotta);
+    color: white;
+    background: rgba(224, 122, 95, 1);
+    border-radius: 6px;
+    box-shadow: 
+        0 1px 6px rgba(0, 0, 0, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: color 0.1s ease;
+    cursor: pointer;
+  }
+
+  .event-link:hover {
+    border: 1px solid var(--ps-terracotta);
+    background: rgba(224, 122, 95, 0.9);
   }
   
   .events__features-list {
@@ -103,21 +130,26 @@
   }
   
   .events__features-list li {
+    display: flex;
+    align-items: center;
     padding: 0.5rem 0;
-    padding-left: 1.5rem;
+    /* padding-left: 1.5rem; */
     position: relative;
   }
   
-  .events__features-list li::before {
-    content: '✓';
-    color: var(--ps-green);
-    position: absolute;
-    left: 0;
-    font-weight: bold;
+  .events__features-list .bullet {
+    display: inline-block;
+    background-color: var(--ps-green);
+    margin-right: 0.5rem;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
   }
   
   /* Events showcase section */
   .events-showcase {
+    margin: auto;
+    max-width: 1000px;
     margin-top: 5rem;
   }
   
@@ -158,10 +190,16 @@
 @media (max-width: 900px) {
   .top-section {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .historic-image-title,
+  .historic-image-description {
+    text-align: center;
   }
   
   .right-column {
-    margin-top: 2rem;
+    text-align: center;
   }
 }
   

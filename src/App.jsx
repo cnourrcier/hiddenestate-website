@@ -33,7 +33,7 @@ function App() {
           <Route path="/mission" element={<MissionPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
-        {/* <ViewportDimensions /> */}
+        <ViewportDimensions />
         <Footer />
         <ScrollToTopButton />
       </Router>
