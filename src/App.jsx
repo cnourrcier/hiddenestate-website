@@ -13,7 +13,6 @@ import Footer from "./components/Footer";
 import ViewportDimensions from "./utils/ViewportDimensions";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 
-
 function App() {
   return (
     <>
