@@ -12,14 +12,24 @@ const CarouselControls = ({
   className='',
 }) => {
   function getThumbnailIndexes() {
-    const indexes = [];
-    for (let i = -2; i <= 2; i++) {
+    const indexes = new Set(); // Using a Set to automatically handle duplicates
+    const maxThumbs = Math.min(5, items.length); // Never show more thumbs than items
+    
+    // Calculate how many items to show on each side of the current item
+    const sideItems = Math.floor((maxThumbs - 1) / 2);
+    
+    for (let i = -sideItems; i <= sideItems; i++) {
+      if (indexes.size >= items.length) break; // Don't add more than total items
+      
       let index = currentIndex + i;
+      // Handle wrapping
       if (index < 0) index = items.length + index;
       if (index >= items.length) index = index - items.length;
-      indexes.push(index);
+      
+      indexes.add(index);
     }
-    return indexes;
+    
+    return Array.from(indexes);
   }
 
   return (
