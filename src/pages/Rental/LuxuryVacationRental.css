@@ -386,7 +386,6 @@
 }
 
 .booking-button:hover {
-
   border: 1px solid var(--ps-terracotta);
   background: rgba(224, 122, 95, 0.9);
 }

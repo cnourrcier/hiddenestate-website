@@ -45,6 +45,10 @@ const EventsPage = () => {
         
         <div className="event-card">
           <h3 className="event-title">Modernism 2025 Featured Home Tour</h3>
+          <div className='event-brochure-container'>
+            <img className="brochure-closed" src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1740960594/Hidden%20Gable%20Estate/events/modernism-2025-featured-home-tour/magazine-closed-transparentbg_small_us9e9k.png`} alt="Modernism 2025 Featured Home Tour Brochure open" />
+            <img className="brochure-open" src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1740960594/Hidden%20Gable%20Estate/events/modernism-2025-featured-home-tour/magazine-open-transparentbg_small_s1t5fj.png`} alt="Modernism 2025 Featured Home Tour Brochure open" />
+          </div>
           <div className="event-images">
             <img 
               alt="iconic celebrity Nelda Linsk poolside"
