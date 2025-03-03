@@ -12,6 +12,7 @@ import ContactPage from "./pages/ContactPage";
 import Footer from "./components/Footer";
 import ViewportDimensions from "./utils/ViewportDimensions";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import CorporateEvents from "./pages/Rental/CorporateEvents";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           </Route>
           <Route path="/gardens" element={<GardensPage />} />
           <Route path="rental/luxuryvacationrental" element={<LuxuryVacationRental />}/>
+          <Route path="rental/corporateevents" element={<CorporateEvents />}/>
           <Route path="/galleries/estate" element={<EstatePage />} />
           <Route path="/galleries/events" element={<EventsPage />} />
           <Route path="/media" element={<MediaPage />} />

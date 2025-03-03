@@ -15,7 +15,7 @@ const Hero = () => {
                 </div>
                 <div className="hero-event-links">
                     <div className="event-links-grid">
-                        <Link to="/contact" className="hero__event-link">
+                        <Link to="/rental/corporateevents" className="hero__event-link">
                             <span>Corporate Events</span>
                         </Link>
                         <Link to="/contact" className="hero__event-link">
