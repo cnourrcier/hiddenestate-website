@@ -18,14 +18,20 @@ const Hero = () => {
                         <Link to="/rental/corporateevents" className="hero__event-link">
                             <span>Corporate Events</span>
                         </Link>
-                        <Link to="/contact" className="hero__event-link">
-                            <span>Weddings</span>
-                        </Link>
-                        <Link to="/contact" className="hero__event-link">
-                            <span>Private Events</span>
-                        </Link>
                         <Link to="/rental/luxuryvacationrental" className="hero__event-link">
                             <span>Vacation Rentals</span>
+                        </Link>
+                        <Link to="/rental/privateevents" className="hero__event-link">
+                            <span>Private Events</span>
+                        </Link>
+                        <Link to="/rental/privatetours" className="hero__event-link">
+                            <span>Private Tours</span>
+                        </Link>
+                        <Link to="/rental/weddings" className="hero__event-link">
+                            <span>Weddings</span>
+                        </Link>
+                        <Link to="/rental/dinnerparties" className="hero__event-link">
+                            <span>Dinner Parties</span>
                         </Link>
                     </div>
                 </div>

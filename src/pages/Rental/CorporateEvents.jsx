@@ -97,9 +97,6 @@ const CorporateEvents = () => {
                   </li>
                 ))}
               </ul>
-              <p>
-                We collaborate with world-class event creators, managers, and caterers to design an unforgettable experience tailored to your brand.
-              </p>
             </div>
 
           </div>
@@ -110,21 +107,7 @@ const CorporateEvents = () => {
             <div className="rental__secondary-content-wrapper">
 
               <div className="rental__list-container">
-                <h3>Luxury Amenities for Team Building & Networking</h3>
-                <p>
-                  Encourage collaboration and relaxation with a variety of engaging activities:
-                </p>
-                <ul className="rental__list">
-                  {corporateRecreationList.map((recreation, index) => (
-                    <li key={index} className='rental__list-item'>
-                      <span>{recreation}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="rental__list-container">
-                <h3 className='red'>Versatile Event Spaces for Any Corporate Occasion</h3>
+                <h3>Versatile Event Spaces for Any Corporate Occasion</h3>
                 <p>
                   Hidden Gable Estate can accommodate 200+ guests across a variety of stunning venues:                </p>
                 <p>
@@ -140,24 +123,29 @@ const CorporateEvents = () => {
                 </ul>
               </div>
 
+              <div className="rental__list-container">
+                <h3 className='red'>Luxury Amenities for Team Building & Networking</h3>
+                <p>
+                  Encourage collaboration and relaxation with a variety of engaging activities:
+                </p>
+                <ul className="rental__list">
+                  {corporateRecreationList.map((recreation, index) => (
+                    <li key={index} className='rental__list-item'>
+                      {recreation}
+                    </li>
+                  ))}
+                </ul>
+
+                <h3 className="red">Book Your Exclusive Stay at Hidden Gable Estate</h3>
+                <p>
+                  Let Hidden Gable Estate provide the perfect balance of sophistication, exclusivity, and inspiration for your next corporate event.
+                </p>
+                <button onClick={handleClick} className="rental__booking-button">Contact Us</button>  
+              </div>
+
             </div>
         </section>
-        
-        <section className="rental__booking-section">
-          <div className="rental__booking-container">
-            <h2 className="rental__booking-title">Book Your Exclusive Stay at Hidden Gable Estate</h2>
-            <p className="rental__booking-description">
-              Let Hidden Gable Estate provide the perfect balance of sophistication, exclusivity, and inspiration for your next corporate event.
-            </p>
-            
-            <div className="rental__booking-form">
-              <p className="rental__booking-contact-message">
-                📩 <strong>Contact us today to reserve your stay!</strong>
-              </p>
-              <button onClick={handleClick} className="rental__booking-button">Contact Us</button>
-            </div>
-          </div>
-        </section>
+
       </div>
     </main>
   );

@@ -232,18 +232,12 @@ const LuxuryVacationRental = () => {
         </section>
         
         <section className="rental__booking-section">
-          <div className="rental__booking-container">
-            <h2 className="rental__booking-title">Book Your Exclusive Stay at Hidden Gable Estate</h2>
-            <p className="rental__booking-description">
+          <div className="rental__list-container">
+            <h3 className="red">Book Your Exclusive Stay at Hidden Gable Estate</h3>
+            <p>
               Whether you're planning a <strong>family getaway, a retreat with friends, or a romantic escape</strong>, this <strong>iconic Hollywood estate</strong> is the ultimate destination for <strong>luxury, privacy, and relaxation</strong>.
             </p>
-            
-            <div className="rental__booking-form">
-              <p className="rental__booking-contact-message">
-                📩 <strong>Contact us today to reserve your stay!</strong>
-              </p>
-              <button onClick={handleClick} className="rental__booking-button">Contact Us</button>
-            </div>
+            <button onClick={handleClick} className="rental__booking-button">Book Now</button>
           </div>
         </section>
       </div>

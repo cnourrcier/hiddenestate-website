@@ -34,7 +34,7 @@ const DinnerParties = () => {
         <div 
           className="rental__hero-image"
           style={{ 
-            backgroundImage: `url(https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734804922/Hidden%20Gable%20Estate/home%20page/5750_y8gi72.jpg)`,
+            backgroundImage: `url(https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741278738/Hidden%20Gable%20Estate/rental/dinnerparty_i8reh7.jpg`,
           }}
         ></div>
       </div>
@@ -46,9 +46,6 @@ const DinnerParties = () => {
           <div className="rental__header">
               <h1>Enchanting Dinner Experiences at The Hidden Gable Estate</h1>
               <h2><em>"If the walls could talk" … create something magical.</em></h2>
-              {/* <p className="rental__tagline">
-                Step back in time and experience the Hollywood glamour and architectural beauty of The Hidden Gable Estate, a Palm Springs treasure steeped in celebrity history.
-              </p> */}
           </div>
 
           <div className="rental__details">
@@ -89,7 +86,7 @@ const DinnerParties = () => {
             <div className="rental__secondary-content-wrapper">
 
               <div className="rental__list-container">
-                <h3 className='red'>A Tailored Culinary Experience</h3>
+                <h3>A Tailored Culinary Experience</h3>
                 <p>
                   Our team can help craft an extraordinary evening, offering access to:
                 </p>
@@ -103,23 +100,20 @@ const DinnerParties = () => {
                 </ul>
               </div>
 
+              <div className='rental__list-container'>
+                <h3 className="red">Curate Your Private Dinner Party</h3>
+                <p>
+                  Whether you're a history buff, architecture enthusiast, or simply looking for a one-of-a-kind experience, The Hidden Gable Estate promises an unforgettable journey into the heart of Palm Springs’ Golden Age.
+                </p>
+                <p className="rental__booking-contact-message">
+                  📞 <strong>Contact us for per-person rates, docent fees, and to discuss any special requests.</strong>
+                </p>
+                <button onClick={handleClick} className="rental__booking-button">Contact Us</button>
+              </div>
+
             </div>
         </section>
         
-        <section className="rental__booking-section">
-          <div className="rental__booking-container">
-            <h2 className="rental__booking-title">Booking & Rates</h2>
-            <p className="rental__booking-description">
-              Whether you're a history buff, architecture enthusiast, or simply looking for a one-of-a-kind experience, The Hidden Gable Estate promises an unforgettable journey into the heart of Palm Springs’ Golden Age.
-            </p>
-            <div className="rental__booking-form">
-              <p className="rental__booking-contact-message">
-                📞 <strong>Contact us for per-person rates, docent fees, and to discuss any special requests.</strong>
-              </p>
-              <button onClick={handleClick} className="rental__booking-button">Contact Us</button>
-            </div>
-          </div>
-        </section>
       </div>
     </main>
   );

@@ -60,6 +60,16 @@ const Weddings = () => {
               <p>
                 Hidden Gable Estate blends Spanish Colonial charm, breathtaking mountain views, and lush gardens to create an unforgettable backdrop for your special day. Whether you’re planning an intimate ceremony, a grand reception, or a romantic commitment ceremony, this storied estate offers the perfect setting.
               </p>
+
+              <h3 className='red'>The Perfect Location</h3>
+              <ul className="rental__list-with-emoji">
+                {weddingLocationList.map((location, index) => (
+                  <li key={index} className='rental__list-item-with-emoji'>
+                    <span>{location.emoji}</span>
+                    <span>{location.name}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
             
             <div className="rental__list-container">
@@ -82,19 +92,7 @@ const Weddings = () => {
             <div className="rental__secondary-content-wrapper">
 
               <div className="rental__list-container">
-                <h3>The Perfect Location</h3>
-                <ul className="rental__list">
-                  {weddingLocationList.map((location, index) => (
-                    <li key={index} className='rental__list-item'>
-                      <span>{location.emoji}</span>
-                      <span>{location.name}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="rental__list-container">
-                <h3 className='red'>Tailored to Your Vision</h3>
+                <h3>Tailored to Your Vision</h3>
                 <p>
                   From an intimate gathering to a grand affair, Hidden Gable Estate offers a versatile space for any wedding style. Our team can assist with:
                 </p>
@@ -108,24 +106,14 @@ const Weddings = () => {
                 </ul>
               </div>
 
+              <div className='rental__list-container'>
+                <h3 className="red">Bring your dream wedding to life at Hidden Gable Estate</h3>
+                <button onClick={handleClick} className="rental__booking-button">Contact Us</button>
+              </div>
+
             </div>
         </section>
-        
-        <section className="rental__booking-section">
-          <div className="rental__booking-container">
-            <h2 className="rental__booking-title">Bring your dream wedding to life at Hidden Gable Estate</h2>
-            <p className="rental__booking-description">
-            
-            </p>
-            
-            <div className="rental__booking-form">
-              <p className="rental__booking-contact-message">
-                📩 <strong>Contact us today!</strong>
-              </p>
-              <button onClick={handleClick} className="rental__booking-button">Contact Us</button>
-            </div>
-          </div>
-        </section>
+
       </div>
     </main>
   );

@@ -104,17 +104,15 @@ const PrivateTours = () => {
         </section>
         
         <section className="rental__booking-section">
-          <div className="rental__booking-container">
-            <h2 className="rental__booking-title">Booking & Rates</h2>
-            <p className="rental__booking-description">
+          <div className="rental__list-container">
+            <h3 className="red">Curate Your Private Tour</h3>
+            <p>
               Whether you're a history buff, architecture enthusiast, or simply looking for a one-of-a-kind experience, The Hidden Gable Estate promises an unforgettable journey into the heart of Palm Springs’ Golden Age.
             </p>
-            <div className="rental__booking-form">
               <p className="rental__booking-contact-message">
                 📞 <strong>Contact us for per-person rates, docent fees, and to discuss any special requests.</strong>
               </p>
               <button onClick={handleClick} className="rental__booking-button">Contact Us</button>
-            </div>
           </div>
         </section>
       </div>

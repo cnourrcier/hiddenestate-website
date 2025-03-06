@@ -62,7 +62,7 @@
 .rental__title {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .red {
@@ -105,7 +105,7 @@
 
 .rental__list-container {
   flex: 1;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   background-color: white;
   border-radius: 3px;
 }
@@ -113,7 +113,7 @@
 .rental__list-container h3 {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .rental__list-container p {
@@ -127,6 +127,7 @@
 
 .rental__list {
   padding-left: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .rental__list-item {
@@ -259,7 +260,7 @@
 }
 
 .rental__secondary-section {
-  padding: 0 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
 
 .rental__secondary-content-wrapper {
@@ -276,46 +277,17 @@
 }
 
 .rental__booking-section {
+  text-align: center;
   padding: 0 2rem 2rem 2rem;
 }
 
-.rental__booking-container {
+/* .rental__booking-container {
   max-width: 900px;
   margin: 0 auto;
   background-color: white;
   border-radius: 3px;
   overflow: hidden;
-}
-
-.rental__booking-title {
-  background-color: var(--ps-terracotta);
-  color: white;
-  padding: 1.5rem;
-  text-align: center;
-  font-size: 2rem;
-  margin: 0;
-}
-
-.rental__booking-description {
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 1.1rem;
-  color: #4B5563;
-  max-width: 700px;
-  margin: 0 auto;
-  border-bottom: 1px solid #E5E7EB;
-}
-
-.rental__booking-form {
-  padding: 2rem;
-  text-align: center;
-}
-
-.rental__booking-contact-message {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}
+} */
 
 .rental__booking-button {
   margin: auto;

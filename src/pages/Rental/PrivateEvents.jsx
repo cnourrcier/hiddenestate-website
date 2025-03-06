@@ -70,6 +70,18 @@ const PrivateEvents = () => {
               <p>
                 Whether you're a Classic Hollywood enthusiast, an admirer of historic Spanish architecture, or drawn to the romance of Monet’s inspirations, this estate provides a one-of-a-kind setting for your special occasion.
               </p>
+
+              <h3 className='red'>Luxury Amenities for Unforgettable Moments</h3>
+                <p>
+                  Bond with family, friends, or colleagues while enjoying world-class entertainment and leisure options:
+                </p>
+                <ul className="rental__list">
+                  {privateRecreationList.map((recreation, index) => (
+                    <li key={index} className='rental__list-item'>
+                      <span>{recreation}</span>
+                    </li>
+                  ))}
+                </ul>
             </div>
             
             <div className="rental__list-container">
@@ -95,21 +107,7 @@ const PrivateEvents = () => {
             <div className="rental__secondary-content-wrapper">
 
               <div className="rental__list-container">
-                <h3>Luxury Amenities for Unforgettable Moments</h3>
-                <p>
-                  Bond with family, friends, or colleagues while enjoying world-class entertainment and leisure options:
-                </p>
-                <ul className="rental__list">
-                  {privateRecreationList.map((recreation, index) => (
-                    <li key={index} className='rental__list-item'>
-                      <span>{recreation}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="rental__list-container">
-                <h3 className='red'>A Historic Setting for Themed Events</h3>
+                <h3>A Historic Setting for Themed Events</h3>
                 <p>
                   Hidden Gable Estate’s rich history and architectural beauty provide the perfect backdrop for immersive, themed experiences:
                 </p>
@@ -123,23 +121,17 @@ const PrivateEvents = () => {
                 </ul>
               </div>
 
+              <div className='rental__list-container'>
+                <h3 className="red">Book Your Exclusive Stay at Hidden Gable Estate</h3>
+                <p>
+                  Whether you're planning an elegant soirée, an immersive themed event, or a private retreat, Hidden Gable Estate is the perfect canvas for your vision.
+                </p>
+                <button onClick={handleClick} className="rental__booking-button">Contact Us</button>
+              </div>
+
             </div>
         </section>
-        
-        <section className="rental__booking-section">
-          <div className="rental__booking-container">
-            <h2 className="rental__booking-title">Book Your Exclusive Stay at Hidden Gable Estate</h2>
-            <p className="rental__booking-description">
-              Whether you're planning an elegant soirée, an immersive themed event, or a private retreat, Hidden Gable Estate is the perfect canvas for your vision.
-            </p>
-            <div className="rental__booking-form">
-              <p className="rental__booking-contact-message">
-                📩 <strong>Contact us today to explore how we can bring your event to life!</strong>
-              </p>
-              <button onClick={handleClick} className="rental__booking-button">Contact Us</button>
-            </div>
-          </div>
-        </section>
+
       </div>
     </main>
   );
