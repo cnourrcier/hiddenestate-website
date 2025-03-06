@@ -10,24 +10,6 @@ const DinnerParties = () => {
     navigate('/contact');
   };
 
-  const privateTourFeatureList = [
-    { emoji: "🌟", name: 'Exclusive Estate Tour: Discover the Desert Hideaway where Clark Gable and Carole Lombard escaped Hollywood to experience life as "normal folks.' },
-    { emoji: "🌟", name: "Step Into Old Las Palmas: Imagine a springtime stroll through the neighborhood, where you might have run into Kirk Douglas, Bing Crosby, Clark Gable, or Lucille Ball in their heyday." },
-    { emoji: "🌟", name: "Architectural & Garden Insights: Explore the stunning Spanish Revival design, lush gardens, and period furnishings that make this estate an architectural gem." },
-  ];
-
-  const privateTourDetailList = [
-    { emoji: "🕰", name: "Scheduling: Tours are typically held mid-week, based on availability." },
-    { emoji: "⏳", name: "Duration: Standard tours last 45 minutes but can be tailored to your needs." },
-    { emoji: "🍸", name: "Enhance Your Experience: Customize your tour with cocktail hours, pickleball, lunch, or dinner (indoors or outdoors)." },
-  ];
-
-  const specializedTourDetailList = [
-    "Celebrity History Tour – Learn about the estate’s star-studded past.",
-    "Architectural Tour – Discover the design and craftsmanship behind this Spanish Revival masterpiece.",
-    "Garden Tour – Stroll through the lush grounds and experience the estate’s breathtaking landscape.",
-  ];
-
   const diningExperienceList = [
     { emoji: "✨", name: "Intimate Gatherings: Host an elegant dinner party for up to 10 guests in the exquisite dining room, with the option to expand into the grand great room." },
     { emoji: "✨", name: "Poolside Elegance: Enjoy a medium-sized dinner party for up to 30 guests at the Pool Cabana and around the shimmering pool." },
