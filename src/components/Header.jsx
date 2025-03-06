@@ -33,8 +33,14 @@ const Header = () => {
     const location = useLocation();
     const isMainPage = location.pathname == '/';
     // const isRentalPage = location.pathname.startsWith('/rental/');
-    const shouldBeTransparent = isMainPage //|| isRentalPage;
 
+    const getHeaderClass = () => {
+        if (mobileMenuDropdown) return 'header solid fixed';
+        if (isMainPage) return 'header transparent';
+        // if (isRentalPage) return 'header semitransparent';
+        return 'header solid';
+    }
+    
     function handleDropdownToggle(dropdownSetter, isOpen) {
         return () => dropdownSetter(isOpen);
     }
@@ -48,7 +54,7 @@ const Header = () => {
     }
 
     return (
-        <header className={shouldBeTransparent && !mobileMenuDropdown ? 'header transparent' : isMainPage && mobileMenuDropdown ? 'header solid fixed' : 'header solid'}>
+        <header className={getHeaderClass()}>
             <div className={!mobileMenuDropdown ? 'logo-container' : 'hidden'}>
                 <Link to="/"><img src={`/img/Blancov2.png`} /></Link>
             </div>
