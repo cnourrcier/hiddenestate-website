@@ -98,33 +98,33 @@ const LuxuryVacationRental = () => {
 
         <section className="rental__primary-section">
 
-            <div className="rental__header">
-                <h1>Luxury Vacation Rental at Hidden Gable Estate</h1>
-                <h2><em>Dramatic Mountain Views • Historic Celebrity Estate</em></h2>
-                <p className="rental__tagline">"Let's Play Pickleball!"</p>
-                <p>
+          <div className="rental__header">
+              <h1>Luxury Vacation Rental at Hidden Gable Estate</h1>
+              <h2><em>Dramatic Mountain Views • Historic Celebrity Estate</em></h2>
+              <p className="rental__tagline">"Let's Play Pickleball!"</p>
+              <p>
                 Lush gardens | 100-year-old olive trees | Towering date palms |
                 Citrus grove
-                </p>
-            </div>
+              </p>
+          </div>
 
-            <div className="rental__details">
-                <h2 className='rental__title red'>Experience the Glamour of Hollywood's Golden Age</h2>
-                <p>
-                    Nestled in the prestigious Old Las Palmas neighborhood, Hidden
-                    Gable Estate is a historic Spanish Colonial Revival estate
-                    offering a one-of-a-kind luxury vacation rental experience in Palm
-                    Springs. Rich in Hollywood lore and architectural charm, this
-                    private 5-bedroom, 6-bathroom retreat accommodates up to 10
-                    guests, making it the ultimate desert escape.
-                </p>
-                <p>
-                    Embraced by breathtaking mountain views, this secluded, gated
-                    estate is thoughtfully curated with exquisite period furnishings,
-                    lush landscaping, and modern amenities, including a private
-                    pickleball court, large saltwater pool, and a charming casita.
-                </p>
-            </div>
+          <div className="rental__details">
+              <h2 className='rental__title red'>Experience the Glamour of Hollywood's Golden Age</h2>
+              <p>
+                  Nestled in the prestigious Old Las Palmas neighborhood, Hidden
+                  Gable Estate is a historic Spanish Colonial Revival estate
+                  offering a one-of-a-kind luxury vacation rental experience in Palm
+                  Springs. Rich in Hollywood lore and architectural charm, this
+                  private 5-bedroom, 6-bathroom retreat accommodates up to 10
+                  guests, making it the ultimate desert escape.
+              </p>
+              <p>
+                  Embraced by breathtaking mountain views, this secluded, gated
+                  estate is thoughtfully curated with exquisite period furnishings,
+                  lush landscaping, and modern amenities, including a private
+                  pickleball court, large saltwater pool, and a charming casita.
+              </p>
+          </div>
 
           <h2 className="rental__title">Discover Your Perfect Getaway</h2>
           

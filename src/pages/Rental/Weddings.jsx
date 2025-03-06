@@ -56,14 +56,14 @@ const Weddings = () => {
           
           <div className="rental__primary-content-wrapper">
             <div className="rental__list-container">
-              <h3 className='red'>A one-of-a-kind wedding venue</h3>
+              <h3 className='red'>A Venue Like No Other</h3>
               <p>
                 Hidden Gable Estate blends Spanish Colonial charm, breathtaking mountain views, and lush gardens to create an unforgettable backdrop for your special day. Whether you’re planning an intimate ceremony, a grand reception, or a romantic commitment ceremony, this storied estate offers the perfect setting.
               </p>
             </div>
             
             <div className="rental__list-container">
-              <h3>A Venue Like No Other</h3>
+              <h3>Luxurious Ammenities & Accomodations</h3>
               <ul className="rental__list-with-emoji">
                 {weddingAccomodationList.map((accomodation, index) => (
                   <li key={index} className="rental__list-item-with-emoji">

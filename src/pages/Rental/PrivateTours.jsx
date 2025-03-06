@@ -50,16 +50,21 @@ const PrivateTours = () => {
 
           <div className="rental__header">
               <h1>Private Tours – Palm Springs Celebrity & Spanish Architecture Experience</h1>
-              {/* <h2><em>"If the walls could talk" … create something magical.</em></h2> */}
+              <h2><em>
+                Step back in time and experience the Hollywood glamour and architectural beauty of The Hidden Gable Estate
+              </em></h2>
               <p className="rental__tagline">
-                Step back in time and experience the Hollywood glamour and architectural beauty of The Hidden Gable Estate, a Palm Springs treasure steeped in celebrity history.
+                A Palm Springs treasure steeped in celebrity History
               </p>
           </div>
 
           <div className="rental__details">
-              {/* <h2 className='rental__title red'>Experience the Glamour of Hollywood's Golden Age</h2> */}
+              <h2 className='rental__title red'>A Legacy of Stars: The Spanish Revival Masterpiece</h2>
               <p>
-                Designed in the Roaring Twenties by master architect McNeal Swasey for renowned fashion designer Swobdi, this exquisite Spanish Revival estate has been home to some of Hollywood’s most iconic figures, including Clark Gable & Carole Lombard, Bing & Dixie Crosby, Sammy Davis Jr., Maurice Chevalier, and more. Once owned by the Douglas family, the estate even retains the handcrafted pool table made for movie star Kirk Douglas—a true piece of cinematic history.
+                Designed in the Roaring Twenties by master architect McNeal Swasey for renowned fashion designer Swobdi, this exquisite Spanish Revival estate has been home to some of Hollywood’s most iconic figures, including Clark Gable & Carole Lombard, Bing & Dixie Crosby, Sammy Davis Jr., Maurice Chevalier, and more.
+              </p>
+              <p>
+                Once owned by the Douglas family, the estate even retains the handcrafted pool table made for movie star Kirk Douglas—a true piece of cinematic history.
               </p>
           </div>
           

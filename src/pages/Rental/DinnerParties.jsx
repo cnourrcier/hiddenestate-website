@@ -52,9 +52,12 @@ const DinnerParties = () => {
           </div>
 
           <div className="rental__details">
-              {/* <h2 className='rental__title red'>Experience the Glamour of Hollywood's Golden Age</h2> */}
+              <h2 className='rental__title red'>Roaring Twenties Elegance</h2>
               <p>
-                For an exclusive and unforgettable dinner party, The Hidden Gable Estate offers a setting like no other. Steeped in Hollywood history, this magnificent estate was designed in the Roaring Twenties by master architect McNeal Swasey for renowned fashion designer “Swobdi.” Guests will dine under original ornate lighting, surrounded by authentic period décor and furnishings, immersing themselves in the glamour of a bygone era.
+                For an exclusive and unforgettable dinner party, The Hidden Gable Estate offers a setting like no other. Steeped in Hollywood history, this magnificent estate was designed in the Roaring Twenties by master architect McNeal Swasey for renowned fashion designer “Swobdi.”
+              </p>
+              <p>
+                Guests will dine under original ornate lighting, surrounded by authentic period décor and furnishings, immersing themselves in the glamour of a bygone era.
               </p>
           </div>
           
