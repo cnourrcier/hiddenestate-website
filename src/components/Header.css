@@ -102,7 +102,7 @@
     z-index: 999;
 }
 
-.rental, .galleries {
+.rental-dropdown, .galleries-dropdown {
     padding: 0 1rem;
     left: -15px;
     width: 12rem;
@@ -155,7 +155,7 @@
 
 .mobile-submenu.open {
     opacity: 1;
-    max-height: 300px;
+    max-height: 500px;
     padding: 0.8rem;
     background-color: var(--ps-whiter);
     color: hsl(0, 0%, 18%);

@@ -67,12 +67,15 @@ const Header = () => {
                     <div className='tab'>
                         <p>Rental</p>
                     </div>
-                    <div className={`menu-dropdown ${rentalMenuDropdown ? 'rental show' : ''}`}>
+                    <div className={`menu-dropdown ${rentalMenuDropdown ? 'rental-dropdown show' : ''}`}>
                         <ul className='dropdown-list'>
                             <li><Link to="/rental/corporateevents" className='tab'>Corporate Events</Link></li>
-                            <li><Link to="/contact" className='tab'>Private Events</Link></li>
-                            <li><Link to="/contact" className='tab'>Weddings</Link></li>
+                            <li><Link to="/rental/privateevents" className='tab'>Private Events</Link></li>
+                            <li><Link to="/rental/weddings" className='tab'>Weddings</Link></li>
                             <li><Link to="/rental/luxuryvacationrental" className='tab'>Luxury Vacation Rental</Link></li>
+                            <li><Link to="/rental/privatetours" className='tab'>Private Tours</Link></li>
+                            <li><Link to="/rental/dinnerparties" className='tab'>Dinner Parties</Link></li>
+                            {/* <li><Link to="/rental/filmlocation" className='tab'>Film Location</Link></li> */}
                         </ul>
                     </div>
                 </div>
@@ -84,7 +87,7 @@ const Header = () => {
                     <div className='tab'>
                         <p>Galleries</p>
                     </div>
-                    <div className={`menu-dropdown ${galleriesMenuDropdown ? 'galleries show' : ''}`}>
+                    <div className={`menu-dropdown ${galleriesMenuDropdown ? 'galleries-dropdown show' : ''}`}>
                         <ul className='dropdown-list'>
                             <li><Link to="/galleries/estate" className='tab'>Estate</Link></li>
                             <li><Link to="/galleries/events" className='tab'>Events</Link></li>
@@ -139,11 +142,17 @@ const Header = () => {
                                 <ul className={`mobile-submenu ${mobileRentalOpen ? 'open' : ''}`}>
                                     <li><Link onClick={handleClick} to="/rental/corporateevents" className='tab'>Corporate Events</Link></li>
                                     <div className='divider-line'></div>
-                                    <li><Link onClick={handleClick} to="/contact" className='tab'>Private Events</Link></li>
+                                    <li><Link onClick={handleClick} to="/rental/privateevents" className='tab'>Private Events</Link></li>
                                     <div className='divider-line'></div>
-                                    <li><Link onClick={handleClick} to="/contact" className='tab'>Weddings</Link></li>
+                                    <li><Link onClick={handleClick} to="/rental/weddings" className='tab'>Weddings</Link></li>
                                     <div className='divider-line'></div>
                                     <li><Link onClick={handleClick} to="/rental/luxuryvacationrental" className='tab'>Luxury Vacation Rental</Link></li>
+                                    <div className='divider-line'></div>
+                                    <li><Link onClick={handleClick} to="/rental/privatetours" className='tab'>Private Tours</Link></li>
+                                    <div className='divider-line'></div>
+                                    <li><Link onClick={handleClick} to="/rental/dinnerparties" className='tab'>Dinner Parties</Link></li>
+                                    {/* <div className='divider-line'></div> */}
+                                    {/* <li><Link onClick={handleClick} to="/rental/filmlocations" className='tab'>Film Locations</Link></li> */}
                                 </ul>
                             </li>
                             <li className='mobile-submenu-container'>

@@ -1,16 +1,16 @@
-.main-container {
+.rental {
   width: 100%;
   overflow-y: auto;
 }
 
-.hero-banner {
+.rental__hero-banner {
   position: relative;
   height: 80vh;
   width: 100%;
   overflow: hidden;
 }
 
-.hero-image {
+.rental__hero-image {
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -18,22 +18,22 @@
   background-repeat: no-repeat;
 }
 
-.content-container {
+.rental__content-container {
   position: relative;
   background-color: var(--ps-whiter);
   z-index: 2;
 }
 
-.corporate__main-section {
-  padding-bottom: 1rem;
+.rental__primary-section {
+  padding: 1rem 2rem;
 }
 
-.luxury-rental-header {
+.rental__header {
   text-align: center;
   padding: 1rem 2rem 2rem 2rem;
 }
 
-.luxury-rental-header h1 {
+.rental__header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   color: var(--ps-terracotta);
@@ -41,21 +41,21 @@
   line-height: 3.5rem;
 }
 
-.luxury-rental-header h2 {
+.rental__header h2 {
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 1rem;
   color: var(--ps-grey);
 }
 
-.tagline {
+.rental__tagline {
   font-style: italic;
   color: var(--ps-terracotta);
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
-.section-title {
+.rental__title {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -68,103 +68,82 @@
   color: var(--ps-green);
 }
 
-.content-wrapper {
-  padding: 0 2rem;
+.rental__primary-content-wrapper {
+  gap: 2rem;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
 }
 
-.features-container {
+.rental__list-container {
   flex: 1;
   padding: 2rem;
   background-color: white;
   border-radius: 3px;
-  margin-bottom: 2rem;
 }
 
-.features-container h3 {
+.rental__list-container h3 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: var(--ps-terracotta);
   margin-bottom: 1.5rem;
 }
 
-.feature-list {
+.rental__list-container p {
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.rental__list-container p:last-child {
+  margin-bottom: 0;
+}
+
+.rental__list {
   padding-left: 1rem;
 }
 
-.feature-item {
+.rental__list-item {
   margin-bottom: 0.9rem;
 }
 
-.celebrity-list {
+.rental__list-with-emoji {
   list-style: none;
   padding: 0;
 }
 
-.celebrity-item {
+.rental__list-item-with-emoji {
   display: flex;
   margin-bottom: 0.9rem;
   align-items: flex-start;
 }
 
-.feature-text,
-.celebrity-text {
-  color: #4B5563;
-}
-
-.celebrity-container {
+.rental__details {
   flex: 1;
   padding: 2rem;
   background-color: #fff;
   border-radius: 3px;
+  margin-bottom: 2rem;
 }
 
-.celebrity-container h3 {
+.rental__details h3 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
 
-.celebrity-container p {
+.rental__details p {
   line-height: 1.7;
   color: #4B5563;
   margin-bottom: 1.5rem;
 }
 
-.celebrity-container p:last-child {
+.rental__details p:last-child {
   margin-bottom: 0;
 }
 
-.details-container {
-  flex: 1;
-  padding: 2rem;
-  margin: 0 2rem 2rem 2rem;
-  background-color: #fff;
-  border-radius: 3px;
-}
-
-.details-container h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-}
-
-.details-container p {
-  line-height: 1.7;
-  color: #4B5563;
-  margin-bottom: 1.5rem;
-}
-
-.details-container p:last-child {
-  margin-bottom: 0;
-}
-
-.image-gallery-divider {
+.rental__image-gallery {
   display: flex;
   overflow-x: auto;
-  padding: 1rem 0 2rem 0;
+  padding: 2rem 0;
   background-color: transparent;
   scrollbar-width: thin;
   scrollbar-color: #666 #1a1a1a;
@@ -172,20 +151,20 @@
   flex-grow: 1;
 }
 
-.image-gallery-divider::-webkit-scrollbar {
+.rental__image-gallery::-webkit-scrollbar {
   height: 8px;
 }
 
-.image-gallery-divider::-webkit-scrollbar-track {
+.rental__image-gallery::-webkit-scrollbar-track {
   background: #1a1a1a;
 }
 
-.image-gallery-divider::-webkit-scrollbar-thumb {
+.rental__image-gallery::-webkit-scrollbar-thumb {
   background-color: #666;
   border-radius: 4px;
 }
 
-.gallery-image-container {
+.rental__gallery-image-container {
   position: relative;
   flex: 0 0 350px;
   height: 220px;
@@ -196,22 +175,22 @@
   transition: transform 0.3s ease;
 }
 
-.gallery-image-container:hover {
+.rental__gallery-image-container:hover {
   transform: translateY(-5px);
 }
 
-.gallery-image {
+.rental__gallery-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.gallery-image-container:hover .gallery-image {
+.rental__gallery-image-container:hover .rental__gallery-image {
   transform: scale(1.05);
 }
 
-.image-overlay {
+.rental__image-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -223,23 +202,23 @@
   transition: opacity 0.3s ease;
 }
 
-.gallery-image-container:hover .image-overlay {
+.rental__gallery-image-container:hover .rental__image-overlay {
   opacity: 1;
 }
 
-.image-caption {
+.rental__image-caption {
   font-size: 0.9rem;
   font-weight: 500;
 }
 
-.gallery-nav-button-container {
+.rental__gallery-nav-button-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4rem;
 }
 
-.gallery-nav-button {
+.rental__gallery-nav-button {
   background-color: transparent;
   border: 2px solid var(--ps-terracotta);
   border-radius: 50%;
@@ -254,69 +233,31 @@
   transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
-.gallery-nav-button > * {
+.rental__gallery-nav-button > * {
   color: var(--ps-terracotta);
   width: 1.5rem;
   height: 1.5rem;
 }
 
-.gallery-nav-button:hover > *,
-.gallery-nav-button:focus-visible > * {
+.rental__gallery-nav-button:hover > *,
+.rental__gallery-nav-button:focus-visible > * {
     transform: scale(1.1);
 }
 
-.gallery-nav-button:hover,
-.gallery-nav-button:focus-visible {
+.rental__gallery-nav-button:hover,
+.rental__gallery-nav-button:focus-visible {
     background-color: rgba(225, 124, 96, 0.1);
 }
 
-.secondary-section {
+.rental__secondary-section {
   padding: 2rem;
 }
 
-.section-container {
-  margin: 0 auto;
-}
-
-.activities-wrapper {
-  display: flex;
+.rental__secondary-content-wrapper {
   gap: 2rem;
+  margin: 0 auto;
+  display: flex;
   flex-direction: row;
-}
-
-.activities-box, .location-box {
-  flex: 1;
-  background-color: white;
-  padding: 2rem;
-  border-radius: 3px;
-}
-
-.activities-box h3, .location-box h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.activities-list {
-  margin-top: 0.5rem;
-}
-
-.activities-list, .location-list {
-  padding-left: 1.5rem;
-  line-height: 1.8;
-}
-
-.activities-list li, .location-list li {
-  margin-bottom: 0.5rem;
-}
-
-.location-list {
-  list-style: none;
-}
-
-.location-box p {
-  line-height: 1.7;
-  margin-bottom: 1rem;
 }
 
 .emoji {
@@ -325,11 +266,11 @@
   min-width: 24px;
 }
 
-.booking-section {
+.rental__booking-section {
   padding: 0 2rem 2rem 2rem;
 }
 
-.booking-container {
+.rental__booking-container {
   max-width: 900px;
   margin: 0 auto;
   background-color: white;
@@ -337,7 +278,7 @@
   overflow: hidden;
 }
 
-.booking-title {
+.rental__booking-title {
   background-color: var(--ps-terracotta);
   color: white;
   padding: 1.5rem;
@@ -346,7 +287,7 @@
   margin: 0;
 }
 
-.booking-description {
+.rental__booking-description {
   text-align: center;
   padding: 1.5rem;
   font-size: 1.1rem;
@@ -356,18 +297,18 @@
   border-bottom: 1px solid #E5E7EB;
 }
 
-.booking-form {
+.rental__booking-form {
   padding: 2rem;
   text-align: center;
 }
 
-.booking-contact-message {
+.rental__booking-contact-message {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   text-align: center;
 }
 
-.booking-button {
+.rental__booking-button {
   margin: auto;
   display: block;
   padding: 12px 20px;
@@ -385,65 +326,61 @@
   cursor: pointer;
 }
 
-.booking-button:hover {
+.rental__booking-button:hover {
   border: 1px solid var(--ps-terracotta);
   background: rgba(224, 122, 95, 0.9);
 }
 
 
 @media (min-width: 769px) {
-  .features-container {
-    margin-right: 2rem;
+  .rental__list-container {
     margin-bottom: 0;
   }
 }
 
 @media (max-width: 768px) {
 
-  .content-wrapper {
-    flex-direction: column;
-    padding: 0 1rem;
+  .rental__primary-section {
+    padding: 2rem 1rem;
   }
 
-  .hero-banner {
+  .rental__primary-content-wrapper {
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 3rem;
+  }
+
+  .rental__hero-banner {
     height: 60vh;
   }
   
-  .gallery-image-container {
+  .rental__gallery-image-container {
     flex: 0 0 280px;
     height: 180px;
   }
 
-  .luxury-rental-header {
+  .rental__header {
     padding: 2rem 1rem;
   }
 
-  .details-container {
+  .rental__secondary-section {
     padding: 2rem 1rem;
   }
 
-  .secondary-section {
-    padding: 2rem 1rem;
-  }
-
-  .activities-wrapper {
+  .rental__secondary-content-wrapper {
     flex-direction: column;
   }
   
-  .activities-box {
-    margin-bottom: 2rem;
-  }
-  
-  .booking-section {
+  .rental__booking-section {
     padding: 2rem 1rem;
   }
   
-  .booking-title {
+  .rental__booking-title {
     font-size: 1.5rem;
     padding: 1rem;
   }
   
-  .booking-form {
+  .rental__booking-form {
     padding: 1.5rem;
   }
 }

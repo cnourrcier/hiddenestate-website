@@ -1,0 +1,120 @@
+
+import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+import './Rental.css';
+
+const PrivateTours = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/contact');
+  };
+
+  const privateTourFeatureList = [
+    { emoji: "🌟", name: 'Exclusive Estate Tour: Discover the Desert Hideaway where Clark Gable and Carole Lombard escaped Hollywood to experience life as "normal folks.' },
+    { emoji: "🌟", name: "Step Into Old Las Palmas: Imagine a springtime stroll through the neighborhood, where you might have run into Kirk Douglas, Bing Crosby, Clark Gable, or Lucille Ball in their heyday." },
+    { emoji: "🌟", name: "Architectural & Garden Insights: Explore the stunning Spanish Revival design, lush gardens, and period furnishings that make this estate an architectural gem." },
+  ];
+
+  const privateTourDetailList = [
+    { emoji: "🕰", name: "Scheduling: Tours are typically held mid-week, based on availability." },
+    { emoji: "⏳", name: "Duration: Standard tours last 45 minutes but can be tailored to your needs." },
+    { emoji: "🍸", name: "Enhance Your Experience: Customize your tour with cocktail hours, pickleball, lunch, or dinner (indoors or outdoors)." },
+  ];
+
+  const specializedTourDetailList = [
+    "Celebrity History Tour – Learn about the estate’s star-studded past.",
+    "Architectural Tour – Discover the design and craftsmanship behind this Spanish Revival masterpiece.",
+    "Garden Tour – Stroll through the lush grounds and experience the estate’s breathtaking landscape.",
+  ];
+
+  return (
+    <main className="rental">
+
+      <Helmet>
+        <title>Palm Springs Private Tours</title>
+      </Helmet>
+      
+      <div className="rental__hero-banner">
+        <div 
+          className="rental__hero-image"
+          style={{ 
+            backgroundImage: `url(https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734804922/Hidden%20Gable%20Estate/home%20page/5750_y8gi72.jpg)`,
+          }}
+        ></div>
+      </div>
+      
+      <div className="rental__content-container">
+
+        <section className="rental__primary-section">
+
+          <div className="rental__header">
+              <h1>Private Tours – Palm Springs Celebrity & Spanish Architecture Experience</h1>
+              {/* <h2><em>"If the walls could talk" … create something magical.</em></h2> */}
+              <p className="rental__tagline">
+                Step back in time and experience the Hollywood glamour and architectural beauty of The Hidden Gable Estate, a Palm Springs treasure steeped in celebrity history.
+              </p>
+          </div>
+
+          <div className="rental__details">
+              {/* <h2 className='rental__title red'>Experience the Glamour of Hollywood's Golden Age</h2> */}
+              <p>
+                Designed in the Roaring Twenties by master architect McNeal Swasey for renowned fashion designer Swobdi, this exquisite Spanish Revival estate has been home to some of Hollywood’s most iconic figures, including Clark Gable & Carole Lombard, Bing & Dixie Crosby, Sammy Davis Jr., Maurice Chevalier, and more. Once owned by the Douglas family, the estate even retains the handcrafted pool table made for movie star Kirk Douglas—a true piece of cinematic history.
+              </p>
+          </div>
+          
+          <div className="rental__primary-content-wrapper">
+            <div className="rental__list-container">
+              <h3 className='red'>What to Expect on Your Private Tour</h3>
+              <ul className="rental__list-with-emoji">
+                {privateTourFeatureList.map((feature, index) => (
+                  <li key={index} className="rental__list-item-with-emoji">
+                    <span>{feature.emoji}</span>
+                    <span>{feature.name}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            
+            <div className="rental__list-container">
+              <h3>Tour Details & Customization</h3>
+              <ul className="rental__list-with-emoji">
+                {privateTourDetailList.map((detail, index) => (
+                  <li key={index} className="rental__list-item-with-emoji">
+                    <span className="emoji">{detail.emoji}</span>
+                    <span>{detail.name}</span>
+                  </li>
+                ))}
+                <li>🏛 Specialized Tours Available:</li>
+                <ul>
+                  { specializedTourDetailList.map((detail, index) => (
+                    <li key={index} className='rental__list-item'>{detail}</li>
+                  ))}
+                </ul>
+              </ul>
+            </div>
+
+          </div>
+
+        </section>
+        
+        <section className="rental__booking-section">
+          <div className="rental__booking-container">
+            <h2 className="rental__booking-title">Booking & Rates</h2>
+            <p className="rental__booking-description">
+              Whether you're a history buff, architecture enthusiast, or simply looking for a one-of-a-kind experience, The Hidden Gable Estate promises an unforgettable journey into the heart of Palm Springs’ Golden Age.
+            </p>
+            <div className="rental__booking-form">
+              <p className="rental__booking-contact-message">
+                📞 <strong>Contact us for per-person rates, docent fees, and to discuss any special requests.</strong>
+              </p>
+              <button onClick={handleClick} className="rental__booking-button">Contact Us</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  );
+};
+
+export default PrivateTours;
