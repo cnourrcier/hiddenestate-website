@@ -65,7 +65,7 @@ const Weddings = () => {
               <ul className="rental__list-with-emoji">
                 {weddingLocationList.map((location, index) => (
                   <li key={index} className='rental__list-item-with-emoji'>
-                    <span>{location.emoji}</span>
+                    <span className='emoji'>{location.emoji}</span>
                     <span>{location.name}</span>
                   </li>
                 ))}

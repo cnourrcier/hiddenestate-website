@@ -32,6 +32,8 @@ const Header = () => {
 
     const location = useLocation();
     const isMainPage = location.pathname == '/';
+    // const isRentalPage = location.pathname.startsWith('/rental/');
+    const shouldBeTransparent = isMainPage //|| isRentalPage;
 
     function handleDropdownToggle(dropdownSetter, isOpen) {
         return () => dropdownSetter(isOpen);
@@ -46,7 +48,7 @@ const Header = () => {
     }
 
     return (
-        <header className={isMainPage && !mobileMenuDropdown ? 'header transparent' : isMainPage && mobileMenuDropdown ? 'header solid fixed' : 'header solid'}>
+        <header className={shouldBeTransparent && !mobileMenuDropdown ? 'header transparent' : isMainPage && mobileMenuDropdown ? 'header solid fixed' : 'header solid'}>
             <div className={!mobileMenuDropdown ? 'logo-container' : 'hidden'}>
                 <Link to="/"><img src={`/img/Blancov2.png`} /></Link>
             </div>
@@ -75,7 +77,7 @@ const Header = () => {
                             <li><Link to="/rental/luxuryvacationrental" className='tab'>Luxury Vacation Rental</Link></li>
                             <li><Link to="/rental/privatetours" className='tab'>Private Tours</Link></li>
                             <li><Link to="/rental/dinnerparties" className='tab'>Dinner Parties</Link></li>
-                            {/* <li><Link to="/rental/filmlocation" className='tab'>Film Location</Link></li> */}
+                            <li><Link to="/rental/filmlocation" className='tab'>Film Location</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -151,8 +153,8 @@ const Header = () => {
                                     <li><Link onClick={handleClick} to="/rental/privatetours" className='tab'>Private Tours</Link></li>
                                     <div className='divider-line'></div>
                                     <li><Link onClick={handleClick} to="/rental/dinnerparties" className='tab'>Dinner Parties</Link></li>
-                                    {/* <div className='divider-line'></div> */}
-                                    {/* <li><Link onClick={handleClick} to="/rental/filmlocations" className='tab'>Film Locations</Link></li> */}
+                                    <div className='divider-line'></div>
+                                    <li><Link onClick={handleClick} to="/rental/filmlocations" className='tab'>Film Locations</Link></li>
                                 </ul>
                             </li>
                             <li className='mobile-submenu-container'>

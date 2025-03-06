@@ -80,6 +80,12 @@
     gap: 1.5rem;
 }
 
+.event-links-grid > *:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 1.5rem);
+}
+
 .hero__event-link {
     font-family: "Limelight", sans-serif;
     position: relative;

@@ -1,5 +1,6 @@
 
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import './Rental.css';
 
 const FilmLocation = () => {
@@ -9,129 +10,103 @@ const FilmLocation = () => {
     navigate('/contact');
   };
 
-  const propertyFeatures = [
-    "Entertain important clients",
-    "Reward top-performing employees",
-    "Launch a new product with style",
-    "Host a unique and memorable corporate gathering",
+  const filmLocationFeatureList = [
+    { feature: "Exclusive & Private", description: "A gated estate ensures a controlled environment, free from unwanted tourists or bystanders." },
+    { feature: "Convenient Location", description: "Step Into Old Las Palmas: Imagine a springtime stroll through the neighborhood, where you might have run into Kirk Douglas, Bing Crosby, Clark Gable, or Lucille Ball in their heyday." },
+    { feature: "Versatile Spaces", description: "Expansive exterior grounds spanning an acre, ideal for large-scale filming, events, and parties accommodating 200+ guests." },
+    { feature: "Authentic Atmosphere", description: "Spanish Colonial Revival architecture, period furnishings, and vintage décor offer an elegant and historically rich setting." },
+    { feature: "Breathtaking Backdrops", description: "Lush gardens, mature trees, a large pool with a cabana, and spectacular mountain views create endless filming possibilities." },
+    { feature: " Production-Friendly Amenities", description: "A spacious cabana with a bathroom and kitchenette, ample space for lighting and camera setups, and plentiful street parking for cast and crew." },
   ];
 
-  const celebrityList = [
-    { emoji: "🎭", name: "The Roaring Twenties & Flapper Era"},
-    {emoji: "🎩", name: "The Great Gatsby & Classic Hollywood"},
-    {emoji: "🃏", name: "Casino Night & Rat Pack Glamour"},
-    {emoji: "🖤", name: "Casablanca-Inspired Elegance"},
-    {emoji: "🚀", name: "The Space Race & WWII Era"},
-    {emoji: "👩 💼", name: "Women Leaders & Influencers"},
-  ]
+  const filmOptionsList = [
+    { emoji: "🎬", name: "Film & Television Productions" },
+    { emoji: "📸", name: "Photography & Fashion Shoots" },
+    { emoji: "🎵", name: "Music Videos" },
+    { emoji: "🏡", name: "Architectural & Travel Publications" },
+  ];
+
+  const specializedTourDetailList = [
+    "Celebrity History Tour – Learn about the estate’s star-studded past.",
+    "Architectural Tour – Discover the design and craftsmanship behind this Spanish Revival masterpiece.",
+    "Garden Tour – Stroll through the lush grounds and experience the estate’s breathtaking landscape.",
+  ];
 
   return (
-    <div className="main-container">
+    <main className="rental">
+
+      <Helmet>
+        <title>Palm Springs Film Location</title>
+      </Helmet>
       
-      <div className="hero-banner">
+      <div className="rental__hero-banner">
         <div 
-          className="hero-image"
+          className="rental__hero-image"
           style={{ 
             backgroundImage: `url(https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1740954186/Hidden%20Gable%20Estate/home%20page/_I1A0391_vwom7z.jpg`,
           }}
         ></div>
       </div>
       
-      <div className="content-container">
-        <div className="corporate__main-section">
-            <div className="luxury-rental-header">
-                <h1>Corporate Events at Hidden Gable Estate – A Palm Springs Landmark</h1>
-                <h2><em>Custom Events • Extraordinary Experiences • Your Brand</em></h2>
-            </div>
-          
-          <div className="content-wrapper">
-            <div className="features-container">
-              <h3>Elevate your next corporate offsite, retreat, or business event</h3>
+      <div className="rental__content-container">
+
+        <section className="rental__primary-section">
+
+          <div className="rental__header">
+              <h1>The Hidden Gable Estate – Palm Springs’ Premier Media Production Venue</h1>
+              {/* <h2><em>
+                Step back in time and experience the Hollywood glamour and architectural beauty of The Hidden Gable Estate
+              </em></h2> */}
               <p>
-                Nestled in the historic Old Las Palmas neighborhood, this private Spanish estate offers an inspiring and sophisticated setting for companies looking to:
+                Spanish Architecture | Period Furnishings | Lush Gardens | Spectacular Views | Secluded
               </p>
-              <ul className="feature-list">
-                {propertyFeatures.map((feature, index) => (
-                  <li key={index} className="feature-item">
-                    <span className="feature-text">{feature}</span>
+          </div>
+
+          <div className="rental__details">
+              <p>
+                Nestled in the prestigious Old Las Palmas neighborhood, just minutes from top hotels, entertainment, and dining, The Hidden Gable Estate is a stunning private retreat perfect for all types of visual media productions.
+              </p>
+          </div>
+          
+          <div className="rental__primary-content-wrapper">
+            <div className="rental__list-container">
+              <h3 className='red'>Why Choose Hidden Gable Estate?</h3>
+              <ul className="rental__list">
+                {filmLocationFeatureList.map((item, index) => (
+                  <li key={index} className="rental__list-item">
+                    <span><strong>{item.feature}: </strong></span> 
+                    <span> {item.description}</span>
                   </li>
                 ))}
               </ul>
-              <p>
-                We collaborate with world-class event creators, managers, and caterers to design an unforgettable experience tailored to your brand.
-              </p>
             </div>
             
-            <div className="celebrity-container">
-              <h3>A Historic Setting for Unique Themed Events</h3>
-              <p>
-                Hidden Gable Estate’s rich Hollywood history and Spanish Colonial architecture set the perfect stage for immersive, themed corporate gatherings:
-              </p>
-              <ul className="celebrity-list">
-                {celebrityList.map((celebrity, index) => (
-                  <li key={index} className="celebrity-item">
-                    <span className="emoji">{celebrity.emoji}</span>
-                    <span className="celebrity-text">{celebrity.name}</span>
+            <div className="rental__list-container">
+              <h3>Ideal For:</h3>
+              <ul className="rental__list-with-emoji">
+                {filmOptionsList.map((option, index) => (
+                  <li key={index} className="rental__list-item-with-emoji">
+                    <span className="emoji">{option.emoji}</span>
+                    <span>{option.name}</span>
                   </li>
                 ))}
               </ul>
+
               <p>
-                We collaborate with world-class event creators, managers, and caterers to design an unforgettable experience tailored to your brand.
+                This private, gated estate with a rich Hollywood history is a one-of-a-kind filming destination. Capture the essence of Old Hollywood glamour, timeless architecture, and the natural beauty of Palm Springs at The Hidden Gable Estate.
               </p>
-            </div>
-          </div>
-        </div>
-        
-        <div className="secondary-section">
-          <div className="section-container">
-            <div className="activities-wrapper">
-              <div className="activities-box">
-                <h3>Luxury Amenities for Team Building & Networking</h3>
-                <p>
-                  Encourage collaboration and relaxation with a variety of engaging activities:
-                </p>
-                <ul className="activities-list .corporate">
-                  <li>Pickleball & Bocce Ball</li>
-                  <li>Swimming Pool & Hot Tub</li>
-                  <li>Outdoor BBQ & Dining</li>
-                </ul>
-              </div>
-              <div className="location-box">
-                <h3 className='red'>Versatile Event Spaces for Any Corporate Occasion</h3>
-                <p>
-                  Hidden Gable Estate can accommodate 200+ guests across a variety of stunning venues:                </p>
-                <p>
-                    Just 90 minutes from Los Angeles, Palm Springs offers a perfect blend of mid-century charm and modern luxury. Whether you're exploring trendy boutiques, world-class golf courses, hiking trails, or vibrant nightlife, the city's top attractions are just minutes away:
-                </p>
-                <ul className="location-list">
-                    <li><span className="emoji">🍸</span>Cocktail Receptions</li>
-                    <li><span className="emoji">🍽</span>Banquets, Luncheons & Dinners</li>
-                    <li><span className="emoji">🎉</span>Corporate Retreats, Team Offsites & Networking Events</li>
-                    <li><span className="emoji">🚀</span>Product Launches & Media Events</li>
-                    <li><span className="emoji">💼</span>Executive Meetings & Hospitality Gatherings</li>
-                    <li><span className="emoji">🎗</span>Fundraisers & Charity Events</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-       <div className="booking-section">
-          <div className="booking-container">
-            <h2 className="booking-title">Book Your Exclusive Stay at Hidden Gable Estate</h2>
-            <p className="booking-description">
-              Let Hidden Gable Estate provide the perfect balance of sophistication, exclusivity, and inspiration for your next corporate event.
-            </p>
-            <div className="booking-form">
-              <p className="booking-contact-message">
-                📩 <strong>Contact us today to reserve your stay!</strong>
+              <p className="rental__booking-contact-message">
+                Please contact us to discuss your unique requirements. 
               </p>
-              <button onClick={handleClick} className="booking-button">Contact Us</button>
+              <button onClick={handleClick} className="rental__booking-button">Contact Us</button>
             </div>
+
           </div>
-        </div>
+
+        </section>
+
       </div>
-    </div>
+    </main>
   );
 };
 

@@ -17,15 +17,15 @@ const PrivateTours = () => {
   ];
 
   const privateTourDetailList = [
-    { emoji: "🕰", name: "Scheduling: Tours are typically held mid-week, based on availability." },
-    { emoji: "⏳", name: "Duration: Standard tours last 45 minutes but can be tailored to your needs." },
-    { emoji: "🍸", name: "Enhance Your Experience: Customize your tour with cocktail hours, pickleball, lunch, or dinner (indoors or outdoors)." },
+    { emoji: "🕰", detail: "Scheduling", description: "Tours are typically held mid-week, based on availability." },
+    { emoji: "⏳", detail: "Duration", description: "Standard tours last 45 minutes but can be tailored to your needs." },
+    { emoji: "🍸", detail: "Enhance Your Experience", description: "Customize your tour with cocktail hours, pickleball, lunch, or dinner (indoors or outdoors)." },
   ];
 
-  const specializedTourDetailList = [
-    "Celebrity History Tour – Learn about the estate’s star-studded past.",
-    "Architectural Tour – Discover the design and craftsmanship behind this Spanish Revival masterpiece.",
-    "Garden Tour – Stroll through the lush grounds and experience the estate’s breathtaking landscape.",
+  const specializedTourList = [
+    { name: "Celebrity History Tour", description: "Learn about the estate’s star-studded past." },
+    { name: "Architectural Tour", description: "Discover the design and craftsmanship behind this Spanish Revival masterpiece." },
+    { name: "Garden Tour", description: "Stroll through the lush grounds and experience the estate’s breathtaking landscape." },
   ];
 
   return (
@@ -74,7 +74,7 @@ const PrivateTours = () => {
               <ul className="rental__list-with-emoji">
                 {privateTourFeatureList.map((feature, index) => (
                   <li key={index} className="rental__list-item-with-emoji">
-                    <span>{feature.emoji}</span>
+                    <span className='emoji'>{feature.emoji}</span>
                     <span>{feature.name}</span>
                   </li>
                 ))}
@@ -84,18 +84,28 @@ const PrivateTours = () => {
             <div className="rental__list-container">
               <h3>Tour Details & Customization</h3>
               <ul className="rental__list-with-emoji">
-                {privateTourDetailList.map((detail, index) => (
+                {privateTourDetailList.map((item, index) => (
                   <li key={index} className="rental__list-item-with-emoji">
-                    <span className="emoji">{detail.emoji}</span>
-                    <span>{detail.name}</span>
+                    <span className="emoji">{item.emoji}</span>
+                    <span>
+                      <strong>{item.detail}: </strong>
+                      {item.description}
+                    </span>
                   </li>
                 ))}
-                <li>🏛 Specialized Tours Available:</li>
-                <ul>
-                  { specializedTourDetailList.map((detail, index) => (
-                    <li key={index} className='rental__list-item'>{detail}</li>
-                  ))}
-                </ul>
+                  <li className='rental__list-item-with-emoji'>
+                    <span className='emoji'>🏛</span>
+                    <span>
+                      <strong>Specialized Tours Available: </strong>
+                      <ul className='rental__sublist'>
+                        { specializedTourList.map((tour, index) => (
+                          <li key={index} className='rental__list-item'>
+                            <em>{tour.name}</em> – {tour.description}
+                          </li>
+                        ))}
+                      </ul>
+                    </span> 
+                  </li>
               </ul>
             </div>
 

@@ -33,6 +33,9 @@ const Hero = () => {
                         <Link to="/rental/dinnerparties" className="hero__event-link">
                             <span>Dinner Parties</span>
                         </Link>
+                        <Link to="/rental/filmlocation" className="hero__event-link">
+                            <span>Film Location</span>
+                        </Link>
                     </div>
                 </div>
             </div>
