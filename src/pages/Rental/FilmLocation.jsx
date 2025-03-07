@@ -26,12 +26,6 @@ const FilmLocation = () => {
     { emoji: "🏡", name: "Architectural & Travel Publications" },
   ];
 
-  const specializedTourDetailList = [
-    "Celebrity History Tour – Learn about the estate’s star-studded past.",
-    "Architectural Tour – Discover the design and craftsmanship behind this Spanish Revival masterpiece.",
-    "Garden Tour – Stroll through the lush grounds and experience the estate’s breathtaking landscape.",
-  ];
-
   return (
     <main className="rental">
 
@@ -43,7 +37,7 @@ const FilmLocation = () => {
         <div 
           className="rental__hero-image"
           style={{ 
-            backgroundImage: `url(https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1740954186/Hidden%20Gable%20Estate/home%20page/_I1A0391_vwom7z.jpg`,
+            backgroundImage: `url(https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741378878/Hidden%20Gable%20Estate/home%20page/_I1A0391_xn500l.jpg`,
           }}
         ></div>
       </div>

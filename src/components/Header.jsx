@@ -160,7 +160,7 @@ const Header = () => {
                                     <div className='divider-line'></div>
                                     <li><Link onClick={handleClick} to="/rental/dinnerparties" className='tab'>Dinner Parties</Link></li>
                                     <div className='divider-line'></div>
-                                    <li><Link onClick={handleClick} to="/rental/filmlocations" className='tab'>Film Locations</Link></li>
+                                    <li><Link onClick={handleClick} to="/rental/filmlocation" className='tab'>Film Location</Link></li>
                                 </ul>
                             </li>
                             <li className='mobile-submenu-container'>

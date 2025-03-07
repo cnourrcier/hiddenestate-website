@@ -52,7 +52,7 @@ const CorporateEvents = () => {
         <div 
           className="rental__hero-image"
           style={{ 
-            backgroundImage: `url(https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1740954186/Hidden%20Gable%20Estate/home%20page/_I1A0391_vwom7z.jpg`,
+            backgroundImage: `url(https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741378878/Hidden%20Gable%20Estate/home%20page/_I1A0391_xn500l.jpg`,
           }}
         ></div>
       </div>
@@ -110,9 +110,6 @@ const CorporateEvents = () => {
                 <h3>Versatile Event Spaces for Any Corporate Occasion</h3>
                 <p>
                   Hidden Gable Estate can accommodate 200+ guests across a variety of stunning venues:                </p>
-                <p>
-                    Just 90 minutes from Los Angeles, Palm Springs offers a perfect blend of mid-century charm and modern luxury. Whether you're exploring trendy boutiques, world-class golf courses, hiking trails, or vibrant nightlife, the city's top attractions are just minutes away:
-                </p>
                 <ul className="rental__list-with-emoji">
                   {corporateVenueList.map((venue, index) => (
                     <li key={index} className='rental__list-item-with-emoji'>
@@ -121,6 +118,9 @@ const CorporateEvents = () => {
                       </li>
                   ))}
                 </ul>
+                <p>
+                    Just 90 minutes from Los Angeles, Palm Springs offers a perfect blend of mid-century charm and modern luxury. Whether you're exploring trendy boutiques, world-class golf courses, hiking trails, or vibrant nightlife, the city's top attractions are just minutes away.
+                </p>
               </div>
 
               <div className="rental__list-container">
@@ -136,7 +136,6 @@ const CorporateEvents = () => {
                   ))}
                 </ul>
 
-                <h3 className="red">Book Your Exclusive Stay at Hidden Gable Estate</h3>
                 <p>
                   Let Hidden Gable Estate provide the perfect balance of sophistication, exclusivity, and inspiration for your next corporate event.
                 </p>

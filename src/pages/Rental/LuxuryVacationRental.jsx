@@ -154,7 +154,7 @@ const LuxuryVacationRental = () => {
                 ))}
               </ul>
               <p>
-                The estate is even featured on the Palm Springs Historical Society Celebrity Homes Tour.
+                The estate is featured on the Palm Springs Historical Society Celebrity Homes Tour.
               </p>
             </div>
 

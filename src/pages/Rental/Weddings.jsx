@@ -40,7 +40,7 @@ const Weddings = () => {
         <div 
           className="rental__hero-image"
           style={{ 
-            backgroundImage: `url(https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1740954186/Hidden%20Gable%20Estate/home%20page/_I1A0391_vwom7z.jpg`,
+            backgroundImage: `url(https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741381147/Hidden%20Gable%20Estate/rental/wedding_vf4sff.jpg`,
           }}
         ></div>
       </div>

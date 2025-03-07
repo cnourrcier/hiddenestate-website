@@ -106,7 +106,7 @@ const DinnerParties = () => {
                   Whether you're a history buff, architecture enthusiast, or simply looking for a one-of-a-kind experience, The Hidden Gable Estate promises an unforgettable journey into the heart of Palm Springs’ Golden Age.
                 </p>
                 <p className="rental__booking-contact-message">
-                  📞 <strong>Contact us for per-person rates, docent fees, and to discuss any special requests.</strong>
+                  <strong>Contact us for per-person rates, docent fees, and to discuss any special requests.</strong>
                 </p>
                 <button onClick={handleClick} className="rental__booking-button">Contact Us</button>
               </div>

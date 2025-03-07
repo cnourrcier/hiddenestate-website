@@ -47,7 +47,7 @@ const PrivateEvents = () => {
         <div 
           className="rental__hero-image"
           style={{ 
-            backgroundImage: `url(https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1740954186/Hidden%20Gable%20Estate/home%20page/_I1A0391_vwom7z.jpg`,
+            backgroundImage: `url(https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741378878/Hidden%20Gable%20Estate/home%20page/_I1A0391_xn500l.jpg`,
           }}
         ></div>
       </div>
@@ -122,7 +122,6 @@ const PrivateEvents = () => {
               </div>
 
               <div className='rental__list-container'>
-                <h3 className="red">Book Your Exclusive Stay at Hidden Gable Estate</h3>
                 <p>
                   Whether you're planning an elegant soirée, an immersive themed event, or a private retreat, Hidden Gable Estate is the perfect canvas for your vision.
                 </p>

@@ -39,7 +39,7 @@ const PrivateTours = () => {
         <div 
           className="rental__hero-image"
           style={{ 
-            backgroundImage: `url(https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734804922/Hidden%20Gable%20Estate/home%20page/5750_y8gi72.jpg)`,
+            backgroundImage: `url(https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741380108/Hidden%20Gable%20Estate/home%20page/5649_cb7wn4.jpg)`,
           }}
         ></div>
       </div>
@@ -120,7 +120,7 @@ const PrivateTours = () => {
               Whether you're a history buff, architecture enthusiast, or simply looking for a one-of-a-kind experience, The Hidden Gable Estate promises an unforgettable journey into the heart of Palm Springs’ Golden Age.
             </p>
               <p className="rental__booking-contact-message">
-                📞 <strong>Contact us for per-person rates, docent fees, and to discuss any special requests.</strong>
+                <strong>Contact us for per-person rates, docent fees, and to discuss any special requests.</strong>
               </p>
               <button onClick={handleClick} className="rental__booking-button">Contact Us</button>
           </div>
