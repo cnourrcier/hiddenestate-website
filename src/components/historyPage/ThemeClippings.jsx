@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import './ThemeClippings.css';
 
 const ThemeClippings = () => {
@@ -32,4 +33,4 @@ const ThemeClippings = () => {
     )
 }
 
-export default ThemeClippings; 
+export default memo(ThemeClippings); 

@@ -4,6 +4,7 @@
 
 .history__title {
   font-size: 2.5rem;
+  line-height: 3.2rem;
   color: var(--ps-terracotta);
   text-transform: uppercase;
   letter-spacing: 1px;
