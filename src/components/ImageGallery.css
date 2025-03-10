@@ -47,32 +47,9 @@
     transform: scale(1.03);
   }
   
-  /* Responsive design */
+  
   @media screen and (max-width: 1024px) {
     .image-gallery {
       display: flex;
-    }
-    
-    .gallery-column {
-      flex: 1;
-    }
-    
-    .gallery-column:nth-child(3) {
-      display: none;
-    }
-  }
-  
-  @media screen and (max-width: 640px) {
-    .image-gallery {
-      display: flex;
-    }
-    
-    .gallery-column {
-      flex: 1;
-    }
-    
-    .gallery-column:nth-child(2),
-    .gallery-column:nth-child(3) {
-      display: none;
     }
   }
