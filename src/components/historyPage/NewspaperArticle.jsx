@@ -3,7 +3,7 @@ import "./NewspaperArticle.css";
 
 const NewspaperArticle = () => {
   return (
-    <article className="wrapper-column">
+    <article className="article__wrapper-column">
       <div className="space" aria-hidden='true'></div>
       <div className="wrapper-row">
         <div className="wrapper">
