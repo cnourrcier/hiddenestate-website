@@ -127,6 +127,11 @@
         grid-template-columns: 1fr;
     }
 
+    .event-links-grid > *:last-child:nth-child(odd) {
+        grid-column: 1;
+        width: 100%;
+    }
+
     .hero-text-container h1 {
         font-size: 4rem;
     }
