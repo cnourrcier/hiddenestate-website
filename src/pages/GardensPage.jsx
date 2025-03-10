@@ -10,15 +10,29 @@ const GardensPage = () => {
     const imageUrl = import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV;
 
     const currentGardenImages = [
-            { id: 1, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504909/Hidden%20Gable%20Estate/gardens%20page/_I1A0136_3_small_tck5l5.jpg`, alt: 'Image 1' },
-            { id: 2, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504909/Hidden%20Gable%20Estate/gardens%20page/_I1A0332_small_eir0og.jpg`, alt: 'Image 2' },
-            { id: 3, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504910/Hidden%20Gable%20Estate/gardens%20page/_I1A0204_2_small_mprvjv.jpg`, alt: 'Image 3' },
-            { id: 4, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504910/Hidden%20Gable%20Estate/gardens%20page/_I1A0059_1_small_lvbnbl.jpg`, alt: 'Image 4' },
-            { id: 5, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504910/Hidden%20Gable%20Estate/gardens%20page/_I1A0056_2_small_utk5r8.jpg`, alt: 'Image 5' },
-            { id: 6, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504909/Hidden%20Gable%20Estate/gardens%20page/_I1A0053_1_small_qcm9tm.jpg`, alt: 'Image 6' },
-            { id: 7, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737505678/Hidden%20Gable%20Estate/gardens%20page/_I1A0336_vapsdt.jpg`, alt: 'Image 7' },
-            { id: 8, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737505677/Hidden%20Gable%20Estate/gardens%20page/_I1A0360_azhsjo.jpg`, alt: 'Image 8' },
+            { id: 1, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1741571246/Hidden%20Gable%20Estate/gardens%20page/_I1A0280_small_nyjxxh.jpg`, alt: 'Image 1' },
+            { id: 2, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1741571118/Hidden%20Gable%20Estate/gardens%20page/_I1A0459_small_jyh2t9.jpg`, alt: 'Image 2' },
+            { id: 3, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1741570327/Hidden%20Gable%20Estate/gardens%20page/_I1A0059_1_small_hvmzhn.jpg`, alt: 'Image 3' },
+            { id: 4, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1741570609/Hidden%20Gable%20Estate/gardens%20page/_I1A0360_small_m54j41.jpg`, alt: 'Image 4' },
+            { id: 5, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1741571455/Hidden%20Gable%20Estate/gardens%20page/_I1A0456_small_eng8xk.jpg`, alt: 'Image 5' },
+            { id: 6, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1741571485/Hidden%20Gable%20Estate/gardens%20page/IMG_8005_small_dovx40.jpg`, alt: 'Image 6' },
+            { id: 7, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1741571495/Hidden%20Gable%20Estate/gardens%20page/IMG_8014_small_o7yqyh.jpg`, alt: 'Image 7' },
+            { id: 8, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1741571502/Hidden%20Gable%20Estate/gardens%20page/IMG_8017_small_x90jsw.jpg`, alt: 'Image 8' },
+            { id: 9, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1741571515/Hidden%20Gable%20Estate/gardens%20page/IMG_8025_small_twutf2.jpg`, alt: 'Image 9' },
+            { id: 10, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1741571525/Hidden%20Gable%20Estate/gardens%20page/IMG_8037_small_k4zhrt.jpg`, alt: 'Image 10' },
+            { id: 11, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1741571540/Hidden%20Gable%20Estate/gardens%20page/IMG_8047_small_tewros.jpg`, alt: 'Image 11' },
         ];
+
+    // const currentGardenImages = [
+    //         { id: 1, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504909/Hidden%20Gable%20Estate/gardens%20page/_I1A0136_3_small_tck5l5.jpg`, alt: 'Image 1' },
+    //         { id: 2, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504909/Hidden%20Gable%20Estate/gardens%20page/_I1A0332_small_eir0og.jpg`, alt: 'Image 2' },
+    //         { id: 3, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504910/Hidden%20Gable%20Estate/gardens%20page/_I1A0204_2_small_mprvjv.jpg`, alt: 'Image 3' },
+    //         { id: 4, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504910/Hidden%20Gable%20Estate/gardens%20page/_I1A0059_1_small_lvbnbl.jpg`, alt: 'Image 4' },
+    //         { id: 5, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504910/Hidden%20Gable%20Estate/gardens%20page/_I1A0056_2_small_utk5r8.jpg`, alt: 'Image 5' },
+    //         { id: 6, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737504909/Hidden%20Gable%20Estate/gardens%20page/_I1A0053_1_small_qcm9tm.jpg`, alt: 'Image 6' },
+    //         { id: 7, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737505678/Hidden%20Gable%20Estate/gardens%20page/_I1A0336_vapsdt.jpg`, alt: 'Image 7' },
+    //         { id: 8, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1737505677/Hidden%20Gable%20Estate/gardens%20page/_I1A0360_azhsjo.jpg`, alt: 'Image 8' },
+    //     ];
 
     const historicalGardenImages = [
             { id: 1, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1736519293/Hidden%20Gable%20Estate/gardens%20page/Untitled-4_small_hvlcmx.jpg`, text: `“We decided on Cactus as a Motif and proceeded to Arizona with trucks tools etc.” as documented by Mrs Swobdi's sister. This occurred in the late 1920s.`, alt: 'Cactus Motif'},
