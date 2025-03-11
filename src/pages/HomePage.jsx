@@ -86,7 +86,6 @@ return (
           onClick={handleOpenMonetModal}
         />
         <cite className="monet-quote">“Color is my daylong obsession, joy, and torment” <span>- Claude Monet</span></cite>
-        {/* <p className="monet-text">The estate interior and exterior colors have been meticulously restored as they existed in the twenties. Swobdi, a frequent world traveler, got her inspiration and color pallet choices from Claude Monet's pink home in Giverny (a commune in France). Pink exterior walls with green shutters, yellow crown molding, exterior tile with all Monet's favorite colors, etc. Monet lived in his pink home from 1883 until his death in 1926. Another example of Monet's influence is his painting “House Among the Palms” with pink exterior and red tile roof.</p> */}
       </div>
     </section>
     <Features />

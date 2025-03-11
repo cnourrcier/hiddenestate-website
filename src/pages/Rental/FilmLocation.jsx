@@ -16,7 +16,7 @@ const FilmLocation = () => {
     { feature: "Versatile Spaces", description: "Expansive exterior grounds spanning an acre, ideal for large-scale filming, events, and parties accommodating 200+ guests." },
     { feature: "Authentic Atmosphere", description: "Spanish Colonial Revival architecture, period furnishings, and vintage décor offer an elegant and historically rich setting." },
     { feature: "Breathtaking Backdrops", description: "Lush gardens, mature trees, a large pool with a cabana, and spectacular mountain views create endless filming possibilities." },
-    { feature: " Production-Friendly Amenities", description: "A spacious cabana with a bathroom and kitchenette, ample space for lighting and camera setups, and plentiful street parking for cast and crew." },
+    { feature: " Production-Friendly Amenities", description: "Ample space for lighting and camera setups, and plentiful parking options for cast and crew." },
   ];
 
   const filmOptionsList = [

@@ -1,0 +1,177 @@
+.media-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-color);
+  }
+  
+  .media-page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .media-page-header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .media-page-header p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .media-events {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .media-event-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    background-color: var(--light-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+  }
+  
+  .media-event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .media-event-image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .media-event-image img,
+  .media-event-image iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: none;
+  }
+  
+  .media-event-content {
+    padding: 1.5rem;
+  }
+  
+  .media-event-content h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .event-date {
+    display: block;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 1rem;
+  }
+  
+  .media-event-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .event-link {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+  }
+  
+  .event-link:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+  }
+  
+  /* Media queries for responsive design */
+  @media (min-width: 768px) {
+    .media-event-card {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .media-event-image {
+      height: 100%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .media-events {
+      gap: 4rem;
+    }
+    
+    .media-event-content {
+      padding: 2rem;
+    }
+  }
+  
+  /* Animation for new content */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .media-event-card {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  /* Staggered animation delay for multiple cards */
+  .media-event-card:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .media-event-card:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  /* Style for featured events */
+  .media-event-card.featured {
+    border-left: 5px solid var(--accent-color);
+  }
+  
+  /* Style for when more media types are added */
+  .media-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .filter-button {
+    background: none;
+    border: 2px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+  }
+  
+  .filter-button:hover,
+  .filter-button.active {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+  }
