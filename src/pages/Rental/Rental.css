@@ -186,25 +186,15 @@
 .rental__image-gallery {
   display: flex;
   overflow-x: auto;
-  /* padding: 2rem 0; */
   background-color: transparent;
-  scrollbar-width: thin;
-  scrollbar-color: #666 #1a1a1a;
-  scroll-behavior: smooth;
   flex-grow: 1;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
 .rental__image-gallery::-webkit-scrollbar {
-  height: 8px;
-}
-
-.rental__image-gallery::-webkit-scrollbar-track {
-  background: #1a1a1a;
-}
-
-.rental__image-gallery::-webkit-scrollbar-thumb {
-  background-color: #666;
-  border-radius: 4px;
+  display: none;
 }
 
 .rental__gallery-image-container {
@@ -367,10 +357,17 @@
   .rental__hero-banner {
     height: 60vh;
   }
+
+  .rental__image-gallery {
+    scroll-snap-type: x mandatory;
+    padding: 0 calc(50% - 140px); /* Center single image (half of viewport minus half of image width) */
+  }
   
   .rental__gallery-image-container {
     flex: 0 0 280px;
     height: 180px;
+    scroll-snap-align: center;
+    margin: 0 5px;
   }
 
   .rental__header {
