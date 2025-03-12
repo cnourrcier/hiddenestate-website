@@ -76,7 +76,8 @@ const LuxuryVacationRental = () => {
     // { url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734719454/Hidden%20Gable%20Estate/home%20page/5757_ufhw0g.jpg`, alt: 'Pool and pickleball court with breathtaking views' },
     { url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734719350/Hidden%20Gable%20Estate/home%20page/5742_mr4ibo.jpg`, alt: 'Interior living space with fireplace' },
     { url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734719452/Hidden%20Gable%20Estate/home%20page/5837_g7sld1.jpg`, alt: 'Saltwater pool with Outdoor Kitchen' },
-    { url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1740889953/Hidden%20Gable%20Estate/home%20page/5672_ueiwtz.jpg`, alt: 'Kirk Douglas pool table' }
+    { url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1740889953/Hidden%20Gable%20Estate/home%20page/5672_ueiwtz.jpg`, alt: 'Kirk Douglas pool table' },
+    { url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741738121/Hidden%20Gable%20Estate/rental/20241122_151650_small_cqcacm.jpg`, alt: 'Kirk Douglas pool table nameplate'} 
   ];
 
   return (
@@ -209,6 +210,12 @@ const LuxuryVacationRental = () => {
                     </li>
                   ))}
                 </ul>
+                <div className='rental__img-container'>
+                  <img 
+                    src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741739068/Hidden%20Gable%20Estate/rental/IMG_8006_okoytm.jpg`} 
+                    alt="Outdoor kitchen and bocce ball"
+                  />
+                </div>
               </div>
 
               <div className="rental__list-container">

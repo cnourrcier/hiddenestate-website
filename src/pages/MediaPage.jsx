@@ -9,12 +9,10 @@ const MediaPage = () => {
           title: "Modernism 2025 Featured Home Tour",
           date: "March 15, 2025",
           description: "Our property was featured in the prestigious Modernism 2025 Home Tour, showcasing its unique architectural design and contemporary aesthetics.",
-          imageUrl: "/images/modernism-tour-2025.jpg", // Replace with your actual image path
-          link: "https://modernism2025.com/featured-homes", // Replace with the actual URL
+          imageUrl: "/images/modernism-tour-2025.jpg",
+          link: "https://modernism2025.com/featured-homes",
           type: "image"
         },
-        // You can add more events here in the future
-        // Example of a future video event:
         /*
         {
           id: 2,

@@ -18,10 +18,7 @@ const ImageGallery = ({ images }) => {
     // Set initial column count
     handleResize();
 
-    // Add event listener
     window.addEventListener('resize', handleResize);
-
-    // Clean up
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 

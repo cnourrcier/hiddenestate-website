@@ -84,7 +84,7 @@
     margin-bottom: 1.5rem;
   }
   
-  .event-link {
+  /* .event-link {
     display: inline-block;
     background-color: var(--secondary-color);
     color: white;
@@ -98,7 +98,7 @@
   .event-link:hover {
     background-color: #2980b9;
     transform: translateY(-2px);
-  }
+  } */
   
   /* Media queries for responsive design */
   @media (min-width: 768px) {

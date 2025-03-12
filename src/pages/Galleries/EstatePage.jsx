@@ -8,7 +8,19 @@ const EstatePage = () => {
     { 
       id: 1,
       imageID: 'cf23209b-fb41-4008-079f-ae78188cdd00',
+      name: '20241122_145117 small.jpg', 
+      alt: 'Description of image 1'
+    },
+    { 
+      // id: 1,
+      imageID: '228a5627-0753-4a01-87c4-3803d9b24f00',
       name: '_I1A0197m_2_oiuer9 small.jpg', 
+      alt: 'Description of image 1'
+    },
+    { 
+      // id: 1,
+      imageID: '40d1d2a5-3385-42a0-ea05-1456f5564500',
+      name: '20241122_145440 small.jpg', 
       alt: 'Description of image 1'
     },
     { 
@@ -164,7 +176,7 @@ const EstatePage = () => {
     { 
       id: 27,
       imageID: '1becceae-49b5-4bde-4582-fa530fadf600',
-      name: 'IMG_8047 small.jpg', // for reference on Cloudflare
+      name: 'IMG_8047 small.jpg',
       alt: 'Portrait photo' 
     },
     { 
