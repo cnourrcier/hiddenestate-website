@@ -29,15 +29,15 @@ const MediaPage = () => {
             link: "https://modernismweek.com/2025/home-tours/old-las-palmas-home-tour-peek/",
             linkTitle: "Event Website"
         },
-        {
-            id: 2,
-            video: 'https://www.youtube.com/embed/your-video-id',
-            type: 'video',
-            headline: 'Inside Tour: Mid-Century Modern Marvel in Palm Springs',
-            source: 'Featured on Discovery Channel',
-            link: 'https://www.youtube.com/watch?v=your-video-id',
-            date: 'June 2025'
-        },
+        // {
+        //     id: 2,
+        //     video: 'https://www.youtube.com/embed/your-video-id',
+        //     type: 'video',
+        //     headline: 'Inside Tour: Mid-Century Modern Marvel in Palm Springs',
+        //     source: 'Featured on Discovery Channel',
+        //     link: 'https://www.youtube.com/watch?v=your-video-id',
+        //     date: 'June 2025'
+        // },
     ];
 
     return (
@@ -75,14 +75,14 @@ const MediaPage = () => {
                                     alt="Brochure open view" 
                                     className="media-brochure-open" 
                                 />
-                                <div className="media-brochure-overlay">
+                                {/* <div className="media-brochure-overlay">
                                     <button
                                         className="media-link"
                                         onClick={() => handleOpenModal(item.brochureOpen, item.headline)}
                                     >
                                         Read Article
                                     </button>
-                                </div>
+                                </div> */}
                             </div>
                         ) : (
                             <div className="media-video-wrapper">
@@ -103,9 +103,9 @@ const MediaPage = () => {
                                 <span className="media-source">{item.source}</span>
                                 <span className="media-date">{item.date}</span>
                             </div>
-                            <a href={item.link} target="_blank" rel="noopener noreferrer" className={ item.linkTitle ? 'media-link' : 'hidden'}>
+                            {/* <a href={item.link} target="_blank" rel="noopener noreferrer" className={ item.linkTitle ? 'media-link' : 'hidden'}>
                                 {item.linkTitle ? item.linkTitle : 'View Feature'}
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                     ))}

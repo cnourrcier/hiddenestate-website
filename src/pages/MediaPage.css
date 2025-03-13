@@ -4,7 +4,6 @@
   margin: 0 auto;
 }
 
-/* Header styles */
 .media__header-container {
   text-align: center;
   position: relative;
@@ -43,6 +42,8 @@
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2.5rem;
   width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
 }
 
 .media-spotlight-card {
@@ -96,7 +97,7 @@
 }
 
 /* Overlay for the read article button */
-.media-brochure-overlay {
+/* .media-brochure-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -109,7 +110,7 @@
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 3;
-}
+} */
 
 .media-brochure-closed {
   height: 180px;
@@ -132,7 +133,7 @@
 }
 
 /* Hover effects for brochures */
-.media-spotlight-card:hover .media-brochure-closed {
+/* .media-spotlight-card:hover .media-brochure-closed {
   transform: rotate(-12deg) translateX(-10px) scale(1.05);
   filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
 }
@@ -144,7 +145,7 @@
 
 .media-spotlight-card:hover .media-brochure-overlay {
   opacity: 1;
-}
+} */
 
 .media-video-wrapper {
   height: 100%;
@@ -244,16 +245,16 @@
     display: block;
   }
   
-  .media-brochure-overlay {
+  /* .media-brochure-overlay {
     opacity: 0.9;
     background-color: rgba(0, 0, 0, 0.05);
-  }
+  } */
   
   /* Move the overlay button to bottom of container for easier thumb access */
-  .media-brochure-overlay {
+  /* .media-brochure-overlay {
     align-items: flex-end;
     padding-bottom: 15px;
-  }
+  } */
   
   /* Apply the rotation effect by default on mobile */
   .media-brochure-closed {
@@ -265,7 +266,7 @@
   }
   
   /* Slightly more dramatic effect on active/tap state */
-  .media-spotlight-card:active .media-brochure-closed {
+  /* .media-spotlight-card:active .media-brochure-closed {
     transform: rotate(-12deg) translateX(-10px) scale(1.05);
     filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
   }
@@ -273,13 +274,13 @@
   .media-spotlight-card:active .media-brochure-open {
     transform: rotate(10deg) translateX(10px) scale(1.05);
     filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
-  }
+  } */
   
   /* Make the "Read Article" button more prominent */
-  .media-brochure-overlay .media-link {
+  /* .media-brochure-overlay .media-link {
     padding: 12px 24px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
+  } */
 }
 
 @media (max-width: 1050px) {
@@ -305,13 +306,13 @@
     height: 160px;
   }
   
-  .media-spotlight-card:hover .media-brochure-closed {
+  /* .media-spotlight-card:hover .media-brochure-closed {
     transform: rotate(-10deg) translateX(-5px) scale(1.05);
   }
   
   .media-spotlight-card:hover .media-brochure-open {
     transform: rotate(8deg) translateX(5px) scale(1.05);
-  }
+  } */
   
   .media-info {
     padding: 0.8rem;
