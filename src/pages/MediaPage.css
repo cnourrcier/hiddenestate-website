@@ -1,202 +1,363 @@
 .media-page {
-    padding: 160px 2rem 60px 2rem;
-    max-width: 1200px;
+  padding: 160px 2rem 60px 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+.media__header-container {
+  text-align: center;
+  position: relative;
+  margin-bottom: 4rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.media__header {
+  font-size: 1.6rem;
+  color: var(--ps-dark-terracotta);
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.media__subheader {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--ps-grey);
+  margin-bottom: 1rem;
+}
+
+.star {
+  font-size: 1rem;
+  color: var(--ps-terracotta);
+  margin: 0 0.7rem;
+  vertical-align: middle;
+}
+
+/* Media spotlight container and cards */
+.media-spotlight-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.media-spotlight-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  width: 100%;
+}
+
+.media-spotlight-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, var(--ps-dark-terracotta), var(--ps-terracotta));
+}
+
+/* Media content - images, brochures, and videos */
+.media-content {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+.media-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.media-spotlight-card:hover .media-image {
+  transform: scale(1.05);
+}
+
+/* Brochure container and images styles */
+.media-brochure-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+/* Overlay for the read article button */
+.media-brochure-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+}
+
+.media-brochure-closed {
+  height: 180px;
+  object-fit: contain;
+  transform: rotate(-8deg) translateX(15px);
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.2));
+  z-index: 1;
+  position: relative;
+  transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.media-brochure-open {
+  height: 180px;
+  object-fit: contain;
+  transform: rotate(6deg) translateX(-15px);
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.2));
+  z-index: 2;
+  position: relative;
+  transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+/* Hover effects for brochures */
+.media-spotlight-card:hover .media-brochure-closed {
+  transform: rotate(-12deg) translateX(-10px) scale(1.05);
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
+}
+
+.media-spotlight-card:hover .media-brochure-open {
+  transform: rotate(10deg) translateX(10px) scale(1.05);
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
+}
+
+.media-spotlight-card:hover .media-brochure-overlay {
+  opacity: 1;
+}
+
+.media-video-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.media-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Media info section */
+.media-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 210px; /* Fixed height for consistent card sizing */
+}
+
+.media-headline {
+  font-size: 1.25rem;
+  color: var(--ps-blue);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.media-source-date {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+  font-size: 0.9rem;
+  color: var(--ps-grey);
+}
+
+.media-source {
+  font-weight: 600;
+}
+
+.media-date {
+  font-style: italic;
+}
+
+.media-link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 1px solid var(--ps-dark-terracotta);
+  color: white;
+  background: rgba(224, 122, 95, 1);
+  border-radius: 4px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: background 0.2s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.media-info .media-link {
+  align-self: flex-start;
+}
+
+.media-link:hover {
+  border: 1px solid var(--ps-terracotta);
+  background: rgba(224, 122, 95, 0.9);
+}
+
+.hidden {
+  display: none;
+}
+
+.mobile-touch-indicator {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--ps-dark-terracotta);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  z-index: 4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Show the indicator only on touch devices */
+@media (hover: none) {
+  .mobile-touch-indicator {
+    display: block;
+  }
+  
+  .media-brochure-overlay {
+    opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Move the overlay button to bottom of container for easier thumb access */
+  .media-brochure-overlay {
+    align-items: flex-end;
+    padding-bottom: 15px;
+  }
+  
+  /* Apply the rotation effect by default on mobile */
+  .media-brochure-closed {
+    transform: rotate(-10deg) translateX(-5px) scale(1.02);
+  }
+  
+  .media-brochure-open {
+    transform: rotate(8deg) translateX(5px) scale(1.02);
+  }
+  
+  /* Slightly more dramatic effect on active/tap state */
+  .media-spotlight-card:active .media-brochure-closed {
+    transform: rotate(-12deg) translateX(-10px) scale(1.05);
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
+  }
+  
+  .media-spotlight-card:active .media-brochure-open {
+    transform: rotate(10deg) translateX(10px) scale(1.05);
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
+  }
+  
+  /* Make the "Read Article" button more prominent */
+  .media-brochure-overlay .media-link {
+    padding: 12px 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 1050px) {
+  .media-spotlight-container {
+    grid-template-columns: 1fr;
+    max-width: 550px;
     margin: 0 auto;
+    gap: 2rem;
   }
-  
-  /* Header styles */
-  .media__header-container {
-    text-align: center;
-    position: relative;
-    margin-bottom: 4rem;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
+}
+
+@media (max-width: 768px) {
   .media__header {
-    font-size: 1.6rem;
-    color: var(--ps-dark-terracotta);
-    letter-spacing: 1.5px;
-    line-height: 1.2;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
   }
   
   .media__subheader {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: var(--ps-grey);
-    margin-bottom: 1rem;
+    padding: 0 1rem;
   }
   
-  .star {
-    font-size: 1rem;
-    color: var(--ps-terracotta);
-    margin: 0 0.7rem;
-    vertical-align: middle;
+  .media-brochure-closed,
+  .media-brochure-open {
+    height: 160px;
   }
   
-  /* Media spotlight container and cards */
-  .media-spotlight-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2.5rem;
+  .media-spotlight-card:hover .media-brochure-closed {
+    transform: rotate(-10deg) translateX(-5px) scale(1.05);
   }
   
-  .media-spotlight-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
+  .media-spotlight-card:hover .media-brochure-open {
+    transform: rotate(8deg) translateX(5px) scale(1.05);
   }
   
-  .media-spotlight-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(to right, var(--ps-dark-terracotta), var(--ps-terracotta));
-  }
-  
-  .media-spotlight-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
-  }
-  
-  /* Media content - images and videos */
-  .media-content {
-    height: 220px;
-    overflow: hidden;
-  }
-  
-  .media-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-  
-  .media-spotlight-card:hover .media-image {
-    transform: scale(1.05);
-  }
-  
-  .media-video-wrapper {
-    height: 100%;
-    width: 100%;
-    position: relative;
-  }
-  
-  .media-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  /* Media info section */
   .media-info {
-    padding: 1.5rem;
-    display: flex;
+    padding: 0.8rem;
+  }
+
+  .media-source-date {
     flex-direction: column;
-    height: 210px; /* Fixed height for consistent card sizing */
+  }
+}
+
+@media (max-width: 480px) {
+  .media-page {
+    padding: 120px 1rem 40px 1rem;
+  }
+  
+  .media__header {
+    font-size: 1.3rem;
+  }
+  
+  .media-info {
+    padding: 1.2rem;
   }
   
   .media-headline {
-    font-size: 1.25rem;
-    color: var(--ps-blue);
-    margin-bottom: 1rem;
-    font-weight: 700;
-    line-height: 1.4;
-    flex-grow: 1;
-    text-align: left;
+    font-size: 1.1rem;
   }
   
-  .media-source-date {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.2rem;
-    font-size: 0.9rem;
-    color: var(--ps-grey);
+  .media-brochure-closed,
+  .media-brochure-open {
+    height: 140px;
+  }
+
+  .media-info .media-link {
+    align-self: unset;
+  }
+}
+
+/* Additional responsive adjustments for very small screens */
+@media (max-width: 380px) {
+  .media-spotlight-container {
+    grid-template-columns: 1fr;
+    max-width: 100%;
   }
   
-  .media-source {
-    font-weight: 600;
+  .media-brochure-closed,
+  .media-brochure-open {
+    height: 130px;
   }
-  
-  .media-date {
-    font-style: italic;
-  }
-  
-  .media-link {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 0.95rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border: 1px solid var(--ps-dark-terracotta);
-    color: white;
-    background: rgba(224, 122, 95, 1);
-    border-radius: 4px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-    transition: background 0.2s ease;
-    text-align: center;
-    align-self: flex-start;
-  }
-  
-  .media-link:hover {
-    border: 1px solid var(--ps-terracotta);
-    background: rgba(224, 122, 95, 0.9);
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 900px) {
-    .media-spotlight-container {
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .media__header {
-      font-size: 1.5rem;
-    }
-    
-    .media__subheader {
-      padding: 0 1rem;
-    }
-    
-    .media-spotlight-container {
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.8rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .media-page {
-      padding: 120px 1rem 40px 1rem;
-    }
-    
-    .media__header {
-      font-size: 1.3rem;
-    }
-    
-    .media-spotlight-container {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-    
-    .media-info {
-      padding: 1.2rem;
-    }
-    
-    .media-headline {
-      font-size: 1.1rem;
-    }
-  }
+}

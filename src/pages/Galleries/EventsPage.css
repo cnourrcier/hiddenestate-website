@@ -171,7 +171,6 @@
     background-color: var(--ps-terracotta);
   }
   
-  /* Improved brochure container */
   .event-brochure-container {
     display: flex;
     justify-content: center;
