@@ -115,7 +115,8 @@
 .media-brochure-closed {
   height: 180px;
   object-fit: contain;
-  transform: rotate(-8deg) translateX(15px);
+  /* transform: rotate(-10deg) translateX(15px); */
+  transform: rotate(-12deg) translateX(15px);
   filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.2));
   z-index: 1;
   position: relative;
@@ -125,7 +126,8 @@
 .media-brochure-open {
   height: 180px;
   object-fit: contain;
-  transform: rotate(6deg) translateX(-15px);
+  /* transform: rotate(8deg) translateX(-8px); */
+  transform: rotate(8deg) translateX(-5px);
   filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.2));
   z-index: 2;
   position: relative;
@@ -196,7 +198,7 @@
   font-style: italic;
 }
 
-.media-link {
+/* .media-link {
   display: inline-block;
   padding: 10px 20px;
   font-size: 0.95rem;
@@ -210,16 +212,16 @@
   transition: background 0.2s ease;
   text-align: center;
   cursor: pointer;
-}
+} */
 
-.media-info .media-link {
+/* .media-info .media-link {
   align-self: flex-start;
-}
+} */
 
-.media-link:hover {
+/* .media-link:hover {
   border: 1px solid var(--ps-terracotta);
   background: rgba(224, 122, 95, 0.9);
-}
+} */
 
 .hidden {
   display: none;
@@ -258,11 +260,11 @@
   
   /* Apply the rotation effect by default on mobile */
   .media-brochure-closed {
-    transform: rotate(-10deg) translateX(-5px) scale(1.02);
+    /* transform: rotate(-10deg) translateX(-5px) scale(1.02); */
   }
   
   .media-brochure-open {
-    transform: rotate(8deg) translateX(5px) scale(1.02);
+    /* transform: rotate(8deg) translateX(5px) scale(1.02); */
   }
   
   /* Slightly more dramatic effect on active/tap state */
