@@ -5,7 +5,11 @@ const Fleeson = () => {
         <div className='fleeson'>
             <section className='fleeson__article'>
                 <h3>Captain Clark Gable flys with bomber squadron in WWII</h3>
-                <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736195174/Hidden%20Gable%20Estate/history%20page/fleeson-heroes_syicpy.png`} alt="heroes article" />
+                <img 
+                    src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736195174/Hidden%20Gable%20Estate/history%20page/fleeson-heroes_syicpy.png`} 
+                    alt='heroes article' 
+                    loading='lazy'
+                />
             </section>
             <section className='fleeson__quote1'>
                 <p>“Dear Doris: There are many presidents who can read your column, but it is only a happy few who have it delivered to them in person.  Sincerely, John Kennedy.”</p>
@@ -23,7 +27,11 @@ const Fleeson = () => {
             </section>
             <div className='row-divider'></div>
             <section className='fleeson__img1'>
-                <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839277/Hidden%20Gable%20Estate/history%20page/trenches_nnwonq.jpg`} alt="trenches" />
+                <img 
+                    src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839277/Hidden%20Gable%20Estate/history%20page/trenches_nnwonq.jpg`} 
+                    alt='trenches'
+                    loading='lazy'
+                />
             </section>
             <section className='fleeson__main-text2'>
                 <h3>War Beat:</h3>
@@ -37,10 +45,18 @@ const Fleeson = () => {
                 <p>Fleeson said to Chicago Times in 1944: “In Italy I went ashore in an amphibious duck with an Army evacuation nurses unit and landed right on the beach.  I have never seen such heroism as those girls showed.  They would trudge up to the lines under fire to attend the wounded.”</p>
             </section>
             <section className='fleeson__img2'>
-                <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839276/Hidden%20Gable%20Estate/history%20page/group_of_military_nglgyu.jpg`} alt="group of military" />
+                <img 
+                    src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839276/Hidden%20Gable%20Estate/history%20page/group_of_military_nglgyu.jpg`} 
+                    alt="group of military" 
+                    loading='lazy'
+                />
             </section>
             <section className='fleeson__img3'>
-                <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735404643/Hidden%20Gable%20Estate/history%20page/DorisFleeson_vfnxso.jpg`} alt="doris fleeson" />
+                <img 
+                    src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735404643/Hidden%20Gable%20Estate/history%20page/DorisFleeson_vfnxso.jpg`} 
+                    alt="doris fleeson" 
+                    loading='lazy'
+                />
             </section>
         </div>
     )

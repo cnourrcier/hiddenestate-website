@@ -1,13 +1,21 @@
 import './SharCracraft.css';
 
-const SharCracraftNew = () => {
+const SharCracraft = () => {
     return (
         <div className='cracraft'>
             <div className='cracraft__headline'>
-                <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839322/Hidden%20Gable%20Estate/history%20page/DS19760430.2.205-a1-700w_lut0b6.jpg`} alt="Shar Cracraft Home - Air of Old Palm Springs" />
+                <img 
+                    src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839322/Hidden%20Gable%20Estate/history%20page/DS19760430.2.205-a1-700w_lut0b6.jpg`} 
+                    alt="Shar Cracraft Home - Air of Old Palm Springs" 
+                    loading='lazy'
+                />
             </div>
             <div className='cracraft__article-photo-self'>
-                <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839323/Hidden%20Gable%20Estate/history%20page/The_Desert_Sun_1976_01_26_11.mjpg_nvytk2.jpg`} alt="The Desert Sun January 1976" />
+                <img 
+                    src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839323/Hidden%20Gable%20Estate/history%20page/The_Desert_Sun_1976_01_26_11.mjpg_nvytk2.jpg`} 
+                    alt="The Desert Sun January 1976" 
+                    loading='lazy'
+                />
             </div>
             <section className='cracraft__main-text'>
                 <div className='cracraft__content-wrapper'>
@@ -26,14 +34,22 @@ const SharCracraftNew = () => {
                 </div>
             </section>
             <div className='cracraft__article-text'>
-                <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839323/Hidden%20Gable%20Estate/history%20page/Palm_Desert_Post_1976_01_29_23_brhguf.jpg`} alt="Palm Desert Post January 1976" />
+                <img 
+                    src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839323/Hidden%20Gable%20Estate/history%20page/Palm_Desert_Post_1976_01_29_23_brhguf.jpg`} 
+                    alt="Palm Desert Post January 1976" 
+                    loading='lazy'
+                />
             </div>
             <div className='cracraft__article-photo-house'>
-                <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839324/Hidden%20Gable%20Estate/history%20page/The_Desert_Sun_1976_04_30_37_m_ljcw6n.jpg`} alt="The Desert Sun Home & Garden April 1976" />
+                <img 
+                    src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735839324/Hidden%20Gable%20Estate/history%20page/The_Desert_Sun_1976_04_30_37_m_ljcw6n.jpg`} 
+                    alt="The Desert Sun Home & Garden April 1976" 
+                    loading='lazy'
+                />
             </div>
             
         </div>
     )
 }
 
-export default SharCracraftNew;
+export default SharCracraft;

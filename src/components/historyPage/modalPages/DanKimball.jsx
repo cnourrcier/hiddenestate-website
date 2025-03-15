@@ -16,7 +16,11 @@ const DanKimball = () => (
             </ul>
         </section>
         <section className="kimball__img">
-          <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1737299379/Hidden%20Gable%20Estate/history%20page/time_magazine_1958_June_30_Kimbal_and_Aerojet_ylmz71.jpg`} alt="time magazine 1958 June 30 Kimbal and Aerojet" />
+          <img 
+            src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1737299379/Hidden%20Gable%20Estate/history%20page/time_magazine_1958_June_30_Kimbal_and_Aerojet_ylmz71.jpg`} 
+            alt="time magazine 1958 June 30 Kimbal and Aerojet" 
+            loading='lazy'
+            />
         </section>
     </div>
   );

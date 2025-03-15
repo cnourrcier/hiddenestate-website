@@ -1,6 +1,6 @@
 import './MasterArchitect.css';
 
-const MasterAchitect = () => (
+const MasterArchitect = () => (
     <div className='swasey'>
 
         <section className="swasey__text-content ">
@@ -15,20 +15,40 @@ const MasterAchitect = () => (
         </section>
 
         <div className='row'>
-          <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734719349/Hidden%20Gable%20Estate/home%20page/5734_dy1q44.jpg`} alt="Master Architect" />
+          <img 
+            src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734719349/Hidden%20Gable%20Estate/home%20page/5734_dy1q44.jpg`} 
+            alt="Master Architect" 
+            loading='lazy'
+          />
         </div>
         <div className='row'>
-          <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1737773426/Hidden%20Gable%20Estate/history%20page/Los_Angeles_Times_1931_April_6_pg_74_small_naa4cp.png`} alt="Los Angeles Times 1931 April 6 pg 74 " />
-          <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1737774605/Hidden%20Gable%20Estate/history%20page/The_Los_Angeles_Times_1925_10_04_108_small_pc5utk.jpg`} alt="barrymores build in beverly hills" />
+          <img 
+            src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1737773426/Hidden%20Gable%20Estate/history%20page/Los_Angeles_Times_1931_April_6_pg_74_small_naa4cp.png`} 
+            alt="Los Angeles Times 1931 April 6 pg 74 "
+            loading='lazy'
+          />
+          <img 
+            src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1737774605/Hidden%20Gable%20Estate/history%20page/The_Los_Angeles_Times_1925_10_04_108_small_pc5utk.jpg`} 
+            alt="barrymores build in beverly hills"
+            loading='lazy'
+          />
         </div>
         <div className='row'>
-          <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1737773427/Hidden%20Gable%20Estate/history%20page/Los_Angeles_Evening_Citizen_News_1924_06_25_15_76_small_pm4t4l.png`} alt="hollywood daily citizen" />
+          <img 
+            src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1737773427/Hidden%20Gable%20Estate/history%20page/Los_Angeles_Evening_Citizen_News_1924_06_25_15_76_small_pm4t4l.png`} 
+            alt="hollywood daily citizen" 
+            loading='lazy'
+          />
         </div>
         <div className="row">
-          <img src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1737773427/Hidden%20Gable%20Estate/history%20page/The_Los_Angeles_Times_1925_10_12_6_small_ujelwt.jpg`} alt="Los Angeles Times 1925 October" />
+          <img 
+            src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1737773427/Hidden%20Gable%20Estate/history%20page/The_Los_Angeles_Times_1925_10_12_6_small_ujelwt.jpg`}
+            alt="Los Angeles Times 1925 October"
+            loading='lazy'
+          />
         </div>
 
     </div>
   );
   
-  export default MasterAchitect;
+  export default MasterArchitect;

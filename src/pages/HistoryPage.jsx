@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { lazy, useCallback, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import "./HistoryPage.css";
@@ -11,13 +11,13 @@ import Douglas from '../components/historyPage/Douglas';
 
 // Import modal content components
 import Modal from "../components/Modal";
-import DanKimball from "../components/historyPage/modalPages/DanKimball";
-import Swobdi from "../components/historyPage/modalPages/Swobdi";
-import GableLombard from "../components/historyPage/modalPages/GableLombard";
-import DorisFleeson from "../components/historyPage/modalPages/DorisFleeson";
-import WarBonds from "../components/historyPage/modalPages/WarBonds";
-import MasterArchitect from "../components/historyPage/modalPages/MasterArchitect";
-import SharCracraft from "../components/historyPage/modalPages/SharCracraft";
+const DanKimball = lazy(() => import('../components/historyPage/modalPages/DanKimball'));
+const Swobdi = lazy(() => import('../components/historyPage/modalPages/Swobdi'));
+const GableLombard = lazy(() => import('../components/historyPage/modalPages/GableLombard'));
+const DorisFleeson = lazy(() => import('../components/historyPage/modalPages/DorisFleeson'));
+const WarBonds = lazy(() => import('../components/historyPage/modalPages/WarBonds'));
+const MasterArchitect = lazy(() => import('../components/historyPage/modalPages/MasterArchitect'));
+const SharCracraft = lazy(() => import('../components/historyPage/modalPages/SharCracraft'));
 
 // Import data
 import {
