@@ -16,14 +16,17 @@ import MediaPage from "./pages/MediaPage";
 import MissionPage from "./pages/MissionPage";
 import ContactPage from "./pages/ContactPage";
 import Footer from "./components/Footer";
-import ViewportDimensions from "./utils/ViewportDimensions";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import ViewportDimensions from "./utils/ViewportDimensions";
+import Analytics from "./utils/Analytics";
 
 
 function App() {
   return (
     <>
       <Router>
+        <Analytics />
+
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />}>
@@ -46,7 +49,7 @@ function App() {
           <Route path="/mission" element={<MissionPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
-        {/* <ViewportDimensions /> */}
+        {import.meta.env.VITE_ENV === 'development' && <ViewportDimensions /> }
         <Footer />
         <ScrollToTopButton />
       </Router>
