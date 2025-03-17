@@ -1,26 +1,13 @@
-import { lazy, useCallback, useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Hero from "../components/homePage/Hero";
 import About from "../components/homePage/About";
 import Carousel from "../components/carousel/Carousel";
 import Features from "../components/homePage/Features";
 import Reviews from "../components/homePage/Reviews";
 import Location from "../components/homePage/Location";
-import Modal from "../components/Modal";
 import claudeMonetInspiration from '../assets/claude-monet-inspiration.svg';
-import { Helmet } from "react-helmet-async";
+import { useModal } from "../context/ModalContext";
 import './HomePage.css';
-
-const ClaudeMonet = lazy(() => import('../components/homePage/modalPages/ClaudeMonet'));
-
-// Import data
-import {
-  getItemBySlug,
-} from '../data/modalData';
-
-const componentMap = {
-  ClaudeMonet,
-}
 
 const images = [
   { id: 1, url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741378878/Hidden%20Gable%20Estate/home%20page/_I1A0391_xn500l.jpg`, alt: 'Image 1'},
@@ -30,77 +17,40 @@ const images = [
 ];
  
 function HomePage() {
-  const { slug } = useParams();
-  const navigate = useNavigate();
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(null);
+  const { handleOpenModal } = useModal();
 
-  useEffect(() => {
-    if (slug) {
-      const item = getItemBySlug(slug);
-      if (item) {
-        const itemWithComponent = {
-          ...item,
-          Component: componentMap[item.Component]
-        };
-        setSelectedItem(itemWithComponent);
-        setModalOpen(true);
-      }
-    } else {
-      setModalOpen(false);
-    }
-  }, [slug]);
+  return (
+    <main className="homepage">
 
-const handleCloseModal = useCallback(() => {
-  navigate('/');
-}, [navigate]);
+      <Helmet>
+        <title>Palm Springs Luxury Vacation Rental</title>
+      </Helmet>
 
-const handleOpenModal = useCallback((modalSlug) => {
-  if (modalSlug) {
-    navigate(`/home/${modalSlug}`);
-  }
-}, [navigate]);
-
-return (
-  <main className="homepage">
-
-    <Helmet>
-      <title>Palm Springs Luxury Vacation Rental</title>
-    </Helmet>
-
-    <Hero />
-    <About />
-    
-    <section className="homepage__image-section">
-      <Carousel 
-        items={ images } 
-        showThumbnails={ true }
-        className='homepage-carousel'
-      />
-      <div className="monet-container">
-        <h3 className="monet-title">Claude Monet Inspiration</h3>
-        <p>(Click image for more)</p>
-        <img 
-          className='monet-image' 
-          src={claudeMonetInspiration} alt="Claude Monet - House Among the Palms" 
-          onClick={() => handleOpenModal('monet-inspiration')}
+      <Hero />
+      <About />
+      
+      <section className="homepage__image-section">
+        <Carousel 
+          items={ images } 
+          showThumbnails={ true }
+          className='homepage-carousel'
         />
-        <cite className="monet-quote">“Color is my daylong obsession, joy, and torment” <span>- Claude Monet</span></cite>
-      </div>
-    </section>
-    <Features />
-    <Reviews />
-    <Location />
-    
-    {modalOpen && (
-      <Modal 
-        isOpen={modalOpen}
-        onClose={handleCloseModal}
-        item={selectedItem}
-      />
-    )}
-  </main>
-);
-}
+        <div className="monet-container">
+          <h3 className="monet-title">Claude Monet Inspiration</h3>
+          <p>(Click image for more)</p>
+          <img 
+            className='monet-image' 
+            src={claudeMonetInspiration} alt="Claude Monet - House Among the Palms" 
+            onClick={() => handleOpenModal('monet-inspiration')}
+          />
+          <cite className="monet-quote">“Color is my daylong obsession, joy, and torment” <span>- Claude Monet</span></cite>
+        </div>
+      </section>
+      <Features />
+      <Reviews />
+      <Location />
+    </main>
+  );
+  }
 
 export default HomePage;

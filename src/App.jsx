@@ -6,6 +6,7 @@ import ScrollToTopButton from "./components/ScrollToTopButton";
 import ViewportDimensions from "./utils/ViewportDimensions";
 import Analytics from "./utils/Analytics";
 import LoadingFallback from "./components/LoadingFallback";
+import { ModalProvider } from "./context/ModalContext";
 
 // Lazy load all page components
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -28,34 +29,33 @@ function App() {
   return (
     <Router>
       <Analytics />
-
-      <Header />
-      <Suspense fallback={<LoadingFallback />}>
-        <Routes>
-          <Route path="/" element={<HomePage />}>
+      <ModalProvider>
+        <Header />
+        <Suspense fallback={<LoadingFallback />}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
             <Route path="home/:slug" element={<HomePage />} />
-          </Route>
-          <Route path="/history" element={<HistoryPage />}>
-            <Route path=":slug" element={<HistoryPage />} />
-          </Route>
-          <Route path="/gardens" element={<GardensPage />} />
-          <Route path="rental/corporateevents" element={<CorporateEvents />} />
-          <Route path="rental/privateevents" element={<PrivateEvents />} />
-          <Route path="rental/weddings" element={<Weddings />} />
-          <Route path="rental/luxuryvacationrental" element={<LuxuryVacationRental />} />
-          <Route path="rental/privatetours" element={<PrivateTours />} />
-          <Route path="rental/dinnerparties" element={<DinnerParties />} />
-          <Route path="rental/filmlocation" element={<FilmLocation />} />
-          <Route path="/galleries/estate" element={<EstatePage />} />
-          <Route path="/galleries/events" element={<EventsPage />} />
-          <Route path="/media" element={<MediaPage />} />
-          <Route path="/mission" element={<MissionPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
-      </Suspense>
-      {import.meta.env.VITE_ENV === 'development' && <ViewportDimensions />}
-      <Footer />
-      <ScrollToTopButton />
+            <Route path="/history" element={<HistoryPage />} />
+            <Route path="/history/:slug" element={<HistoryPage />} />
+            <Route path="/gardens" element={<GardensPage />} />
+            <Route path="rental/corporateevents" element={<CorporateEvents />} />
+            <Route path="rental/privateevents" element={<PrivateEvents />} />
+            <Route path="rental/weddings" element={<Weddings />} />
+            <Route path="rental/luxuryvacationrental" element={<LuxuryVacationRental />} />
+            <Route path="rental/privatetours" element={<PrivateTours />} />
+            <Route path="rental/dinnerparties" element={<DinnerParties />} />
+            <Route path="rental/filmlocation" element={<FilmLocation />} />
+            <Route path="/galleries/estate" element={<EstatePage />} />
+            <Route path="/galleries/events" element={<EventsPage />} />
+            <Route path="/media" element={<MediaPage />} />
+            <Route path="/mission" element={<MissionPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </Suspense>
+        {import.meta.env.VITE_ENV === 'development' && <ViewportDimensions />}
+        <Footer />
+        <ScrollToTopButton />
+      </ModalProvider>
     </Router>
   );
 }

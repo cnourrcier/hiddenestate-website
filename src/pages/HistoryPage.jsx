@@ -1,5 +1,3 @@
-import { lazy, useCallback, useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import "./HistoryPage.css";
 
@@ -9,72 +7,17 @@ import ThemeClippings from "../components/historyPage/ThemeClippings";
 import NewspaperArticle from "../components/historyPage/NewspaperArticle";
 import Douglas from '../components/historyPage/Douglas';
 
-// Import modal content components
-import Modal from "../components/Modal";
-const DanKimball = lazy(() => import('../components/historyPage/modalPages/DanKimball'));
-const Swobdi = lazy(() => import('../components/historyPage/modalPages/Swobdi'));
-const GableLombard = lazy(() => import('../components/historyPage/modalPages/GableLombard'));
-const DorisFleeson = lazy(() => import('../components/historyPage/modalPages/DorisFleeson'));
-const WarBonds = lazy(() => import('../components/historyPage/modalPages/WarBonds'));
-const MasterArchitect = lazy(() => import('../components/historyPage/modalPages/MasterArchitect'));
-const SharCracraft = lazy(() => import('../components/historyPage/modalPages/SharCracraft'));
+// Import context
+import { useModal } from "../context/ModalContext";
 
 // Import data
 import {
-  topHistoryItems as dataTopHistoryItems,
-  bottomHistoryItems as dataBottomHistoryItems,
-  getItemBySlug
+  topHistoryItems,
+  bottomHistoryItems,
 } from '../data/modalData';
 
-const componentMap = {
-  DanKimball,
-  Swobdi,
-  GableLombard,
-  DorisFleeson,
-  WarBonds,
-  MasterArchitect,
-  SharCracraft,
-};
-
 const HistoryPage = () => {
-  const { slug } = useParams(); // Get the slug from URL params
-  const navigate = useNavigate();
-  const [modalOpen, setModalOpen] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(null);
-
-  const topHistoryItems = dataTopHistoryItems.map(item => ({
-    ...item,
-    Component: componentMap[item.Component]
-  }));
-
-  const bottomHistoryItems = dataBottomHistoryItems.map(item => ({
-    ...item,
-    Component: componentMap[item.Component]
-  }));
-
-  useEffect(() => {
-    if (slug) {
-      const item = getItemBySlug(slug);
-      if (item) {
-        const itemWithComponent = {
-          ...item,
-          Component: componentMap[item.Component]
-        };
-        setSelectedItem(itemWithComponent);
-        setModalOpen(true);
-      }
-    } else {
-      setModalOpen(false);
-    }
-  }, [slug]);
-
-  const handleCloseModal = useCallback(() => {
-    navigate('/history');
-  }, [navigate]);
-
-  const handleOpenModal = useCallback((item) => {
-    navigate(`/history/${item.slug}`);
-  }, [navigate]);
+  const{ handleOpenModal } = useModal();
 
   return (
     <main className="history">
@@ -91,7 +34,7 @@ const HistoryPage = () => {
         <HistoryGallery 
           className="fun-style" 
           items={topHistoryItems} 
-          onItemClick={(item) => handleOpenModal(item)}
+          onItemClick={(item) => handleOpenModal(item.slug)}
         />
       </section>
 
@@ -111,16 +54,9 @@ const HistoryPage = () => {
         <HistoryGallery 
           className="grid-style" 
           items={bottomHistoryItems} 
-          onItemClick={(item) => handleOpenModal(item)}
+          onItemClick={(item) => handleOpenModal(item.slug)}
         />
       </section>
-      {modalOpen && selectedItem && (
-        <Modal 
-          isOpen={modalOpen}
-          onClose={handleCloseModal} 
-          item={selectedItem}
-        />
-      )}
     </main>
   );
 };
