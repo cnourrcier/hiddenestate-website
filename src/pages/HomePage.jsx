@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { lazy, useCallback, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Hero from "../components/homePage/Hero";
 import About from "../components/homePage/About";
@@ -8,9 +8,19 @@ import Reviews from "../components/homePage/Reviews";
 import Location from "../components/homePage/Location";
 import Modal from "../components/Modal";
 import claudeMonetInspiration from '../assets/claude-monet-inspiration.svg';
-import ClaudeMonet from "../components/homePage/modalPages/ClaudeMonet";
 import { Helmet } from "react-helmet-async";
 import './HomePage.css';
+
+const ClaudeMonet = lazy(() => import('../components/homePage/modalPages/ClaudeMonet'));
+
+// Import data
+import {
+  getItemBySlug,
+} from '../data/modalData';
+
+const componentMap = {
+  ClaudeMonet,
+}
 
 const images = [
   { id: 1, url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741378878/Hidden%20Gable%20Estate/home%20page/_I1A0391_xn500l.jpg`, alt: 'Image 1'},
@@ -18,19 +28,6 @@ const images = [
   { id: 3, url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734719452/Hidden%20Gable%20Estate/home%20page/5837_g7sld1.jpg`, alt: 'Saltwater pool with Outdoor Kitchen'},
   { id: 4, url: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734719350/Hidden%20Gable%20Estate/home%20page/5742_mr4ibo.jpg`, alt: 'Interior living space with fireplace image 2'},
 ];
-
-const modalItems = [
-  {
-    galleryTitle: ["Claude Monet Inspiration"],
-    slug: "monet-inspiration",
-    HTMLTitle: "Claude Monet Inspiration",
-    modalTitle: "Claude Monet Inspiration",
-    image: claudeMonetInspiration,
-    Component: ClaudeMonet,
-  },
-];
-
-const getItemBySlug = (slug) => modalItems.find(item => item.slug === slug);
  
 function HomePage() {
   const { slug } = useParams();
@@ -42,7 +39,11 @@ function HomePage() {
     if (slug) {
       const item = getItemBySlug(slug);
       if (item) {
-        setSelectedItem(item);
+        const itemWithComponent = {
+          ...item,
+          Component: componentMap[item.Component]
+        };
+        setSelectedItem(itemWithComponent);
         setModalOpen(true);
       }
     } else {
@@ -54,8 +55,10 @@ const handleCloseModal = useCallback(() => {
   navigate('/');
 }, [navigate]);
 
-const handleOpenModal = useCallback(() => {
-  navigate(`/home/${modalItems[0].slug}`);
+const handleOpenModal = useCallback((modalSlug) => {
+  if (modalSlug) {
+    navigate(`/home/${modalSlug}`);
+  }
 }, [navigate]);
 
 return (
@@ -80,7 +83,7 @@ return (
         <img 
           className='monet-image' 
           src={claudeMonetInspiration} alt="Claude Monet - House Among the Palms" 
-          onClick={handleOpenModal}
+          onClick={() => handleOpenModal('monet-inspiration')}
         />
         <cite className="monet-quote">“Color is my daylong obsession, joy, and torment” <span>- Claude Monet</span></cite>
       </div>

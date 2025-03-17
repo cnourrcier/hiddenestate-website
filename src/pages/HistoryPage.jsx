@@ -23,8 +23,8 @@ const SharCracraft = lazy(() => import('../components/historyPage/modalPages/Sha
 import {
   topHistoryItems as dataTopHistoryItems,
   bottomHistoryItems as dataBottomHistoryItems,
-  getHistoryItemBySlug
-} from '../data/historyData';
+  getItemBySlug
+} from '../data/modalData';
 
 const componentMap = {
   DanKimball,
@@ -54,7 +54,7 @@ const HistoryPage = () => {
 
   useEffect(() => {
     if (slug) {
-      const item = getHistoryItemBySlug(slug);
+      const item = getItemBySlug(slug);
       if (item) {
         const itemWithComponent = {
           ...item,
