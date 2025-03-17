@@ -33,7 +33,7 @@ const componentMap = {
   DorisFleeson,
   WarBonds,
   MasterArchitect,
-  SharCracraft
+  SharCracraft,
 };
 
 const HistoryPage = () => {
@@ -91,7 +91,7 @@ const HistoryPage = () => {
         <HistoryGallery 
           className="fun-style" 
           items={topHistoryItems} 
-          onItemClick={handleOpenModal}
+          onItemClick={(item) => handleOpenModal(item)}
         />
       </section>
 
@@ -111,7 +111,7 @@ const HistoryPage = () => {
         <HistoryGallery 
           className="grid-style" 
           items={bottomHistoryItems} 
-          onItemClick={handleOpenModal}
+          onItemClick={(item) => handleOpenModal(item)}
         />
       </section>
       {modalOpen && selectedItem && (
