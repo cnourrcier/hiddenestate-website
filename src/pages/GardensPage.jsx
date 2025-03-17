@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import Carousel from '../components/carousel/Carousel';
-import Modal from '../components/Modal';
 import { Helmet } from "react-helmet-async";
+import Carousel from '../components/carousel/Carousel';
+import { useModal } from "../context/ModalContext";
 import './GardensPage.css';
 
 
 const GardensPage = () => {
+    const { handleOpenSimpleModal } = useModal();
     
     const imageUrl = import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV;
 
@@ -46,19 +46,9 @@ const GardensPage = () => {
             { id: 21, url: `https://res.cloudinary.com/${imageUrl}/image/upload/v1736519290/Hidden%20Gable%20Estate/gardens%20page/Untitled-30_small_qgcvgt.jpg`, text: `Mrs Swobdi admiring the gardens in her high heels with snow on the ground`, alt: 'Cactus Motif'},
     ];
 
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [selectedItem, setSelectedItem] = useState(null);
-    
     const openModal = (item) => {
-    setSelectedItem(item);
-    setIsModalOpen(true);
-    }
-
-    const closeModal = () => {
-    setSelectedItem(null);
-    setIsModalOpen(false);
-    }
-
+        handleOpenSimpleModal(item);
+    };
 
     return (
         <main className='gardens'>
@@ -118,14 +108,6 @@ const GardensPage = () => {
                         alt="" 
                     />
                 </div>
-                {isModalOpen && (
-                    <Modal 
-                        isOpen={isModalOpen}
-                        onClose={closeModal} 
-                        item={selectedItem}
-                        className={'simple'}
-                    />
-                )}
             </section>
             
             <section className='gardens__image-and-text-slider'>

@@ -1,16 +1,16 @@
-import { createContext, lazy, startTransition, useCallback, useContext, useEffect, useState } from "react";
+import { createContext, lazy, startTransition, useCallback, useContext, useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
-
-// Import all modal content components lazily
-const DanKimball = lazy(() => import('../components/historyPage/modalPages/DanKimball'));
-const Swobdi = lazy(() => import('../components/historyPage/modalPages/Swobdi'));
-const GableLombard = lazy(() => import('../components/historyPage/modalPages/GableLombard'));
-const DorisFleeson = lazy(() => import('../components/historyPage/modalPages/DorisFleeson'));
-const WarBonds = lazy(() => import('../components/historyPage/modalPages/WarBonds'));
-const MasterArchitect = lazy(() => import('../components/historyPage/modalPages/MasterArchitect'));
-const SharCracraft = lazy(() => import('../components/historyPage/modalPages/SharCracraft'));
-const ClaudeMonet = lazy(() => import('../components/homePage/modalPages/ClaudeMonet'));
+const componentMap = {
+    DanKimball: lazy(() => import('../components/historyPage/modalPages/DanKimball')),
+    Swobdi: lazy(() => import('../components/historyPage/modalPages/Swobdi')),
+    GableLombard: lazy(() => import('../components/historyPage/modalPages/GableLombard')),
+    DorisFleeson: lazy(() => import('../components/historyPage/modalPages/DorisFleeson')),
+    WarBonds: lazy(() => import('../components/historyPage/modalPages/WarBonds')),
+    MasterArchitect: lazy(() => import('../components/historyPage/modalPages/MasterArchitect')),
+    SharCracraft: lazy(() => import('../components/historyPage/modalPages/SharCracraft')),
+    ClaudeMonet: lazy(() => import('../components/homePage/modalPages/ClaudeMonet')),
+};
 
 import claudeMonetInspiration from '../assets/claude-monet-inspiration.svg';
 
@@ -18,17 +18,6 @@ import {
     getItemBySlug,
 } from '../data/modalData';
 import Modal from "../components/Modal";
-
-const componentMap = {
-    DanKimball,
-    Swobdi,
-    GableLombard,
-    DorisFleeson,
-    WarBonds,
-    MasterArchitect,
-    SharCracraft,
-    ClaudeMonet,
-};
 
 const imageMap = {
     claudeMonetInspiration
@@ -41,6 +30,8 @@ export const ModalProvider = ({ children }) => {
     const navigate = useNavigate();
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalItem, setModalItem] = useState(null);
+    const [simpleModalOpen, setSimpleModalOpen] = useState(false);
+    const [simpleModalItem, setSimpleModalItem] = useState(null);
 
     useEffect(() => {
         const pathParts = location.pathname.split('/');
@@ -86,8 +77,32 @@ export const ModalProvider = ({ children }) => {
       }
     }, [navigate]);
 
+    const prevLocationRef = useRef(location);
+
+    useEffect(() => {
+        // Closes simple modal if already open and location changes (i.e. back button pressed)
+        if (simpleModalOpen && location !== prevLocationRef.current) {
+            setSimpleModalOpen(false);
+            setSimpleModalItem(null);
+        }
+        prevLocationRef.current = location;
+    }, [location, simpleModalOpen]);
+
+    const handleOpenSimpleModal = useCallback((item) => {
+        setSimpleModalItem(item);
+        setSimpleModalOpen(true);
+    }, []);
+
+    const handleCloseSimpleModal = useCallback(() => {
+        setSimpleModalItem(null);
+        setSimpleModalOpen(false);
+    }, []);
+
     return (
-        <ModalContext.Provider value={{ handleOpenModal, }}>
+        <ModalContext.Provider value={{ 
+            handleOpenModal, 
+            handleOpenSimpleModal,
+        }}>
             {children}
 
             {isModalOpen && (
@@ -95,6 +110,15 @@ export const ModalProvider = ({ children }) => {
                     isOpen={isModalOpen}
                     onClose={handleCloseModal}
                     item={modalItem}
+                />
+            )}
+
+            {simpleModalOpen && (
+                <Modal 
+                    isOpen={simpleModalOpen}
+                    onClose={handleCloseSimpleModal}
+                    item={simpleModalItem}
+                    className="simple"
                 />
             )}
         </ModalContext.Provider>
