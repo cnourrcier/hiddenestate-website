@@ -1,4 +1,4 @@
-import { Suspense, useEffect } from 'react';
+import { useEffect } from 'react';
 import { X } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import './Modal.css';
@@ -11,13 +11,6 @@ const Modal = ({ isOpen, onClose, item, className='' }) => {
   }, [isOpen]);
   
   if (!isOpen) return null;
-
-  const LoadingPlaceholder = () => (
-    <div className="modal-loading-placeholder">
-      <div className="loading-spinner"></div>
-      <p>Loading page...</p>
-    </div>
-  );
 
   return (
     <div className={`modal-overlay ${className}`}>
@@ -38,9 +31,7 @@ const Modal = ({ isOpen, onClose, item, className='' }) => {
         </div>
 
         {item.Component ? (
-            <Suspense fallback={<LoadingPlaceholder />}>
               <item.Component />
-            </Suspense>
           ) : (
             <div className="modal-content">
                     <img
