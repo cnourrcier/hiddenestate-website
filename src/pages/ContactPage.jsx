@@ -3,6 +3,8 @@ import axios from 'axios';
 import { Helmet } from 'react-helmet-async';
 import './ContactPage.css';
 
+const website = window.location.hostname;
+
 const ContactPage = () => {
     const form = useRef();
     const [submitStatus, setSubmitStatus] = useState('');
@@ -15,6 +17,7 @@ const ContactPage = () => {
             name: form.current.name.value,
             email: form.current.email.value,
             message: form.current.message.value,
+            website,
         };
 
         try {
