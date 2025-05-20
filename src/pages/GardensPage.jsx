@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import Carousel from '../components/carousel/Carousel';
+import Carousel from '../components/common/carousel/Carousel';
 import { useModal } from "../context/ModalContext";
 import './GardensPage.css';
 

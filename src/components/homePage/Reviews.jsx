@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import CarouselControls from '../carousel/CarouselControls';
+import CarouselControls from '../common/carousel/CarouselControls';
 import './Reviews.css';
 import './ReviewsSlider.css';
 

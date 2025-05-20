@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import ImageGallery from "../../components/ImageGallery";
+import ImageGallery from "../../components/common/ImageGallery";
 import './EstatePage.css';
 
 const EstatePage = () => {

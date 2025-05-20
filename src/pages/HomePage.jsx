@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Hero from "../components/homePage/Hero";
 import About from "../components/homePage/About";
-import Carousel from "../components/carousel/Carousel";
+import Carousel from "../components/common/carousel/Carousel";
 import Features from "../components/homePage/Features";
 import Reviews from "../components/homePage/Reviews";
 import Location from "../components/homePage/Location";

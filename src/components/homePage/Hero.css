@@ -26,8 +26,8 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(
-        rgba(10, 10, 10, 0.6), 
-        rgba(10, 10, 10, 0.4)
+        rgba(10, 10, 10, 0.4), 
+        rgba(10, 10, 10, 0.3)
     );
 }
 
@@ -41,8 +41,7 @@
     justify-content: center;
     align-items: center;
     color: var(--ps-white);
-    padding-top: 3rem;
-    margin: 3rem;
+    margin: 6rem 2rem 3rem 2rem;
 }
 
 .hero-text-container {
@@ -53,7 +52,7 @@
 
 .hero-text-container h1 {
     font-family: "Limelight", sans-serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 1.2;
     letter-spacing: -2px;
     font-weight: 700;
@@ -62,7 +61,7 @@
 
 .hero-subtitle {
     font-family: "Poiret One", serif;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 300;
     font-style: italic;
     letter-spacing: 1px;
@@ -91,21 +90,18 @@
     position: relative;
     display: inline-block;
     padding: 12px 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--ps-whiter);
     transition: color 0.3s ease;
-
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(1px);
+    background: rgba(244, 241, 222, 0.3);
+    backdrop-filter: blur(2px);
     border-radius: 10px;
-    border: 1px solid transparent;
     box-shadow: 
         0 4px 6px rgba(0, 0, 0, 0.1),
         0 1px 3px rgba(0, 0, 0, 0.08);
-    
     cursor: pointer;
 }
 
@@ -115,14 +111,25 @@
 }
 
 .hero__event-link:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: var(--ps-sand);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(1px);
+    color: var(--ps-white);
     box-shadow: 
         0 6px 8px rgba(0, 0, 0, 0.15),
         0 2px 4px rgba(0, 0, 0, 0.12);
 }
 
+@media screen and (max-width: 900px) {
+    .hero-text-container h1 {
+        font-size: 3.2rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .hero-content {
+        margin-top: 8rem;
+    }
+
     .event-links-grid {
         grid-template-columns: 1fr;
     }
@@ -133,18 +140,18 @@
     }
 
     .hero-text-container h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .hero-subtitle {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
 
 @media screen and (max-width: 480px) {
 
     .hero-content {
-        padding-top: 3rem;
+        margin-top: 8.5rem;
     }
 
     .hero-content h1 {
@@ -163,8 +170,8 @@
         gap: 1rem;
     }
 
-    .event-link {
+    .hero__event-link {
         padding: 10px 0;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 }

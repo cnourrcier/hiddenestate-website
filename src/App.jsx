@@ -1,11 +1,11 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import ScrollToTopButton from "./components/ScrollToTopButton";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import ScrollToTopButton from "./components/common/ScrollToTopButton";
 import ViewportDimensions from "./utils/ViewportDimensions";
 import Analytics from "./utils/Analytics";
-import LoadingFallback from "./components/LoadingFallback";
+import LoadingFallback from "./components/common/LoadingFallback";
 import { ModalProvider } from "./context/ModalContext";
 
 // Lazy load all page components

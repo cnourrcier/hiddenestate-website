@@ -1,4 +1,4 @@
-import VideoPlayer from '../VideoPlayer';
+import VideoPlayer from '../common/VideoPlayer';
 import { Link } from 'react-router-dom';
 import './Hero.css';
 

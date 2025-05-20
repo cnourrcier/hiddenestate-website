@@ -17,7 +17,7 @@ import claudeMonetInspiration from '../assets/claude-monet-inspiration.svg';
 import {
     getItemBySlug,
 } from '../data/modalData';
-import Modal from "../components/Modal";
+import Modal from "../components/common/Modal";
 
 const imageMap = {
     claudeMonetInspiration

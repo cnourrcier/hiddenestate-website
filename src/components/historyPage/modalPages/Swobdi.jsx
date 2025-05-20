@@ -1,4 +1,4 @@
-import Carousel from '../../carousel/Carousel';
+import Carousel from '../../common/carousel/Carousel';
 import './Swobdi.css';
 
 const Swobdi = () => {
