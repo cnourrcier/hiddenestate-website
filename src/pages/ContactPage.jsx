@@ -18,6 +18,8 @@ const ContactPage = () => {
         error: null
     });
 
+    const [isLoading, setIsLoading] = useState(false);
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData(prevState => ({
@@ -48,6 +50,8 @@ const ContactPage = () => {
         return;
         }
         
+        setIsLoading(true);
+
         try {
         // Send email via backend
         const response = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/send-email`, formData);
@@ -74,11 +78,13 @@ const ContactPage = () => {
             });
         }, 5000);
         } catch (error) {
-        console.error('Failed to send email:', error);
-        setFormStatus({
-            submitted: false,
-            error: 'Failed to send your message. Please try again.'
-        });
+            console.error('Failed to send email:', error);
+            setFormStatus({
+                submitted: false,
+                error: 'Failed to send your message. Please try again.'
+            });
+        } finally {
+            setIsLoading(false);
         }
     };
 
@@ -149,7 +155,16 @@ const ContactPage = () => {
                                     />
                                 </div>
 
-                                <button type="submit" className="contact-btn">Send Message</button>
+                                <button type="submit" className="contact-btn" disabled={isLoading}>
+                                    {isLoading ? (
+                                        <>
+                                            <i className="fas fa-spinner fa-spin" style={{ marginRight: '8px' }}></i>
+                                            Sending...
+                                        </>
+                                    ) : (
+                                        'Send Message'
+                                    )}
+                                </button>
                             </form>
                         )}
                     </div>  
