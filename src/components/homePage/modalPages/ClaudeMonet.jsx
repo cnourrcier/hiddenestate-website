@@ -16,7 +16,7 @@ const ClaudeMonet = () => {
             
             <p>
               The estate interior and exterior colors have been meticulously restored as they existed in the twenties.
-              Swobdi, a frequent world traveler, got her inspiration and color pallet choices from Claude Monet's pink home in Giverny (a commune in France).
+              Swobdi, a frequent world traveler, got her inspiration and color pallet choices from Claude Monet's pink home in Giverny.
             </p>
             
             <p>

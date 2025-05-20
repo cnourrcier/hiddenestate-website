@@ -34,7 +34,7 @@ const MissionPage = () => {
             <section>
                 <h2>Nourrcier Family </h2>
                 <p>Chuck & Karen Nourrcier - Specializing in restoration and adaptive reuse of Queen Anne, Craftsman and Spanish Architectures.</p>
-                <p>Long Beach Heritage Preservation Awards: 2020, 2024</p>
+                <p>Long Beach Heritage Preservation Awards: 2020, 2024, 2025</p>
                 <p>Landmark and Mills Act: 711 Daisy Ave, 909 Elm Ave, 344 W 8th </p>
                 <p>Torrey House: 4/23/2018, SG100002319</p>
                 <ul>
