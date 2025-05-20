@@ -18,6 +18,7 @@
   --ps-whiter: #f9f7ec;
   --ps-whitest: hsl(52, 50%, 97%);
   --ps-gold: #d4af37;
+  --ps-light-shadow: rgba(0, 0, 0, 0.15);
 }
 
 html {

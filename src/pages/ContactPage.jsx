@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import { Helmet } from 'react-helmet-async';
 import './ContactPage.css';
@@ -6,62 +6,154 @@ import './ContactPage.css';
 const website = window.location.hostname;
 
 const ContactPage = () => {
-    const form = useRef();
-    const [submitStatus, setSubmitStatus] = useState('');
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: '',
+        website,
+    });
+  
+    const [formStatus, setFormStatus] = useState({
+        submitted: false,
+        error: null
+    });
 
-    const sendEmail = async(e) => {
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prevState => ({
+        ...prevState,
+        [name]: value
+        }));
+    };
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-    
-        // Collect form data
-        const formData = {
-            name: form.current.name.value,
-            email: form.current.email.value,
-            message: form.current.message.value,
-            website,
-        };
-
-        try {
-            // Send email via backend
-            const response = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/send-email`, formData);
-            setSubmitStatus(response.data.message);
-            form.current.reset();
-        } catch (error) {
-            console.error('Failed to send email:', error);
-            setSubmitStatus('Failed to send email. Please try again.');
+        
+        // Form validation
+        if (!formData.name || !formData.email || !formData.message) {
+        setFormStatus({
+            submitted: false,
+            error: 'Please fill out all fields'
+        });
+        return;
         }
-      };
+        
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formData.email)) {
+        setFormStatus({
+            submitted: false,
+            error: 'Please enter a valid email address'
+        });
+        return;
+        }
+        
+        try {
+        // Send email via backend
+        const response = await axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/send-email`, formData);
+        console.log('Form submitted:', response.data);
+
+        // Reset form and show success message
+        setFormData({
+            name: '',
+            email: '',
+            message: '',
+            website,
+        });
+        
+        setFormStatus({
+            submitted: true,
+            error: null
+        });
+        
+        // Reset success message after 5 seconds
+        setTimeout(() => {
+            setFormStatus({
+            submitted: false,
+            error: null
+            });
+        }, 5000);
+        } catch (error) {
+        console.error('Failed to send email:', error);
+        setFormStatus({
+            submitted: false,
+            error: 'Failed to send your message. Please try again.'
+        });
+        }
+    };
 
     return (
         <main className="contact-page">
-
             <Helmet>
-                <title>Palm Springs Weddings/Events</title>
+                <title>Contact - Hidden Gable Estate | Palm Springs</title>
+                <meta name="description" content="Contact the historic Hidden Gable Estate in Palm Springs, the former retreat of Clark Gable and Carole Lombard." />
             </Helmet>
 
             <div className="container">
-                <h1>Contact Us</h1>
+                <h1>Contact Us
+                    <span className="intro">Inquire about the Hidden Gable Estate</span>
+                </h1>
 
                 <div className="contact-content">
                     <div className="contact-form">
-                        <form ref={form} onSubmit={sendEmail}>
-                            <div className="form-group">
-                                <label htmlFor="name">Name</label>
-                                <input type="text" name="name" required />
+                        {formStatus.submitted ? (
+                            <div className="form-success">
+                                <i className='fas fa-check-circle'></i>
+                                <p>Thank you for your message! We'll get back to you soon about your interest in the Hidden Gable Estate.</p>
                             </div>
-                            <div className="form-group">
-                                <label htmlFor="email">Email</label>
-                                <input type="email" name="email" required />
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="message">Message</label>
-                                <textarea name="message" required />
-                            </div>
-                            <button type="submit" className="btn btn-primary">Send Message</button>
-                        </form>
-                        {submitStatus && <p>{submitStatus}</p>}
-                    </div>
+                        ) : (
+                            <form onSubmit={handleSubmit}>
+                                {formStatus.error && (
+                                    <div className="form-error">
+                                        <i className='fas fa-exclamation-circle'></i>
+                                        <p>{formStatus.error}</p>
+                                    </div>
+                                )}
+
+                                <div className="form-group">
+                                    <label htmlFor="name">Your Name</label>
+                                    <input 
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                        placeholder="John Doe"
+                                        required 
+                                    />
+                                </div>
+
+                                <div className="form-group">
+                                    <label htmlFor="email">Email Address</label>
+                                    <input 
+                                        type="email" 
+                                        id="email"
+                                        name="email" 
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        placeholder="john@example.com"
+                                        required 
+                                    />
+                                </div>
+
+                                <div className="form-group">
+                                    <label htmlFor="message">Message</label>
+                                    <textarea 
+                                        id="message"
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        placeholder="What would you like to know about the Hidden Gable Estate?"
+                                        rows="6"
+                                        required
+                                    />
+                                </div>
+
+                                <button type="submit" className="contact-btn">Send Message</button>
+                            </form>
+                        )}
+                    </div>  
                 </div>
-                
             </div>
         </main>
     );
