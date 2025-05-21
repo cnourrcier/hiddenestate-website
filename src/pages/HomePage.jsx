@@ -1,12 +1,10 @@
 import { Helmet } from "react-helmet-async";
 import Hero from "../components/homePage/Hero";
 import About from "../components/homePage/About";
-import Carousel from "../components/common/carousel/Carousel";
 import Features from "../components/homePage/Features";
 import Reviews from "../components/homePage/Reviews";
 import Location from "../components/homePage/Location";
-import claudeMonetInspiration from '../assets/claude-monet-inspiration.svg';
-import { useModal } from "../context/ModalContext";
+import ImageSection from "../components/homePage/ImageSection";
 import './HomePage.css';
 
 const images = [
@@ -17,35 +15,15 @@ const images = [
 ];
  
 function HomePage() {
-  const { handleOpenModal } = useModal();
 
   return (
     <main className="homepage">
-
       <Helmet>
         <title>Palm Springs Luxury Vacation Rental</title>
       </Helmet>
-
       <Hero />
       <About />
-      
-      <section className="homepage__image-section">
-        <Carousel 
-          items={ images } 
-          showThumbnails={ true }
-          className='homepage-carousel'
-        />
-        <div className="monet-container">
-          <h3 className="monet-title">Claude Monet Inspiration</h3>
-          <p>(Click image for more)</p>
-          <img 
-            className='monet-image' 
-            src={claudeMonetInspiration} alt="Claude Monet - House Among the Palms" 
-            onClick={() => handleOpenModal('monet-inspiration')}
-          />
-          <cite className="monet-quote">“Color is my daylong obsession, joy, and torment” <span>- Claude Monet</span></cite>
-        </div>
-      </section>
+      <ImageSection images={images} />
       <Features />
       <Reviews />
       <Location />

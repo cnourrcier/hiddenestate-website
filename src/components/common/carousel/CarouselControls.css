@@ -9,6 +9,10 @@
     padding: 0 2rem;
 }
 
+.controls-container.homepage-carousel {
+    padding: 0 3rem;
+}
+
 .controls-container.reviews-carousel {
     justify-content: center;
     margin-top: 0.5rem;
