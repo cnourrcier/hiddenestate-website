@@ -1,11 +1,9 @@
 import { Link } from 'react-router-dom';
 import './Footer.css'; 
 
-// import yelpIcon from '../assets/icons/yelp.svg';
-// import tripadvisorIcon from '../assets/icons/tripadvisor.svg';
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const bookingUrl = "https://www.naturalretreats.com/property-detail-page?name=hidden-gable-estate-7351";
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -51,22 +49,17 @@ const Footer = () => {
         <div className="footer-info">
           <h3>Hidden Gable Estate</h3>
           <p>Experience the glamor and history of one of Palm Springs' most treasured landmarks.</p>
-          {/* <p>You can find us on</p>
-          <div className="social-links">
-            <a href="https://yelp.com" target="_blank" rel="noopener noreferrer">
-                Yelp
-                <img src={yelpIcon} alt="Yelp" className="social-icon" />
-            </a>
-            <a href="https://tripadvisor.com" target="_blank" rel="noopener noreferrer">
-                TripAdvisor
-                <img src={tripadvisorIcon} alt="Tripadvisor" className="social-icon" />
-            </a>
-          </div> */}
+        </div>
+        <a href={bookingUrl} className="book-button" target="_blank" rel="noopener noreferrer">
+          Book it!
+        </a>
+        <div className="management-info">
+          Exclusively managed by Natural Retreats <span style={{ fontStyle: 'italic' }}>"Alaya Collection"</span>
         </div>
       </div>
       
       <div className="footer-bottom">
-        <p>Copyright © {currentYear} Hidden Gable Estate - All Rights Reserved | City of Palm Springs ID 5045</p>
+        <p>Copyright © {currentYear} Hidden Gable Estate - All Rights Reserved | City of Palm Springs ID 068950</p>
         <p>Website by DevRise Studio</p>
       </div>
     </footer>

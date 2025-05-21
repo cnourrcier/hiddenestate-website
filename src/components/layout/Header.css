@@ -74,6 +74,32 @@
 .estate-word:nth-child(2) { --n: 1; }
 .estate-word:nth-child(3) { --n: 2; }
 
+.links-container {
+    display: flex;
+    margin-left: auto;
+    gap: 1.5rem;
+}
+
+.book-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poiret One", serif;
+  background-color: var(--ps-dark-terracotta);
+  color: var(--ps-whiter);
+  padding: 0.3rem 1rem;
+  text-decoration: none;
+  margin-left: auto;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.book-btn:hover {
+  background-color: var(--ps-terracotta);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: var(--ps-white);
+}
+
 .tabs-container {
     position: relative;
     margin-left: auto;
