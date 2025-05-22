@@ -1,86 +1,88 @@
-import { memo, useCallback, useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-import './HistoryGallery.css';
-
-const MOBILE_BREAKPOINT = 768;
+import { memo } from "react";
+import PropTypes from "prop-types";
+import { useResponsive } from "../../hooks/useResponsive";
+import { GalleryUtils } from "../../utils/galleryUtils";
+import "./HistoryGallery.css";
 
 const HistoryGallery = ({ items, className, onItemClick }) => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= MOBILE_BREAKPOINT);
+    const { isMobile } = useResponsive();
 
-  const handleResize = useCallback(() => {
-    setIsMobile(window.innerWidth <= MOBILE_BREAKPOINT);
-  }, []);
+    const displayItems = GalleryUtils.getDisplayItems(
+        items,
+        className,
+        isMobile
+    );
 
-  useEffect(() => {
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, [handleResize]);
+    const handleKeyDown = (e, slug) => {
+        if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault(); // prevent page scroll on space key
+            onItemClick(slug);
+        }
+    };
 
-  const handleKeyDown = (e, item) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault(); // prevent page scroll on space key
-      onItemClick(item);
-    }
-  };
-
-  const displayItems = useCallback(() => {
-    if (className === 'grid-style' && isMobile) {
-      const reorderedItems = [...items];
-      // Swap Master architect and War Bonds
-      if (reorderedItems.length >= 2) {
-        [reorderedItems[0], reorderedItems[1]] = [reorderedItems[1], reorderedItems[0]];
-      }
-      return reorderedItems;
-    }
-    return items;
-  }, [items, className, isMobile]);
-
-  const itemsToDisplay = displayItems();
-
-  return (
-    <div className={`image-gallery-wrapper ${className}`}>
-      {itemsToDisplay.map((item, index) => ( 
-        <div 
-          key={`gallery-item-${item.slug || index}`} 
-          className='img-wrapper' 
-          onClick={() => onItemClick(item)}
-          onKeyDown={(e) => handleKeyDown(e, item)}
-          tabIndex='0' // Make div focusable for keyboard navigation
-          role='button'
-          aria-label={`View details about ${item.galleryTitle[0]}`}
-        >
-          <img
-            src={item.image}
-            alt={item.galleryTitle[0]}
-            className={`img-gallery-img ${item.size || ''}`}
-            loading='lazy'
-          />
-          <div 
-            className={className === 'fun-style' ? 'fun-style-overlay' : 'text-content'}
-            aria-hidden='true'
-          >
-            <p>{item.galleryTitle[0]}</p>
-            {item.galleryTitle?.[1] && <p>{item.galleryTitle[1]}</p>}
-            {item?.year && <p>{item?.year}</p>}
-          </div>
+    return (
+        <div className={`image-gallery-wrapper ${className}`}>
+            {displayItems.map((item, index) => (
+                <GalleryItem
+                    key={`gallery-item-${item.navigation.slug || index}`}
+                    item={item}
+                    className={className}
+                    onItemClick={onItemClick}
+                    onKeyDown={handleKeyDown}
+                />
+            ))}
         </div>
-      ))}
-    </div>
-  );
+    );
 };
 
+const GalleryItem = memo(({ item, className, onItemClick, onKeyDown }) => (
+    <div
+        className="img-wrapper"
+        onClick={() => onItemClick(item.navigation.slug)}
+        onKeyDown={e => onKeyDown(e, item.navigate.slug)}
+        tabIndex="0"
+        role="button"
+        aria-label={`View details about ${item.titles.galleryTitle[0]}`}
+    >
+        <img
+            src={item.source}
+            alt={item.alt}
+            className={`img-gallery-img ${item.size || ""}`}
+            loading="lazy"
+        />
+        <div
+            className={
+                className === "fun-style" ? "fun-style-overlay" : "text-content"
+            }
+            aria-hidden="true"
+        >
+            <p>{item.titles.galleryTitle[0]}</p>
+            {item.titles.galleryTitle?.[1] && (
+                <p>{item.titles.galleryTitle[1]}</p>
+            )}
+        </div>
+    </div>
+));
+
 HistoryGallery.propTypes = {
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      image: PropTypes.string.isRequired,
-      galleryTitle: PropTypes.arrayOf(PropTypes.string).isRequired,
-      slug: PropTypes.string,
-      size: PropTypes.string,
-      year: PropTypes.string
-    })
-  ).isRequired,
-  className: PropTypes.string.isRequired,
-  onItemClick: PropTypes.func.isRequired
+    items: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.string.isRequired,
+            source: PropTypes.string.isRequired,
+            alt: PropTypes.string.isRequired,
+            titles: PropTypes.shape({
+                galleryTitle: PropTypes.arrayOf(PropTypes.string).isRequired,
+                htmlTitle: PropTypes.string.isRequired,
+                modalTitle: PropTypes.string.isRequired,
+            }).isRequired,
+            navigation: PropTypes.shape({
+                slug: PropTypes.string.isRequired,
+                pageRoute: PropTypes.string.isRequired,
+            }).isRequired,
+        }).isRequired
+    ).isRequired,
+    className: PropTypes.string.isRequired,
+    onItemClick: PropTypes.func.isRequired,
 };
 
 export default memo(HistoryGallery);

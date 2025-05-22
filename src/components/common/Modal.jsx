@@ -1,49 +1,65 @@
-import { useEffect } from 'react';
-import { X } from 'lucide-react';
-import { Helmet } from 'react-helmet-async';
-import './Modal.css';
+import { X } from "lucide-react";
+import { Helmet } from "react-helmet-async";
+import { useBodyScrollLock } from "../../hooks/useBodyScrollLock";
+import "./Modal.css";
 
-const Modal = ({ isOpen, onClose, item, className='' }) => {
+const Modal = ({
+    isOpen,
+    onClose,
+    item,
+    className = "",
+    isLoading = false,
+}) => {
+    useBodyScrollLock(isOpen);
 
-  useEffect(() => {
-    if (isOpen) document.body.style.overflow = 'hidden';
-    return () => document.body.style.overflow = '';
-  }, [isOpen]);
-  
-  if (!isOpen) return null;
+    if (!isOpen) return null;
 
-  return (
-    <div className={`modal-overlay ${className}`}>
-
-      <Helmet>
-        <title>{item.HTMLTitle}</title>
-      </Helmet>
-
-      <div className="modal-container">
-        <div className="modal-header">
-          <h3 className="modal-title">{item.modalTitle}</h3>
-          <button 
-            onClick={onClose}
-            className="modal-close-button"
-          >
-            <X />
-          </button>
-        </div>
-
-        {item.Component ? (
-              <item.Component />
-          ) : (
-            <div className="modal-content">
-                    <img
-                        src={item.image}
-                        alt={item.modalTitle}
-                        className="modal-image"
-                    />
+    if (isLoading) {
+        return (
+            <div className={`modal-overlay ${className}`}>
+                <div className="modal-container">
+                    <div className="modal-loading">Loading...</div>
+                </div>
             </div>
-        )}
-      </div>
-    </div>
-  );
+        );
+    }
+
+    if (!item) return null;
+
+    return (
+        <div className={`modal-overlay ${className}`}>
+            <Helmet>
+                <title>{item.titles?.htmlTitle || "Modal"}</title>
+            </Helmet>
+
+            <div className="modal-container">
+                <div className="modal-header">
+                    <h3 className="modal-title">
+                        {item.titles?.modalTitle || item.modalTitle}
+                    </h3>
+                    <button
+                        onClick={onClose}
+                        className="modal-close-button"
+                        aria-label="Close modal"
+                    >
+                        <X />
+                    </button>
+                </div>
+
+                {item.modalComponent ? (
+                    <item.modalComponent />
+                ) : (
+                    <div className="modal-content">
+                        <img
+                            src={item.source}
+                            alt={item.alt}
+                            className="modal-image"
+                        />
+                    </div>
+                )}
+            </div>
+        </div>
+    );
 };
 
 export default Modal;
