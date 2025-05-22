@@ -1,10 +1,8 @@
-/* Global styles */
 .location {
     margin: auto;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
-/* Layout styles */
 .location-content {
     display: flex;
     gap: 2rem;
@@ -16,15 +14,15 @@
     display: flex;
     flex-direction: column;
     background-color: #f0f0f0;
-    border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-.side-info-container {
+.side-content-container {
     flex: 60%;
     display: flex;
     align-items: stretch;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* Map styles */
@@ -59,37 +57,20 @@
     color: #fff;
 }
 
-/* Side info styles */
-.side-info {
+.side-content {
     width: 100%;
     position: relative;
-    border-radius: 3px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.side-info img {
+.side-content img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-@media (min-width: 993px) {
-    .side-info img {
-        object-position: 20% 50%;
-    }
-}
-
-.side-info-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.side-info-content {
+.side-content-text {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -101,12 +82,12 @@
     text-align: center;
 }
 
-.side-info-content h3 {
+.side-content-text h3 {
     margin-bottom: 0.5rem;
     font-size: 1.4rem;
 }
 
-.side-info-content p {
+.side-content-text p {
     margin: 0;
     font-size: 1rem;
     opacity: 0.9;
@@ -156,57 +137,110 @@
     filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.3));
 }
 
-.location__description {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 1rem;
+.location-description {
+    margin: 2rem 0;
+    padding: 2rem;
     background-color: var(--ps-sand);
-    border-radius: 3px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-.location__description p {
-    color: var(--ps-blue);
-    font-size: 1.1rem;
+.location-description::before {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 1px;
+    background: var(--ps-terracotta);
+    margin: 0 auto 1.5rem auto;
+}
+
+.location-description p {
+    color: var(--ps-dark-blue);
+    font-size: 1.2rem;
+    font-family: "Playfair Display", Georgia, serif;
     font-style: italic;
-    line-height: 1.6;
+    line-height: 1.8;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.location-description p span {
+    font-weight: bold;
+    color: var(--ps-terracotta);
+    font-style: normal;
+    /* border-bottom: 1px solid var(--ps-terracotta); */
+    padding-bottom: 2px;
+}
+
+.location-description::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 1px;
+    background: var(--ps-terracotta);
+    margin: 1.5rem auto 0 auto;
 }
 
 /* Responsive styles */
+@media (min-width: 993px) {
+    .side-content img {
+        object-position: 20% 50%;
+    }
+}
+
 @media (max-width: 992px) {
     .location-content {
         flex-direction: column;
     }
 
     .map-container,
-    .side-info-container {
+    .side-content-container {
         width: 100%;
     }
 
-    .side-info {
+    .side-content {
         height: 300px;
     }
 }
 
 @media (max-width: 768px) {
-
     .map-container .mapboxgl-map {
         min-height: 350px;
     }
 
-    .side-info {
+    .side-content {
         height: 250px;
     }
 
-    .side-info-content h3 {
+    .side-content-text h3 {
         font-size: 1.2rem;
     }
 
-    .side-info-content p {
+    .side-content-text p {
         font-size: 0.9rem;
+    }
+
+    .location-description {
+        margin: 2rem 0;
+        padding: 2rem 1.5rem;
+    }
+
+    .location-description p {
+        font-size: 1.1rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+    .location {
+        margin: auto;
+        padding: 1rem;
+    }
+
+    .location-content {
+        gap: 1rem;
+    }
 
     .map-container .mapboxgl-map {
         min-height: 300px;
@@ -220,15 +254,29 @@
         margin: 0.25rem;
     }
 
-    .side-info {
+    .side-content {
         height: 200px;
     }
 
-    .side-info-content h3 {
+    .side-content-text h3 {
         font-size: 1.1rem;
     }
 
-    .side-info-content p {
+    .side-content-text p {
         font-size: 0.8rem;
+    }
+
+    .location-description {
+        margin: 1.5rem 0;
+        padding: 1.5rem 1rem;
+    }
+
+    .location-description p {
+        font-size: 1rem;
+    }
+
+    .location-description::before,
+    .location-description::after {
+        width: 100px;
     }
 }
