@@ -1,37 +1,36 @@
-.reviews {
+.reviews-section {
     max-width: 1200px;
     margin: auto;
-    padding: 1rem;
+    padding: 1rem 2rem;
     background-color: var(--ps-white);
     color: var(--ps-blue);
 }
 
 .reviews__heading {
-    font-size: 1.2rem;
-    color: var(--ps-terracotta);
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 3rem;
+    line-height: 1.2;
     text-align: center;
+    letter-spacing: 1px;
+    font-family: "Playfair Display", Georgia, serif;
+    color: var(--ps-terracotta);
+    margin-bottom: 0.5rem;
+    margin-top: 0.3rem;
     position: relative;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
+    text-shadow: 1px 1px 2px var(--ps-light-shadow);
 }
 
 .reviews__heading::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 2px;
-    background-color: var(--ps-green);
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--ps-sand);
+    margin: 15px auto;
 }
 
-.reviews__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+.reviews__slider-container {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .review-card {
@@ -39,16 +38,16 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--ps-sand);
-    border-radius: 3px;
-    padding: 1rem 1.5rem;
+    padding: 1.5rem;
     transition: transform 0.3s ease;
 }
 
 .review__title {
     color: var(--ps-terracotta);
+    text-shadow: 0.5px 0.5px 0.5px var(--ps-light-shadow);
     font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    border-bottom: 2px solid var(--ps-green);
+    margin: 0.5rem 0;
+    border-top: 1px solid var(--ps-gold);
 }
 
 .review__text {
@@ -63,14 +62,16 @@
     align-items: center;
     margin-top: 1rem;
     padding-top: 0.5rem;
-    border-top: 1px solid var(--ps-green);
+    border-top: 1px solid var(--ps-gold);
 }
 
 .review__author {
     font-weight: bold;
     color: var(--ps-terracotta);
+    text-shadow: 0.5px 0.5px 0.5px var(--ps-light-shadow);
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-family: "Playfair Display", Georgia, serif;
 }
 
 .review__date {
@@ -78,9 +79,39 @@
     font-style: italic;
 }
 
+.reviews__slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.reviews__slider-container {
+    margin: auto;
+    width: 70%;
+    overflow: hidden;
+}
+
+.slider-review-card {
+    flex: 0 0 100%;
+    width: 100%;
+}
 
 @media (max-width: 992px) {
-    .reviews__container {
-        grid-template-columns: 1fr;
+    .reviews-slider {
+        height: 100%;
+    }
+
+    .reviews__slider-container {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .reviews-section {
+        padding: 1rem;
+    }
+
+    .slider-review-card {
+        padding: 1rem 1.5rem;
     }
 }

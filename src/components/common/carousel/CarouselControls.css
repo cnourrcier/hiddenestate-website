@@ -31,6 +31,7 @@
     cursor: pointer;
     background-color: transparent;
     transition: transform 0.1s ease-in-out;
+    box-shadow: 1px 1px 2px var(--ps-light-shadow);
 }
 
 .nav-btn > * {
@@ -103,6 +104,7 @@
     display: flex;
     justify-content: center;
     border: 1px solid var(--ps-terracotta);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.09);
 }
 
 .image-text {
@@ -118,7 +120,7 @@
 }
 
 .small-text {
-    font-size: 0.8rem;;
+    font-size: 0.8rem;
 }
 
 /* Accessibility styles */
@@ -126,7 +128,6 @@
 .thumbnail-btn:focus-visible {
     outline: auto;
 }
-
 
 /* Reviews styles */
 
@@ -152,8 +153,6 @@
     opacity: 1;
     transform: scale(1.2);
 }
-
-
 
 @media (max-width: 950px) {
     .thumbnails-container {

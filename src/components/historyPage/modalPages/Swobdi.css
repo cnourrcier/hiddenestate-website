@@ -5,7 +5,7 @@
 
 .swobdi h3 {
     line-height: 1.7rem;
-  }
+}
 
 .swobdi__text-content {
     padding: 0 1rem;
@@ -32,7 +32,7 @@
 }
 
 @media (max-width: 1300px) {
-     .swobdi {
+    .swobdi {
         flex-direction: column;
         padding-bottom: 3rem;
     }
