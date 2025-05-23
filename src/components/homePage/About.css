@@ -154,15 +154,6 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* .about__quote {
-    background-color: var(--ps-sand);
-    padding: 1rem;
-    border-radius: 3px;
-    border-left: 5px solid var(--ps-terracotta);
-    font-style: italic;
-    position: relative;
-} */
-
 .about__quote::before {
     content: open-quote;
     position: absolute;

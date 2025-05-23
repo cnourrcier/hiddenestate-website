@@ -323,7 +323,7 @@ export const historyImages = [
 ];
 
 /**
- * Home page images
+ * Home page images - src/components/homePage/ImageSection
  */
 export const homeImages = [
     {
@@ -343,6 +343,295 @@ export const homeImages = [
             clickable: true,
             modalComponent: "ClaudeMonet",
         },
+    },
+];
+
+/**
+ * Home page images - src/components/homePage/ImageSection
+ */
+export const homeSliderImages = [
+    {
+        id: 1,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741378878/Hidden%20Gable%20Estate/home%20page/_I1A0391_xn500l.jpg`,
+        alt: "Image 1",
+    },
+    {
+        id: 2,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734804922/Hidden%20Gable%20Estate/home%20page/5750_y8gi72.jpg`,
+        alt: "Outdoor cabana seating area",
+    },
+    {
+        id: 3,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734719452/Hidden%20Gable%20Estate/home%20page/5837_g7sld1.jpg`,
+        alt: "Saltwater pool with Outdoor Kitchen",
+    },
+    {
+        id: 4,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734719350/Hidden%20Gable%20Estate/home%20page/5742_mr4ibo.jpg`,
+        alt: "Interior living space with fireplace image 2",
+    },
+];
+
+/**
+ * Swobdi modal images - src/components/historyPage/modalPages/Swobdi
+ */
+export const swobdiImages = [
+    {
+        id: 1,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-fashions_j2in6j.jpg`,
+        text: `"Julanne Johnson, leading woman for Douglas Fairbanks, has beauty which may well be likened to the most beautiful in art"`,
+        text2: `Los Angeles Times 1924`,
+        alt: "",
+    },
+    {
+        id: 2,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736874700/Hidden%20Gable%20Estate/history%20page/swobdi-with-glove_hwp2tj.jpg`,
+        text: `Ruth Clifford, she was also, for a time, the voice of Walt Disney's Minnie Mouse and Daisy Duck`,
+        text2: `Los Angeles Times 1923`,
+        alt: "",
+    },
+    {
+        id: 3,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/stranger-within-our-gates_zghaht.jpg`,
+        text: `Los Angeles Evening Express 1926`,
+        alt: "",
+    },
+    {
+        id: 4,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-feather-hat_stddkw.jpg`,
+        text: `Aileen Pringle, Goldwyn Star`,
+        text2: `Los Angeles Times 1923`,
+        alt: "",
+    },
+    {
+        id: 5,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-chinese-robe_ypeydp.jpg`,
+        text: `Mary Astor, she may be best remembered for her performance as Brigid O'Shaughnessy in The Maltese Falcon (1941)`,
+        text2: `Los Angeles Times 1923`,
+        alt: "",
+    },
+    {
+        id: 6,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736874698/Hidden%20Gable%20Estate/history%20page/swobdi-25-years-in-business_uitt4o.jpg`,
+        text: `Mrs Swobdi started as a Millinery Shop in 1901`,
+        alt: "",
+    },
+    {
+        id: 7,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/LA-fashion-show_a7ix14.jpg`,
+        text: `Los Angeles Herald 1917`,
+        alt: "",
+    },
+    {
+        id: 8,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-illustration_du4jwq.jpg`,
+        text: `Extracted from one of Mrs Swobdi's advertisements`,
+        text2: `Los Angeles Times 1923`,
+        alt: "",
+    },
+    {
+        id: 9,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736874700/Hidden%20Gable%20Estate/history%20page/swobdi-on-display-for-your-approval_df1vj1.jpg`,
+        text: `Los Angeles Evening Express 1926`,
+        alt: "",
+    },
+    {
+        id: 10,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736874699/Hidden%20Gable%20Estate/history%20page/swobdi-large-hat_djrnsn.jpg`,
+        text: `Los Angeles Times 1920`,
+        alt: "",
+    },
+    {
+        id: 11,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1737419003/Hidden%20Gable%20Estate/history%20page/swobdi_at_house_-_m_sojiro.jpg`,
+        text: `Mrs Swobdi in front of her winter home circa 1928`,
+        alt: "",
+    },
+];
+
+/**
+ * Garden page images
+ */
+export const currentGardenImages = [
+    {
+        id: 1,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741571246/Hidden%20Gable%20Estate/gardens%20page/_I1A0280_small_nyjxxh.jpg`,
+        alt: "Image 1",
+    },
+    {
+        id: 2,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741571118/Hidden%20Gable%20Estate/gardens%20page/_I1A0459_small_jyh2t9.jpg`,
+        alt: "Image 2",
+    },
+    {
+        id: 3,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741570327/Hidden%20Gable%20Estate/gardens%20page/_I1A0059_1_small_hvmzhn.jpg`,
+        alt: "Image 3",
+    },
+    {
+        id: 4,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741570609/Hidden%20Gable%20Estate/gardens%20page/_I1A0360_small_m54j41.jpg`,
+        alt: "Image 4",
+    },
+    {
+        id: 5,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741571455/Hidden%20Gable%20Estate/gardens%20page/_I1A0456_small_eng8xk.jpg`,
+        alt: "Image 5",
+    },
+    {
+        id: 6,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741571495/Hidden%20Gable%20Estate/gardens%20page/IMG_8014_small_o7yqyh.jpg`,
+        alt: "Image 6",
+    },
+    {
+        id: 7,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741571502/Hidden%20Gable%20Estate/gardens%20page/IMG_8017_small_x90jsw.jpg`,
+        alt: "Image 7",
+    },
+    {
+        id: 8,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741571525/Hidden%20Gable%20Estate/gardens%20page/IMG_8037_small_k4zhrt.jpg`,
+        alt: "Image 8",
+    },
+    {
+        id: 9,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741571540/Hidden%20Gable%20Estate/gardens%20page/IMG_8047_small_tewros.jpg`,
+        alt: "Image 9",
+    },
+];
+
+export const historicalGardenImages = [
+    {
+        id: 1,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736519293/Hidden%20Gable%20Estate/gardens%20page/Untitled-4_small_hvlcmx.jpg`,
+        text: `“We decided on Cactus as a Motif and proceeded to Arizona with trucks tools etc.” as documented by Mrs Swobdi's sister. This occurred in the late 1920s.`,
+        alt: "Cactus Motif",
+    },
+    {
+        id: 2,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736519290/Hidden%20Gable%20Estate/gardens%20page/Untitled-15_small_kt8wgy.jpg`,
+        text: `Our supply dump, in the hills near Quartsite Arizona. Lumber, straw, cases ropes, tools etc… All taken with us from Los Angeles. We had with us one 5-ton truck and trailer and two cars.`,
+        alt: "",
+    },
+    {
+        id: 3,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736519291/Hidden%20Gable%20Estate/gardens%20page/Untitled-16_small_dhcks7.jpg`,
+        text: `This was our 1st choice; we chose a small one to practice on 18 feet & no branches. Weight about 1800 lbs.`,
+        alt: "",
+    },
+    {
+        id: 4,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736519291/Hidden%20Gable%20Estate/gardens%20page/Untitled-17_small_lzkifh.jpg`,
+        text: `This is George King “King George”. A desert rat who told us we needn't have employed our labor gang as he would have helped us. He is about 75 years old.`,
+        alt: "",
+    },
+    {
+        id: 5,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736375711/Hidden%20Gable%20Estate/gardens%20page/cactus_workers_arizona_-_m_small_mu9i63.jpg`,
+        text: `2nd Choice and by far the hardest to handle on account of the spreading branches. The top four feet broke off in transit.  It was about 21 feet high before it was broken and weight was over 2 tons. Patty & Agnes (Swobdi)`,
+        alt: "",
+    },
+    {
+        id: 5.1,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736554119/Hidden%20Gable%20Estate/gardens%20page/cactus_workers_arizona_-_closeup_ochths.jpg`,
+        text: `Note Mrs Swodi's outfit and shoes while in a remote part of Arizona in the twenties.`,
+        alt: "",
+    },
+    {
+        id: 6,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736519290/Hidden%20Gable%20Estate/gardens%20page/Untitled-19_small_kz1far.jpg`,
+        text: `We looked this one over but decided it was too large.`,
+        alt: "",
+    },
+    {
+        id: 7,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736519290/Hidden%20Gable%20Estate/gardens%20page/Untitled-20_small_zwd0uj.jpg`,
+        text: `The twins shown in this picture next took our eye as being very attractive and we just had room for it on the trailer. While shifting the crate on the trailor. I fell into the plant and got plenty stuck up about it.`,
+        alt: "",
+    },
+    {
+        id: 8,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736519293/Hidden%20Gable%20Estate/gardens%20page/Untitled-21_small_ytgm4b.jpg`,
+        text: `This shows the method of loading. We used sacks full of straw on the crate to protect the plants and plenty of brush between and over the large plants to enable us to put smaller ones on top. It took several Mexicans 2 days to cut enough brush. They worked slow.`,
+        alt: "",
+    },
+    {
+        id: 9,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736519292/Hidden%20Gable%20Estate/gardens%20page/Untitled-32_small_gadddh.jpg`,
+        text: `From near Ajo Arizona`,
+        alt: "",
+    },
+    {
+        id: 10,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736374996/Hidden%20Gable%20Estate/gardens%20page/Untitled-33_small_jgjcxy.jpg`,
+        text: `Gunsight Mountain 25 miles S.E. of Ajo. This mountain is full of cacti of various sorts. The best of which is Lemaireocereus thurberi (Stenocereus thurberi). The arrow points to a Thurberi over 10 feet tall. Here we found the plant later named Echinocereus Meadii by Dr. H.D. Houghton.`,
+        alt: "",
+    },
+    {
+        id: 11,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736375253/Hidden%20Gable%20Estate/gardens%20page/Untitled-34_small_f37g6q.jpg`,
+        text: `From near Tuscon Arizona`,
+        alt: "",
+    },
+    {
+        id: 12,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736375960/Hidden%20Gable%20Estate/gardens%20page/Untitled-35_small_ojsodo.jpg`,
+        text: `At night from the nearest town, ship our days collection by freight to Los Angeles to be later FWD. to Palm Springs. These pictures show how we loaded our Packard each day.`,
+        alt: "",
+    },
+    {
+        id: 13,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736375391/Hidden%20Gable%20Estate/gardens%20page/Untitled-36_small_wqtkda.jpg`,
+        text: `Loaded Packard`,
+        alt: "",
+    },
+    {
+        id: 14,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736375474/Hidden%20Gable%20Estate/gardens%20page/Untitled-37_small_ziffxo.jpg`,
+        text: `Florence standing by Opuntia`,
+        alt: "",
+    },
+    {
+        id: 15,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736375540/Hidden%20Gable%20Estate/gardens%20page/Untitled-38_small_uiucrh.jpg`,
+        text: `Carnegiea Gigantea Cristate - In the hospital grounds of the Indian Reservation. I believe the finest “crest” in the world. A perfect specimen.`,
+        alt: "",
+    },
+    {
+        id: 16,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736375613/Hidden%20Gable%20Estate/gardens%20page/Untitled-39_small_mi7qii.jpg`,
+        text: `There are miles and miles of these Opuntias. They look like fruit trees loaded with fruit the year round.`,
+        alt: "",
+    },
+    {
+        id: 17,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736553560/Hidden%20Gable%20Estate/gardens%20page/Untitled-40_small_h72ppc.jpg`,
+        text: `After being unloaded in Palm Springs`,
+        alt: "",
+    },
+    {
+        id: 18,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736553560/Hidden%20Gable%20Estate/gardens%20page/Untitled-41_small_yegumk.jpg`,
+        text: `The hoisting apparatus we used to plant them with.`,
+        alt: "",
+    },
+    {
+        id: 19,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736519291/Hidden%20Gable%20Estate/gardens%20page/Untitled-23_small_ejizoz.jpg`,
+        text: `Desert Motif as completed`,
+        alt: "",
+    },
+    {
+        id: 20,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736519292/Hidden%20Gable%20Estate/gardens%20page/Untitled-27_small_ecjiad.jpg`,
+        text: `Desert Motif as completed`,
+        alt: "",
+    },
+    {
+        id: 21,
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736519290/Hidden%20Gable%20Estate/gardens%20page/Untitled-30_small_qgcvgt.jpg`,
+        text: `Mrs Swobdi admiring the gardens in her high heels with snow on the ground`,
+        alt: "",
     },
 ];
 

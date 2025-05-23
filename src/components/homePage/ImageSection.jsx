@@ -1,15 +1,16 @@
 import Carousel from "../common/carousel/Carousel";
 import claudeMonetInspiration from "../../assets/claude-monet-inspiration.svg";
 import { useModal } from "../../context/ModalContext";
+import { homeSliderImages } from "../../data/imagesData";
 import "./ImageSection.css";
 
-const ImageSection = ({ images }) => {
+const ImageSection = () => {
     const { openModal } = useModal();
 
     return (
         <section className="homepage__image-section">
             <Carousel
-                items={images}
+                items={homeSliderImages}
                 showThumbnails={true}
                 className="homepage-carousel"
             />
