@@ -1,8 +1,8 @@
 .about {
-    min-height: 100dvh;
+    /* min-height: 100dvh; */
     max-width: 1400px;
     margin: auto;
-    padding: 1rem 2rem;
+    padding: 3rem 2rem;
     background-color: var(--ps-white);
     color: var(--ps-blue);
     font-family: "Playfair Display", Georgia, serif;
@@ -50,9 +50,11 @@
     gap: 2rem;
     margin-bottom: 2rem;
     align-items: start;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
-.about__content-image-container {
+/* .about__content-image-container {
     grid-row-start: 1;
     grid-row-end: 3;
     max-width: 240px;
@@ -60,19 +62,19 @@
     border-radius: 0;
     overflow: hidden;
     aspect-ratio: 3/4;
-}
+} */
 
-.about__image {
+/* .about__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: sepia(10%);
     transition: filter 0.3s ease;
-}
+} */
 
-.about__image:hover {
+/* .about__image:hover {
     filter: sepia(0%);
-}
+} */
 
 .about__content-text {
     grid-column-start: 2;
@@ -145,71 +147,6 @@
     background-color: var(--ps-gold);
 } */
 
-.about__quote {
-    background-color: var(--ps-sand);
-    padding: 2.5rem 2rem;
-    font-style: italic;
-    position: relative;
-    margin: 3rem 0;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.about__quote::before {
-    content: open-quote;
-    position: absolute;
-    top: -30px;
-    left: 30px;
-    font-size: 6rem;
-    color: var(--ps-terracotta);
-    font-family: "Playfair Display", Georgia, serif;
-    line-height: 1;
-    opacity: 0.5;
-}
-
-.about__quote p {
-    margin-bottom: 1rem;
-    line-height: 1.8;
-    position: relative;
-    color: var(--ps-dark-blue);
-    z-index: 1;
-}
-
-.about__quote-title {
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: var(--ps-dark-terracotta);
-}
-
-.about__quote-highlight {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    margin: 1.5rem 0;
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 1.8;
-}
-
-.about__quote span {
-    font-weight: bold;
-    color: var(--ps-terracotta);
-    border-bottom: 1px solid var(--ps-white);
-    padding-bottom: 2px;
-}
-
-.about__quote-source {
-    display: block;
-    text-align: right;
-    color: var(--ps-terracotta);
-    font-weight: bold;
-    margin-bottom: 1rem;
-    padding-right: 1rem;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    font-family: "Montserrat", sans-serif;
-}
-
 @media (max-width: 900px) {
     .about__content-highlight {
         width: 100%;
@@ -250,11 +187,11 @@
         margin-top: 0.6rem;
     }
 
-    .about__content-image-container {
+    /* .about__content-image-container {
         float: left;
         margin-right: 1.5rem;
         margin-bottom: 1rem;
-    }
+    } */
 
     .about__content-highlight {
         margin: 1rem 0;
@@ -263,10 +200,10 @@
 
 @media (max-width: 500px) {
     .about {
-        padding: 1rem;
+        padding: 2.5rem 1rem;
     }
 
-    .about__content-image-container {
+    /* .about__content-image-container {
         max-width: 200px;
-    }
+    } */
 }

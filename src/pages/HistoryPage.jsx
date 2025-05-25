@@ -16,7 +16,7 @@ const HistoryPage = () => {
                 <title>Celebrity Desert Hideaway</title>
             </Helmet>
 
-            <h1 className="history__title">Hidden Gable Estate</h1>
+            <h1 className="history__title">Hidden Estate</h1>
             <h2 className="history__subtitle">Est. 1925</h2>
             <p className="history-discover-hint">
                 (Click any image to learn more!)
