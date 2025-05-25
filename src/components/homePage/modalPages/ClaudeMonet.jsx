@@ -12,7 +12,7 @@ const ClaudeMonet = () => {
                 />
 
                 <div className="modal-text">
-                    <h2>Claude Monet's Influence on the Hidden Gable Estate</h2>
+                    <h2>Claude Monet's Influence on the Hidden Estate</h2>
 
                     <p>
                         The estate interior and exterior colors have been
@@ -47,8 +47,7 @@ const ClaudeMonet = () => {
                             This artistic influence represents the cultural
                             exchange between European aesthetics and the
                             developing architectural identity of Palm Springs in
-                            the 1920s, when the Hidden Gable Estate was
-                            established.
+                            the 1920s, when the Hidden Estate was established.
                         </p>
                     </div>
                 </div>
