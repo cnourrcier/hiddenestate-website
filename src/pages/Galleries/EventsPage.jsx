@@ -61,6 +61,36 @@ const EventsPage = () => {
             </section>
 
             <section className="events-showcase">
+                <div className="event-card wedding-shower-card">
+                    <h3 className="event-title">April Wedding Shower</h3>
+                    <div className="wedding-collage">
+                        <img
+                            src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/1571cc76-4843-4394-59c4-679c02f89700/public`}
+                            alt="Soon to be bride posing while opening gifts"
+                            className="collage-photo"
+                        />
+                        <img
+                            src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/9b5d22df-9ee5-411e-80dc-22f44b98cd00/public`}
+                            alt="Drinks for the wedding shower guests"
+                            className="collage-photo"
+                        />
+                        <img
+                            src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/5993b9e0-1415-40bc-2fa7-03595df36500/public`}
+                            alt="Group of young ladies enjoying the pool - wedding shower"
+                            className="collage-photo"
+                        />
+                        <img
+                            src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/55358379-8570-4fb7-1a89-f803cc88eb00/public`}
+                            alt="IMG_6270"
+                            className="collage-photo"
+                        />
+                        <img
+                            src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/ac032ab1-847a-4066-613b-7fbb62706600/public`}
+                            alt="Soon to be bride posing"
+                            className="collage-photo"
+                        />
+                    </div>
+                </div>
                 <div className="event-card">
                     <h3 className="event-title">
                         Modernism 2025 Featured Home Tour
