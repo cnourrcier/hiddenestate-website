@@ -17,11 +17,11 @@ const GableLombard = () => {
                 <p className="img-description">1928</p>
             </div>
             <p>
-                Hidden Gable Estate, commissioned by Agnes Swobdi, is a product
-                of the roaring 20's. It was a time of great wealth creation,
-                women's liberation and revealing fashions aka “flappers”. It was
-                also the golden age of Hollywood dominated by Clark Gable “King
-                of Hollywood”.
+                Hidden Estate, commissioned by Agnes Swobdi, is a product of the
+                roaring 20's. It was a time of great wealth creation, women's
+                liberation and revealing fashions aka “flappers”. It was also
+                the golden age of Hollywood dominated by Clark Gable “King of
+                Hollywood”.
             </p>
             <p>
                 Silent films became popular in the US at the beginning of the
@@ -61,7 +61,7 @@ const GableLombard = () => {
                 Their primary residence (purchased just before they married) was
                 a 20-acre ranch in the city of Encino, less than 15 miles from
                 the recording studios in Culver City. However, they had a second
-                home in Palm Springs (Hidden Gable Estate) until Carol Lombard's
+                home in Palm Springs (Hidden Estate) until Carol Lombard's
                 untimely death in 1942. This was their most private desert
                 hideaway.
             </p>
@@ -75,9 +75,9 @@ const GableLombard = () => {
                 flying five missions himself.
             </p>
             <p>
-                Doris Fleeson, a future resident of Hidden Gable Estate, meet
-                Clark Gable in London. You can see the article she wrote about
-                Gable in her section of the property's history.
+                Doris Fleeson, a future resident of Hidden Estate, meet Clark
+                Gable in London. You can see the article she wrote about Gable
+                in her section of the property's history.
             </p>
             <div className="img three">
                 <img

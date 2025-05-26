@@ -56,7 +56,7 @@ const NewspaperArticle = () => {
                     </div>
                     <div className="text-body">
                         {/* <b>
-              <span className="text-intro">Hidden Gable Estate</span>
+              <span className="text-intro">Hidden Estate</span>
             </b> */}
                         <p>
                             A prime example of Spanish Colonial Revival
