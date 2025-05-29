@@ -1,4 +1,4 @@
-import { GableQuote } from "../../homePage/GableQuote";
+// import { GableQuote } from "../../historyPage/GableQuote";
 import "./GableLombard.css";
 
 const GableLombard = () => {
