@@ -4,7 +4,7 @@ const About = () => {
     return (
         <section className="about">
             <h2 className="about__heading">
-                Welcome to the Hidden Gable Estate
+                Welcome to the Hidden Estate
                 <span className="about__subtitle">
                     Located in Old Las Palmas, Palm Springs
                 </span>
