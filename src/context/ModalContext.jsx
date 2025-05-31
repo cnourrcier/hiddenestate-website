@@ -9,6 +9,8 @@ export const ModalProvider = ({ children }) => {
     const urlModal = useUrlModal();
     const simpleModal = useSimpleModal();
 
+    console.log(urlModal.modalItem);
+
     return (
         <ModalContext.Provider
             value={{

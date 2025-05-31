@@ -332,7 +332,7 @@ export const homeImages = [
         alt: "Claude Monet painting that inspired Hidden Gable Estate",
         titles: {
             galleryTitle: ["Claude Monet Inspiration"],
-            htmlTitle: "",
+            htmlTitle: "Claude Monet Inspiration",
             modalTitle: "Claude Monet Inspiration",
         },
         navigation: {

@@ -12,7 +12,7 @@ const HistoryPage = () => {
 
     return (
         <main className="history">
-            <Helmet>
+            <Helmet key={location.pathname}>
                 <title>Celebrity Desert Hideaway</title>
             </Helmet>
 

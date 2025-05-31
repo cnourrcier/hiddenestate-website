@@ -10,7 +10,7 @@ import "./HomePage.css";
 function HomePage() {
     return (
         <main className="homepage">
-            <Helmet>
+            <Helmet key={location.pathname}>
                 <title>Palm Springs Luxury Vacation Rental</title>
             </Helmet>
             <Hero />
