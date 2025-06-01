@@ -8,11 +8,11 @@ const Features = () => {
                 <ul className="features__list">
                     <li>
                         <span className="feature-title">
-                            Historic Spanish Architecture (1925) with rich
-                            Celebrity History:
+                            1925 Spanish Architecture with rich celebrity
+                            history:
                         </span>{" "}
                         Created by a Master Architect for famed Los Angeles
-                        Fashion designer/importer Inspiration and color pallet
+                        Fashion designer/importer. Inspiration and color pallet
                         choices from Claude Monet's pink home in Giverny.
                     </li>
                     <li>
