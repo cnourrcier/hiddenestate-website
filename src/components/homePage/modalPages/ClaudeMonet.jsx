@@ -33,7 +33,7 @@ const ClaudeMonet = () => {
                         Another example of Monet's influence is his painting
                         "House Among the Palms" with pink exterior and red tile
                         roof, which bears striking similarities to the Hidden
-                        Gable Estate's aesthetic.
+                        Estate's aesthetic.
                     </p>
 
                     <blockquote>

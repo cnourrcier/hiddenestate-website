@@ -7,22 +7,26 @@ const Features = () => {
                 <h2 className="features__heading">Features</h2>
                 <ul className="features__list">
                     <li>
-                        <span className="feature-title">Amazing Location:</span>{" "}
-                        Walking distance to downtown Palm Springs
+                        <span className="feature-title">
+                            Historic Spanish Architecture (1925) with rich
+                            Celebrity History:
+                        </span>{" "}
+                        Created by a Master Architect for famed Los Angeles
+                        Fashion designer/importer Inspiration and color pallet
+                        choices from Claude Monet's pink home in Giverny.
                     </li>
                     <li>
                         <span className="feature-title">Mountain Views:</span>{" "}
                         The estate offers breathtaking views of San Jacinto
                         Mountains, a signature feature of many luxury estates in
-                        Old Las Palms
+                        Old Las Palmas
                     </li>
                     <li>
                         <span className="feature-title">
                             Expansive Grounds:
                         </span>{" "}
-                        The property is set on a Large lot (nearly an acre),
-                        with lush gardens, mature palm trees, and ample outdoor
-                        space
+                        The property is set on a large one-acre corner lot, with
+                        lush gardens, mature palm trees, and ample outdoor space
                     </li>
                     <li>
                         <span className="feature-title">
@@ -53,6 +57,10 @@ const Features = () => {
                             Gated, Private and Secluded:
                         </span>{" "}
                         Many event parking options
+                    </li>
+                    <li>
+                        <span className="feature-title">Amazing Location:</span>{" "}
+                        Walking distance to everything downtown Palm Springs
                     </li>
                 </ul>
             </div>
