@@ -17,7 +17,7 @@
     text-align: center;
     font-family: "Playfair Display", Georgia, serif;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem auto;
     text-transform: none;
     position: relative;
     text-shadow: 1px 1px 2px var(--ps-light-shadow);
@@ -55,11 +55,10 @@
 .about__content-image-container {
     grid-row-start: 1;
     grid-row-end: 3;
-    max-width: 240px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     border-radius: 0;
     overflow: hidden;
-    aspect-ratio: 3/4;
+    aspect-ratio: 1;
 }
 
 .about__image {
@@ -86,16 +85,6 @@
 
 .about__content-text p:nth-child(1) {
     margin-bottom: 1rem;
-}
-
-.about__content-text p:first-of-type::first-letter {
-    font-size: 3.5rem;
-    float: left;
-    line-height: 0.8;
-    margin-right: 0.5rem;
-    color: var(--ps-terracotta);
-    font-family: "Playfair Display", Georgia, serif;
-    font-weight: 700;
 }
 
 .about__content-highlight {
@@ -129,22 +118,6 @@
     margin-top: 1rem;
 }
 
-.movie_title {
-    font-style: italic;
-    /* position: relative; */
-    /* padding-bottom: 2px; */
-}
-
-/* .movie_title::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: var(--ps-gold);
-} */
-
 .about__quote {
     background-color: var(--ps-sand);
     padding: 2.5rem 2rem;
@@ -152,18 +125,6 @@
     position: relative;
     margin: 3rem 0;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.about__quote::before {
-    content: open-quote;
-    position: absolute;
-    top: -30px;
-    left: 30px;
-    font-size: 6rem;
-    color: var(--ps-terracotta);
-    font-family: "Playfair Display", Georgia, serif;
-    line-height: 1;
-    opacity: 0.5;
 }
 
 .about__quote p {
@@ -210,18 +171,18 @@
     font-family: "Montserrat", sans-serif;
 }
 
+@media (max-width: 1050px) {
+    .about__content-image-container {
+        aspect-ratio: 3/4;
+        max-width: 240px;
+    }
+}
+
 @media (max-width: 900px) {
     .about__content-highlight {
         width: 100%;
         grid-column-start: 1;
         grid-column-end: 4;
-        padding: 1rem 0;
-    }
-
-    .about__image-container {
-        grid-row: 1;
-        width: 100%;
-        height: 300px;
     }
 }
 
@@ -257,13 +218,18 @@
     }
 
     .about__content-highlight {
-        margin: 1rem 0;
+        margin: 2rem auto 0 auto;
     }
 }
 
 @media (max-width: 500px) {
     .about {
         padding: 1rem;
+    }
+
+    .about__subtitle {
+        font-size: 1.05rem;
+        line-height: 1.4rem;
     }
 
     .about__content-image-container {

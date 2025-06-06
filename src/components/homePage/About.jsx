@@ -4,41 +4,34 @@ const About = () => {
     return (
         <section className="about">
             <h2 className="about__heading">
-                Welcome to the Hidden Estate
+                Hidden Estate
                 <span className="about__subtitle">
-                    Located in Old Las Palmas, Palm Springs
+                    Your Destination for Unforgettable Events or a Luxury
+                    Vacation
                 </span>
             </h2>
             <div className="about__content-wrapper">
                 <div className="about__content-image-container">
                     <img
-                        src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735402328/Hidden%20Gable%20Estate/home%20page/Gable-Lombard-39_nv5j1q.jpg`}
+                        src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/ee482777-30a3-464e-e287-27a376743a00/public`}
                         alt="Clark Gable and Carole Lombard's Palm Springs Estate"
                         className="about__image"
                     />
                 </div>
                 <div className="about__content-text">
                     <p>
-                        Clark Gable, famous for his role as Rhett Butler in{" "}
-                        <span className="movie_title">
-                            "Gone with the Wind"
-                        </span>{" "}
-                        and his Oscar winning role in{" "}
-                        <span className="movie_title">
-                            “It happened one night”
-                        </span>
-                        , occupied this estate with his wife Carole Lombard.
-                        Known as their <i>"desert hideaway"</i>, the property
-                        boasts many luxurious amenities typical of the era,
-                        including sprawling gardens, a large swimming pool, and
-                        expansive views of the San Jacinto Mountains.
+                        Hidden Estate is a stunning Spanish Revival estate in
+                        the heart of Palm Springs. Steeped in Hollywood history,
+                        this secluded and fully gated property features lush
+                        botanical gardens, mountain views, private Pickleball
+                        Court and a sparkling saltwater pool.
                     </p>
                     <p>
-                        Located just a couple of hours from Los Angeles, Palm
-                        Springs offered a convenient escape from the hustle and
-                        bustle of Hollywood. It provided a serene retreat where
-                        stars could unwind and enjoy a more private lifestyle
-                        within the tranquility of the desert.
+                        Whether you're planning an elegant outdoor wedding, an
+                        intimate gathering, or a high-end soirée, Hidden Estate
+                        delivers timeless charm and exclusive privacy. Make your
+                        next event truly unforgettable at one of Palm Springs'
+                        most unique and storied venues.
                     </p>
                 </div>
                 <div className="about__content-highlight">
