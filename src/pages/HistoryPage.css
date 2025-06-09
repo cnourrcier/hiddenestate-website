@@ -1,82 +1,84 @@
 .history {
-  padding: 130px 2rem 60px 2rem;
+    padding: 130px 2rem 60px 2rem;
 }
 
 .history__title {
-  font-size: 2.5rem;
-  line-height: 3.2rem;
-  color: var(--ps-terracotta);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: center;
-  position: relative;
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+    color: var(--ps-terracotta);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    text-shadow: 0.5px 0.5px 0.5px var(--ps-light-shadow);
 }
 
 .history__subtitle {
-  font-size: 1.5rem;
-  color: var(--ps-blue);
-  margin-bottom: 1rem;
-  position: relative;
-  padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--ps-blue);
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 1rem;
+    text-shadow: 0.5px 0.5px 0.5px var(--ps-light-shadow);
 }
 
 .history__subtitle::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 3px;
-  background-color: var(--ps-green);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: var(--ps-green);
 }
 
 .history-discover-hint {
-  text-align: center;
-  color: #666;
+    text-align: center;
+    color: #666;
 }
 
 .top-history__container {
-  padding-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 .bottom-history__container {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 @media (max-width: 1050px) {
-  .history-discover-hint {
-    padding-bottom: 2rem;
-  }
+    .history-discover-hint {
+        padding-bottom: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
-  .history-page h1 {
-    font-size: 28px;
-  }
+    .history-page h1 {
+        font-size: 28px;
+    }
 
-  .history-page h2 {
-    font-size: 24px;
-  }
+    .history-page h2 {
+        font-size: 24px;
+    }
 
-  .history-page h3 {
-    font-size: 20px;
-  }
+    .history-page h3 {
+        font-size: 20px;
+    }
 
-  .history-discover-hint {
-    padding-bottom: 1.5rem;
-  }
+    .history-discover-hint {
+        padding-bottom: 1.5rem;
+    }
 }
 
 @media (max-width: 650px) {
-  .history-discover-hint {
-    padding-bottom: 1rem;
-  }
+    .history-discover-hint {
+        padding-bottom: 1rem;
+    }
 }
 
 @media (max-width: 500px) {
-  .history {
-    padding: 130px 0 60px 0;
-  }
+    .history {
+        padding: 130px 0 60px 0;
+    }
 }
