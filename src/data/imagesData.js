@@ -182,6 +182,30 @@ export const estateImages = [
         name: "IMG_8046 small.jpg",
         alt: "Portrait photo",
     },
+    {
+        id: "estate-31",
+        source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/_I1A0662/public`,
+        name: "_I1A0662.jpg",
+        alt: "Portrait photo",
+    },
+    {
+        id: "estate-32",
+        source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/_I1A0690/public`,
+        name: "_I1A0690.jpg",
+        alt: "Portrait photo",
+    },
+    {
+        id: "estate-33",
+        source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/_I1A0721/public`,
+        name: "_I1A0721.jpg",
+        alt: "Portrait photo",
+    },
+    {
+        id: "estate-34",
+        source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/_I1A0729/public`,
+        name: "_I1A0729.jpg",
+        alt: "Portrait photo",
+    },
 ];
 
 /**
