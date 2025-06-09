@@ -1,8 +1,122 @@
-import "./EventsPage.css";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import {
+    CarouselProvider,
+    Carousel,
+} from "../../components/common/carouselNew";
+import "./EventsPage.css";
 
 const EventsPage = () => {
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    };
+
+    // Foundation event carousel data
+    const foundationEventImages = [
+        {
+            id: "6-3-PSUSDF-DAL_0895",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0895/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0894",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0894/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0560",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0560/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0576",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0576/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0581",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0581/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0600",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0600/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0604",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0604/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0628",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0628/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0611",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0611/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0640",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0640/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0641",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0641/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0661",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0661/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0701",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0701/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0711",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0711/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0752",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0752/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0787",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0787/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0783",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0783/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0878",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0878/public`,
+            alt: "",
+        },
+        {
+            id: "6-3-PSUSDF-DAL_0839",
+            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0839/public`,
+            alt: "",
+        },
+    ];
+
+    const foundationCarouselOptions = {
+        autoPlay: true,
+        autoPlayInterval: 4000,
+        loop: true,
+        initialIndex: 0,
+    };
+
     return (
         <main className="events-page">
             <Helmet>
@@ -61,6 +175,43 @@ const EventsPage = () => {
             </section>
 
             <section className="events-showcase">
+                <div className="event-card">
+                    <h3 className="event-title">
+                        The Foundation for Palm Springs Unified School District
+                        2025 End of Year Event
+                    </h3>
+                    <CarouselProvider
+                        items={foundationEventImages}
+                        options={foundationCarouselOptions}
+                        className="foundation-event-carousel"
+                        ariaLabel="Foundation end of year event photo gallery"
+                    >
+                        <Carousel
+                            direction="horizontal"
+                            // aspectRatio="4/3"
+                            showZoom={false}
+                        />
+                    </CarouselProvider>
+                    <div className="foundation-card-bottom">
+                        <img
+                            style={{ width: "150px" }}
+                            src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/f79cc279-5e0a-41fa-fef1-e1487055bf00/public`}
+                            alt=""
+                        />
+                        <div className="foundation-gallery-text">
+                            <p className="photo-attribution">
+                                Photos by David A. Lee
+                            </p>
+                            <Link
+                                to="foundation-for-psusd-2025"
+                                className="view-gallery-link"
+                                onClick={scrollToTop}
+                            >
+                                View full gallery
+                            </Link>
+                        </div>
+                    </div>
+                </div>
                 <div className="event-card wedding-shower-card">
                     <h3 className="event-title">April Wedding Shower</h3>
                     <div className="wedding-collage">

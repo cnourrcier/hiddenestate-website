@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { estateImages } from "../../data/imagesData";
 import ImageGallery from "../../components/common/ImageGallery/ImageGallery";
 import "./EstatePage.css";
 
@@ -10,7 +11,7 @@ const EstatePage = () => {
             </Helmet>
 
             <main className="estate-page">
-                <ImageGallery />
+                <ImageGallery images={estateImages} />
             </main>
         </>
     );

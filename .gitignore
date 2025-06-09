@@ -26,6 +26,6 @@ dist-ssr
 .env
 .prettierrc
 eslint.config.js
-
+.vscode/
 
 public/video/

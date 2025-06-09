@@ -1,9 +1,8 @@
-import { estateImages } from "../../../data/imagesData";
 import { useColumnLayout } from "../../../hooks/useColumnLayout";
 import "./ImageGallery.css";
 
-const ImageGallery = () => {
-    const { columns } = useColumnLayout(estateImages);
+const ImageGallery = ({ images }) => {
+    const { columns } = useColumnLayout(images);
 
     return (
         <div className="gallery-container">

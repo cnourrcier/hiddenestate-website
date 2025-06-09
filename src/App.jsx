@@ -23,6 +23,9 @@ const DinnerParties = lazy(() => import("./pages/Rental/DinnerParties"));
 const FilmLocation = lazy(() => import("./pages/Rental/FilmLocation"));
 const EstatePage = lazy(() => import("./pages/Galleries/EstatePage"));
 const EventsPage = lazy(() => import("./pages/Galleries/EventsPage"));
+const FoundationForPsusd2025 = lazy(
+    () => import("./pages/Galleries/FoundationForPsusd2025")
+);
 const MediaPage = lazy(() => import("./pages/MediaPage"));
 const MissionPage = lazy(() => import("./pages/MissionPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
@@ -75,6 +78,10 @@ function App() {
                         <Route
                             path="/galleries/events"
                             element={<EventsPage />}
+                        />
+                        <Route
+                            path="/galleries/events/foundation-for-psusd-2025"
+                            element={<FoundationForPsusd2025 />}
                         />
                         <Route path="/media" element={<MediaPage />} />
                         <Route path="/mission" element={<MissionPage />} />

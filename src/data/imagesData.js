@@ -34,8 +34,8 @@ export const estateImages = [
     },
     {
         id: "estate-6",
-        source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/03b7f9fc-94c5-4d46-8563-44a381ded800/public`,
-        name: "_I1A0461 small.jpg",
+        source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/ee482777-30a3-464e-e287-27a376743a00/public`,
+        name: "Spanish Stairs leading to Casita at Hidden Gable Estate 4x5 small.jpg",
         alt: "Beautiful landscape",
     },
     {
