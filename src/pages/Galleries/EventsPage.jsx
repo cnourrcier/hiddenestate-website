@@ -75,6 +75,13 @@ const EventsPage = () => {
                         The Foundation for Palm Springs Unified School District
                         2025 End of Year Event
                     </h3>
+                    <Link
+                        to="foundation-for-psusd-2025"
+                        className="view-gallery-link"
+                        onClick={scrollToTop}
+                    >
+                        View full gallery
+                    </Link>
                     <CarouselProvider
                         items={foundationEventCarouselImages}
                         options={{
@@ -94,21 +101,13 @@ const EventsPage = () => {
                     </CarouselProvider>
                     <div className="foundation-card-bottom">
                         <img
-                            style={{ width: "150px" }}
-                            src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/f79cc279-5e0a-41fa-fef1-e1487055bf00/public`}
+                            src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/84f8557b-fe46-4aa9-fb22-01c6eabc4400/public`}
                             alt=""
                         />
                         <div className="foundation-gallery-text">
                             <p className="photo-attribution">
                                 Photos by David A. Lee
                             </p>
-                            <Link
-                                to="foundation-for-psusd-2025"
-                                className="view-gallery-link"
-                                onClick={scrollToTop}
-                            >
-                                View full gallery
-                            </Link>
                         </div>
                     </div>
                 </div>

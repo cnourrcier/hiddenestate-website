@@ -61,12 +61,12 @@ const Header = () => {
 
     return (
         <header className={getHeaderClass()}>
-            <div className={!mobileMenuDropdown ? "logo-container" : "hidden"}>
+            <div className="logo-container">
                 <Link to="/">
                     <img src={`/img/Blancov2.png`} />
                 </Link>
             </div>
-            <div className={!mobileMenuDropdown ? "estate-name" : "hidden"}>
+            <div className="estate-name">
                 <div className="estate-word">Hidden</div>
                 <div className="estate-word">Estate</div>
             </div>

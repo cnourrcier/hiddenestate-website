@@ -358,10 +358,14 @@
 .foundation-card-bottom {
     margin-top: 1rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     text-align: center;
+}
+
+.foundation-card-bottom img {
+    width: 300px;
 }
 
 .photo-attribution {
@@ -370,9 +374,12 @@
 }
 
 .view-gallery-link {
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
     color: var(--ps-terracotta);
     font-weight: bold;
-    /* text-shadow: 0.5px 0.5px 0.5px var(--ps-light-shadow); */
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 900px) {
@@ -501,6 +508,11 @@
         bottom: 15px;
         right: 10px;
     }
+
+    .foundation-card-bottom {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -550,6 +562,10 @@
 
     .foundation-gallery-text {
         text-align: center;
+    }
+
+    .foundation-card-bottom img {
+        width: 200px;
     }
 }
 
