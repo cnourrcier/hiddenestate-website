@@ -12,7 +12,7 @@ const PrivateTours = () => {
     const privateTourFeatureList = [
         {
             emoji: "🌟",
-            name: 'Exclusive Estate Tour: Discover the Desert Hideaway where Clark Gable and Carole Lombard escaped Hollywood to experience life as "normal folks.',
+            name: 'Exclusive Estate Tour: Discover the Desert Hideaway where celebrities escaped Hollywood to experience life as "normal folks."',
         },
         {
             emoji: "🌟",
@@ -88,7 +88,7 @@ const PrivateTours = () => {
                             <em>
                                 Step back in time and experience the Hollywood
                                 glamour and architectural beauty of The Hidden
-                                Gable Estate
+                                Estate
                             </em>
                         </h2>
                         <p className="rental__tagline">

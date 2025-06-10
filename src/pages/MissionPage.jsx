@@ -29,8 +29,9 @@ const MissionPage = () => {
                     className="hidden-gable__image"
                 />
                 <p>
-                    Named for its gable roof hidden behind the pink walls in Old
-                    Las Palmas. Restoration is an on-going process with planned
+                    Old Las Palmas neighborhood is famous for large celebrity
+                    estates hidden behind tall hedges, hence the name "Hidden
+                    Estate". Restoration is an on-going process with planned
                     projects during the summer months. We are lucky to have
                     photos from the time the home was completed for guidance.
                     Future plans include restoring the courtyard on the South

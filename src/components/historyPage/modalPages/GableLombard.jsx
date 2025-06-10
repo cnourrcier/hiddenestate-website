@@ -62,8 +62,7 @@ const GableLombard = () => {
                 a 20-acre ranch in the city of Encino, less than 15 miles from
                 the recording studios in Culver City. However, they had a second
                 home in Palm Springs (Hidden Estate) until Carol Lombard's
-                untimely death in 1942. This was their most private desert
-                hideaway.
+                untimely death in 1942.
             </p>
             <p>
                 Shortly after Lombard's death, Gable, who was inconsolable and
