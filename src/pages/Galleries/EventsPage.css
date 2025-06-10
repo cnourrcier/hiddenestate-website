@@ -18,6 +18,7 @@
     letter-spacing: 1.5px;
     line-height: 1.2;
     font-weight: 700;
+    text-shadow: 0.5px 0.5px 0.5px var(--ps-light-shadow);
 }
 
 .star {
@@ -164,6 +165,7 @@
     text-align: center;
     position: relative;
     padding-bottom: 0.8rem;
+    text-shadow: 0.5px 0.5px 0.5px var(--ps-light-shadow);
 }
 
 .event-title::after {
@@ -364,7 +366,7 @@
 
 .photo-attribution {
     font-weight: bold;
-    text-shadow: 1px 1px 20px var(--ps-light-shadow);
+    text-shadow: 0.5px 0.5px 0.5px var(--ps-light-shadow);
 }
 
 .view-gallery-link {

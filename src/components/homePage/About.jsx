@@ -13,7 +13,7 @@ const About = () => {
             <div className="about__content-wrapper">
                 <div className="about__content-image-container">
                     <img
-                        src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/ee482777-30a3-464e-e287-27a376743a00/public`}
+                        src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/Spanish-Stairs-leading-to-Casita-at-Hidden-Gable-Estate-4x5/public`}
                         alt="Hidden Estate"
                         className="about__image"
                     />

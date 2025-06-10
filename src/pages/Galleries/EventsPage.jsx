@@ -4,117 +4,12 @@ import {
     CarouselProvider,
     Carousel,
 } from "../../components/common/carouselNew";
+import { foundationEventCarouselImages } from "../../data/imagesData";
 import "./EventsPage.css";
 
 const EventsPage = () => {
     const scrollToTop = () => {
         window.scrollTo(0, 0);
-    };
-
-    // Foundation event carousel data
-    const foundationEventImages = [
-        {
-            id: "6-3-PSUSDF-DAL_0895",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0895/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0894",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0894/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0560",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0560/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0576",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0576/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0581",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0581/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0600",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0600/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0604",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0604/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0628",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0628/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0611",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0611/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0640",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0640/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0641",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0641/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0661",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0661/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0701",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0701/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0711",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0711/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0752",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0752/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0787",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0787/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0783",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0783/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0878",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0878/public`,
-            alt: "",
-        },
-        {
-            id: "6-3-PSUSDF-DAL_0839",
-            source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0839/public`,
-            alt: "",
-        },
-    ];
-
-    const foundationCarouselOptions = {
-        autoPlay: true,
-        autoPlayInterval: 4000,
-        loop: true,
-        initialIndex: 0,
     };
 
     return (
@@ -181,8 +76,13 @@ const EventsPage = () => {
                         2025 End of Year Event
                     </h3>
                     <CarouselProvider
-                        items={foundationEventImages}
-                        options={foundationCarouselOptions}
+                        items={foundationEventCarouselImages}
+                        options={{
+                            autoPlay: true,
+                            autoPlayInterval: 4000,
+                            loop: true,
+                            initialIndex: 0,
+                        }}
                         className="foundation-event-carousel"
                         ariaLabel="Foundation end of year event photo gallery"
                     >
