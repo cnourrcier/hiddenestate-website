@@ -62,13 +62,11 @@
 }
 
 .book-button {
-    /* display: inline-block; */
     background-color: var(--ps-dark-terracotta);
     color: var(--ps-whiter);
     font-weight: bold;
     padding: 0.6rem 1.3rem;
     text-decoration: none;
-    /* margin: 1rem auto; */
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }

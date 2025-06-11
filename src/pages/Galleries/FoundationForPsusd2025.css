@@ -1,3 +1,11 @@
 .foundation-event-gallery-page {
     padding: 160px 2rem 60px 2rem;
 }
+
+.return-link {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--ps-terracotta);
+}
