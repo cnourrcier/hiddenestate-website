@@ -128,14 +128,40 @@ const Footer = () => {
                         Springs' most treasured landmarks.
                     </p>
                 </div>
-                <a
-                    href={bookingUrl}
-                    className="book-button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Book it!
-                </a>
+                <div className="footer-external-links">
+                    <a
+                        href={bookingUrl}
+                        className="book-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Book it!
+                    </a>
+                    <a
+                        href="https://www.facebook.com/share/1Bc7GxCz7L/?mibextid=wwXIfr"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit our Facebook page"
+                    >
+                        <img
+                            className="footer-social-icon"
+                            src="/icons/facebook.svg"
+                            alt="Hidden Estate Facebook page link"
+                        />
+                    </a>
+                    <a
+                        href="https://www.instagram.com/hiddenestatepalmsprings?igsh=MXNlMmFzdHhmNzJ0Zg=="
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visit our Instagram page"
+                    >
+                        <img
+                            className="footer-social-icon"
+                            src="/icons/instagram.svg"
+                            alt="Hidden Estate Instagram page link"
+                        />
+                    </a>
+                </div>
                 <div className="management-info">
                     Exclusively managed by Natural Retreats{" "}
                     <span style={{ fontStyle: "italic" }}>

@@ -71,12 +71,12 @@ const Header = () => {
                 <div className="estate-word">Estate</div>
             </div>
             <div className="links-container">
-                <div className="social-icons">
+                <div className="header-social-icons">
                     <a
                         href="https://www.facebook.com/share/1Bc7GxCz7L/?mibextid=wwXIfr"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="social-icon"
+                        className="header-social-icon"
                         aria-label="Visit our Facebook page"
                     >
                         <svg
@@ -92,7 +92,7 @@ const Header = () => {
                         href="https://www.instagram.com/hiddenestatepalmsprings?igsh=MXNlMmFzdHhmNzJ0Zg=="
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="social-icon"
+                        className="header-social-icon"
                         aria-label="Visit our Instagram page"
                     >
                         <svg

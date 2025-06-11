@@ -1,119 +1,134 @@
 .footer {
-  padding: 2.5rem;
-  color: var(--ps-white);
-  background-color: var(--ps-blue);
+    padding: 2.5rem;
+    color: var(--ps-white);
+    background-color: var(--ps-blue);
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.2rem;
-  margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .footer-links a {
-  color: #c5d5e5;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  font-size: 0.9rem;
-  padding: 0.3rem 0.5rem;
+    color: #c5d5e5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.5rem;
 }
 
 .footer-links a:hover {
-  color: var(--ps-whiter);
-  text-decoration: underline;
+    color: var(--ps-whiter);
+    text-decoration: underline;
 }
 
 .footer-info {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto 1.5rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
 }
 
 .footer-info h3 {
-  color: var(--ps-whiter);
-  font-size: 1.2rem;
-  margin-bottom: 12px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #3d4d5d;
-  display: inline-block;
+    color: var(--ps-whiter);
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #3d4d5d;
+    display: inline-block;
 }
 
 .footer-info p {
-  line-height: 1.6;
-  color: #c5d5e5;
-  /* margin-bottom: 20px; */
+    line-height: 1.6;
+    color: #c5d5e5;
+    /* margin-bottom: 20px; */
+}
+
+.footer-external-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .book-button {
-  display: inline-block;
-  background-color: var(--ps-dark-terracotta);
-  color: var(--ps-whiter);
-  font-weight: bold;
-  padding: 0.8rem 1.5rem;
-  text-decoration: none;
-  margin: 1rem auto;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* display: inline-block; */
+    background-color: var(--ps-dark-terracotta);
+    color: var(--ps-whiter);
+    font-weight: bold;
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    /* margin: 1rem auto; */
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .book-button:hover {
-  background-color: var(--ps-terracotta);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--ps-terracotta);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-social-icon {
+    width: 2.5rem;
+}
+.footer-social-icon:hover {
+    opacity: 0.9;
 }
 
 .management-info {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #c5d5e5;
-  margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #c5d5e5;
+    margin-bottom: 1rem;
 }
 
 .management-info a {
-  color: #c5d5e5;
-  text-decoration: underline;
-  transition: color 0.3s ease;
+    color: #c5d5e5;
+    text-decoration: underline;
+    transition: color 0.3s ease;
 }
 
 .management-info a:hover {
-  color: var(--ps-whiter);
+    color: var(--ps-whiter);
 }
 
 .footer-bottom {
-  max-width: 1200px;
-  margin: 20px auto 0;
-  padding: 20px 20px 0;
-  text-align: center;
-  border-top: 1px solid #3d4d5d;
-  font-size: 0.9rem;
-  color: #a5b5c5;
+    max-width: 1200px;
+    margin: 20px auto 0;
+    padding: 20px 20px 0;
+    text-align: center;
+    border-top: 1px solid #3d4d5d;
+    font-size: 0.9rem;
+    color: #a5b5c5;
 }
 
 .footer-bottom p {
-  margin: 5px 0;
+    margin: 5px 0;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .footer-links {
-    gap: 0.8rem;
-  }
-  
-  .footer-links a {
-    padding: 0.2rem 0.4rem;
-  }
+    .footer-links {
+        gap: 0.8rem;
+    }
+
+    .footer-links a {
+        padding: 0.2rem 0.4rem;
+    }
 }
 
 @media (max-width: 480px) {
-  .footer-links {
-    gap: 0.5rem;
-  }
+    .footer-links {
+        gap: 0.5rem;
+    }
 }

@@ -87,13 +87,13 @@
     align-items: center;
 }
 
-.social-icons {
+.header-social-icons {
     display: flex;
     align-items: center;
     gap: 0.8rem;
 }
 
-.social-icon {
+.header-social-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,7 +103,7 @@
     /* border-radius: 50%; */
 }
 
-.social-icon:hover {
+.header-social-icon:hover {
     color: var(--ps-sand);
     /* background-color: rgba(255, 255, 255, 0.1); */
 }
@@ -276,12 +276,12 @@
         gap: 0.8rem;
     }
 
-    .social-icons {
+    .header-social-icons {
         flex-direction: column;
         gap: 0;
     }
 
-    .social-icon {
+    .header-social-icon {
         padding: 0.4rem;
     }
 
