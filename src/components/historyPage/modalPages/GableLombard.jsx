@@ -1,10 +1,8 @@
-// import { GableQuote } from "../../historyPage/GableQuote";
 import "./GableLombard.css";
 
 const GableLombard = () => {
     return (
         <div className="gable-lombard">
-            {/* <GableQuote /> */}
             <header>
                 <h3>Desert Hideaway 1939 to 1942</h3>
             </header>
