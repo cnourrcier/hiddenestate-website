@@ -131,11 +131,11 @@ const Footer = () => {
                 <div className="footer-external-links">
                     <a
                         href={bookingUrl}
-                        className="book-button"
+                        className="footer-book-button"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Book it!
+                        Check Availability
                     </a>
                     <a
                         href="https://www.facebook.com/share/1Bc7GxCz7L/?mibextid=wwXIfr"

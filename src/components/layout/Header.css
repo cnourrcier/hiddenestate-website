@@ -108,7 +108,7 @@
     /* background-color: rgba(255, 255, 255, 0.1); */
 }
 
-.book-btn {
+.header-book-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,7 +122,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.book-btn:hover {
+.header-book-btn:hover {
     background-color: var(--ps-terracotta);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: var(--ps-white);
@@ -267,7 +267,7 @@
     background-color: var(--ps-white);
 }
 
-@media (max-width: 560px) {
+@media (max-width: 620px) {
     .logo-container {
         height: 83%;
     }
@@ -285,7 +285,7 @@
         padding: 0.4rem;
     }
 
-    .book-btn {
+    .header-book-btn {
         align-self: center;
         height: fit-content;
         padding: 0.3rem 0.5rem;
@@ -301,8 +301,26 @@
         padding: 0 1rem;
     }
 
+    .logo-container {
+        height: 81%;
+    }
+
     .estate-name {
         margin-left: 0;
+    }
+
+    .links-container {
+        gap: 0.5rem;
+    }
+
+    .header-social-icons {
+        padding-left: 0.5rem;
+    }
+
+    .header-book-btn {
+        text-align: center;
+        padding: 0.5rem 0.3rem;
+        line-height: 1.4rem;
     }
 
     .mobile {

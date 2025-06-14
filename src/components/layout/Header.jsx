@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { ChevronDown, ChevronUp, X } from "lucide-react";
 import "./Header.css";
 
-const widthLimit = 1200;
+const widthLimit = 1285;
 const bookingUrl =
     "https://www.naturalretreats.com/property-detail-page?name=hidden-gable-estate-7351";
 
@@ -107,11 +107,11 @@ const Header = () => {
                 </div>
                 <a
                     href={bookingUrl}
-                    className="book-btn"
+                    className="header-book-btn"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Book it!
+                    Check Availability
                 </a>
                 <div
                     className={
