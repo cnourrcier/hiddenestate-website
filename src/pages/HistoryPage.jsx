@@ -6,6 +6,7 @@ import Douglas from "../components/historyPage/Douglas";
 import { useModal } from "../context/ModalContext";
 import { topHistoryImages, bottomHistoryImages } from "../data/imagesData";
 import "./HistoryPage.css";
+import PoolTable from "../components/historyPage/PoolTable";
 
 const HistoryPage = () => {
     const { openModal } = useModal();
@@ -39,7 +40,8 @@ const HistoryPage = () => {
             </section>
 
             <section>
-                <Douglas />
+                {/* <Douglas /> */}
+                <PoolTable />
             </section>
 
             <section className="bottom-history__container">
