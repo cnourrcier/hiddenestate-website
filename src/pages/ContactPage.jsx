@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet-async";
 import "./ContactPage.css";
 
 const website = window.location.hostname;
+const bookingUrl =
+    "https://www.naturalretreats.com/property-detail-page?name=hidden-estate-7351";
 
 const ContactPage = () => {
     const [formData, setFormData] = useState({
@@ -91,13 +93,35 @@ const ContactPage = () => {
         }
     };
 
+    const handleBookingClick = () => {
+        window.open(bookingUrl, "_blank", "noopener,noreferrer");
+    };
+
+    const handleSocialClick = platform => {
+        let url;
+        switch (platform) {
+            case "facebook":
+                url =
+                    "https://www.facebook.com/share/1Bc7GxCz7L/?mibextid=wwXIfr";
+
+                break;
+            case "instagram":
+                url =
+                    "https://www.instagram.com/hiddenestatepalmsprings?igsh=MXNlMmFzdHhmNzJ0Zg==";
+                break;
+            default:
+                return;
+        }
+        window.open(url, "_blank", "noopener,noreferrer");
+    };
+
     return (
         <main className="contact-page">
             <Helmet>
                 <title>Contact - Hidden Estate | Palm Springs</title>
                 <meta
                     name="description"
-                    content="Contact the historic Hidden Estate in Palm Springs, the former retreat of Clark Gable and Carole Lombard."
+                    content="Contact the historic Hidden Estate in Palm Springs, the former retreat of Clark Gable and Carole Lombard. Check availability and follow us on social media."
                 />
             </Helmet>
 
@@ -187,6 +211,56 @@ const ContactPage = () => {
                                 </button>
                             </form>
                         )}
+                    </div>
+
+                    <div className="contact-sidebar">
+                        <div className="availability-section">
+                            <h3>Book Your Stay</h3>
+                            <p>
+                                Ready to experience the luxury and history of
+                                the Hidden Estate? Check availability and make
+                                your reservation.
+                            </p>
+                            <button
+                                className="availability-btn"
+                                onClick={handleBookingClick}
+                                type="button"
+                                aria-label="Check availability and book your stay"
+                            >
+                                <i className="fas fa-calendar-check"></i>
+                                Check Availability
+                            </button>
+                        </div>
+
+                        <div className="social-section">
+                            <h3>Follow Us</h3>
+                            <p>
+                                Stay connected and see the latest from the
+                                Hidden Estate.
+                            </p>
+                            <div className="social-links">
+                                <button
+                                    className="social-link facebook"
+                                    onClick={() =>
+                                        handleSocialClick("facebook")
+                                    }
+                                    type="button"
+                                    aria-label="Follow us on Facebook"
+                                >
+                                    <i className="fab fa-facebook-f"></i>
+                                </button>
+                                <button
+                                    className="social-link instagram"
+                                    onClick={() =>
+                                        handleSocialClick("instagram")
+                                    }
+                                    type="button"
+                                    aria-label="Follow us on Instagram"
+                                >
+                                    <i className="fab fa-instagram"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -20,7 +20,7 @@
     margin-bottom: 0.5rem;
     text-transform: none;
     position: relative;
-    text-shadow: 1px 1px 2px var(--ps-light-shadow);
+    text-shadow: 1px 1px 1px var(--ps-light-shadow);
 }
 
 .contact-page h1::after {
@@ -52,12 +52,161 @@
     max-width: 900px;
 }
 
+/* Desktop layout - form and sidebar side by side */
+@media (min-width: 769px) {
+    .contact-content {
+        grid-template-columns: 2fr 1fr;
+        max-width: 1200px;
+        gap: 3rem;
+        align-items: stretch;
+    }
+}
+
 .contact-form {
     background-color: var(--ps-sand);
     padding: 1rem 2rem;
     position: relative;
-    /* margin: 1rem 0; */
-    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(var(--ps-terracotta-rgb, 224, 122, 95), 0.2);
+}
+
+@media (min-width: 769px) {
+    .contact-form {
+        height: 100%;
+    }
+
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .contact-form .form-group:last-of-type {
+        flex: 1;
+    }
+
+    .contact-form .form-group:last-of-type textarea {
+        height: 100%;
+        min-height: 150px;
+    }
+}
+
+.contact-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.availability-section {
+    background-color: var(--ps-sand);
+    padding: 2rem;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid rgba(var(--ps-terracotta-rgb, 224, 122, 95), 0.2);
+}
+
+.availability-section h3 {
+    font-family: "Playfair Display", Georgia, serif;
+    color: var(--ps-terracotta);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-shadow: 0.5px 0.5px 0.5px var(--ps-light-shadow);
+}
+
+.availability-section p {
+    font-family: "Montserrat", sans-serif;
+    color: var(--ps-blue);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.availability-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background-color: var(--ps-green);
+    color: var(--ps-white);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border: 2px solid var(--ps-green);
+    width: 100%;
+    max-width: 280px;
+}
+
+.availability-btn:hover {
+    background-color: var(--ps-dark-green);
+    border-color: var(--ps-dark-green);
+    cursor: pointer;
+}
+
+.availability-btn i {
+    font-size: 1.1rem;
+}
+
+.social-section {
+    background-color: var(--ps-sand);
+    padding: 2rem;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid rgba(var(--ps-terracotta-rgb, 224, 122, 95), 0.2);
+}
+
+.social-section h3 {
+    font-family: "Playfair Display", Georgia, serif;
+    color: var(--ps-terracotta);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-shadow: 0.5px 0.5px 0.5px var(--ps-light-shadow);
+}
+
+.social-section p {
+    font-family: "Montserrat", sans-serif;
+    color: var(--ps-blue);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--ps-terracotta);
+    color: var(--ps-white);
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+}
+
+.social-link.facebook:hover {
+    background-color: var(--ps-dark-terracotta);
+}
+
+.social-link.instagram:hover {
+    background-color: var(--ps-dark-terracotta);
 }
 
 .form-group {
@@ -201,6 +350,7 @@
     line-height: 1.8;
 }
 
+/* Mobile-specific adjustments */
 @media (max-width: 768px) {
     .contact-page h1 {
         font-size: 2.2rem;
@@ -214,6 +364,35 @@
     .contact-form {
         padding: 2rem 1.5rem;
     }
+
+    .contact-sidebar {
+        margin-top: 1rem;
+    }
+
+    .availability-section,
+    .social-section {
+        padding: 1.5rem;
+    }
+
+    .availability-section h3,
+    .social-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .availability-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .social-links {
+        gap: 1.5rem;
+    }
+
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -221,7 +400,13 @@
         padding: 130px 1rem 1rem 1rem;
     }
 
-    .btn {
+    .contact-btn,
+    .availability-btn {
         width: 100%;
+    }
+
+    .availability-section,
+    .social-section {
+        padding: 1.2rem;
     }
 }

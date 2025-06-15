@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     const bookingUrl =
-        "https://www.naturalretreats.com/property-detail-page?name=hidden-gable-estate-7351";
+        "https://www.naturalretreats.com/property-detail-page?name=hidden-estate-7351";
 
     const scrollToTop = () => {
         window.scrollTo(0, 0);
