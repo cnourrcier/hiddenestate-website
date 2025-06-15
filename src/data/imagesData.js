@@ -314,11 +314,11 @@ export const foundationEventGalleryImages = [
         source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0576/public`,
         alt: "",
     },
-    {
-        id: "IMG_2019",
-        source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/IMG_2019/public`,
-        alt: "",
-    },
+    // {
+    //     id: "IMG_2019",
+    //     source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/IMG_2019/public`,
+    //     alt: "",
+    // },
     {
         id: "6-3-PSUSDF-DAL_0581",
         source: `${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/6-3-PSUSDF-DAL_0581/public`,
