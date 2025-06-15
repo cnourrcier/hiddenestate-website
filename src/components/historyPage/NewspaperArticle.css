@@ -1,95 +1,96 @@
 .wrapper-column {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .wrapper-row {
-  display: flex;
-  margin: auto;
-  max-width: 1100px;
-  background-color: var(--ps-whiter);
-  padding: 1rem;
+    display: flex;
+    margin: auto;
+    max-width: 1100px;
+    background-color: var(--ps-whiter);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .floating-box-one {
-  width: 150px;
-  height: 300px;
-  background-color: transparent;
-  float: right;
-  position: relative;
-  margin-bottom: 1rem;
+    width: 150px;
+    height: 300px;
+    background-color: transparent;
+    float: right;
+    position: relative;
+    margin-bottom: 1rem;
 }
 
 .floating-box-two {
-  width: 150px;
-  height: 300px;
-  background-color: transparent;
-  float: left;
-  position: relative;
-  margin-bottom: 1rem;
+    width: 150px;
+    height: 300px;
+    background-color: transparent;
+    float: left;
+    position: relative;
+    margin-bottom: 1rem;
 }
 
 .inner-box-one {
-  width: 100px;
-  height: 260px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+    width: 100px;
+    height: 260px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .inner-text-box {
-  position: relative;
-  width: 200px;
-  height: 100%;
-  font-size: 0.73rem;
-  z-index: 2;
-  padding-top:0.5rem;
-  border: 1px solid #ccc;
-  background-image: url('/img/paper-fibers.png');
+    position: relative;
+    width: 200px;
+    height: 100%;
+    font-size: 0.73rem;
+    z-index: 2;
+    padding-top: 0.5rem;
+    border: 1px solid #ccc;
+    background-image: url("/img/paper-fibers.png");
 }
 
 .list {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .box-title {
-  text-align: center;
-  font-weight: bold;
-  padding-bottom: 0.3rem;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 0.3rem;
 }
 
 .boxTitleUnderline {
-  width: 75px;
-  height: 3px;
-  background-color: var(--ps-whiter);
-  margin: auto;
+    width: 75px;
+    height: 3px;
+    background-color: var(--ps-whiter);
+    margin: auto;
 }
 
 .list {
-  padding-top: 0.7rem;
+    padding-top: 0.7rem;
 }
 
 .listItem {
-  padding-bottom: 0.1rem;
+    padding-bottom: 0.1rem;
 }
 
 .listItemLeft {
-  padding-left: 0.5rem;
-  color: var(--ps-blue);
+    padding-left: 0.5rem;
+    color: var(--ps-blue);
 }
 
 .listItemRight {
-  padding-left: 1rem;
-  padding-bottom: 0.5rem;
-  color: var(--ps-terracotta);
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    color: var(--ps-terracotta);
 }
 
 .inner-box-two {
-  width: 100px;
-  height: 260px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+    width: 100px;
+    height: 260px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 /* .text-intro {
@@ -103,53 +104,52 @@
 } */
 
 .text-body p {
-  text-align: justify;
-  margin: 0 1rem 1rem 1rem;
+    text-align: justify;
+    margin: 0 1rem 1rem 1rem;
 }
 
 .text-body .text-highlight {
-  font-size: 1.5rem;
-  margin: 0 1rem;
+    font-size: 1.5rem;
+    margin: 0 1rem;
 }
 
-
 @media (max-width: 850px) {
-  .wrapper-row {
-    flex-direction: column;
-  }
+    .wrapper-row {
+        flex-direction: column;
+    }
 
-  .floating-box-one {
-    width: 200px;
-    height: 100%;
-    margin-bottom: 0;
-    margin: 0.5rem 1rem;
-  }
+    .floating-box-one {
+        width: 200px;
+        height: 100%;
+        margin-bottom: 0;
+        margin: 0.5rem 1rem;
+    }
 
-  .inner-box-one {
-    width: 200px;
-    position: unset;
-  }
-  .floating-box-two {
-    display: none;
-  }
+    .inner-box-one {
+        width: 200px;
+        position: unset;
+    }
+    .floating-box-two {
+        display: none;
+    }
 }
 
 @media (max-width: 550px) {
-  .wrapper-column {
-    margin: 0;
-  }
- 
-  .floating-box-one {
-    display: flex;
-    justify-content: center;
-    float:unset;
-    width: 100%;
-    margin: auto;
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
-  }
+    .wrapper-column {
+        margin: 0;
+    }
 
-  .text-body p {
-    text-align: left;
-  }
+    .floating-box-one {
+        display: flex;
+        justify-content: center;
+        float: unset;
+        width: 100%;
+        margin: auto;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .text-body p {
+        text-align: left;
+    }
 }
