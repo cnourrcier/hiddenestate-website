@@ -2,7 +2,7 @@
 .pool-table {
     margin: auto;
     max-width: 1100px;
-    padding: 3rem 0 0 0;
+    padding: 3rem 1rem 0 1rem;
     overflow: hidden;
 }
 
@@ -36,7 +36,8 @@
 
 /* Image element */
 .pool-table__image-container img {
-    max-width: 350px;
+    max-width: min(350px, 100%);
+    width: 100%;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     object-fit: cover;
@@ -132,8 +133,8 @@
 @media (max-width: 550px) {
     .pool-table {
         margin: auto;
-        max-width: 1200px;
-        padding: 3rem 2rem 0 2rem;
+        max-width: 100%;
+        padding: 3rem 0;
         overflow: hidden;
     }
 }

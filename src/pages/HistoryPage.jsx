@@ -39,10 +39,8 @@ const HistoryPage = () => {
                 <NewspaperArticle />
             </section>
 
-            <section>
-                {/* <Douglas /> */}
-                <PoolTable />
-            </section>
+            {/* <Douglas /> */}
+            <PoolTable />
 
             <section className="bottom-history__container">
                 <HistoryGallery
