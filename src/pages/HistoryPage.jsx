@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import HistoryGallery from "../components/historyPage/HistoryGallery";
 import ThemeClippings from "../components/historyPage/ThemeClippings";
 import NewspaperArticle from "../components/historyPage/NewspaperArticle";
-import Douglas from "../components/historyPage/Douglas";
+import DouglasInterview from "../components/historyPage/DouglasInterview";
 import { useModal } from "../context/ModalContext";
 import { topHistoryImages, bottomHistoryImages } from "../data/imagesData";
 import "./HistoryPage.css";
@@ -39,7 +39,7 @@ const HistoryPage = () => {
                 <NewspaperArticle />
             </section>
 
-            {/* <Douglas /> */}
+            <DouglasInterview />
             <PoolTable />
 
             <section className="bottom-history__container">

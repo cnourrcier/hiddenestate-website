@@ -11,11 +11,6 @@ const PoolTable = () => {
         >
             <div className="pool-table__flex-container">
                 <div className="pool-table__image-section">
-                    <p className="pool-table__craftsman pool-table__craftsman--mobile">
-                        <strong>
-                            Pool Table Handcrafted for Kirk Douglas by Adler
-                        </strong>
-                    </p>
                     <div className="pool-table__image-container">
                         <img
                             src={imageSrc}
@@ -23,7 +18,7 @@ const PoolTable = () => {
                             loading="lazy"
                         />
                     </div>
-                    <p className="pool-table__craftsman pool-table__craftsman--desktop">
+                    <p className="pool-table__craftsman">
                         <strong>Handcrafted for Kirk Douglas by Adler</strong>
                     </p>
                 </div>

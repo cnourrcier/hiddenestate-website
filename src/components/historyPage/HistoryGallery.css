@@ -16,7 +16,9 @@
 .image-gallery-wrapper.grid-style {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    gap: 3rem;
 }
 
 /* Image wrapper - common styles */
@@ -57,7 +59,7 @@
 
 /* Image wrapper - grid style spacing */
 .image-gallery-wrapper.grid-style .img-wrapper {
-    margin: 1rem auto;
+    margin: 0 auto;
 }
 
 /* Fun style overlay */

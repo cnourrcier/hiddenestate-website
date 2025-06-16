@@ -1,0 +1,111 @@
+/* Main container */
+.douglas {
+    margin: auto;
+    max-width: 1000px;
+    padding: 2rem;
+    margin-top: 3rem;
+    overflow: hidden;
+    background-color: var(--ps-whiter);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo container */
+.douglas__logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Logo image */
+.douglas__logo-container img {
+    max-width: 400px;
+}
+
+.douglas__content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* max-width: 600px; */
+}
+
+/* Text container */
+.douglas__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.douglas__text-title {
+    text-align: center;
+}
+
+/* Title styling */
+.douglas__text-title h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.douglas__text-title p {
+    margin: 0.2rem 0 0.8rem;
+    font-style: italic;
+    color: var(--ps-terracotta);
+}
+
+/* Quote styling */
+.douglas__quote {
+    margin: 0 0 1rem 0;
+    padding-left: 1rem;
+    border-left: 3px solid var(--ps-green);
+    font-style: italic;
+}
+
+/* Attribution styling */
+.douglas__attribution {
+    margin: 0 0 1rem 0;
+    font-style: italic;
+    color: var(--ps-terracotta);
+    text-align: right;
+}
+
+/* Responsive design */
+@media (max-width: 1100px) {
+    .douglas__flex-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .douglas__pool-table-section {
+        margin: auto;
+        min-width: unset;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .douglas__image-container img {
+        max-width: 95vw;
+    }
+}
+
+@media (max-width: 550px) {
+    .douglas {
+        margin: auto;
+        margin-top: 3rem;
+        max-width: 100%;
+        padding: 1rem;
+        overflow: hidden;
+    }
+
+    .douglas__pool-table-section {
+        padding: 1rem;
+    }
+
+    .douglas__pool-table-content {
+        text-align: center;
+    }
+
+    .douglas__logo-container img {
+        max-width: 92vw;
+    }
+}
