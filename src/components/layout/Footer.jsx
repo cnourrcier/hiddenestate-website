@@ -134,6 +134,7 @@ const Footer = () => {
                         className="footer-book-button"
                         target="_blank"
                         rel="noopener noreferrer"
+                        data-umami-event="check-availability-click"
                     >
                         Check Availability
                     </a>

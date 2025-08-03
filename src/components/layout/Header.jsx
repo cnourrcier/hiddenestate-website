@@ -110,6 +110,7 @@ const Header = () => {
                     className="header-book-btn"
                     target="_blank"
                     rel="noopener noreferrer"
+                    data-umami-event="check-availability-click"
                 >
                     Check Availability
                 </a>

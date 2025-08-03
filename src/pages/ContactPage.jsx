@@ -226,6 +226,7 @@ const ContactPage = () => {
                                 onClick={handleBookingClick}
                                 type="button"
                                 aria-label="Check availability and book your stay"
+                                data-umami-event="check-availability-click"
                             >
                                 <i className="fas fa-calendar-check"></i>
                                 Check Availability
