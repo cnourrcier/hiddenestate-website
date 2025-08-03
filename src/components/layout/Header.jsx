@@ -78,6 +78,8 @@ const Header = () => {
                         rel="noopener noreferrer"
                         className="header-social-icon"
                         aria-label="Visit our Facebook page"
+                        data-umami-event="facebook-button-click"
+                        data-umami-event-location="website-top"
                     >
                         <svg
                             width="22"
@@ -94,6 +96,8 @@ const Header = () => {
                         rel="noopener noreferrer"
                         className="header-social-icon"
                         aria-label="Visit our Instagram page"
+                        data-umami-event="instagram-button-click"
+                        data-umami-event-location="website-top"
                     >
                         <svg
                             width="22"
@@ -111,6 +115,7 @@ const Header = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     data-umami-event="check-availability-click"
+                    data-umami-event-location="website-top"
                 >
                     Check Availability
                 </a>

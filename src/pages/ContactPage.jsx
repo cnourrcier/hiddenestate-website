@@ -227,6 +227,7 @@ const ContactPage = () => {
                                 type="button"
                                 aria-label="Check availability and book your stay"
                                 data-umami-event="check-availability-click"
+                                data-umami-event-location="contact-page"
                             >
                                 <i className="fas fa-calendar-check"></i>
                                 Check Availability
@@ -247,6 +248,8 @@ const ContactPage = () => {
                                     }
                                     type="button"
                                     aria-label="Follow us on Facebook"
+                                    data-umami-event="facebook-button-click"
+                                    data-umami-event-location="contact-page"
                                 >
                                     <i className="fab fa-facebook-f"></i>
                                 </button>
@@ -257,6 +260,8 @@ const ContactPage = () => {
                                     }
                                     type="button"
                                     aria-label="Follow us on Instagram"
+                                    data-umami-event="instagram-button-click"
+                                    data-umami-event-location="contact-page"
                                 >
                                     <i className="fab fa-instagram"></i>
                                 </button>

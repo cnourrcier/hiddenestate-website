@@ -135,6 +135,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         data-umami-event="check-availability-click"
+                        data-umami-event-location="website-footer"
                     >
                         Check Availability
                     </a>
@@ -143,6 +144,8 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Visit our Facebook page"
+                        data-umami-event="facebook-button-click"
+                        data-umami-event-location="website-footer"
                     >
                         <img
                             className="footer-social-icon"
@@ -155,6 +158,8 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Visit our Instagram page"
+                        data-umami-event="instagram-button-click"
+                        data-umami-event-location="website-footer"
                     >
                         <img
                             className="footer-social-icon"
