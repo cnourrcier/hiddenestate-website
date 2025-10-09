@@ -5,7 +5,7 @@ import Features from "../components/homePage/Features";
 import Reviews from "../components/homePage/Reviews";
 import Location from "../components/homePage/Location";
 import ImageSection from "../components/homePage/ImageSection";
-import "./HomePage.css";
+// import "./HomePage.css";
 
 function HomePage() {
     return (
