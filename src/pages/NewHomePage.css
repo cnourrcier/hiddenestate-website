@@ -243,6 +243,9 @@
 }
 
 @media (max-width: 500px) {
+    .homepage-hero-section {
+        padding: 110px 0 1rem 0;
+    }
     .hero-image-container img {
         height: 40vh;
     }
@@ -257,22 +260,28 @@
 
     .hero-details-grid {
         gap: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     .hero-detail-item {
         padding-left: 1rem;
     }
 
-    .hero-detail-label {
+    /* .hero-detail-label {
         font-size: 0.75rem;
     }
 
     .hero-detail-text {
         font-size: 0.95rem;
+    } */
+
+    .hero-divider {
+        margin: 2rem auto;
     }
 
     .hero-content-section {
-        padding: 0 1rem 1.5rem;
+        padding: 0;
     }
 
     .event-row {
