@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import claudeMonetInspiration from "../assets/claude-monet-inspiration.svg";
 import { useModal } from "../context/ModalContext";
 import "./NewHomePage.css";
+import ScrollLink from "../components/common/ScrollLink";
 
 function NewHomePage() {
     const { openModal } = useModal();
@@ -90,9 +91,12 @@ function NewHomePage() {
                             </em>
                         </p>
 
-                        <button className="homepage-cta-button">
+                        <ScrollLink
+                            to="/contact"
+                            className="homepage-cta-button"
+                        >
                             Learn More
-                        </button>
+                        </ScrollLink>
                     </div>
                 </div>
             </section>
@@ -162,7 +166,7 @@ function NewHomePage() {
                     <strong>Cactus and Succulent Society of America - </strong>{" "}
                     Hidden Estate has hosted Palm Spring's most distinguished
                     gatherings since
-                    <strong>the roaring twenties</strong>
+                    <strong> the roaring twenties</strong>
                 </p>
             </section>
             <section>
@@ -203,14 +207,14 @@ function NewHomePage() {
                             </p>
                             <div className="wedding-image-small">
                                 <img
-                                    src="https://placehold.co/400x300/FFC0CB/FFFFFF?text=Floral+Table+Setting"
+                                    src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/97a770ff-993c-492f-e7a2-b3bf259b5900/public`}
                                     alt="Elegant floral table setting"
                                 />
                             </div>
                         </div>
                         <div className="weddings-image-large">
                             <img
-                                src="https://placehold.co/600x450/D4A574/FFFFFF?text=Outdoor+Wedding+Ceremony"
+                                src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/1b6a06d6-9947-4c18-ef95-8bb6d14d1a00/public`}
                                 alt="Outdoor wedding ceremony"
                             />
                             <p className="image-caption">Digitally Staged</p>
@@ -221,7 +225,7 @@ function NewHomePage() {
                     <div className="corporate-section">
                         <div className="corporate-image-left">
                             <img
-                                src="https://placehold.co/400x500/8B7355/FFFFFF?text=Tasting+Event"
+                                src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/ab14de62-7e2b-4fc1-b639-f0cf74966e00/public`}
                                 alt="Corporate tasting event"
                             />
                         </div>
@@ -241,12 +245,12 @@ function NewHomePage() {
                                 </strong>
                                 .
                             </p>
-                        </div>
-                        <div className="corporate-image-right">
-                            <img
-                                src="https://placehold.co/600x450/87CEEB/FFFFFF?text=Outdoor+Gathering"
-                                alt="Outdoor corporate gathering"
-                            />
+                            <div className="corporate-image-right">
+                                <img
+                                    src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/b0414e01-0512-4b4f-a338-cf6052910900/public`}
+                                    alt="Outdoor corporate gathering"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -256,7 +260,7 @@ function NewHomePage() {
                     {/* Hero Image */}
                     <div className="hero-image">
                         <img
-                            src="https://placehold.co/1200x400/4A7C59/FFFFFF?text=Aerial+Estate+View"
+                            src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/0eb1b926-84e5-4d75-9428-deb416d64600/public`}
                             alt="Aerial view of Hidden Estate"
                         />
                     </div>
@@ -265,7 +269,7 @@ function NewHomePage() {
                     <div className="film-section">
                         <div className="film-image">
                             <img
-                                src="https://placehold.co/600x500/D4A574/FFFFFF?text=Spanish+Architecture"
+                                src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/3e9020ca-5edf-4997-4ba5-a16d58a10a00/public`}
                                 alt="Historic Spanish architecture with mountain backdrop"
                             />
                         </div>
@@ -301,7 +305,7 @@ function NewHomePage() {
                         </div>
                         <div className="historic-image">
                             <img
-                                src="https://placehold.co/600x450/8FBC8F/FFFFFF?text=Estate+Grounds"
+                                src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/95cf435b-2633-4aa3-eaa9-3bca9dd2b800/public`}
                                 alt="Palm-lined estate grounds"
                             />
                         </div>
@@ -323,9 +327,12 @@ function NewHomePage() {
                             private tour and reserve your date at Palm Springs'
                             most historic luxury venue.
                         </p>
-                        <button className="homepage-cta-button">
+                        <ScrollLink
+                            to="/contact"
+                            className="homepage-cta-button"
+                        >
                             Learn More
-                        </button>
+                        </ScrollLink>
                     </div>
                 </div>
             </section>
