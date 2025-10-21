@@ -1,8 +1,9 @@
 import { Helmet } from "react-helmet-async";
 import claudeMonetInspiration from "../assets/claude-monet-inspiration.svg";
 import { useModal } from "../context/ModalContext";
-import "./NewHomePage.css";
 import ScrollLink from "../components/common/ScrollLink";
+import Location from "../components/homePage/Location";
+import "./NewHomePage.css";
 
 function NewHomePage() {
     const { openModal } = useModal();
@@ -83,6 +84,19 @@ function NewHomePage() {
                                 </span>
                             </div>
                         </div>
+                        <ScrollLink
+                            to="/contact"
+                            className="homepage-cta-button"
+                        >
+                            Learn More
+                        </ScrollLink>
+                        <div className="classic-photo-container">
+                            <img
+                                className="classic-photo"
+                                src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/dc006985-d7fd-45c0-11df-e24b4ce5a100/public`}
+                                alt=""
+                            />
+                        </div>
 
                         <p className="hero-century-tagline">
                             <em>
@@ -90,15 +104,11 @@ function NewHomePage() {
                                 Celebrity
                             </em>
                         </p>
-
-                        <ScrollLink
-                            to="/contact"
-                            className="homepage-cta-button"
-                        >
-                            Learn More
-                        </ScrollLink>
                     </div>
                 </div>
+                <section className="location-section">
+                    <Location />
+                </section>
             </section>
             <section>
                 <div className="homepage-garden-image-container">
@@ -257,8 +267,8 @@ function NewHomePage() {
             </section>
             <section className="event-experiences">
                 <div className="experiences-container">
-                    {/* Hero Image */}
-                    <div className="hero-image">
+                    {/* Aerial Image */}
+                    <div className="aerial-image">
                         <img
                             src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/0eb1b926-84e5-4d75-9428-deb416d64600/public`}
                             alt="Aerial view of Hidden Estate"

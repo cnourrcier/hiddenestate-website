@@ -31,7 +31,6 @@
 .hero-content-section {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 2rem;
 }
 
 .hero-image-container {
@@ -51,7 +50,7 @@
 }
 
 .hero-historical-details {
-    padding: 4rem;
+    /* padding: 4rem; */
     margin-top: -4rem;
     position: relative;
     z-index: 3;
@@ -63,6 +62,7 @@
     gap: 4rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    padding: 4rem 4rem 0 4rem;
 }
 
 .hero-detail-item {
@@ -136,12 +136,6 @@
     opacity: 0.6;
 }
 
-.hero-century-tagline {
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
 .homepage-cta-button {
     background-color: var(--ps-dark-terracotta);
     color: var(--ps-whiter);
@@ -162,6 +156,26 @@
 
 .homepage-cta-button:hover {
     background-color: var(--ps-terracotta);
+}
+
+.classic-photo-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.classic-photo-container img {
+    width: 100%;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+}
+
+.hero-century-tagline {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 /* Tablet breakpoint */
@@ -271,14 +285,6 @@
         padding-left: 1rem;
     }
 
-    /* .hero-detail-label {
-        font-size: 0.75rem;
-    }
-
-    .hero-detail-text {
-        font-size: 0.95rem;
-    } */
-
     .hero-divider {
         margin: 2rem auto;
     }
@@ -290,6 +296,15 @@
     .event-row {
         margin: 0;
     }
+
+    .hero-century-tagline {
+        margin-bottom: 0;
+    }
+}
+
+.location-section {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 /* homepage garden image*/
@@ -298,7 +313,6 @@
     max-width: 1000px;
     margin: 0 auto;
     width: 100%;
-    padding: 0 2rem;
 }
 
 .homepage-garden-image-container img {
@@ -314,7 +328,7 @@
 
 @media (max-width: 550px) {
     .homepage-garden-image-container {
-        padding: 0;
+        padding: 0 1rem;
     }
 }
 
@@ -359,7 +373,6 @@
     max-width: 1000px;
     margin: 0 auto;
     width: 100%;
-    padding: 0 2rem;
 }
 
 .homepage-car-image-container img {
@@ -375,17 +388,15 @@
 
 @media (max-width: 550px) {
     .homepage-car-image-container {
-        padding: 0;
+        padding: 0 1rem;
     }
 }
 
 /* frankly darling quote section*/
 
 .about {
-    /* min-height: 100dvh; */
     max-width: 1000px;
     margin: auto;
-    padding: 1rem 2rem;
     background-color: var(--ps-white);
     color: var(--ps-blue);
     font-family: "Playfair Display", Georgia, serif;
@@ -398,7 +409,6 @@
     font-style: italic;
     position: relative;
     margin: 1rem 0;
-    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); */
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -454,7 +464,7 @@
 
 @media (max-width: 500px) {
     .about {
-        padding: 0;
+        padding: 0 1rem;
     }
 }
 
@@ -463,7 +473,7 @@
 .succulent-society-image-container {
     width: 100%;
     max-width: 1000px;
-    padding: 0 2rem 2rem 2rem;
+    padding: 1rem 0;
     margin: 0 auto;
 }
 
@@ -497,7 +507,7 @@
 
 @media (max-width: 500px) {
     .succulent-society-image-container {
-        padding: 0;
+        padding: 0 1rem;
     }
 }
 
@@ -752,12 +762,12 @@
 }
 
 /* Hero Image */
-.hero-image {
+.aerial-image {
     width: 100%;
     margin-bottom: 30px;
 }
 
-.hero-image img {
+.aerial-image img {
     width: 100%;
     height: auto;
     display: block;
@@ -824,7 +834,7 @@
         padding: 0 0 40px 0;
     }
 
-    .hero-image {
+    .aerial-image {
         margin-bottom: 40px;
     }
 
@@ -846,7 +856,7 @@
         padding: 0 0 30px 0;
     }
 
-    .hero-image {
+    .aerial-image {
         margin-bottom: 30px;
     }
 

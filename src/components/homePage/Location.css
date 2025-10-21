@@ -1,6 +1,6 @@
 .location {
     margin: auto;
-    padding: 1rem 2rem;
+    /* padding: 1rem 2rem; */
 }
 
 .location-content {
@@ -192,7 +192,7 @@
 
 @media (max-width: 992px) {
     .location-content {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .map-container,
