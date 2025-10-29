@@ -90,34 +90,10 @@ function NewHomePage() {
                         >
                             Learn More
                         </ScrollLink>
-                        <div className="classic-photo-container">
-                            <img
-                                className="classic-photo"
-                                src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/dc006985-d7fd-45c0-11df-e24b4ce5a100/public`}
-                                alt=""
-                            />
-                        </div>
-
-                        <p className="hero-century-tagline">
-                            <em>
-                                A Century of Elegance, Exclusivity, and
-                                Celebrity
-                            </em>
-                        </p>
                     </div>
                 </div>
-                <section className="location-section">
-                    <Location />
-                </section>
             </section>
-            <section>
-                <div className="homepage-garden-image-container">
-                    <img
-                        src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741571246/Hidden%20Gable%20Estate/gardens%20page/_I1A0280_small_nyjxxh.jpg`}
-                        alt=""
-                    />
-                </div>
-            </section>
+
             <section>
                 <div className="homepage-highlight">
                     <p>
@@ -127,6 +103,7 @@ function NewHomePage() {
                     </p>
                 </div>
             </section>
+
             <section>
                 <div className="homepage-car-image-container">
                     <img
@@ -135,12 +112,13 @@ function NewHomePage() {
                     />
                 </div>
             </section>
-            <section className="about">
-                <blockquote className="about__quote">
-                    <h4 className="about__quote-title">
+
+            <section>
+                <blockquote className="frankly-darling__quote">
+                    <h4 className="frankly-darling__quote-title">
                         "Frankly darling, you will give a damn."
                     </h4>
-                    <cite className="about__quote-source">
+                    <cite className="frankly-darling__quote-source">
                         - Lauran Piro, GOOD HOUSEKEEPING Oct 2, 2014
                     </cite>
                     <p>
@@ -150,7 +128,7 @@ function NewHomePage() {
                         equivalent of a strapping gentleman in a pink polo shirt
                         – oddly, it just works.
                     </p>
-                    <p className="about__quote-highlight">
+                    <p className="frankly-darling__quote-highlight">
                         <span>Clark Gable</span> and actress{" "}
                         <span>Carole Lombard</span> once called this Spanish
                         Colonial in Palm Springs their home.
@@ -165,35 +143,25 @@ function NewHomePage() {
                     </p>
                 </blockquote>
             </section>
+
             <section>
-                <div className="succulent-society-image-container">
+                <div className="homepage-garden-image-container">
                     <img
-                        src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1736364893/Hidden%20Gable%20Estate/gardens%20page/Cactus_event_-_m_small_lgdphh.jpg`}
+                        src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741571246/Hidden%20Gable%20Estate/gardens%20page/_I1A0280_small_nyjxxh.jpg`}
                         alt=""
                     />
                 </div>
-                <p className="succulent-society-description">
-                    <strong>Cactus and Succulent Society of America - </strong>{" "}
-                    Hidden Estate has hosted Palm Spring's most distinguished
-                    gatherings since
-                    <strong> the roaring twenties</strong>
-                </p>
             </section>
-            <section>
-                <div className="monet-container">
-                    <h3 className="monet-title">Claude Monet Inspiration</h3>
-                    <p>(Click image for more)</p>
-                    <img
-                        className="monet-image"
-                        src={claudeMonetInspiration}
-                        alt="Claude Monet - House Among the Palms"
-                        onClick={() => openModal("monet-inspiration")}
-                    />
-                    <cite className="monet-quote">
-                        “Color is my daylong obsession, joy, and torment”{" "}
-                        <span>- Claude Monet</span>
-                    </cite>
-                </div>
+
+            <section className="classic-photo-container">
+                <img
+                    className="classic-photo"
+                    src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/dc006985-d7fd-45c0-11df-e24b4ce5a100/public`}
+                    alt=""
+                />
+                <p className="hero-century-tagline">
+                    <em>A Century of Elegance, Exclusivity, and Celebrity</em>
+                </p>
             </section>
 
             <section className="events-section">
@@ -345,6 +313,25 @@ function NewHomePage() {
                         </ScrollLink>
                     </div>
                 </div>
+            </section>
+
+            <section className="location-section">
+                <Location />
+            </section>
+
+            <section className="monet-container">
+                <h3 className="monet-title">Claude Monet Inspiration</h3>
+                <p>(Click image for more)</p>
+                <img
+                    className="monet-image"
+                    src={claudeMonetInspiration}
+                    alt="Claude Monet - House Among the Palms"
+                    onClick={() => openModal("monet-inspiration")}
+                />
+                <cite className="monet-quote">
+                    “Color is my daylong obsession, joy, and torment”{" "}
+                    <span>- Claude Monet</span>
+                </cite>
             </section>
         </main>
     );

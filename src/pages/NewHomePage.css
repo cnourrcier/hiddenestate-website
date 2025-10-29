@@ -1,7 +1,7 @@
 /* Hero section*/
 
 .homepage-hero-section {
-    padding: 8rem 0 2rem 0;
+    padding: 8.5rem 0 0 0;
 }
 
 /* Minimal overlay - just the tagline */
@@ -161,7 +161,7 @@
 .classic-photo-container {
     width: 100%;
     max-width: 1000px;
-    margin: 30px auto;
+    margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -172,9 +172,14 @@
     object-position: center;
 }
 
+@media (max-width: 1000px) {
+    .classic-photo-container {
+        padding: 0 1rem;
+    }
+}
+
 .hero-century-tagline {
     font-size: 1.4rem;
-    margin-bottom: 1rem;
     text-align: center;
 }
 
@@ -182,11 +187,6 @@
 @media (max-width: 1024px) {
     .hero-tagline {
         font-size: 3.5rem;
-    }
-
-    .hero-historical-details {
-        padding: 3rem;
-        margin-top: -3rem;
     }
 
     .hero-details-grid {
@@ -200,7 +200,7 @@
 
 @media (max-width: 768px) {
     .homepage-hero-section {
-        padding: 8rem 0 1rem 0;
+        padding: 8rem 0 0 0;
     }
 
     .hero-image-container img {
@@ -213,7 +213,7 @@
     }
 
     .hero-historical-details {
-        padding: 2.5rem 2rem;
+        padding: 0 2rem;
         margin-top: -2rem;
     }
 
@@ -271,10 +271,6 @@
         font-size: 1.8rem;
     }
 
-    .hero-historical-details {
-        padding: 2rem 1.5rem;
-    }
-
     .hero-details-grid {
         gap: 2rem;
         margin-top: 2rem;
@@ -307,12 +303,25 @@
     margin: 0 auto;
 }
 
+@media (max-width: 1000px) {
+    .location-section {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .location-section {
+        padding: 0;
+    }
+}
+
 /* homepage garden image*/
 
 .homepage-garden-image-container {
     max-width: 1000px;
     margin: 0 auto;
     width: 100%;
+    padding-bottom: 1rem;
 }
 
 .homepage-garden-image-container img {
@@ -320,15 +329,9 @@
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .homepage-garden-image-container {
-        padding: 0 1rem;
-    }
-}
-
-@media (max-width: 550px) {
-    .homepage-garden-image-container {
-        padding: 0 1rem;
+        padding: 0 1rem 1rem 1rem;
     }
 }
 
@@ -372,6 +375,7 @@
 .homepage-car-image-container {
     max-width: 1000px;
     margin: 0 auto;
+    padding-bottom: 1rem;
     width: 100%;
 }
 
@@ -380,47 +384,34 @@
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .homepage-car-image-container {
-        padding: 0 1rem;
-    }
-}
-
-@media (max-width: 550px) {
-    .homepage-car-image-container {
-        padding: 0 1rem;
+        padding: 0 1rem 1rem 1rem;
     }
 }
 
 /* frankly darling quote section*/
 
-.about {
+.frankly-darling__quote {
     max-width: 1000px;
-    margin: auto;
-    background-color: var(--ps-white);
-    color: var(--ps-blue);
-    font-family: "Playfair Display", Georgia, serif;
-    line-height: 1.6;
-}
-
-.about__quote {
-    background-color: var(--ps-sand);
-    padding: 2.5rem 2rem;
+    padding: 2rem;
     font-style: italic;
-    position: relative;
-    margin: 1rem 0;
+    margin: 0 auto 1.5rem auto;
+    background-color: var(--ps-sand);
+    color: var(--ps-blue);
+    line-height: 1.6;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    font-family: "Playfair Display", Georgia, serif;
 }
 
-.about__quote p {
+.frankly-darling__quote p {
     margin-bottom: 1rem;
     line-height: 1.8;
-    position: relative;
     color: var(--ps-dark-blue);
     z-index: 1;
 }
 
-.about__quote-title {
+.frankly-darling__quote-title {
     text-align: center;
     font-size: 1.8rem;
     font-weight: bold;
@@ -428,7 +419,7 @@
     color: var(--ps-dark-terracotta);
 }
 
-.about__quote-highlight {
+.frankly-darling__quote-highlight {
     grid-column-start: 2;
     grid-column-end: 4;
     margin: 1.5rem 0;
@@ -437,14 +428,14 @@
     line-height: 1.8;
 }
 
-.about__quote span {
+.frankly-darling__quote span {
     font-weight: bold;
     color: var(--ps-terracotta);
     border-bottom: 1px solid var(--ps-white);
     padding-bottom: 2px;
 }
 
-.about__quote-source {
+.frankly-darling__quote-source {
     display: block;
     text-align: right;
     color: var(--ps-terracotta);
@@ -457,13 +448,13 @@
 }
 
 @media (max-width: 768px) {
-    .about {
+    .frankly-darling-section {
         padding: 1rem;
     }
 }
 
 @media (max-width: 500px) {
-    .about {
+    .frankly-darling-section {
         padding: 0 1rem;
     }
 }
@@ -518,7 +509,7 @@
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .monet-title {
@@ -552,12 +543,9 @@
 /* Events Section */
 
 .events-section {
-    padding: 0;
-}
-
-.container {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0;
 }
 
 .main-heading {
@@ -566,8 +554,7 @@
     font-family: "Playfair Display", Georgia, serif;
     color: var(--ps-dark-terracotta);
     text-align: center;
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin: 3rem 0;
     line-height: 1.3;
     text-shadow: 1px 1px 1px var(--ps-light-shadow);
 }
@@ -594,8 +581,8 @@
 .weddings-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-bottom: 40px;
+    gap: 2rem;
+    margin-bottom: 2rem;
     align-items: start;
 }
 
@@ -632,7 +619,7 @@
 .corporate-section {
     display: grid;
     grid-template-columns: 1.2fr 1.5fr;
-    gap: 30px;
+    gap: 2rem;
     align-items: start;
 }
 
@@ -646,12 +633,12 @@
 .corporate-content {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 @media (min-width: 968px) {
     .weddings-section {
-        margin-bottom: 30px;
+        margin-bottom: 2rem;
     }
 
     .weddings-image-large {
@@ -725,7 +712,7 @@
 
     .corporate-section {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 0px;
     }
 
     .corporate-image-left {
@@ -753,7 +740,7 @@
 /* Event Experiences*/
 
 .event-experiences {
-    padding: 0 0 60px 0;
+    padding: 0;
 }
 
 .experiences-container {
@@ -815,12 +802,24 @@
     display: block;
 }
 
+@media (max-width: 1000px) {
+    .historic-image {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .historic-image {
+        padding: 0;
+    }
+}
+
 /* Plan Your Event Section */
 .plan-event-section {
     text-align: center;
     letter-spacing: 0.5px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 20px 2rem 20px;
     max-width: 900px;
 }
 
@@ -847,6 +846,7 @@
 
     .film-image {
         order: -1;
+        padding: 0 1rem;
     }
 }
 
@@ -865,6 +865,10 @@
         gap: 25px;
         margin-bottom: 40px;
         padding: 0 15px;
+    }
+
+    .film-image {
+        padding: 0;
     }
 
     .plan-event-section {
