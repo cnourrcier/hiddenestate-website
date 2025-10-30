@@ -267,6 +267,10 @@
         height: 40vh;
     }
 
+    .hero-historical-details {
+        padding: 0;
+    }
+
     .hero-tagline {
         font-size: 1.8rem;
     }
@@ -289,16 +293,20 @@
         margin: 2rem auto;
     }
 
-    .hero-content-section {
-        padding: 0;
-    }
-
     .event-row {
         margin: 0;
     }
 
     .hero-century-tagline {
         margin-bottom: 0;
+    }
+
+    .hero-description {
+        padding: 0 1rem;
+    }
+
+    .homepage-cta-button {
+        padding: 1rem 1.5rem;
     }
 }
 
