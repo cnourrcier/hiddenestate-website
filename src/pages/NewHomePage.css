@@ -162,7 +162,6 @@
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .classic-photo-container img {
@@ -181,6 +180,7 @@
 .hero-century-tagline {
     font-size: 1.4rem;
     text-align: center;
+    padding-top: 1rem;
 }
 
 /* Tablet breakpoint */
@@ -269,6 +269,10 @@
 
     .hero-tagline {
         font-size: 1.8rem;
+    }
+
+    .hero-century-tagline {
+        padding-top: 0.5rem;
     }
 
     .hero-details-grid {
