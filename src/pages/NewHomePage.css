@@ -152,6 +152,7 @@
     text-align: center;
     width: 40vw;
     max-width: 300px;
+    white-space: nowrap;
 }
 
 .homepage-cta-button:hover {
