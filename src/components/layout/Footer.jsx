@@ -47,12 +47,6 @@ const Footer = () => {
                     <Link to="/rental/weddings" onClick={scrollToTop}>
                         Weddings
                     </Link>
-                    <Link
-                        to="/rental/luxuryvacationrental"
-                        onClick={scrollToTop}
-                    >
-                        Luxury Vacation Rental
-                    </Link>
                     <Link to="/rental/privatetours" onClick={scrollToTop}>
                         Private Tours
                     </Link>

@@ -130,8 +130,8 @@ const Location = () => {
                     to as the <span>"Beverly Hills"</span> of Palm Springs. Rich
                     in architecture and Hollywood history, this affluent
                     neighborhood also holds estates belonging to well-known
-                    figures like Leonardo DiCaprio, Kurt Russel, and Katherine
-                    Hepburn.
+                    figures like Leonardo DiCaprio, Katherine Hepburn, Elizabeth
+                    Taylor, Dinah Shore, Liberace, Goldie Hawn and Kurt Russell.
                 </p>
             </div>
         </section>

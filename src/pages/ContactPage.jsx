@@ -215,11 +215,16 @@ const ContactPage = () => {
 
                     <div className="contact-sidebar">
                         <div className="availability-section">
-                            <h3>Book Your Stay</h3>
+                            <p className="capacity-info">
+                                <strong>Occupancy:</strong> seated dinner 250+,
+                                reception 400+
+                            </p>
                             <p>
-                                Ready to experience the luxury and history of
-                                the Hidden Estate? Check availability and make
-                                your reservation.
+                                Many of our wedding couples love having
+                                immediate family or wedding party members stay
+                                onsite, while the rest of their guests enjoy the
+                                convenience of nearby hotels, cafés, and
+                                restaurants just steps away.
                             </p>
                             <button
                                 className="availability-btn"

@@ -46,7 +46,7 @@ function NewHomePage() {
                                     <strong>Fashion icon</strong> Agnes Swobdi,
                                     <strong>
                                         {" "}
-                                        couturier to Hollywood's silent film
+                                        couturière to Hollywood's silent film
                                         stars.
                                     </strong>
                                 </div>

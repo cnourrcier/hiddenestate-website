@@ -116,11 +116,27 @@
     text-shadow: 0.5px 0.5px 0.5px var(--ps-light-shadow);
 }
 
+.availability-section p.capacity-info {
+    font-family: "Montserrat", sans-serif;
+    color: var(--ps-blue);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.availability-section p.capacity-info strong {
+    color: var(--ps-terracotta);
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+}
+
 .availability-section p {
     font-family: "Montserrat", sans-serif;
     color: var(--ps-blue);
     margin-bottom: 1.5rem;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 0.95rem;
 }
 
 .availability-btn {
