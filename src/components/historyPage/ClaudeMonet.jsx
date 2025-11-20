@@ -1,4 +1,4 @@
-import claudeMonetInspiration from "../../../assets/claude-monet-inspiration.svg";
+import claudeMonetInspiration from "../../assets/claude-monet-inspiration.svg";
 import "./ClaudeMonet.css";
 
 const ClaudeMonet = () => {
@@ -40,17 +40,17 @@ const ClaudeMonet = () => {
                         "Color is my daylong obsession, joy, and torment" -
                         Claude Monet
                     </blockquote>
-
-                    <div className="historical-note">
-                        <h3>Historical Connection</h3>
-                        <p>
-                            This artistic influence represents the cultural
-                            exchange between European aesthetics and the
-                            developing architectural identity of Palm Springs in
-                            the 1920s, when the Hidden Estate was established.
-                        </p>
-                    </div>
                 </div>
+            </div>
+
+            <div className="historical-note">
+                <h3>Historical Connection</h3>
+                <p>
+                    This artistic influence represents the cultural exchange
+                    between European aesthetics and the developing architectural
+                    identity of Palm Springs in the 1920s, when the Hidden
+                    Estate was established.
+                </p>
             </div>
         </div>
     );

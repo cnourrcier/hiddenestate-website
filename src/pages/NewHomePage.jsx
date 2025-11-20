@@ -1,13 +1,9 @@
 import { Helmet } from "react-helmet-async";
-import claudeMonetInspiration from "../assets/claude-monet-inspiration.svg";
-import { useModal } from "../context/ModalContext";
 import ScrollLink from "../components/common/ScrollLink";
 import Location from "../components/homePage/Location";
 import "./NewHomePage.css";
 
 function NewHomePage() {
-    const { openModal } = useModal();
-
     return (
         <main className="homepage">
             <Helmet key={location.pathname}>
@@ -317,21 +313,6 @@ function NewHomePage() {
 
             <section className="location-section">
                 <Location />
-            </section>
-
-            <section className="monet-container">
-                <h3 className="monet-title">Claude Monet Inspiration</h3>
-                <p>(Click image for more)</p>
-                <img
-                    className="monet-image"
-                    src={claudeMonetInspiration}
-                    alt="Claude Monet - House Among the Palms"
-                    onClick={() => openModal("monet-inspiration")}
-                />
-                <cite className="monet-quote">
-                    “Color is my daylong obsession, joy, and torment”{" "}
-                    <span>- Claude Monet</span>
-                </cite>
             </section>
         </main>
     );

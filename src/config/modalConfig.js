@@ -20,9 +20,6 @@ export const MODAL_COMPONENTS = {
     SharCracraft: lazy(
         () => import("../components/historyPage/modalPages/SharCracraft")
     ),
-    ClaudeMonet: lazy(
-        () => import("../components/homePage/modalPages/ClaudeMonet")
-    ),
 };
 
 export const IMAGE_MAP = {

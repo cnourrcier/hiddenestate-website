@@ -7,6 +7,8 @@ import { useModal } from "../context/ModalContext";
 import { topHistoryImages, bottomHistoryImages } from "../data/imagesData";
 import "./HistoryPage.css";
 import PoolTable from "../components/historyPage/PoolTable";
+import ClaudeMonet from "../components/historyPage/ClaudeMonet";
+import ArchitectHighlight from "../components/historyPage/ArchitectHighlight";
 
 const HistoryPage = () => {
     const { openModal } = useModal();
@@ -20,7 +22,7 @@ const HistoryPage = () => {
             <h1 className="history__title">Hidden Estate</h1>
             <h2 className="history__subtitle">Est. 1925</h2>
             <p className="history-discover-hint">
-                (Click any image to learn more!)
+                (Click any image to view more!)
             </p>
 
             <section className="top-history__container">
@@ -42,7 +44,14 @@ const HistoryPage = () => {
             <DouglasInterview />
             <PoolTable />
 
+            <ArchitectHighlight />
+
+            <ClaudeMonet />
+
             <section className="bottom-history__container">
+                <p className="bottom-history-hint">
+                    (click images to view more!)
+                </p>
                 <HistoryGallery
                     className="grid-style"
                     items={bottomHistoryImages}

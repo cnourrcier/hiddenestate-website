@@ -15,7 +15,7 @@
 /* Grid style gallery layout */
 .image-gallery-wrapper.grid-style {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     width: 100%;
     max-width: 1000px;
     gap: 3rem;
@@ -84,7 +84,7 @@
 }
 
 /* Text content for grid style */
-.img-wrapper .text-content {
+.text-content {
     margin-top: 0.5rem;
     color: var(--ps-blue);
     display: flex;
@@ -94,7 +94,8 @@
     font-weight: bold;
     padding: 0.5rem;
     text-align: center;
-    max-width: 250px;
+    font-style: italic;
+    /* max-width: 250px; */
 }
 
 /* Hover effects */
@@ -130,8 +131,8 @@
 }
 
 .image-gallery-wrapper.grid-style .img-gallery-img {
-    max-width: 40vh;
-    max-height: 45vh;
+    max-width: 65vh;
+    max-height: 60vh;
 }
 
 .img-wrapper:hover .img-gallery-img,

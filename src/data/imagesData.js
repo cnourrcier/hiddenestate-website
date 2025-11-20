@@ -801,24 +801,6 @@ export const historyImages = [
     },
     {
         id: "history-5",
-        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735404675/Hidden%20Gable%20Estate/history%20page/SHE_S_READY__TOO._BUY_WAR_BONDS_-_NARA_-_515403_92_zn1vsu.jpg`,
-        alt: "WWII Buy a Bomber Campaign",
-        titles: {
-            galleryTitle: ['"Buy a Bomber Campaign"'],
-            htmlTitle: "WWII",
-            modalTitle: "WWII",
-        },
-        navigation: {
-            slug: "wwii",
-            pageRoute: "history",
-        },
-        interaction: {
-            clickable: true,
-            modalComponent: "WarBonds",
-        },
-    },
-    {
-        id: "history-6",
         source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735402995/Hidden%20Gable%20Estate/history%20page/MasterArchitect_xk0htu.jpg`,
         alt: "A Spanish Colonial Revival and one of the oldest homes in Old Las Palmas designed by Master Architect McNeal Swasey",
         titles: {
@@ -833,6 +815,24 @@ export const historyImages = [
         interaction: {
             clickable: true,
             modalComponent: "MasterArchitect",
+        },
+    },
+    {
+        id: "history-6",
+        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735404675/Hidden%20Gable%20Estate/history%20page/SHE_S_READY__TOO._BUY_WAR_BONDS_-_NARA_-_515403_92_zn1vsu.jpg`,
+        alt: "WWII Buy a Bomber Campaign",
+        titles: {
+            galleryTitle: ['"Buy a Bomber Campaign"'],
+            htmlTitle: "WWII",
+            modalTitle: "WWII",
+        },
+        navigation: {
+            slug: "wwii",
+            pageRoute: "history",
+        },
+        interaction: {
+            clickable: true,
+            modalComponent: "WarBonds",
         },
     },
     {
@@ -1193,4 +1193,8 @@ export const topHistoryImages = historyImages.slice(0, 4);
 /**
  * Bottom history gallery items
  */
-export const bottomHistoryImages = historyImages.slice(4, 7);
+export const middleHistoryImages = historyImages.slice(4, 5);
+/**
+ * Bottom history gallery items
+ */
+export const bottomHistoryImages = historyImages.slice(5, 7);
