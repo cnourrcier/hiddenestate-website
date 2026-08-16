@@ -38,11 +38,14 @@ const Header = () => {
 
     const location = useLocation();
     const isMainPage = location.pathname == "/";
+    // Temporary: matches the new hero's transparent-header design for client review.
+    // Remove once /home-preview is retired or promoted to the live homepage.
+    const isHomePreviewPage = location.pathname == "/home-preview";
     // const isRentalPage = location.pathname.startsWith('/rental/');
 
     const getHeaderClass = () => {
         if (mobileMenuDropdown) return "header solid fixed";
-        if (isMainPage) return "header transparent";
+        if (isMainPage || isHomePreviewPage) return "header transparent";
         // if (isRentalPage) return 'header semitransparent';
         return "header solid";
     };
