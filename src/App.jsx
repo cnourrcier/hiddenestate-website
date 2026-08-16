@@ -13,19 +13,19 @@ const NewHomePage = lazy(() => import("./pages/NewHomePage"));
 const HomePage = lazy(() => import("./pages/HomePage"));
 const HistoryPage = lazy(() => import("./pages/HistoryPage"));
 const GardensPage = lazy(() => import("./pages/GardensPage"));
-const CorporateEvents = lazy(() => import("./pages/Rental/CorporateEvents"));
-const PrivateEvents = lazy(() => import("./pages/Rental/PrivateEvents"));
-const Weddings = lazy(() => import("./pages/Rental/Weddings"));
+const CorporateEvents = lazy(() => import("./pages/rental/CorporateEvents"));
+const PrivateEvents = lazy(() => import("./pages/rental/PrivateEvents"));
+const Weddings = lazy(() => import("./pages/rental/Weddings"));
 const LuxuryVacationRental = lazy(
-    () => import("./pages/Rental/LuxuryVacationRental")
+    () => import("./pages/rental/LuxuryVacationRental")
 );
-const PrivateTours = lazy(() => import("./pages/Rental/PrivateTours"));
-const DinnerParties = lazy(() => import("./pages/Rental/DinnerParties"));
-const FilmLocation = lazy(() => import("./pages/Rental/FilmLocation"));
-const EstatePage = lazy(() => import("./pages/Galleries/EstatePage"));
-const EventsPage = lazy(() => import("./pages/Galleries/EventsPage"));
+const PrivateTours = lazy(() => import("./pages/rental/PrivateTours"));
+const DinnerParties = lazy(() => import("./pages/rental/DinnerParties"));
+const FilmLocation = lazy(() => import("./pages/rental/FilmLocation"));
+const EstatePage = lazy(() => import("./pages/galleries/EstatePage"));
+const EventsPage = lazy(() => import("./pages/galleries/EventsPage"));
 const FoundationForPsusd2025 = lazy(
-    () => import("./pages/Galleries/FoundationForPsusd2025")
+    () => import("./pages/galleries/FoundationForPsusd2025")
 );
 const MediaPage = lazy(() => import("./pages/MediaPage"));
 const MissionPage = lazy(() => import("./pages/MissionPage"));
