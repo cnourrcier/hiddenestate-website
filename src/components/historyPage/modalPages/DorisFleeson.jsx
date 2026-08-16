@@ -1,6 +1,6 @@
 import "./DorisFleeson.css";
 
-const Fleeson = () => {
+const DorisFleeson = () => {
     return (
         <div className="fleeson">
             <section className="fleeson__article">
@@ -100,4 +100,4 @@ const Fleeson = () => {
     );
 };
 
-export default Fleeson;
+export default DorisFleeson;

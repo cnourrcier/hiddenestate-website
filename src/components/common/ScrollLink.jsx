@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function ScrollLink({ to, children, ...props }) {
+const ScrollLink = ({ to, children, ...props }) => {
     const handleClick = () => {
         window.scrollTo(0, 0);
     };
@@ -10,6 +10,6 @@ function ScrollLink({ to, children, ...props }) {
             {children}
         </Link>
     );
-}
+};
 
 export default ScrollLink;

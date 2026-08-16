@@ -3,7 +3,7 @@ import ScrollLink from "../components/common/ScrollLink";
 import Location from "../components/homePage/Location";
 import "./NewHomePage.css";
 
-function NewHomePage() {
+const NewHomePage = () => {
     return (
         <main className="homepage">
             <Helmet key={location.pathname}>
@@ -316,6 +316,6 @@ function NewHomePage() {
             </section>
         </main>
     );
-}
+};
 
 export default NewHomePage;

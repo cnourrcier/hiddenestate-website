@@ -7,7 +7,7 @@ import Location from "../components/homePage/Location";
 import ImageSection from "../components/homePage/ImageSection";
 import "./HomePage.css";
 
-function HomePage() {
+const HomePage = () => {
     return (
         <main className="homepage">
             <Helmet key={location.pathname}>
@@ -23,6 +23,6 @@ function HomePage() {
             </div>
         </main>
     );
-}
+};
 
 export default HomePage;
