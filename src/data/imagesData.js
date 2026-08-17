@@ -865,7 +865,7 @@ export const homeImages = [
     {
         id: "home-1",
         source: "claude-monet-inspiration.svg",
-        alt: "Claude Monet painting that inspired Hidden Gable Estate",
+        alt: "Claude Monet painting that inspired Hidden Estate",
         titles: {
             galleryTitle: ["Claude Monet Inspiration"],
             htmlTitle: "Claude Monet Inspiration",

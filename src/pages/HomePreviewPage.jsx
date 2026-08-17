@@ -2,8 +2,9 @@ import { Helmet } from "react-helmet-async";
 import HeroPreview from "../components/homePage/HeroPreview";
 import AboutPreview from "../components/homePage/AboutPreview";
 import Highlights from "../components/homePage/Highlights";
-import WeddingsSection from "../components/homePage/WeddingsSection";
+import EstateCollage from "../components/homePage/EstateCollage";
 import FullWidthImage from "../components/homePage/FullWidthImage";
+import WeddingsSection from "../components/homePage/WeddingsSection";
 import CustomEventsSection from "../components/homePage/CustomEventsSection";
 import FilmPhotoSection from "../components/homePage/FilmPhotoSection";
 import LuxuryStaySection from "../components/homePage/LuxuryStaySection";
@@ -20,18 +21,14 @@ const HomePreviewPage = () => {
             <HeroPreview />
             <AboutPreview />
             <Highlights />
-            <FullWidthImage
-                src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741378878/Hidden%20Gable%20Estate/home%20page/_I1A0391_xn500l.jpg`}
-                alt="Image 1"
-            />
+            <EstateCollage />
+
             <WeddingsSection />
             <FullWidthImage
-                src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/a6bd670e-d588-45a4-d0d0-fc146b8d9300/public`}
+                src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741378878/Hidden%20Gable%20Estate/home%20page/_I1A0391_xn500l.jpg`}
+                alt="Vintage convertible parked at the entry gate of Hidden Estate"
             />
             <CustomEventsSection />
-            <FullWidthImage
-                src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/bd300306-be21-4b43-e439-1d35fe310200/public`}
-            />
             <FilmPhotoSection />
             <LuxuryStaySection />
             <div className="location-div">

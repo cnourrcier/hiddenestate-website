@@ -44,7 +44,7 @@
 .about-preview__content-image-container {
     grid-row-start: 1;
     grid-row-end: 3;
-    width: 320px;
+    width: 440px;
 }
 
 .about-preview__image {
@@ -52,6 +52,7 @@
     width: 100%;
     height: auto;
     filter: sepia(10%);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
     transition: filter 0.3s ease;
 }
 
@@ -134,7 +135,7 @@
 
 @media (max-width: 1050px) {
     .about-preview__content-image-container {
-        width: 240px;
+        width: 320px;
     }
 }
 
@@ -176,7 +177,7 @@
     }
 
     .about-preview__content-image-container {
-        width: 200px;
+        width: 240px;
     }
 
     .about-preview__tags {

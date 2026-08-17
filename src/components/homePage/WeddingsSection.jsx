@@ -11,8 +11,9 @@ const WeddingsSection = () => {
             <div className="weddings-section__image-wrapper">
                 <img
                     src={weddingSectionImage}
-                    alt="Floral lanterns lining the wedding aisle at Hidden Gable Estate"
+                    alt="Floral lanterns lining the wedding aisle at Hidden Estate"
                     className="weddings-section__image"
+                    loading="lazy"
                 />
             </div>
             <div className="weddings-section__content">

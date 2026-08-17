@@ -17,6 +17,7 @@ const AboutPreview = () => {
                         src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/2e2d2929-c302-4b51-c787-2de361d35000/public`}
                         alt="Hidden Estate"
                         className="about-preview__image"
+                        loading="lazy"
                     />
                 </div>
                 <div className="about-preview__content-text">

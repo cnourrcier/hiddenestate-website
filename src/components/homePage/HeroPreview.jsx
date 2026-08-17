@@ -9,7 +9,7 @@ const HeroPreview = () => {
             <div className="hero-image-wrapper">
                 <img
                     src={droneShot}
-                    alt="Aerial view of Hidden Gable Estate's pool, gardens, and Spanish Colonial Revival architecture"
+                    alt="Aerial view of Hidden Estate's pool, gardens, and Spanish Colonial Revival architecture"
                     className="hero-image"
                 />
                 <div className="hero-image-scrim" aria-hidden="true"></div>

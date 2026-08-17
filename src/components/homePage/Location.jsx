@@ -81,6 +81,7 @@ const Location = () => {
                                     <img
                                         src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1725299251/Hidden%20Gable%20Estate/home%20page/_I1A0197m_2_oiuer9.jpg`}
                                         alt="Property"
+                                        loading="lazy"
                                     />
                                     <div className="popup-content">
                                         <h3>{popupInfo.name}</h3>
@@ -114,6 +115,7 @@ const Location = () => {
                         <img
                             src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1725299251/Hidden%20Gable%20Estate/home%20page/_I1A0197m_2_oiuer9.jpg`}
                             alt="Property"
+                            loading="lazy"
                         />
                         <div className="side-content-text">
                             <h3>{markerInfo.name}</h3>
