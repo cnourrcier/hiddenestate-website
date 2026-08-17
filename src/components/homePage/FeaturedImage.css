@@ -1,0 +1,17 @@
+.featured-image {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
+}
+
+.featured-image__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 500px) {
+    .featured-image {
+        padding: 0 1rem 1.5rem;
+    }
+}

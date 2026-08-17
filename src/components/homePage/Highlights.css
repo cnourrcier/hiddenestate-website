@@ -1,0 +1,119 @@
+.highlights {
+    background-color: var(--ps-whiter);
+    padding: 3.5rem 2rem;
+}
+
+.highlights__list {
+    list-style: none;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.highlights__item {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 1.5rem;
+    border-right: 1px solid var(--ps-light-shadow);
+}
+
+.highlights__item:last-child {
+    border-right: none;
+}
+
+.highlights__icon {
+    display: block;
+    width: 56px;
+    height: 56px;
+    color: var(--ps-gold);
+}
+
+.highlights__icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.highlights__divider {
+    display: block;
+    width: 44px;
+    height: 10px;
+    margin: 0.75rem 0;
+    color: var(--ps-gold);
+}
+
+.highlights__label {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.05rem;
+    line-height: 1.4;
+    color: var(--ps-blue);
+}
+
+@media screen and (max-width: 1024px) {
+    .highlights {
+        padding: 3rem 1.25rem;
+    }
+
+    .highlights__item {
+        padding: 0 0.75rem;
+    }
+
+    .highlights__icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .highlights__divider {
+        width: 32px;
+        margin: 0.6rem 0;
+    }
+
+    .highlights__label {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .highlights {
+        padding: 2rem 0.5rem;
+    }
+
+    .highlights__item {
+        padding: 0 0.35rem;
+    }
+
+    .highlights__icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .highlights__divider {
+        width: 22px;
+        height: 8px;
+        margin: 0.4rem 0;
+    }
+
+    .highlights__label {
+        font-size: 0.62rem;
+        line-height: 1.3;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .highlights__item {
+        padding: 0 0.2rem;
+    }
+
+    .highlights__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .highlights__label {
+        font-size: 0.55rem;
+    }
+}
