@@ -1,0 +1,105 @@
+.film-photo {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--ps-whiter);
+}
+
+.film-photo__title {
+    font-family: "Caveat", "Poiret One", cursive;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.1;
+    color: var(--ps-blue);
+    margin: 0 0 0.5rem;
+}
+
+.film-photo__subtitle {
+    font-family: "Playfair Display", Georgia, serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--ps-terracotta);
+    margin: 0 0 1.5rem;
+}
+
+.film-photo__image-wrapper {
+    width: 100%;
+}
+
+.film-photo__image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.film-photo__links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.film-photo__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.75rem;
+    background-color: var(--ps-sand);
+    border: 1px solid var(--ps-blue);
+    color: var(--ps-blue);
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
+}
+
+.film-photo__link:hover {
+    background-color: var(--ps-blue);
+    color: var(--ps-whiter);
+}
+
+@media screen and (min-width: 1024px) {
+    .film-photo__image-wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .film-photo {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .film-photo__title {
+        font-size: 2.6rem;
+    }
+
+    .film-photo__subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .film-photo__title {
+        font-size: 2.2rem;
+    }
+
+    .film-photo__links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .film-photo__link {
+        width: 100%;
+        max-width: 280px;
+    }
+}

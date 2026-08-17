@@ -1,0 +1,64 @@
+.press-quote {
+    background-color: var(--ps-sand);
+    padding: 2rem;
+    font-family: Montserrat, sans-serif;
+    position: relative;
+}
+
+.press-quote__title {
+    text-align: center;
+    font-family: "Caveat", "Poiret One", cursive;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    color: var(--ps-dark-terracotta);
+}
+
+.press-quote__squiggle {
+    display: block;
+    width: 180px;
+    height: 12px;
+    margin: 0 auto 1.5rem;
+    color: var(--ps-terracotta);
+}
+
+.press-quote p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    position: relative;
+    color: var(--ps-dark-blue);
+    z-index: 1;
+}
+
+.press-quote__highlight {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.press-quote span {
+    font-weight: bold;
+    color: var(--ps-terracotta);
+    border-bottom: 1px solid var(--ps-whiter);
+    padding-bottom: 2px;
+}
+
+.press-quote__source {
+    display: block;
+    text-align: right;
+    color: var(--ps-terracotta);
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-family: Montserrat, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .press-quote__title {
+        font-size: 2rem;
+    }
+}

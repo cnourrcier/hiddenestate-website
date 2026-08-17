@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PressQuote from "./PressQuote";
 import "./AboutPreview.css";
 
 const AboutPreview = () => {
@@ -13,7 +14,7 @@ const AboutPreview = () => {
             <div className="about-preview__content-wrapper">
                 <div className="about-preview__content-image-container">
                     <img
-                        src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/Spanish-Stairs-leading-to-Casita-at-Hidden-Gable-Estate-4x5/public`}
+                        src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/2e2d2929-c302-4b51-c787-2de361d35000/public`}
                         alt="Hidden Estate"
                         className="about-preview__image"
                     />
@@ -41,6 +42,8 @@ const AboutPreview = () => {
                         and storied venues.
                     </p>
                 </div>
+            </div>
+            <div className="about-preview__highlight-section">
                 <div className="about-preview__divider">
                     <svg
                         className="about-preview__squiggle"
@@ -89,34 +92,7 @@ const AboutPreview = () => {
                     </Link>
                 </div>
             </div>
-            <blockquote className="about-preview__quote">
-                <h4 className="about-preview__quote-title">
-                    "Frankly darling, you will give a damn."
-                </h4>
-                <cite className="about-preview__quote-source">
-                    - Lauran Piro, GOOD HOUSEKEEPING Oct 2, 2014
-                </cite>
-                <p>
-                    "We love a good pink house, but a rosy-hued home that once
-                    belonged to one of Hollywood's dreamiest actors makes us
-                    especially giddy. It's like the real-estate equivalent of a
-                    strapping gentleman in a pink polo shirt — oddly, it just
-                    works.
-                </p>
-                <p className="about-preview__quote-highlight">
-                    <span>Clark Gable</span> and actress{" "}
-                    <span>Carole Lombard</span> once called this Spanish
-                    Colonial in Palm Springs their home.
-                </p>
-                <p>
-                    And it's rife with perplexing famous-people details, like
-                    half a dozen bathrooms, a saltwater pool, and a guest house
-                    cutely called a <i>'casita'</i>. But, exposed wooden beams,
-                    intricate tilework, and a master bedroom with outdoor access
-                    make this house a timeless classic (much like Gable
-                    himself)."
-                </p>
-            </blockquote>
+            <PressQuote />
         </section>
     );
 };

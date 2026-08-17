@@ -2,10 +2,11 @@ import { Helmet } from "react-helmet-async";
 import HeroPreview from "../components/homePage/HeroPreview";
 import AboutPreview from "../components/homePage/AboutPreview";
 import Highlights from "../components/homePage/Highlights";
-import FeaturedImage from "../components/homePage/FeaturedImage";
 import WeddingsSection from "../components/homePage/WeddingsSection";
-import Features from "../components/homePage/Features";
-import Reviews from "../components/homePage/Reviews";
+import FullWidthImage from "../components/homePage/FullWidthImage";
+import CustomEventsSection from "../components/homePage/CustomEventsSection";
+import FilmPhotoSection from "../components/homePage/FilmPhotoSection";
+import LuxuryStaySection from "../components/homePage/LuxuryStaySection";
 import Location from "../components/homePage/Location";
 import "./HomePage.css";
 
@@ -19,8 +20,20 @@ const HomePreviewPage = () => {
             <HeroPreview />
             <AboutPreview />
             <Highlights />
-            <FeaturedImage />
+            <FullWidthImage
+                src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741378878/Hidden%20Gable%20Estate/home%20page/_I1A0391_xn500l.jpg`}
+                alt="Image 1"
+            />
             <WeddingsSection />
+            <FullWidthImage
+                src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/a6bd670e-d588-45a4-d0d0-fc146b8d9300/public`}
+            />
+            <CustomEventsSection />
+            <FullWidthImage
+                src={`${import.meta.env.VITE_CLOUDFLARE_IMAGE_URL}/bd300306-be21-4b43-e439-1d35fe310200/public`}
+            />
+            <FilmPhotoSection />
+            <LuxuryStaySection />
             <div className="location-div">
                 <Location />
             </div>

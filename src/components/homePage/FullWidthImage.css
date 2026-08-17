@@ -1,0 +1,10 @@
+.full-width-image {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.full-width-image__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
