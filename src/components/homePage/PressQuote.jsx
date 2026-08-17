@@ -6,7 +6,7 @@ const PressQuote = () => {
             <h4 className="press-quote__title">
                 &ldquo;Frankly darling, you will give a damn.&rdquo;
             </h4>
-            <svg
+            {/* <svg
                 className="press-quote__squiggle"
                 viewBox="0 0 300 20"
                 preserveAspectRatio="none"
@@ -19,7 +19,7 @@ const PressQuote = () => {
                     strokeWidth="4"
                     strokeLinecap="round"
                 />
-            </svg>
+            </svg> */}
             <cite className="press-quote__source">
                 - Lauran Piro, GOOD HOUSEKEEPING Oct 2, 2014
             </cite>

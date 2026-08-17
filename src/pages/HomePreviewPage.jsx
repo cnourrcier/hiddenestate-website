@@ -8,8 +8,7 @@ import WeddingsSection from "../components/homePage/WeddingsSection";
 import CustomEventsSection from "../components/homePage/CustomEventsSection";
 import FilmPhotoSection from "../components/homePage/FilmPhotoSection";
 import LuxuryStaySection from "../components/homePage/LuxuryStaySection";
-import Location from "../components/homePage/Location";
-import "./HomePage.css";
+import LocationPreview from "../components/homePage/LocationPreview";
 
 const HomePreviewPage = () => {
     return (
@@ -31,9 +30,7 @@ const HomePreviewPage = () => {
             <CustomEventsSection />
             <FilmPhotoSection />
             <LuxuryStaySection />
-            <div className="location-div">
-                <Location />
-            </div>
+            <LocationPreview />
         </main>
     );
 };
