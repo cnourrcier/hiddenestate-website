@@ -6,113 +6,46 @@ const Footer = () => {
     const bookingUrl =
         "https://www.naturalretreats.com/property-detail-page?name=hidden-estate-7351";
 
-    const scrollToTop = () => {
-        window.scrollTo(0, 0);
-    };
-
     return (
         <footer className="footer">
             <div className="footer-container">
                 <div className="footer-links">
-                    <Link to="/" onClick={scrollToTop}>
-                        Home
-                    </Link>
-                    <Link to="/history" onClick={scrollToTop}>
-                        History
-                    </Link>
-                    <Link to="/gardens" onClick={scrollToTop}>
-                        Gardens
-                    </Link>
-                    <Link to="/galleries/estate" onClick={scrollToTop}>
-                        Estate Gallery
-                    </Link>
-                    <Link to="/galleries/events" onClick={scrollToTop}>
-                        Events
-                    </Link>
-                    <Link to="/media" onClick={scrollToTop}>
-                        Media
-                    </Link>
-                    <Link to="/mission" onClick={scrollToTop}>
-                        Mission
-                    </Link>
-                    <Link to="/contact" onClick={scrollToTop}>
-                        Contact
-                    </Link>
-                    <Link to="/rental/corporateevents" onClick={scrollToTop}>
-                        Corporate Events
-                    </Link>
-                    <Link to="/rental/privateevents" onClick={scrollToTop}>
-                        Private Events
-                    </Link>
-                    <Link to="/rental/weddings" onClick={scrollToTop}>
-                        Weddings
-                    </Link>
-                    <Link to="/rental/privatetours" onClick={scrollToTop}>
-                        Private Tours
-                    </Link>
-                    <Link to="/rental/dinnerparties" onClick={scrollToTop}>
-                        Dinner Parties
-                    </Link>
-                    <Link to="/rental/filmlocation" onClick={scrollToTop}>
-                        Film Location
-                    </Link>
-                    <Link to="/history/swobdi" onClick={scrollToTop}>
-                        Fashion
-                    </Link>
-                    <Link to="/history/swobdi" onClick={scrollToTop}>
-                        Roaring Twenties
-                    </Link>
-                    <Link
-                        to="/history/clark-gable-and-carol-lombard"
-                        onClick={scrollToTop}
-                    >
+                    <Link to="/">Home</Link>
+                    <Link to="/history">History</Link>
+                    <Link to="/gardens">Gardens</Link>
+                    <Link to="/galleries/estate">Estate Gallery</Link>
+                    <Link to="/galleries/events">Events</Link>
+                    <Link to="/media">Media</Link>
+                    <Link to="/mission">Mission</Link>
+                    <Link to="/contact">Contact</Link>
+                    <Link to="/rental/corporateevents">Corporate Events</Link>
+                    <Link to="/rental/privateevents">Private Events</Link>
+                    <Link to="/rental/weddings">Weddings</Link>
+                    <Link to="/rental/privatetours">Private Tours</Link>
+                    <Link to="/rental/dinnerparties">Dinner Parties</Link>
+                    <Link to="/rental/filmlocation">Film Location</Link>
+                    <Link to="/history/swobdi">Fashion</Link>
+                    <Link to="/history/swobdi">Roaring Twenties</Link>
+                    <Link to="/history/clark-gable-and-carol-lombard">
                         Classic Hollywood
                     </Link>
-                    <Link to="/history/doris-fleeson" onClick={scrollToTop}>
-                        WWII
-                    </Link>
-                    <Link to="/history/dan-kimball" onClick={scrollToTop}>
-                        Space Race
-                    </Link>
-                    <Link to="/history/swobdi" onClick={scrollToTop}>
-                        Swobdi
-                    </Link>
-                    <Link to="/history/dan-kimball" onClick={scrollToTop}>
-                        Dan Kimball
-                    </Link>
-                    <Link
-                        to="/history/clark-gable-and-carol-lombard"
-                        onClick={scrollToTop}
-                    >
+                    <Link to="/history/doris-fleeson">WWII</Link>
+                    <Link to="/history/dan-kimball">Space Race</Link>
+                    <Link to="/history/swobdi">Swobdi</Link>
+                    <Link to="/history/dan-kimball">Dan Kimball</Link>
+                    <Link to="/history/clark-gable-and-carol-lombard">
                         Clark Gable
                     </Link>
-                    <Link
-                        to="/history/clark-gable-and-carol-lombard"
-                        onClick={scrollToTop}
-                    >
+                    <Link to="/history/clark-gable-and-carol-lombard">
                         Carol Lombard
                     </Link>
-                    <Link to="/history/doris-fleeson" onClick={scrollToTop}>
-                        Doris Fleeson
-                    </Link>
-                    <Link to="/history/mcneal-swasey" onClick={scrollToTop}>
-                        McNeal Swasey
-                    </Link>
-                    <Link to="/history/shar-cracraft" onClick={scrollToTop}>
-                        Shar Cracraft
-                    </Link>
-                    <Link to="/history" onClick={scrollToTop}>
-                        Joel Douglas
-                    </Link>
-                    <Link to="/history" onClick={scrollToTop}>
-                        Bing Crosby
-                    </Link>
-                    <Link to="/history" onClick={scrollToTop}>
-                        Sammy Davis Jr
-                    </Link>
-                    <Link to="/history" onClick={scrollToTop}>
-                        Maurice Chevalier
-                    </Link>
+                    <Link to="/history/doris-fleeson">Doris Fleeson</Link>
+                    <Link to="/history/mcneal-swasey">McNeal Swasey</Link>
+                    <Link to="/history/shar-cracraft">Shar Cracraft</Link>
+                    <Link to="/history">Joel Douglas</Link>
+                    <Link to="/history">Bing Crosby</Link>
+                    <Link to="/history">Sammy Davis Jr</Link>
+                    <Link to="/history">Maurice Chevalier</Link>
                 </div>
 
                 <div className="footer-info">

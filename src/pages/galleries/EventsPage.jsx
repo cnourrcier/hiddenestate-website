@@ -8,10 +8,6 @@ import { foundationEventCarouselImages } from "../../data/imagesData";
 import "./EventsPage.css";
 
 const EventsPage = () => {
-    const scrollToTop = () => {
-        window.scrollTo(0, 0);
-    };
-
     return (
         <main className="events-page">
             <Helmet>
@@ -78,7 +74,6 @@ const EventsPage = () => {
                     <Link
                         to="foundation-for-psusd-2025"
                         className="view-gallery-link"
-                        onClick={scrollToTop}
                     >
                         View full gallery
                     </Link>

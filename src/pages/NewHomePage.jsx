@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import ScrollLink from "../components/common/ScrollLink";
+import { Link } from "react-router-dom";
 import Location from "../components/homePage/Location";
 import "./NewHomePage.css";
 
@@ -80,12 +80,9 @@ const NewHomePage = () => {
                                 </span>
                             </div>
                         </div>
-                        <ScrollLink
-                            to="/contact"
-                            className="homepage-cta-button"
-                        >
+                        <Link to="/contact" className="homepage-cta-button">
                             Learn More
-                        </ScrollLink>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -301,12 +298,9 @@ const NewHomePage = () => {
                             private tour and reserve your date at Palm Springs'
                             most historic luxury venue.
                         </p>
-                        <ScrollLink
-                            to="/contact"
-                            className="homepage-cta-button"
-                        >
+                        <Link to="/contact" className="homepage-cta-button">
                             Learn More
-                        </ScrollLink>
+                        </Link>
                     </div>
                 </div>
             </section>

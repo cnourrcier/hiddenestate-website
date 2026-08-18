@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import ScrollToTopButton from "./components/common/ScrollToTopButton";
+import ScrollToTop from "./components/common/ScrollToTop";
 import ViewportDimensions from "./utils/ViewportDimensions";
 import Analytics from "./utils/Analytics";
 import LoadingFallback from "./components/common/LoadingFallback";
@@ -36,6 +37,7 @@ function App() {
     return (
         <Router>
             <Analytics />
+            <ScrollToTop />
             <ModalProvider>
                 <Header />
                 <Suspense fallback={<LoadingFallback />}>
