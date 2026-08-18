@@ -136,19 +136,10 @@
 .hero-badge {
     position: absolute;
     right: 2rem;
-    bottom: 2rem;
-    width: 110px;
-    height: 110px;
-    color: var(--ps-dark-terracotta);
-}
-
-.hero-badge-text {
-    font-family: Montserrat, sans-serif;
-    font-size: 9px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    fill: var(--ps-dark-terracotta);
+    bottom: 5rem;
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
 }
 
 @media screen and (max-width: 900px) {
