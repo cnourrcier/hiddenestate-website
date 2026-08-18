@@ -173,10 +173,10 @@
     }
 
     .hero-badge {
-        width: 90px;
-        height: 90px;
+        /* width: 90px; */
+        /* height: 90px; */
         right: 50%;
-        bottom: 1.5rem;
+        bottom: 0.12rem;
         transform: translateX(50%);
     }
 }
