@@ -36,11 +36,11 @@
 
 @media screen and (max-width: 500px) {
     .custom-events-banner {
-        padding: 1.25rem 1rem;
+        padding: 1.25rem 0.5rem;
     }
 
     .custom-events-banner__text {
-        font-size: 1.05rem;
+        font-size: 1.25rem;
         letter-spacing: 1px;
     }
 
