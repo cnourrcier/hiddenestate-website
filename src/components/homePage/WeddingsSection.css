@@ -123,6 +123,11 @@
 
     .weddings-section__heading {
         font-size: 2.6rem;
+        text-align: center;
+    }
+
+    .weddings-section__actions {
+        justify-content: center;
     }
 }
 

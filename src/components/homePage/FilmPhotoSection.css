@@ -93,6 +93,15 @@
 
     .film-photo__title {
         font-size: 2.6rem;
+        text-align: center;
+    }
+
+    .film-photo__subtitle {
+        text-align: center;
+    }
+
+    .film-photo__links {
+        justify-content: center;
     }
 }
 
