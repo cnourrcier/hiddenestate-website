@@ -150,14 +150,14 @@
     }
 
     .hero-badge {
-        right: 1rem;
-        bottom: 11.8rem;
+        right: 0.1rem;
+        bottom: 6.8rem;
     }
 }
 
 @media screen and (max-width: 768px) {
     .hero-image-scrim {
-        height: 130px;
+        display: none;
     }
 
     .hero-content {
