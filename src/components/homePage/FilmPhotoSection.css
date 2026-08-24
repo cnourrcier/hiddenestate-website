@@ -118,13 +118,16 @@
     }
 
     .film-photo__links {
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         width: 100%;
     }
 
     .film-photo__link {
         width: 100%;
-        max-width: 280px;
+    }
+
+    .film-photo__link:nth-child(3) {
+        grid-column: 1 / -1;
     }
 }

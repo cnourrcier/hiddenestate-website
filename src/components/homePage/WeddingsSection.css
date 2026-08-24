@@ -140,6 +140,11 @@
         font-size: 1.1rem;
     }
 
+    .weddings-section__actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .weddings-section__button {
         min-width: 0;
         width: 100%;

@@ -333,3 +333,14 @@
         padding: 1.5rem 1rem 6rem 1rem;
     }
 }
+
+@media (max-width: 768px) {
+    .estate-name {
+        display: none;
+    }
+
+    .header.transparent {
+        position: relative;
+        background-color: hsl(0, 0%, 18%);
+    }
+}
