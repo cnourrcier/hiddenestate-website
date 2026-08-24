@@ -12,7 +12,7 @@
     justify-content: center;
     gap: 1.5rem;
     padding: 3rem 4rem;
-    text-align: left;
+    text-align: center;
 }
 
 .film-photo__image-wrapper {
@@ -33,7 +33,7 @@
     font-size: 3rem;
     line-height: 1.1;
     color: var(--ps-blue);
-    text-align: left;
+    text-align: center;
     margin: 0;
 }
 
@@ -48,6 +48,7 @@
 .film-photo__links {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
 }
 

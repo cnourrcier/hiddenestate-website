@@ -1,6 +1,5 @@
 .custom-events {
     display: flex;
-    flex-direction: column;
     max-width: 1400px;
     margin: 0 auto;
     background-color: var(--ps-whiter);
@@ -27,10 +26,6 @@
 .custom-events__banner-dot {
     color: var(--ps-terracotta);
     margin: 0 0.6rem;
-}
-
-.custom-events__split {
-    display: flex;
 }
 
 .custom-events__content {
@@ -103,7 +98,7 @@
         letter-spacing: 1.5px;
     }
 
-    .custom-events__split {
+    .custom-events {
         flex-direction: column;
     }
 
