@@ -138,6 +138,12 @@
     }
 }
 
+@media (max-width: 992px) {
+    .about-preview__content-wrapper {
+        margin-bottom: 0;
+    }
+}
+
 @media (min-height: 750px) {
     .about-preview {
         min-height: 100%;
@@ -147,6 +153,7 @@
 @media (max-width: 768px) {
     .about-preview__content-wrapper {
         display: block;
+        margin-bottom: 1rem;
     }
 
     .about-preview__heading {
