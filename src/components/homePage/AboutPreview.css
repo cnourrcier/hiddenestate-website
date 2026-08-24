@@ -79,7 +79,6 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    margin-bottom: 2rem;
 }
 
 .about-preview__divider {
@@ -95,7 +94,7 @@
 }
 
 .about-preview__content-highlight {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 400;
     color: var(--ps-blue);
     font-family: "Caveat", "Poiret One", cursive;

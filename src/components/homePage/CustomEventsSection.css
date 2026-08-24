@@ -1,8 +1,36 @@
 .custom-events {
     display: flex;
+    flex-direction: column;
     max-width: 1400px;
-    margin: 0 auto 0.4rem auto;
+    margin: 0 auto;
     background-color: var(--ps-whiter);
+}
+
+.custom-events__banner {
+    background-color: var(--ps-blue);
+    padding: 1.75rem 2rem;
+}
+
+.custom-events__banner-text {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--ps-whiter);
+}
+
+.custom-events__banner-dot {
+    color: var(--ps-terracotta);
+    margin: 0 0.6rem;
+}
+
+.custom-events__split {
+    display: flex;
 }
 
 .custom-events__content {
@@ -33,15 +61,6 @@
     font-size: 3rem;
     line-height: 1.1;
     color: var(--ps-blue);
-    text-align: left;
-    margin: 0;
-}
-
-.custom-events__tagline {
-    font-family: "Playfair Display", Georgia, serif;
-    font-style: italic;
-    font-size: 1.3rem;
-    color: var(--ps-terracotta);
     margin: 0;
 }
 
@@ -74,7 +93,16 @@
 }
 
 @media screen and (max-width: 900px) {
-    .custom-events {
+    .custom-events__banner {
+        padding: 1.5rem 1.5rem;
+    }
+
+    .custom-events__banner-text {
+        font-size: 1.4rem;
+        letter-spacing: 1.5px;
+    }
+
+    .custom-events__split {
         flex-direction: column;
     }
 
@@ -98,6 +126,19 @@
 }
 
 @media screen and (max-width: 500px) {
+    .custom-events__banner {
+        padding: 1.25rem 1rem;
+    }
+
+    .custom-events__banner-text {
+        font-size: 1.05rem;
+        letter-spacing: 1px;
+    }
+
+    .custom-events__banner-dot {
+        margin: 0 0.35rem;
+    }
+
     .custom-events__content {
         padding: 2rem 1.25rem;
         gap: 1.25rem;
@@ -105,10 +146,6 @@
 
     .custom-events__eyebrow {
         font-size: 2.2rem;
-    }
-
-    .custom-events__tagline {
-        font-size: 1.1rem;
     }
 
     .custom-events__links {

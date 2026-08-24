@@ -1,6 +1,6 @@
 .highlights {
     background-color: var(--ps-whiter);
-    padding: 3.5rem 2rem;
+    padding: 2rem 2rem;
 }
 
 .highlights__list {
@@ -50,7 +50,7 @@
 
 @media screen and (max-width: 1024px) {
     .highlights {
-        padding: 3rem 1.25rem;
+        padding: 2rem 1.25rem;
     }
 
     .highlights__item {

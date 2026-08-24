@@ -11,9 +11,8 @@ const FilmPhotoSection = () => {
                     className="film-photo__image"
                     loading="lazy"
                 />
-                <div className="film-photo__scrim" aria-hidden="true"></div>
             </div>
-            <div className="film-photo__overlay">
+            <div className="film-photo__content">
                 <h2 className="film-photo__title">
                     Film and Photo Opportunities
                 </h2>

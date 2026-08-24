@@ -1,15 +1,23 @@
 .film-photo {
-    position: relative;
+    display: flex;
     max-width: 1400px;
     margin: 0 auto;
-    min-height: 70vh;
-    overflow: hidden;
+    background-color: var(--ps-whiter);
+}
+
+.film-photo__content {
+    flex: 1 1 55%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3rem 4rem;
+    text-align: left;
 }
 
 .film-photo__image-wrapper {
-    position: absolute;
-    inset: 0;
+    flex: 1 1 45%;
+    min-width: 0;
 }
 
 .film-photo__image {
@@ -19,51 +27,27 @@
     object-fit: cover;
 }
 
-.film-photo__scrim {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.75) 0%,
-        rgba(0, 0, 0, 0.35) 45%,
-        rgba(0, 0, 0, 0) 75%
-    );
-    pointer-events: none;
-}
-
-.film-photo__overlay {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    text-align: center;
-    padding: 3rem 2rem;
-}
-
 .film-photo__title {
     font-family: "Caveat", "Poiret One", cursive;
     font-weight: 700;
     font-size: 3rem;
     line-height: 1.1;
-    color: var(--ps-whiter);
-    margin: 0 0 0.5rem;
+    color: var(--ps-blue);
+    text-align: left;
+    margin: 0;
 }
 
 .film-photo__subtitle {
     font-family: "Playfair Display", Georgia, serif;
     font-style: italic;
     font-size: 1.3rem;
-    color: var(--ps-sand);
-    margin: 0 0 1.5rem;
+    color: var(--ps-terracotta);
+    margin: 0;
 }
 
 .film-photo__links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 1rem;
 }
 
@@ -72,59 +56,63 @@
     align-items: center;
     justify-content: center;
     padding: 0.75rem 1.75rem;
-    background-color: rgba(249, 247, 236, 0.1);
-    border: 1px solid var(--ps-whiter);
-    color: var(--ps-whiter);
+    background-color: var(--ps-sand);
+    border: 1px solid var(--ps-blue);
+    color: var(--ps-blue);
     font-family: Montserrat, sans-serif;
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.5px;
-    backdrop-filter: blur(2px);
     transition:
         background-color 0.25s ease,
         color 0.25s ease;
 }
 
 .film-photo__link:hover {
-    background-color: var(--ps-whiter);
-    color: var(--ps-blue);
+    background-color: var(--ps-blue);
+    color: var(--ps-whiter);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .film-photo {
-        min-height: 60vh;
+        flex-direction: column;
     }
 
-    .film-photo__overlay {
-        padding: 2.5rem 1.5rem;
+    .film-photo__image-wrapper {
+        flex: none;
+    }
+
+    .film-photo__image {
+        height: 50vh;
+        min-height: 320px;
+    }
+
+    .film-photo__content {
+        padding: 2.5rem 2rem;
     }
 
     .film-photo__title {
         font-size: 2.6rem;
     }
-
-    .film-photo__subtitle {
-        font-size: 1.1rem;
-    }
 }
 
 @media screen and (max-width: 500px) {
-    .film-photo {
-        min-height: 480px;
+    .film-photo__content {
+        padding: 2rem 1.25rem;
+        gap: 1.25rem;
     }
 
     .film-photo__title {
         font-size: 2.2rem;
     }
 
+    .film-photo__subtitle {
+        font-size: 1.1rem;
+    }
+
     .film-photo__links {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 100%;
-    }
-
-    .film-photo__link {
-        width: 100%;
     }
 
     .film-photo__link:nth-child(3) {

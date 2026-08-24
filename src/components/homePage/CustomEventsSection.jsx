@@ -8,10 +8,6 @@ const CustomEventsSection = () => {
                 <h2 className="custom-events__eyebrow">
                     Celebrations, dinners, receptions and branded gatherings
                 </h2>
-                <p className="custom-events__tagline">
-                    Custom Events &bull; Extraordinary Experiences &bull; Your
-                    Brand
-                </p>
                 <div className="custom-events__links">
                     <Link
                         to="/rental/privateevents"

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import PressQuote from "./PressQuote";
+import Highlights from "./Highlights";
 import "./AboutPreview.css";
 
 const AboutPreview = () => {
@@ -93,6 +94,7 @@ const AboutPreview = () => {
                     </Link>
                 </div>
             </div>
+            <Highlights />
             <PressQuote />
         </section>
     );

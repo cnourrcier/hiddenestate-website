@@ -129,10 +129,6 @@ const LocationPreview = () => {
                         className="location-preview__photo"
                         loading="lazy"
                     />
-                    <div
-                        className="location-preview__photo-scrim"
-                        aria-hidden="true"
-                    ></div>
                     <div className="location-preview__photo-text">
                         <h3>{markerInfo.name}</h3>
                         <p>{markerInfo.address}</p>
