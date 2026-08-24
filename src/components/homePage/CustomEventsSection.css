@@ -74,7 +74,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0.75rem 1.75rem;
+    padding: 0.75rem 1rem;
     background-color: var(--ps-sand);
     border: 1px solid var(--ps-blue);
     color: var(--ps-blue);
