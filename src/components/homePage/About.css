@@ -2,44 +2,33 @@
     min-height: 100dvh;
     max-width: 1400px;
     margin: auto;
-    padding: 1rem 2rem;
-    background-color: var(--ps-white);
+    background-color: var(--ps-whiter);
     color: var(--ps-blue);
-    font-family: "Playfair Display", Georgia, serif;
+    font-family: Montserrat, sans-serif;
     line-height: 1.6;
 }
 
 .about__heading {
-    font-size: 3rem;
-    line-height: 1.2;
-    color: var(--ps-terracotta);
-    letter-spacing: 2px;
-    text-align: center;
-    font-family: "Playfair Display", Georgia, serif;
+    font-family: "Caveat", "Poiret One", cursive;
     font-weight: 700;
-    margin: 0.5rem auto;
+    font-size: 3.6rem;
+    line-height: 1.2;
+    color: var(--ps-blue);
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin: 0 auto 0.5rem;
     text-transform: none;
     position: relative;
-    text-shadow: 1px 1px 2px var(--ps-light-shadow);
-}
-
-.about__heading::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    background: var(--ps-sand);
-    margin: 15px auto;
 }
 
 .about__subtitle {
     display: block;
-    font-size: 1.4rem;
-    color: var(--ps-green);
+    font-size: 1.2rem;
+    color: var(--ps-terracotta);
     margin-bottom: 2rem;
     margin-top: 0.3rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -47,7 +36,7 @@
 .about__content-wrapper {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 2rem;
+    gap: 1.5rem;
     margin-bottom: 2rem;
     align-items: start;
 }
@@ -55,17 +44,15 @@
 .about__content-image-container {
     grid-row-start: 1;
     grid-row-end: 3;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    border-radius: 0;
-    overflow: hidden;
-    aspect-ratio: 1;
+    width: 440px;
 }
 
 .about__image {
+    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     filter: sepia(10%);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
     transition: filter 0.3s ease;
 }
 
@@ -83,106 +70,77 @@
     line-height: 1.8;
 }
 
-.about__content-text p:nth-child(1) {
+.about__content-text p:not(:last-child) {
     margin-bottom: 1rem;
+}
+
+.about__highlight-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about__divider {
+    display: flex;
+    justify-content: center;
+}
+
+.about__squiggle {
+    display: block;
+    width: 180px;
+    height: 12px;
+    color: var(--ps-terracotta);
 }
 
 .about__content-highlight {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-weight: 400;
-    color: var(--ps-green);
-    font-style: italic;
+    color: var(--ps-blue);
+    font-family: "Caveat", "Poiret One", cursive;
     width: auto;
-    position: relative;
     text-align: center;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 
-.about__content-highlight::before,
-.about__content-highlight::after {
-    content: "";
-    display: block;
-    width: 150px;
-    height: 1px;
-    background: var(--ps-terracotta);
-    margin: 0 auto;
+.about__tags {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.about__content-highlight::before {
-    margin-bottom: 1rem;
-}
-
-.about__content-highlight::after {
-    margin-top: 1rem;
-}
-
-.about__quote {
+.about__tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.5rem;
     background-color: var(--ps-sand);
-    padding: 2.5rem 2rem;
-    font-style: italic;
-    position: relative;
-    margin: 3rem 0;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--ps-blue);
+    color: var(--ps-blue);
+    font-family: Montserrat, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease;
 }
 
-.about__quote p {
-    margin-bottom: 1rem;
-    line-height: 1.8;
-    position: relative;
-    color: var(--ps-dark-blue);
-    z-index: 1;
-}
-
-.about__quote-title {
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: var(--ps-dark-terracotta);
-}
-
-.about__quote-highlight {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    margin: 1.5rem 0;
-    font-size: 1.2rem;
-    text-align: center;
-    line-height: 1.8;
-}
-
-.about__quote span {
-    font-weight: bold;
-    color: var(--ps-terracotta);
-    border-bottom: 1px solid var(--ps-white);
-    padding-bottom: 2px;
-}
-
-.about__quote-source {
-    display: block;
-    text-align: right;
-    color: var(--ps-terracotta);
-    font-weight: bold;
-    margin-bottom: 1rem;
-    padding-right: 1rem;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    font-family: "Montserrat", sans-serif;
+.about__tag:hover {
+    background-color: var(--ps-blue);
+    color: var(--ps-whiter);
 }
 
 @media (max-width: 1050px) {
     .about__content-image-container {
-        aspect-ratio: 3/4;
-        max-width: 240px;
+        width: 320px;
     }
 }
 
-@media (max-width: 900px) {
-    .about__content-highlight {
-        width: 100%;
-        grid-column-start: 1;
-        grid-column-end: 4;
+@media (max-width: 992px) {
+    .about__content-wrapper {
+        margin-bottom: 0;
     }
 }
 
@@ -195,15 +153,11 @@
 @media (max-width: 768px) {
     .about__content-wrapper {
         display: block;
+        margin-bottom: 1rem;
     }
 
     .about__heading {
-        font-size: 2.4rem;
-        line-height: 1.2;
-    }
-
-    .about__heading::after {
-        margin: 20px auto;
+        font-size: 2.8rem;
     }
 
     .about__subtitle {
@@ -217,22 +171,30 @@
         margin-bottom: 1rem;
     }
 
-    .about__content-highlight {
-        margin: 2rem auto 0 auto;
+    .about__highlight-section {
+        clear: both;
     }
 }
 
 @media (max-width: 500px) {
-    .about {
-        padding: 1rem;
-    }
-
     .about__subtitle {
         font-size: 1.05rem;
         line-height: 1.4rem;
     }
 
     .about__content-image-container {
-        max-width: 200px;
+        width: 240px;
+    }
+
+    .about__content-text {
+        padding: 0 1rem;
+    }
+
+    .about__tags {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-width: 0;
+        width: 100%;
+        padding: 0 1.25rem;
     }
 }

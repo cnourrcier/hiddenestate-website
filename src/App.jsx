@@ -10,9 +10,7 @@ import LoadingFallback from "./components/common/LoadingFallback";
 import { ModalProvider } from "./context/ModalContext";
 
 // Lazy load all page components
-const NewHomePage = lazy(() => import("./pages/NewHomePage"));
 const HomePage = lazy(() => import("./pages/HomePage"));
-const HomePreviewPage = lazy(() => import("./pages/HomePreviewPage"));
 const HistoryPage = lazy(() => import("./pages/HistoryPage"));
 const GardensPage = lazy(() => import("./pages/GardensPage"));
 const CorporateEvents = lazy(() => import("./pages/rental/CorporateEvents"));
@@ -43,11 +41,6 @@ function App() {
                 <Suspense fallback={<LoadingFallback />}>
                     <Routes>
                         <Route path="/" element={<HomePage />} />
-                        <Route path="/new-home" element={<NewHomePage />} />
-                        <Route
-                            path="/home-preview"
-                            element={<HomePreviewPage />}
-                        />
                         <Route path="home/:slug" element={<HomePage />} />
                         <Route path="/history" element={<HistoryPage />} />
                         <Route

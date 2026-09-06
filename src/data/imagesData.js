@@ -883,32 +883,6 @@ export const homeImages = [
 ];
 
 /**
- * Home page images - src/components/homePage/ImageSection
- */
-export const homeSliderImages = [
-    {
-        id: 1,
-        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1741378878/Hidden%20Gable%20Estate/home%20page/_I1A0391_xn500l.jpg`,
-        alt: "Image 1",
-    },
-    {
-        id: 2,
-        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734804922/Hidden%20Gable%20Estate/home%20page/5750_y8gi72.jpg`,
-        alt: "Outdoor cabana seating area",
-    },
-    {
-        id: 3,
-        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734719452/Hidden%20Gable%20Estate/home%20page/5837_g7sld1.jpg`,
-        alt: "Saltwater pool with Outdoor Kitchen",
-    },
-    {
-        id: 4,
-        source: `https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1734719350/Hidden%20Gable%20Estate/home%20page/5742_mr4ibo.jpg`,
-        alt: "Interior living space with fireplace image 2",
-    },
-];
-
-/**
  * Swobdi modal images - src/components/historyPage/modalPages/Swobdi
  */
 export const swobdiImages = [

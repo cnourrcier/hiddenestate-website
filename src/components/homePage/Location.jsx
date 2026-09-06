@@ -39,8 +39,12 @@ const mapStyles = [
 ];
 
 const CustomMarker = ({ onClick }) => (
-    <div className="custom-marker" onClick={onClick}>
-        <MapPin className="icon" fill="rgba(255, 0, 0, 0.5)" stroke="red" />
+    <div className="location__marker" onClick={onClick}>
+        <MapPin
+            className="location__marker-icon"
+            fill="rgba(224, 122, 95, 0.45)"
+            stroke="currentColor"
+        />
     </div>
 );
 
@@ -54,8 +58,14 @@ const Location = () => {
 
     return (
         <section className="location">
-            <div className="location-content">
-                <div className="map-container">
+            <h2 className="location__heading">Find Your Way Here</h2>
+            <p className="location__subtitle">
+                Nestled in Old Las Palmas, Palm Springs&rsquo; most storied
+                neighborhood
+            </p>
+
+            <div className="location__content">
+                <div className="location__map-container">
                     <Map
                         initialViewState={initialViewLocation}
                         style={{ width: "100%", height: 400 }}
@@ -75,15 +85,15 @@ const Location = () => {
                                 longitude={popupInfo.longitude}
                                 latitude={popupInfo.latitude}
                                 closeOnClick={false}
-                                className="custom-popup"
+                                className="location__popup"
                             >
-                                <div className="popupInfo">
+                                <div className="location__popup-info">
                                     <img
                                         src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1725299251/Hidden%20Gable%20Estate/home%20page/_I1A0197m_2_oiuer9.jpg`}
-                                        alt="Property"
+                                        alt="Hidden Estate grounds"
                                         loading="lazy"
                                     />
-                                    <div className="popup-content">
+                                    <div className="location__popup-content">
                                         <h3>{popupInfo.name}</h3>
                                         <p>{popupInfo.address}</p>
                                     </div>
@@ -95,13 +105,15 @@ const Location = () => {
                         <FullscreenControl position="top-right" />
                         <GeolocateControl position="top-right" />
                     </Map>
-                    <div className="map-style-switcher">
-                        {mapStyles.map((style, index) => (
+                    <div className="location__style-switcher">
+                        {mapStyles.map(style => (
                             <button
-                                key={index}
+                                key={style.name}
                                 onClick={() => setCurrentStyle(style.url)}
                                 className={
-                                    currentStyle === style.url ? "active" : ""
+                                    currentStyle === style.url
+                                        ? "location__style-button location__style-button--active"
+                                        : "location__style-button"
                                 }
                             >
                                 {style.name}
@@ -110,30 +122,31 @@ const Location = () => {
                     </div>
                 </div>
 
-                <div className="side-content-container">
-                    <div className="side-content">
-                        <img
-                            src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1725299251/Hidden%20Gable%20Estate/home%20page/_I1A0197m_2_oiuer9.jpg`}
-                            alt="Property"
-                            loading="lazy"
-                        />
-                        <div className="side-content-text">
-                            <h3>{markerInfo.name}</h3>
-                            <p>{markerInfo.address}</p>
-                        </div>
+                <div className="location__photo-container">
+                    <img
+                        src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1725299251/Hidden%20Gable%20Estate/home%20page/_I1A0197m_2_oiuer9.jpg`}
+                        alt="Hidden Estate grounds near Old Las Palmas"
+                        className="location__photo"
+                        loading="lazy"
+                    />
+                    <div className="location__photo-text">
+                        <h3>{markerInfo.name}</h3>
+                        <p>{markerInfo.address}</p>
                     </div>
                 </div>
             </div>
-            <div className="location-description">
+
+            <div className="location__description">
                 <p>
-                    You'll be within a short walking distance of all the best
-                    dining and entertainment, nestled in{" "}
+                    You&rsquo;ll be within a short walking distance of all the
+                    best dining and entertainment, nestled in{" "}
                     <span>Old Las Palmas</span>, a premier neighborhood referred
-                    to as the <span>"Beverly Hills"</span> of Palm Springs. Rich
-                    in architecture and Hollywood history, this affluent
-                    neighborhood also holds estates belonging to well-known
-                    figures like Leonardo DiCaprio, Katherine Hepburn, Elizabeth
-                    Taylor, Dinah Shore, Liberace, Goldie Hawn and Kurt Russell.
+                    to as the <span>&ldquo;Beverly Hills&rdquo;</span> of Palm
+                    Springs. Rich in architecture and Hollywood history, this
+                    affluent neighborhood also holds estates belonging to
+                    well-known figures like Leonardo DiCaprio, Katherine
+                    Hepburn, Elizabeth Taylor, Dinah Shore, Liberace, Goldie
+                    Hawn and Kurt Russell.
                 </p>
             </div>
         </section>
