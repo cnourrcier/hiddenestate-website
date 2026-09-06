@@ -19,7 +19,7 @@ const Weddings = lazy(() => import("./pages/rental/Weddings"));
 const LuxuryVacationRental = lazy(
     () => import("./pages/rental/LuxuryVacationRental")
 );
-const PrivateTours = lazy(() => import("./pages/rental/PrivateTours"));
+const HistoricTours = lazy(() => import("./pages/rental/HistoricTours"));
 const DinnerParties = lazy(() => import("./pages/rental/DinnerParties"));
 const FilmLocation = lazy(() => import("./pages/rental/FilmLocation"));
 const EstatePage = lazy(() => import("./pages/galleries/EstatePage"));
@@ -30,6 +30,7 @@ const FoundationForPsusd2025 = lazy(
 const MediaPage = lazy(() => import("./pages/MediaPage"));
 const MissionPage = lazy(() => import("./pages/MissionPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
+const ComingSoonPage = lazy(() => import("./pages/ComingSoonPage"));
 
 function App() {
     return (
@@ -49,29 +50,42 @@ function App() {
                         />
                         <Route path="/gardens" element={<GardensPage />} />
                         <Route
-                            path="rental/corporateevents"
+                            path="/corporate-events"
                             element={<CorporateEvents />}
                         />
                         <Route
-                            path="rental/privateevents"
+                            path="/private-events"
                             element={<PrivateEvents />}
                         />
-                        <Route path="rental/weddings" element={<Weddings />} />
                         <Route
-                            path="rental/luxuryvacationrental"
+                            path="/palm-springs-weddings"
+                            element={<Weddings />}
+                        />
+                        <Route
+                            path="/luxury-vacation-rental"
                             element={<LuxuryVacationRental />}
                         />
                         <Route
-                            path="rental/privatetours"
-                            element={<PrivateTours />}
+                            path="/historic-tours"
+                            element={<HistoricTours />}
                         />
                         <Route
                             path="rental/dinnerparties"
                             element={<DinnerParties />}
                         />
                         <Route
-                            path="rental/filmlocation"
+                            path="/photo-film-location"
                             element={<FilmLocation />}
+                        />
+                        <Route
+                            path="/celebrations"
+                            element={<ComingSoonPage title="Celebrations" />}
+                        />
+                        <Route
+                            path="/nonprofit-charity-events"
+                            element={
+                                <ComingSoonPage title="Nonprofit and Charity Events" />
+                            }
                         />
                         <Route
                             path="/galleries/estate"
@@ -87,7 +101,7 @@ function App() {
                         />
                         <Route path="/media" element={<MediaPage />} />
                         <Route path="/mission" element={<MissionPage />} />
-                        <Route path="/contact" element={<ContactPage />} />
+                        <Route path="/inquire" element={<ContactPage />} />
                     </Routes>
                 </Suspense>
                 {import.meta.env.VITE_ENV === "development" && (

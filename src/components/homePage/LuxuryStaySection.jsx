@@ -22,7 +22,7 @@ const LuxuryStaySection = () => {
                 </div>
                 <div className="luxury-stay__links">
                     <Link
-                        to="/rental/luxuryvacationrental"
+                        to="/luxury-vacation-rental"
                         className="luxury-stay__link"
                     >
                         Explore the Stay

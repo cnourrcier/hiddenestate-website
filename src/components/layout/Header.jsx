@@ -8,11 +8,11 @@ const bookingUrl =
     "https://www.naturalretreats.com/property-detail-page?name=hidden-estate-7351";
 
 const Header = () => {
-    const [rentalMenuDropdown, setRentalMenuDropdown] = useState(false);
-    const [galleriesMenuDropdown, setGalleriesMenuDropdown] = useState(false);
+    const [eventsMenuDropdown, setEventsMenuDropdown] = useState(false);
+    const [estateMenuDropdown, setEstateMenuDropdown] = useState(false);
     const [mobileMenuDropdown, setMobileMenuDropdown] = useState(false);
-    const [mobileRentalOpen, setMobileRentalOpen] = useState(false);
-    const [mobileGalleriesOpen, setMobileGalleriesOpen] = useState(false);
+    const [mobileEventsOpen, setMobileEventsOpen] = useState(false);
+    const [mobileEstateOpen, setMobileEstateOpen] = useState(false);
     const [dimensions, setDimensions] = useState({
         width: window.innerWidth,
         height: window.innerHeight,
@@ -126,135 +126,114 @@ const Header = () => {
                             : "hidden"
                     }
                 >
-                    <Link to="/" className="tab">
-                        Home
-                    </Link>
-                    <Link to="/history" className="tab">
-                        History
-                    </Link>
-                    <Link to="/gardens" className="tab">
-                        Gardens
+                    <Link to="/palm-springs-weddings" className="tab">
+                        Weddings
                     </Link>
                     <div
                         onMouseEnter={handleDropdownToggle(
-                            setRentalMenuDropdown,
+                            setEventsMenuDropdown,
                             true
                         )}
                         onMouseLeave={handleDropdownToggle(
-                            setRentalMenuDropdown,
+                            setEventsMenuDropdown,
                             false
                         )}
                         className="dropdown-container"
                     >
                         <div className="tab">
-                            <p>Rental</p>
+                            <p>Events</p>
                         </div>
                         <div
-                            className={`menu-dropdown ${rentalMenuDropdown ? "rental-dropdown show" : ""}`}
+                            className={`menu-dropdown ${eventsMenuDropdown ? "events-dropdown show" : ""}`}
                         >
                             <ul className="dropdown-list">
                                 <li>
+                                    <Link to="/private-events" className="tab">
+                                        Private Events
+                                    </Link>
+                                </li>
+                                <li>
                                     <Link
-                                        to="/rental/corporateevents"
+                                        to="/corporate-events"
                                         className="tab"
                                     >
                                         Corporate Events
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link
-                                        to="/rental/privateevents"
-                                        className="tab"
-                                    >
-                                        Private Events
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/rental/weddings" className="tab">
-                                        Weddings
+                                    <Link to="/celebrations" className="tab">
+                                        Celebrations
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        to="/rental/luxuryvacationrental"
+                                        to="/nonprofit-charity-events"
                                         className="tab"
                                     >
-                                        Luxury Vacation Rental
+                                        Nonprofit and Charity Events
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link
-                                        to="/rental/privatetours"
-                                        className="tab"
-                                    >
-                                        Private Tours
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        to="/rental/dinnerparties"
-                                        className="tab"
-                                    >
-                                        Dinner Parties
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        to="/rental/filmlocation"
-                                        className="tab"
-                                    >
-                                        Film Location
+                                    <Link to="/historic-tours" className="tab">
+                                        Historic Tours
                                     </Link>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    <Link to="/photo-film-location" className="tab">
+                        Photo + Film
+                    </Link>
+                    <Link to="/luxury-vacation-rental" className="tab">
+                        Stay
+                    </Link>
                     <div
                         onMouseEnter={handleDropdownToggle(
-                            setGalleriesMenuDropdown,
+                            setEstateMenuDropdown,
                             true
                         )}
                         onMouseLeave={handleDropdownToggle(
-                            setGalleriesMenuDropdown,
+                            setEstateMenuDropdown,
                             false
                         )}
                         className="dropdown-container"
                     >
                         <div className="tab">
-                            <p>Galleries</p>
+                            <p>The Estate</p>
                         </div>
                         <div
-                            className={`menu-dropdown ${galleriesMenuDropdown ? "galleries-dropdown show" : ""}`}
+                            className={`menu-dropdown ${estateMenuDropdown ? "estate-dropdown show" : ""}`}
                         >
                             <ul className="dropdown-list">
+                                <li>
+                                    <Link to="/history" className="tab">
+                                        History
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/history" className="tab">
+                                        Architecture
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/gardens" className="tab">
+                                        Gardens
+                                    </Link>
+                                </li>
                                 <li>
                                     <Link
                                         to="/galleries/estate"
                                         className="tab"
                                     >
-                                        Estate
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        to="/galleries/events"
-                                        className="tab"
-                                    >
-                                        Events
+                                        Gallery
                                     </Link>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <Link to="/media" className="tab">
-                        Media
-                    </Link>
-                    <Link to="/mission" className="tab">
-                        Our Mission
-                    </Link>
-                    <Link to="/contact" className="tab">
-                        Contact Us
+                    <Link to="/inquire" className="tab">
+                        Inquire
                     </Link>
                 </div>
                 <div
@@ -306,61 +285,33 @@ const Header = () => {
                                 <li>
                                     <Link
                                         onClick={handleClick}
-                                        to="/"
+                                        to="/palm-springs-weddings"
                                         className="tab"
                                     >
-                                        Home
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        onClick={handleClick}
-                                        to="/history"
-                                        className="tab"
-                                    >
-                                        History
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        onClick={handleClick}
-                                        to="/gardens"
-                                        className="tab"
-                                    >
-                                        Gardens
+                                        Weddings
                                     </Link>
                                 </li>
                                 <li className="mobile-submenu-container">
                                     <div
                                         onClick={toggleMobileSubmenu(
-                                            setMobileRentalOpen
+                                            setMobileEventsOpen
                                         )}
                                         className="tab mobile-submenu-toggle"
                                     >
-                                        <span>Rental</span>
-                                        {mobileRentalOpen ? (
+                                        <span>Events</span>
+                                        {mobileEventsOpen ? (
                                             <ChevronUp size={18} />
                                         ) : (
                                             <ChevronDown size={18} />
                                         )}
                                     </div>
                                     <ul
-                                        className={`mobile-submenu ${mobileRentalOpen ? "open" : ""}`}
+                                        className={`mobile-submenu ${mobileEventsOpen ? "open" : ""}`}
                                     >
                                         <li>
                                             <Link
                                                 onClick={handleClick}
-                                                to="/rental/corporateevents"
-                                                className="tab"
-                                            >
-                                                Corporate Events
-                                            </Link>
-                                        </li>
-                                        <div className="divider-line"></div>
-                                        <li>
-                                            <Link
-                                                onClick={handleClick}
-                                                to="/rental/privateevents"
+                                                to="/private-events"
                                                 className="tab"
                                             >
                                                 Private Events
@@ -370,88 +321,116 @@ const Header = () => {
                                         <li>
                                             <Link
                                                 onClick={handleClick}
-                                                to="/rental/weddings"
+                                                to="/corporate-events"
                                                 className="tab"
                                             >
-                                                Weddings
+                                                Corporate Events
                                             </Link>
                                         </li>
                                         <div className="divider-line"></div>
                                         <li>
                                             <Link
                                                 onClick={handleClick}
-                                                to="/rental/luxuryvacationrental"
+                                                to="/celebrations"
                                                 className="tab"
                                             >
-                                                Luxury Vacation Rental
+                                                Celebrations
                                             </Link>
                                         </li>
                                         <div className="divider-line"></div>
                                         <li>
                                             <Link
                                                 onClick={handleClick}
-                                                to="/rental/privatetours"
+                                                to="/nonprofit-charity-events"
                                                 className="tab"
                                             >
-                                                Private Tours
+                                                Nonprofit and Charity Events
                                             </Link>
                                         </li>
                                         <div className="divider-line"></div>
                                         <li>
                                             <Link
                                                 onClick={handleClick}
-                                                to="/rental/dinnerparties"
+                                                to="/historic-tours"
                                                 className="tab"
                                             >
-                                                Dinner Parties
-                                            </Link>
-                                        </li>
-                                        <div className="divider-line"></div>
-                                        <li>
-                                            <Link
-                                                onClick={handleClick}
-                                                to="/rental/filmlocation"
-                                                className="tab"
-                                            >
-                                                Film Location
+                                                Historic Tours
                                             </Link>
                                         </li>
                                     </ul>
                                 </li>
+                                <li>
+                                    <Link
+                                        onClick={handleClick}
+                                        to="/photo-film-location"
+                                        className="tab"
+                                    >
+                                        Photo + Film
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        onClick={handleClick}
+                                        to="/luxury-vacation-rental"
+                                        className="tab"
+                                    >
+                                        Stay
+                                    </Link>
+                                </li>
                                 <li className="mobile-submenu-container">
                                     <div
                                         onClick={toggleMobileSubmenu(
-                                            setMobileGalleriesOpen
+                                            setMobileEstateOpen
                                         )}
                                         className="tab mobile-submenu-toggle"
                                     >
-                                        <span>Galleries</span>
-                                        {mobileGalleriesOpen ? (
+                                        <span>The Estate</span>
+                                        {mobileEstateOpen ? (
                                             <ChevronUp size={18} />
                                         ) : (
                                             <ChevronDown size={18} />
                                         )}
                                     </div>
                                     <ul
-                                        className={`mobile-submenu ${mobileGalleriesOpen ? "open" : ""}`}
+                                        className={`mobile-submenu ${mobileEstateOpen ? "open" : ""}`}
                                     >
                                         <li>
                                             <Link
                                                 onClick={handleClick}
-                                                to="/galleries/estate"
+                                                to="/history"
                                                 className="tab"
                                             >
-                                                Estate
+                                                History
                                             </Link>
                                         </li>
                                         <div className="divider-line"></div>
                                         <li>
                                             <Link
                                                 onClick={handleClick}
-                                                to="/galleries/events"
+                                                to="/history"
                                                 className="tab"
                                             >
-                                                Events
+                                                Architecture
+                                            </Link>
+                                        </li>
+                                        <div className="divider-line"></div>
+                                        <li>
+                                            <Link
+                                                onClick={handleClick}
+                                                to="/gardens"
+                                                className="tab"
+                                            >
+                                                Gardens
+                                            </Link>
+                                        </li>
+                                        <div className="divider-line"></div>
+                                        <li>
+                                            <Link
+                                                onClick={handleClick}
+                                                to="/galleries/estate"
+                                                className="tab"
+                                            >
+                                                Gallery
                                             </Link>
                                         </li>
                                     </ul>
@@ -459,28 +438,10 @@ const Header = () => {
                                 <li>
                                     <Link
                                         onClick={handleClick}
-                                        to="/media"
+                                        to="/inquire"
                                         className="tab"
                                     >
-                                        Media
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        onClick={handleClick}
-                                        to="/mission"
-                                        className="tab"
-                                    >
-                                        Our Mission
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        onClick={handleClick}
-                                        to="/contact"
-                                        className="tab"
-                                    >
-                                        Contact Us
+                                        Inquire
                                     </Link>
                                 </li>
                             </ul>

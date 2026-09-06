@@ -6,7 +6,7 @@ const PrivateEvents = () => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate("/contact");
+        navigate("/inquire");
     };
 
     const privateVenueList = [

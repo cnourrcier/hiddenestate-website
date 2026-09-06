@@ -2,11 +2,11 @@ import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import "./Rental.css";
 
-const PrivateTours = () => {
+const HistoricTours = () => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate("/contact");
+        navigate("/inquire");
     };
 
     const privateTourFeatureList = [
@@ -65,7 +65,7 @@ const PrivateTours = () => {
     return (
         <main className="rental">
             <Helmet>
-                <title>Palm Springs Private Tours</title>
+                <title>Palm Springs Historic Tours</title>
             </Helmet>
 
             <div className="rental__hero-banner">
@@ -81,7 +81,7 @@ const PrivateTours = () => {
                 <section className="rental__primary-section">
                     <div className="rental__header">
                         <h1>
-                            Private Tours – Palm Springs Celebrity & Spanish
+                            Historic Tours – Palm Springs Celebrity & Spanish
                             Architecture Experience
                         </h1>
                         <h2>
@@ -210,4 +210,4 @@ const PrivateTours = () => {
     );
 };
 
-export default PrivateTours;
+export default HistoricTours;

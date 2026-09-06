@@ -160,11 +160,15 @@
     z-index: 999;
 }
 
-.rental-dropdown,
-.galleries-dropdown {
+.events-dropdown,
+.estate-dropdown {
     padding: 0 1rem;
     left: -15px;
     width: 12rem;
+}
+
+.events-dropdown {
+    width: 17rem;
 }
 
 .mobile {

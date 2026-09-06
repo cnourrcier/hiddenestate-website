@@ -38,7 +38,7 @@ const WeddingsSection = () => {
                 </div>
                 <div className="weddings-section__actions">
                     <Link
-                        to="/rental/weddings"
+                        to="/palm-springs-weddings"
                         className="weddings-section__button weddings-section__button--outline"
                     >
                         Explore Weddings

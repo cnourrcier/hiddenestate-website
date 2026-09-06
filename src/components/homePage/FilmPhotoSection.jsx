@@ -21,7 +21,7 @@ const FilmPhotoSection = () => {
                 </p>
                 <div className="film-photo__links">
                     <Link
-                        to="/rental/filmlocation"
+                        to="/photo-film-location"
                         className="film-photo__link"
                     >
                         Film Location

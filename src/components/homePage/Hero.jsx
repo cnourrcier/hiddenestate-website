@@ -37,24 +37,24 @@ const Hero = () => {
 
                 <div className="hero-actions">
                     <div className="hero-buttons">
-                        <Link to="/rental/weddings" className="hero-button">
-                            Explore Weddings
-                        </Link>
                         <Link
-                            to="/rental/privateevents"
+                            to="/palm-springs-weddings"
                             className="hero-button"
                         >
+                            Explore Weddings
+                        </Link>
+                        <Link to="/private-events" className="hero-button">
                             Plan an Event
                         </Link>
                     </div>
 
                     <div className="hero-links">
-                        <Link to="/rental/filmlocation" className="hero-link">
+                        <Link to="/photo-film-location" className="hero-link">
                             Photo + Film
                             <ArrowRight size={18} strokeWidth={2} />
                         </Link>
-                        <Link to="/rental/privatetours" className="hero-link">
-                            Private Tour/Dinner
+                        <Link to="/historic-tours" className="hero-link">
+                            Historic Tour/Dinner
                             <ArrowRight size={18} strokeWidth={2} />
                         </Link>
                     </div>

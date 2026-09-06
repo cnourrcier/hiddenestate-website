@@ -6,7 +6,7 @@ const CorporateEvents = () => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate("/contact");
+        navigate("/inquire");
     };
 
     const corporateActivityList = [

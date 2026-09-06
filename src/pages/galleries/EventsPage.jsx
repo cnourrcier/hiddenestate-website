@@ -35,17 +35,14 @@ const EventsPage = () => {
 
                 <div className="right-column">
                     <div className="event-links">
-                        <Link
-                            to="/rental/corporateevents"
-                            className="event-link"
-                        >
+                        <Link to="/corporate-events" className="event-link">
                             Corporate Events
                         </Link>
-                        <Link to="/rental/privateevents" className="event-link">
+                        <Link to="/private-events" className="event-link">
                             Private Events
                         </Link>
-                        <Link to="/rental/privatetours" className="event-link">
-                            Private Tours
+                        <Link to="/historic-tours" className="event-link">
+                            Historic Tours
                         </Link>
                     </div>
 

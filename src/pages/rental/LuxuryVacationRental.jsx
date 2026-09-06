@@ -8,7 +8,7 @@ const LuxuryVacationRental = () => {
     const galleryRef = useRef(null);
 
     const handleClick = () => {
-        navigate("/contact");
+        navigate("/inquire");
     };
 
     const handleScrollLeft = () => {

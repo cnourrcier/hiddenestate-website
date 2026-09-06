@@ -9,10 +9,7 @@ const CustomEventsSection = () => {
                     Celebrations, dinners, receptions and branded gatherings
                 </h2>
                 <div className="custom-events__links">
-                    <Link
-                        to="/rental/privateevents"
-                        className="custom-events__link"
-                    >
+                    <Link to="/private-events" className="custom-events__link">
                         Plan an Event
                     </Link>
                     <Link
@@ -21,11 +18,8 @@ const CustomEventsSection = () => {
                     >
                         Dinner Parties
                     </Link>
-                    <Link
-                        to="/rental/privatetours"
-                        className="custom-events__link"
-                    >
-                        Private Tours
+                    <Link to="/historic-tours" className="custom-events__link">
+                        Historic Tours
                     </Link>
                 </div>
             </div>

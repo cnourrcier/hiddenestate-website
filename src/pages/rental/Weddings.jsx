@@ -6,7 +6,7 @@ const Weddings = () => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate("/contact");
+        navigate("/inquire");
     };
 
     const weddingAccomodationList = [

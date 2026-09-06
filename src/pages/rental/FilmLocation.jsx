@@ -6,7 +6,7 @@ const FilmLocation = () => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate("/contact");
+        navigate("/inquire");
     };
 
     const filmLocationFeatureList = [
