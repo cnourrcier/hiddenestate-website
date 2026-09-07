@@ -161,19 +161,6 @@ const Header = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/celebrations" className="tab">
-                                        Celebrations
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        to="/nonprofit-charity-events"
-                                        className="tab"
-                                    >
-                                        Nonprofit and Charity Events
-                                    </Link>
-                                </li>
-                                <li>
                                     <Link to="/historic-tours" className="tab">
                                         Historic Tours
                                     </Link>
@@ -325,26 +312,6 @@ const Header = () => {
                                                 className="tab"
                                             >
                                                 Corporate Events
-                                            </Link>
-                                        </li>
-                                        <div className="divider-line"></div>
-                                        <li>
-                                            <Link
-                                                onClick={handleClick}
-                                                to="/celebrations"
-                                                className="tab"
-                                            >
-                                                Celebrations
-                                            </Link>
-                                        </li>
-                                        <div className="divider-line"></div>
-                                        <li>
-                                            <Link
-                                                onClick={handleClick}
-                                                to="/nonprofit-charity-events"
-                                                className="tab"
-                                            >
-                                                Nonprofit and Charity Events
                                             </Link>
                                         </li>
                                         <div className="divider-line"></div>

@@ -30,7 +30,6 @@ const FoundationForPsusd2025 = lazy(
 const MediaPage = lazy(() => import("./pages/MediaPage"));
 const MissionPage = lazy(() => import("./pages/MissionPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
-const ComingSoonPage = lazy(() => import("./pages/ComingSoonPage"));
 
 function App() {
     return (
@@ -76,16 +75,6 @@ function App() {
                         <Route
                             path="/photo-film-location"
                             element={<FilmLocation />}
-                        />
-                        <Route
-                            path="/celebrations"
-                            element={<ComingSoonPage title="Celebrations" />}
-                        />
-                        <Route
-                            path="/nonprofit-charity-events"
-                            element={
-                                <ComingSoonPage title="Nonprofit and Charity Events" />
-                            }
                         />
                         <Route
                             path="/galleries/estate"
