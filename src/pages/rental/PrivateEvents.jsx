@@ -30,7 +30,6 @@ const PrivateEvents = () => {
     ];
 
     const privateRecreationList = [
-        "Pickleball & Bocce Ball",
         "Swimming Pool & Hot Tub",
         "Outdoor BBQ & Dining",
     ];

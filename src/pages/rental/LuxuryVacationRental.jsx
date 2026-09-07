@@ -37,7 +37,6 @@ const LuxuryVacationRental = () => {
         "3,300 sq-ft of living space on a private 1-acre gated estate",
         "Centrally located -- walk to downtown Palm Springs dining & entertainment",
         "Lush gardens, citrus trees & stunning mountain views",
-        "Private Pickleball Court & Bocce Ball Area",
         "Expansive Saltwater Pool & Spa",
         "Poolside Cabana with BBQ, Outdoor Kitchen & Firepit",
         "Play on Kirk Douglas's handcrafted pool table",
@@ -58,7 +57,6 @@ const LuxuryVacationRental = () => {
 
     const activityList = [
         "Take a refreshing dip in the saltwater pool & spa",
-        "Host a friendly pickleball match on your private court",
         "Relax in the poolside cabana with a BBQ & outdoor kitchen",
         "Unwind by the firepit under a starry desert sky",
         "Enjoy an alfresco meal surrounded by lush gardens",
@@ -126,7 +124,7 @@ const LuxuryVacationRental = () => {
                             </em>
                         </h2>
                         <p className="rental__tagline">
-                            "Let's Play Pickleball!"
+                            "Live Like a Movie Star, if only for a weekend"
                         </p>
                         <p>
                             Lush gardens | 100-year-old olive trees | Towering
@@ -152,8 +150,8 @@ const LuxuryVacationRental = () => {
                             Embraced by breathtaking mountain views, this
                             secluded, gated estate is thoughtfully curated with
                             exquisite period furnishings, lush landscaping, and
-                            modern amenities, including a private pickleball
-                            court, large saltwater pool, and a charming casita.
+                            modern amenities, including a large saltwater pool
+                            and a charming casita.
                         </p>
                     </div>
 

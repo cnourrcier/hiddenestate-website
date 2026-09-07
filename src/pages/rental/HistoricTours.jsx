@@ -41,7 +41,7 @@ const HistoricTours = () => {
             emoji: "🍸",
             detail: "Enhance Your Experience",
             description:
-                "Customize your tour with cocktail hours, pickleball, lunch, or dinner (indoors or outdoors).",
+                "Customize your tour with cocktail hours, lunch, or dinner (indoors or outdoors).",
         },
     ];
 

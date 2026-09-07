@@ -5,7 +5,7 @@ import "./Header.css";
 
 const widthLimit = 1285;
 const bookingUrl =
-    "https://www.naturalretreats.com/property-detail-page?name=hidden-estate-7351";
+    "https://www.naturalretreats.com/destinations/palm-springs/city-of-palm-springs/properties/hidden-estate-446";
 
 const Header = () => {
     const [eventsMenuDropdown, setEventsMenuDropdown] = useState(false);

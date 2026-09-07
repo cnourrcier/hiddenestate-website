@@ -5,7 +5,7 @@ import "./ContactPage.css";
 
 const website = window.location.hostname;
 const bookingUrl =
-    "https://www.naturalretreats.com/property-detail-page?name=hidden-estate-7351";
+    "https://www.naturalretreats.com/destinations/palm-springs/city-of-palm-springs/properties/hidden-estate-446";
 
 const ContactPage = () => {
     const [formData, setFormData] = useState({

@@ -26,7 +26,6 @@ const CorporateEvents = () => {
     ];
 
     const corporateRecreationList = [
-        "Pickleball & Bocce Ball",
         "Swimming Pool & Hot Tub",
         "Outdoor BBQ & Dining",
     ];
