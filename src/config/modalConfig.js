@@ -20,10 +20,8 @@ export const MODAL_COMPONENTS = {
     SharCracraft: lazy(
         () => import("../components/historyPage/modalPages/SharCracraft")
     ),
-    ClaudeMonet: lazy(() => import("../components/historyPage/ClaudeMonet")),
 };
 
-export const IMAGE_MAP = {
-    claudeMonetInspiration: () =>
-        import("../assets/claude-monet-inspiration.svg"),
-};
+// Maps an item's `source` string to a lazy import for bundled (local) images.
+// Currently empty: every modal image is hosted on a CDN.
+export const IMAGE_MAP = {};

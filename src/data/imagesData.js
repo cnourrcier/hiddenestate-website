@@ -859,30 +859,6 @@ export const historyImages = [
 ];
 
 /**
- * Home page images - src/components/homePage/ImageSection
- */
-export const homeImages = [
-    {
-        id: "home-1",
-        source: "claude-monet-inspiration.svg",
-        alt: "Claude Monet painting that inspired Hidden Estate",
-        titles: {
-            galleryTitle: ["Claude Monet Inspiration"],
-            htmlTitle: "Claude Monet Inspiration",
-            modalTitle: "Claude Monet Inspiration",
-        },
-        navigation: {
-            slug: "monet-inspiration",
-            pageRoute: "home",
-        },
-        interaction: {
-            clickable: true,
-            modalComponent: "ClaudeMonet",
-        },
-    },
-];
-
-/**
  * Swobdi modal images - src/components/historyPage/modalPages/Swobdi
  */
 export const swobdiImages = [
@@ -1146,9 +1122,10 @@ export const historicalGardenImages = [
 ];
 
 /**
- * Combined array of all modal items - can be used for searching, filtering, etc.
+ * All items that can open a modal from a URL slug - can be used for
+ * searching, filtering, etc.
  */
-export const allModalItems = [...historyImages, ...homeImages];
+export const allModalItems = historyImages;
 
 /**
  * Get a modal item by slug
