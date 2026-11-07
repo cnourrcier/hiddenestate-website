@@ -1,13 +1,7 @@
+import { Link } from "react-router-dom";
 import "./ArchitectHighlight.css";
-import { useModal } from "../../context/ModalContext";
 
 const ArchitectHighlight = () => {
-    const { openModal } = useModal();
-
-    const handleImageClick = () => {
-        openModal("mcneal-swasey");
-    };
-
     return (
         <section className="master-architect__container">
             <div className="master-architect__text-container">
@@ -18,12 +12,12 @@ const ArchitectHighlight = () => {
                 </p>
             </div>
             <div className="master-architect__img-container">
-                <img
-                    src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735402995/Hidden%20Gable%20Estate/history%20page/MasterArchitect_xk0htu.jpg`}
-                    onClick={handleImageClick}
-                    style={{ cursor: "pointer" }}
-                    alt="Master Architect McNeal Swasey"
-                />
+                <Link to="/architecture">
+                    <img
+                        src={`https://res.cloudinary.com/${import.meta.env.VITE_CLOUDINARY_PRODUCT_ENV}/image/upload/v1735402995/Hidden%20Gable%20Estate/history%20page/MasterArchitect_xk0htu.jpg`}
+                        alt="Master Architect McNeal Swasey"
+                    />
+                </Link>
                 <p>(Click image to view more!)</p>
             </div>
         </section>

@@ -40,7 +40,7 @@ const Footer = () => {
                         Carol Lombard
                     </Link>
                     <Link to="/history/doris-fleeson">Doris Fleeson</Link>
-                    <Link to="/history/mcneal-swasey">McNeal Swasey</Link>
+                    <Link to="/architecture">McNeal Swasey</Link>
                     <Link to="/history/shar-cracraft">Shar Cracraft</Link>
                     <Link to="/history">Joel Douglas</Link>
                     <Link to="/history">Bing Crosby</Link>

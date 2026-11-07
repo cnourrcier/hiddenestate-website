@@ -89,7 +89,7 @@ const About = () => {
                     <Link to="/history" className="about__tag">
                         History
                     </Link>
-                    <Link to="/galleries/estate" className="about__tag">
+                    <Link to="/architecture" className="about__tag">
                         Architecture
                     </Link>
                 </div>

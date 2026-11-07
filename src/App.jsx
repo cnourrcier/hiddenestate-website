@@ -13,6 +13,7 @@ import { ModalProvider } from "./context/ModalContext";
 const HomePage = lazy(() => import("./pages/HomePage"));
 const HistoryPage = lazy(() => import("./pages/HistoryPage"));
 const GardensPage = lazy(() => import("./pages/GardensPage"));
+const ArchitecturePage = lazy(() => import("./pages/ArchitecturePage"));
 const CorporateEvents = lazy(() => import("./pages/rental/CorporateEvents"));
 const PrivateEvents = lazy(() => import("./pages/rental/PrivateEvents"));
 const Weddings = lazy(() => import("./pages/rental/Weddings"));
@@ -48,6 +49,10 @@ function App() {
                             element={<HistoryPage />}
                         />
                         <Route path="/gardens" element={<GardensPage />} />
+                        <Route
+                            path="/architecture"
+                            element={<ArchitecturePage />}
+                        />
                         <Route
                             path="/corporate-events"
                             element={<CorporateEvents />}

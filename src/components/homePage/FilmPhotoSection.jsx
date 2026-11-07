@@ -26,7 +26,7 @@ const FilmPhotoSection = () => {
                     >
                         Film Location
                     </Link>
-                    <Link to="/galleries/estate" className="film-photo__link">
+                    <Link to="/architecture" className="film-photo__link">
                         Architecture
                     </Link>
                     <Link to="/history" className="film-photo__link">

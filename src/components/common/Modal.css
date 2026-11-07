@@ -19,6 +19,15 @@
 
   .modal-overlay.simple .modal-container {
     all:unset;
+    /* `all: unset` resets box-sizing, so the padding below would otherwise
+       be added on top of max-height */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    /* Never taller than the screen, so the header and close button always
+       stay visible; the image shrinks to fit the space that is left. */
+    max-height: 100%;
     background-color: rgba(249, 247, 236, 0.1);
     padding: 0 2rem 2rem 2rem;
   }
@@ -38,6 +47,7 @@
 
   .modal-overlay.simple .modal-header {
     background-color: unset;
+    flex: none;
     /* background-color: rgba(249, 247, 236, 0.1); */
   }
   
@@ -71,6 +81,22 @@
     padding-top: 1rem;
     max-width: 90vw;
     object-fit: contain;
+  }
+
+  /* Image-only lightbox: lets a tall image shrink to the height of the screen
+     (min-height: 0 is what allows flex items to shrink below their content) */
+  .modal-overlay.simple .modal-image-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 auto;
+    min-height: 0;
+  }
+
+  .modal-overlay.simple .modal-image {
+    flex: 0 1 auto;
+    min-height: 0;
+    max-width: 100%;
   }
 
   @media (max-width: 1024px) {

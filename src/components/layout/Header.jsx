@@ -198,7 +198,7 @@ const Header = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/history" className="tab">
+                                    <Link to="/architecture" className="tab">
                                         Architecture
                                     </Link>
                                 </li>
@@ -374,7 +374,7 @@ const Header = () => {
                                         <li>
                                             <Link
                                                 onClick={handleClick}
-                                                to="/history"
+                                                to="/architecture"
                                                 className="tab"
                                             >
                                                 Architecture

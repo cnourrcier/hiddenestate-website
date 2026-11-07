@@ -49,7 +49,7 @@ const Modal = ({
                 {item.modalComponent ? (
                     <item.modalComponent />
                 ) : (
-                    <div className="modal-content">
+                    <div className="modal-image-content">
                         <img
                             src={item.source}
                             alt={item.alt}
