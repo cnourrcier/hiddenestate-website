@@ -1,5 +1,9 @@
 .history {
     padding: 130px 2rem 60px 2rem;
+    /* Safety net: if any section ever spills past the screen edge, clip it
+       instead of letting the browser widen/zoom out the entire page (what
+       iOS Safari does). `clip` (unlike `hidden`) creates no scroll container. */
+    overflow-x: clip;
 }
 
 .history__title {
@@ -89,5 +93,12 @@
 @media (max-width: 500px) {
     .history {
         padding: 130px 0 60px 0;
+    }
+
+    /* .history has no side padding here, so give the bottom gallery its own
+       gutter or its photos run edge to edge on tall phones */
+    .bottom-history__container {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }

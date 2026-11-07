@@ -15,7 +15,9 @@
 /* Grid style gallery layout */
 .image-gallery-wrapper.grid-style {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    /* min(400px, 100%) lets the column shrink below 400px on narrow phones
+       instead of forcing the grid (and the whole page) wider than the screen */
+    grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
     width: 100%;
     max-width: 1000px;
     gap: 3rem;
@@ -102,12 +104,21 @@
 .image-gallery-wrapper.fun-style .img-wrapper:hover,
 .image-gallery-wrapper.fun-style .img-wrapper:focus {
     transform: rotate(0deg);
-    margin: 0 2rem;
 }
 
-.image-gallery-wrapper.grid-style .img-wrapper:hover,
-.image-gallery-wrapper.grid-style .img-wrapper:focus {
-    transform: rotate(0deg) scale(1.05);
+/* The layout-changing hover effects (extra margin, scale-up) only apply on
+   devices that really hover. On touch screens :hover/:focus "sticks" after a
+   tap, which would permanently widen the gallery past the screen edge. */
+@media (hover: hover) {
+    .image-gallery-wrapper.fun-style .img-wrapper:hover,
+    .image-gallery-wrapper.fun-style .img-wrapper:focus {
+        margin: 0 2rem;
+    }
+
+    .image-gallery-wrapper.grid-style .img-wrapper:hover,
+    .image-gallery-wrapper.grid-style .img-wrapper:focus {
+        transform: rotate(0deg) scale(1.05);
+    }
 }
 
 .img-wrapper:hover .fun-style-overlay,
@@ -126,12 +137,16 @@
 
 /* Gallery images - size by style */
 .image-gallery-wrapper.fun-style .img-gallery-img {
-    max-width: 39vh;
+    /* 4 images sit in one row, so also cap the width by the viewport width.
+       Height-only sizing (vh) overflows on wide-but-short screens such as
+       iPads in landscape. */
+    max-width: min(39vh, calc(25vw - 1rem));
     max-height: 44vh;
 }
 
 .image-gallery-wrapper.grid-style .img-gallery-img {
-    max-width: 65vh;
+    /* Never wider than the grid column, regardless of how tall the screen is */
+    max-width: min(65vh, 100%);
     max-height: 60vh;
 }
 
@@ -159,16 +174,26 @@
 }
 
 @media (max-width: 670px) {
+    /* 2x2 collage. This used to be a column-wrapping flexbox with a fixed
+       max-height and vh-sized images: on tall phones (iPhone Plus / Pro Max)
+       the images no longer fit two-per-column, so the flex lines wrapped
+       sideways and pushed the page far past the right edge of the screen.
+       A width-based grid cannot do that, whatever the screen height. */
     .image-gallery-wrapper.fun-style {
-        flex-direction: column;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        justify-items: center;
         align-items: center;
-        padding-top: 2rem;
-        max-height: 450px;
-        max-width: 395px;
-        flex-wrap: wrap;
         width: 100%;
-        height: 100%;
+        max-width: 400px;
+        /* side padding leaves room for the rotated corners */
+        padding: 2rem 1.25rem 0;
+    }
+
+    .image-gallery-wrapper.fun-style .img-wrapper {
+        width: 100%;
+        margin: 0;
     }
 
     .img-wrapper .fun-style-overlay {
@@ -179,8 +204,10 @@
     }
 
     .image-gallery-wrapper.fun-style .img-gallery-img {
-        max-width: 26vh;
-        max-height: 31vh;
+        width: 100%;
+        max-width: 100%;
+        max-height: none;
+        height: auto;
     }
 
     .image-gallery-wrapper.fun-style .img-wrapper:nth-child(2) {
@@ -211,30 +238,10 @@
 }
 
 @media (max-width: 500px) {
-    .image-gallery-wrapper.fun-style {
-        max-width: 350px;
-    }
-
     .img-wrapper .fun-style-overlay {
         font-size: 0.6rem;
         line-height: 0.9rem;
         padding: 0.3rem;
         justify-content: center;
-    }
-
-    .image-gallery-wrapper.fun-style .img-gallery-img {
-        max-width: 23vh;
-        max-height: 28vh;
-    }
-}
-
-@media (max-width: 415px) {
-    .image-gallery-wrapper.fun-style .img-gallery-img {
-        max-width: 19vh;
-        max-height: 24vh;
-    }
-
-    .image-gallery-wrapper.fun-style {
-        margin: auto;
     }
 }
