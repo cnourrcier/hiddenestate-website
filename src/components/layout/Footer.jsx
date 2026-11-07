@@ -95,12 +95,6 @@ const Footer = () => {
                         />
                     </a>
                 </div>
-                <div className="management-info">
-                    Exclusively managed by Natural Retreats{" "}
-                    <span style={{ fontStyle: "italic" }}>
-                        "Alaya Collection"
-                    </span>
-                </div>
             </div>
 
             <div className="footer-bottom">

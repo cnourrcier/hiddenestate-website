@@ -83,23 +83,6 @@
     opacity: 0.9;
 }
 
-.management-info {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #c5d5e5;
-    margin-bottom: 1rem;
-}
-
-.management-info a {
-    color: #c5d5e5;
-    text-decoration: underline;
-    transition: color 0.3s ease;
-}
-
-.management-info a:hover {
-    color: var(--ps-whiter);
-}
-
 .footer-bottom {
     max-width: 1200px;
     margin: 20px auto 0;
